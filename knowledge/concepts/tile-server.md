@@ -25,9 +25,11 @@ egypt-latest.osm.pbf    (raw data dump — not a map)
 
 **Key format — MBTiles:** A single SQLite file containing all pre-computed tiles. The tile server opens it and serves the right chunks on request. One file = the entire map at all zoom levels. For Egypt: ~500MB–2GB.
 
-**Our plan:** `tileserver-gl` Docker container. One-time build step to generate `.mbtiles` from our PBF, then a single lightweight container serves forever.
+**Our plan:** Use free external OSM tiles for now (`tile.openstreetmap.org`). Same approach OTP's own debug client uses. Self-hosted (PMTiles or MBTiles) can be added later as a dedicated docker-compose service.
 
-**Status:** Next to add to `docker-compose.yml`.
+**Offline note:** External tiles need internet, but this doesn't matter right now — OTP is server-side, so the app requires a connection either way. Self-hosted tiles don't improve offline capability unless you also embed OTP on-device (separate future decision).
+
+**Status:** Next to evaluate and add to `docker-compose.yml`.
 
 **Resources**
 - [tileserver-gl](https://github.com/maptiler/tileserver-gl)

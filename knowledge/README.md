@@ -12,22 +12,24 @@ Three backend services in Docker, one React Native mobile app:
 ┌─────────────────────────────────────────────┐
 │              DOCKER (docker-compose)         │
 │                                              │
-│  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
-│  │   OTP   │  │  Photon  │  │Tileserver │  │
-│  │ :8080   │  │ :2322    │  │  (TBD)    │  │
-│  │ routing │  │ geocoding│  │ map tiles │  │
-│  └────┬────┘  └────┬────┘  └─────┬─────┘  │
-│       │            │              │        │
-└───────┼────────────┼──────────────┼────────┘
-        │            │              │
-   ┌────▼────────────▼──────────────▼────┐
-   │         REACT NATIVE APP             │
-   │                                      │
-   │  "Plan trip" ────► OTP               │
-   │  "Search" ───────► Photon            │
-   │  "Show map" ─────► Tileserver        │
-   └──────────────────────────────────────┘
+│  ┌──────────┐  ┌──────────┐                 │
+│  │   OTP    │  │  Photon  │                 │
+│  │ :8080    │  │ :2322    │                 │
+│  │ routing  │  │ geocoding│                 │
+│  └────┬─────┘  └────┬─────┘                 │
+│       │              │                       │
+└───────┼──────────────┼───────────────────────┘
+        │              │
+   ┌────▼──────────────▼──────────────────┐
+   │         REACT NATIVE APP              │
+   │                                        │
+   │  "Plan trip" ────► OTP                 │
+   │  "Search" ───────► Photon              │
+   │  Map tiles ───────► OSM (external)     │
+   └────────────────────────────────────────┘
 ```
+
+> Map tiles come from `tile.openstreetmap.org` (free, no Docker service needed).
 
 ---
 
@@ -65,13 +67,13 @@ Alexandria transit doesn't follow fixed stops. Microbuses, buses, and minibuses 
 
 ### 6. [Architecture](concepts/architecture.md)
 
-How the pieces connect. Three backend services (OTP, Photon, Tileserver) all in one `docker-compose.yml`, each handling one job. The React Native app is just a client — it sends HTTP requests and displays results. Each service maps to a Google Maps equivalent: OTP = Directions, Photon = Geocoding, Tileserver = Map tiles.
+How the pieces connect. Two backend services (OTP, Photon) in `docker-compose.yml`, plus external map tiles from OSM. The React Native app is just a client — it sends HTTP requests and displays results. Each service maps to a Google Maps equivalent: OTP = Directions, Photon = Geocoding.
 
 ---
 
 ### 7. [Tile Server](concepts/tile-server.md)
 
-Serves the visual map to the app. The world is pre-sliced into small 256×256 pixel squares (tiles) at multiple zoom levels. The phone requests just the ~20 tiles visible on screen, stitched together as the map you see. Like a book — you don't download 10,000 pages, you just turn to page 47. The pipeline: raw OSM → MBTiles (one-time build) → tileserver-gl (serves forever).
+Serves the visual map to the app. The world is pre-sliced into small 256×256 pixel squares (tiles) at multiple zoom levels. The phone requests just the ~20 tiles visible on screen, stitched together as the map you see. **Decision:** Using free external OSM tiles for now — same as OTP's debug client. Self-hosted tiles and offline caching are deferred.
 
 ---
 

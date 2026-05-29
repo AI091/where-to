@@ -22,9 +22,13 @@ Commuter-first (expand later).
 |---------|--------|
 | OTP (routing) | Running |
 | Photon (geocoding) | Next |
-| Tileserver (map) | Next |
+| Tileserver (map tiles) | Deferred — using external OSM tiles |
 
 ## Tech stack
 
-- Backend: Docker Compose (OTP + Photon + Tileserver)
+- Backend: Docker Compose (OTP + Photon)
 - Mobile: React Native
+
+## Offline
+
+Currently an online-only app. OTP is server-side, so routing requires a connection regardless of tile source. Full offline would require embedding OTP on-device — a distant future consideration.

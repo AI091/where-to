@@ -8,22 +8,24 @@
 ┌─────────────────────────────────────────────┐
 │              DOCKER (docker-compose)         │
 │                                              │
-│  ┌──────────┐  ┌──────────┐  ┌───────────┐  │
-│  │   OTP    │  │  Photon  │  │Tileserver │  │
-│  │ :8080    │  │ :2322    │  │  (TBD)    │  │
-│  │ routing  │  │ geocoding│  │ map tiles │  │
-│  └────┬─────┘  └────┬─────┘  └─────┬─────┘  │
-│       │              │              │        │
-└───────┼──────────────┼──────────────┼────────┘
-        │              │              │
-   ┌────▼──────────────▼──────────────▼────┐
-   │          REACT NATIVE APP              │
+│  ┌──────────┐  ┌──────────┐                 │
+│  │   OTP    │  │  Photon  │                 │
+│  │ :8080    │  │ :2322    │                 │
+│  │ routing  │  │ geocoding│                 │
+│  └────┬─────┘  └────┬─────┘                 │
+│       │              │                       │
+└───────┼──────────────┼───────────────────────┘
+        │              │
+   ┌────▼──────────────▼──────────────────┐
+   │         REACT NATIVE APP              │
    │                                        │
-   │  "Plan trip" ───────► OTP              │
-   │  "Search address" ──► Photon           │
-   │  "Show map" ────────► Tileserver       │
+   │  "Plan trip" ────► OTP                 │
+   │  "Search" ───────► Photon              │
+   │  Map tiles ───────► OSM (external)     │
    └────────────────────────────────────────┘
 ```
+
+> Map tiles come from `tile.openstreetmap.org` (free, no Docker service needed). Self-hosted tiles can be added later as a tileserver container.
 
 **How each service maps to Google Maps:**
 
