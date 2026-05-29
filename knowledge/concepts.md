@@ -31,7 +31,23 @@ I explored the `otp/` folder I had (now deleted). OTP needs **two** inputs to bu
 
 ---
 
-**Status:** Need to set up OTP with Docker.
+**Status:** OTP is now running with Docker at `http://localhost:8080`.
+
+---
+
+## Encounter 3: Hail-and-Ride
+
+**What I learned:** Not all transit follows fixed stops. In Alexandria, many transit modes — microbuses, buses, and minibuses — are effectively **hail-and-ride**: passengers can flag them down anywhere safe along the route, and drop-offs happen anywhere on request. This is common for informal/paratransit in many cities.
+
+**Why it matters:** Standard GTFS with fixed stops doesn't model this well. To simulate hail-and-ride in a trip planner, you typically generate synthetic stops at regular intervals (e.g., every 100–200m) along each route's path. That way OTP knows passengers can board/alight at any of those points.
+
+**GTFS support:** GTFS has `continuous_pickup` and `continuous_drop_off` fields (introduced in 2019) that can mark a route as allowing boarding/alighting between stops. OTP has partial support via its GTFS Flex module, but the routing logic doesn't yet produce hail-and-ride results reliably.
+
+**Status in OTP:** A [Feb 2026 issue](https://github.com/opentripplanner/OpenTripPlanner/issues/7304) confirms that configuring OTP for continuous pickup/dropoff is broken — routes marked as hail-and-ride still only stop at fixed stops. For now, generating synthetic stops at regular intervals is the workaround.
+
+**Resources**
+- [GTFS continuous stop extension](https://gtfs.org/schedule/reference/#stop_timestxt)
+- [OTP issue: continuous pickup/dropoff doesn't work](https://github.com/opentripplanner/OpenTripPlanner/issues/7304)
 
 ---
 
