@@ -1,0 +1,10 @@
+services:
+  otp:
+    image: opentripplanner/opentripplanner:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./otp:/var/opentripplanner
+    environment:
+      - JAVA_TOOL_OPTIONS=-Xmx4G
+    command: --build --serve
