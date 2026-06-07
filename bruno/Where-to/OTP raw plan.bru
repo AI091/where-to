@@ -1,0 +1,17 @@
+meta {
+  name: OTP raw plan
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/otp/gtfs/v1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "query": "{ plan(from:{lat:31.234556,lon:29.963111}, to:{lat:31.212118,lon:29.933577}, date:\"2026-05-29\", time:\"12:00:00\", transportModes:[{mode:BUS},{mode:WALK}]) { itineraries { duration legs { mode duration distance from { name lat lon } to { name lat lon } route { shortName agency { name } } } } } }"
+  }
+}
