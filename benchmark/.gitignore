@@ -1,0 +1,4 @@
+# Derived benchmark data: base feed copy, GTFS variants, OTP graphs, query results.
+# Everything under data/ is regenerable from the scripts in this directory.
+data/
+.venv/
