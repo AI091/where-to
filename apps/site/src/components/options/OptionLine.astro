@@ -1,0 +1,127 @@
+---
+/**
+ * Option A, "الخط": the trip drawn as a transit line. Rides are solid lines in the
+ * vehicle's plate colour; walking is dotted. Each route name sits on a plate.
+ */
+import Icon from '../Icon.astro';
+import {
+	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, vehicleOf, vehicleColor, vehicleShort,
+} from '../../lib/trip';
+
+interface Props { page: Page }
+const { page } = Astro.props;
+const [best, ...others] = page.options;
+const steps = viewSteps(page, best);
+const gray = '#9aa6ad';
+---
+
+<article class="py-8">
+	<h1 class="text-3xl font-bold leading-snug text-sea-dark">ازاي تروح من {page.from.ar} {li(page.to.ar)}؟</h1>
+
+	<div class="mt-5 flex items-end gap-3">
+		<p class="text-5xl font-bold leading-none text-ink">{round5(best.minutes)}</p>
+		<p class="pb-1 text-muted">دقيقة تقريباً، {walkText(best.walkMeters)}</p>
+	</div>
+
+	<!-- The whole trip at a glance, read right to left -->
+	<ol class="mt-4 flex flex-wrap items-center gap-1.5" aria-label="ملخص المشوار">
+		{
+			best.steps.filter((s) => s.kind === 'ride' || s.meters >= 50).map((s, i) => (
+				<>
+					{i > 0 && <li aria-hidden="true" class="text-muted">‹</li>}
+					{s.kind === 'walk' ? (
+						(
+							<li class="inline-flex items-center gap-1 rounded-full bg-black/5 px-2 py-1 text-sm text-muted">
+								<Icon name="walk" class="size-4" />
+								{s.meters} م
+							</li>
+						)
+					) : (
+						<li
+							class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm font-bold text-white"
+							style={`background:${vehicleColor[vehicleOf(s.vehicle)]}`}
+						>
+							<Icon name={vehicleOf(s.vehicle) === 'bus' || vehicleOf(s.vehicle) === 'minibus' ? 'bus' : 'microbus'} class="size-4" />
+							{vehicleShort(s.vehicle)}
+						</li>
+					)}
+				</>
+			))
+		}
+	</ol>
+
+	<ol class="mt-8">
+		{
+			steps.map((s, i) => {
+				const next = steps[i + 1];
+				const line = !next ? null : s.type === 'board' ? vehicleColor[s.vehicle] : gray;
+				const dotted = s.type !== 'board';
+				const color = s.type === 'board' || s.type === 'alight' ? vehicleColor[s.vehicle] : s.type === 'arrive' ? '#0b5e7a' : gray;
+				return (
+					<li class="relative ps-14 pb-7">
+						{line && (
+							<span
+								aria-hidden="true"
+								class="absolute start-[21px] top-10 bottom-0 w-[6px] rounded-full"
+								style={dotted
+									? `background: repeating-linear-gradient(to bottom, ${line} 0 6px, transparent 6px 12px)`
+									: `background:${line}`}
+							/>
+						)}
+						<span
+							class="absolute start-0 top-0 grid size-12 place-items-center rounded-full border-[3px] bg-white"
+							style={`border-color:${color}; color:${color}`}
+						>
+							<Icon
+								name={s.type === 'walk' ? 'walk' : s.type === 'arrive' ? 'flag' : s.type === 'board' && s.ride.fromOnRoad ? 'hand' : s.vehicle === 'bus' || s.vehicle === 'minibus' ? 'bus' : 'microbus'}
+							/>
+						</span>
+
+						{s.type === 'walk' && (
+							<p class="pt-3 text-muted">امشي {s.meters} متر (حوالي {mins(s.minutes)}) لحد <strong class="text-ink">{s.to}</strong></p>
+						)}
+						{s.type === 'board' && (
+							<div class="pt-1">
+								<p class="text-lg font-bold">{boardText(s.ride)}</p>
+								<span class="mt-2 inline-flex flex-col overflow-hidden rounded-lg border-2 bg-white" style={`border-color:${vehicleColor[s.vehicle]}`}>
+									<span class="px-3 py-0.5 text-sm font-bold text-white" style={`background:${vehicleColor[s.vehicle]}`}>{s.ride.vehicle}</span>
+									<span class="px-3 py-1.5 font-bold text-ink">{s.ride.route}</span>
+								</span>
+								<p class="mt-2 text-sm text-muted">اتجاه {s.ride.headsign}، حوالي {round5(s.ride.minutes)} دقيقة</p>
+							</div>
+						)}
+						{s.type === 'alight' && (
+							<p class="pt-3 text-lg">
+								انزل عند <strong style={`color:${vehicleColor[s.vehicle]}`}>{s.ride.to}</strong>
+							</p>
+						)}
+						{s.type === 'arrive' && <p class="pt-3 text-lg font-bold text-sea-dark">وصلت {s.place}</p>}
+					</li>
+				);
+			})
+		}
+	</ol>
+
+	{
+		others.length > 0 && (
+			<section class="mt-4 border-t border-black/10 pt-6">
+				<h2 class="text-xl font-bold text-sea-dark">لو عايز طريقة تانية</h2>
+				<ul class="mt-3 space-y-3">
+					{others.map((o) => (
+						<li class="flex flex-wrap items-center gap-1.5">
+							{rides(o).map((r, i) => (
+								<>
+									{i > 0 && <span class="text-muted">‹</span>}
+									<span class="rounded-full px-2.5 py-1 text-sm font-bold text-white" style={`background:${vehicleColor[vehicleOf(r.vehicle)]}`}>
+										{vehicleShort(r.vehicle)} {r.route}
+									</span>
+								</>
+							))}
+							<span class="text-sm text-muted">حوالي {round5(o.minutes)} دقيقة</span>
+						</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
+</article>

@@ -1,0 +1,113 @@
+---
+/**
+ * Option C, "الخريطة": the page opens with the trip itself, drawn from the real
+ * route shapes. North is up, and in Alexandria north is the sea, which is how
+ * people give directions ("ناحية البحر").
+ */
+import Icon from '../Icon.astro';
+import {
+	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, vehicleOf, vehicleColor, vehicleShort, decodePolyline,
+} from '../../lib/trip';
+
+interface Props { page: Page }
+const { page } = Astro.props;
+const [best, ...others] = page.options;
+const steps = viewSteps(page, best);
+
+// Project every leg into a 360×250 box, north up, keeping the aspect ratio.
+const W = 360, H = 250, PAD = 28;
+const legs = best.steps.map((s) => ({ step: s, pts: decodePolyline(s.geometry) }));
+const all = legs.flatMap((l) => l.pts);
+const lat0 = all.reduce((a, p) => a + p[0], 0) / all.length;
+const k = Math.cos((lat0 * Math.PI) / 180);
+const xs = all.map((p) => p[1] * k), ys = all.map((p) => p[0]);
+const [minX, maxX, minY, maxY] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+const scale = Math.min((W - 2 * PAD) / (maxX - minX || 1e-6), (H - 2 * PAD) / (maxY - minY || 1e-6));
+const offX = (W - (maxX - minX) * scale) / 2, offY = (H - (maxY - minY) * scale) / 2;
+const proj = ([lat, lon]: [number, number]) => [offX + (lon * k - minX) * scale, offY + (maxY - lat) * scale] as const;
+const path = (pts: [number, number][]) => pts.map((p, i) => `${i ? 'L' : 'M'}${proj(p)[0].toFixed(1)} ${proj(p)[1].toFixed(1)}`).join(' ');
+const start = proj(all[0]);
+const end = proj(all[all.length - 1]);
+const transfers = legs.filter((l) => l.step.kind === 'ride').map((l) => proj(l.pts[0]));
+---
+
+<article class="pb-8">
+	<figure class="-mx-5 mt-2 overflow-hidden bg-[#e4eef0]">
+		<svg viewBox={`0 0 ${W} ${H}`} class="block w-full" role="img" aria-label={`خريطة المشوار من ${page.from.ar} ${li(page.to.ar)}`}>
+			<defs>
+				<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0" stop-color="#0b5e7a" stop-opacity="0.35" />
+					<stop offset="1" stop-color="#0b5e7a" stop-opacity="0" />
+				</linearGradient>
+			</defs>
+			<rect width={W} height="38" fill="url(#sea)" />
+			<text x={W - 12} y="22" font-size="12" fill="#073f52" direction="rtl" text-anchor="start">ناحية البحر ↑</text>
+			{
+				legs.map(({ step, pts }) =>
+					step.kind === 'walk' ? (
+						<path d={path(pts)} fill="none" stroke="#5b6770" stroke-width="3" stroke-dasharray="1 6" stroke-linecap="round" />
+					) : (
+						<>
+							<path d={path(pts)} fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+							<path d={path(pts)} fill="none" stroke={vehicleColor[vehicleOf(step.vehicle)]} stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+						</>
+					),
+				)
+			}
+			{transfers.map(([x, y]) => <circle cx={x} cy={y} r="5" fill="#fff" stroke="#1d2830" stroke-width="2" />)}
+			<circle cx={start[0]} cy={start[1]} r="7" fill="#0b5e7a" stroke="#fff" stroke-width="3" />
+			<g transform={`translate(${end[0]} ${end[1]})`}>
+				<path d="M0 0c-6-8-10-12-10-17a10 10 0 0 1 20 0c0 5-4 9-10 17z" fill="#e8871e" stroke="#fff" stroke-width="2" />
+				<circle cy="-17" r="3.5" fill="#fff" />
+			</g>
+		</svg>
+		<figcaption class="flex justify-between px-5 pb-3 text-sm text-muted">
+			<span><span class="text-sea">●</span> {page.from.ar}</span>
+			<span><span class="text-[#e8871e]">●</span> {page.to.ar}</span>
+		</figcaption>
+	</figure>
+
+	<h1 class="mt-6 text-2xl font-bold leading-snug text-sea-dark">ازاي تروح من {page.from.ar} {li(page.to.ar)}؟</h1>
+	<p class="mt-2 text-muted">حوالي {round5(best.minutes)} دقيقة، {walkText(best.walkMeters)}</p>
+
+	<ol class="mt-6 divide-y divide-black/10 border-y border-black/10">
+		{
+			steps.map((s) => {
+				const color = s.type === 'board' || s.type === 'alight' ? vehicleColor[s.vehicle] : s.type === 'arrive' ? '#e8871e' : '#5b6770';
+				const icon = s.type === 'walk' ? 'walk' : s.type === 'arrive' ? 'pin' : s.type === 'board' && s.ride.fromOnRoad ? 'hand' : s.vehicle === 'bus' || s.vehicle === 'minibus' ? 'bus' : 'microbus';
+				return (
+					<li class="flex items-start gap-3 py-3.5">
+						<span class="mt-0.5" style={`color:${color}`}><Icon name={icon} /></span>
+						<div>
+							{s.type === 'walk' && <p>امشي {s.meters} متر لحد <strong>{s.to}</strong> <span class="text-muted">({mins(s.minutes)})</span></p>}
+							{s.type === 'board' && (
+								<>
+									<p>{boardText(s.ride)}</p>
+									<p class="mt-1 font-bold" style={`color:${color}`}>{vehicleShort(s.ride.vehicle)} «{s.ride.route}»</p>
+									<p class="text-sm text-muted">اتجاه {s.ride.headsign}، حوالي {round5(s.ride.minutes)} دقيقة</p>
+								</>
+							)}
+							{s.type === 'alight' && <p>انزل عند <strong>{s.ride.to}</strong></p>}
+							{s.type === 'arrive' && <p class="font-bold">وصلت {s.place}</p>}
+						</div>
+					</li>
+				);
+			})
+		}
+	</ol>
+
+	{
+		others.length > 0 && (
+			<section class="mt-6">
+				<h2 class="font-bold text-sea-dark">طرق تانية</h2>
+				<ul class="mt-2 space-y-1 text-muted">
+					{others.map((o) => (
+						<li>
+							{rides(o).map((r, i) => `${i ? ' ثم ' : ''}${vehicleShort(r.vehicle)} «${r.route}»`).join('')}، حوالي {round5(o.minutes)} دقيقة
+						</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
+</article>

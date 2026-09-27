@@ -1,0 +1,106 @@
+---
+/**
+ * Option B, "لافتة المشروع": the street's own vernacular. Verbs and the route name
+ * are set in Ruqaa, like the hand-painted destination signs on microbus windscreens,
+ * and the steps sit along a strip of road with lane markings.
+ */
+import '@fontsource/aref-ruqaa/700.css';
+import Icon from '../Icon.astro';
+import {
+	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, vehicleOf, vehicleColor, vehicleShort,
+} from '../../lib/trip';
+
+interface Props { page: Page }
+const { page } = Astro.props;
+const [best, ...others] = page.options;
+const steps = viewSteps(page, best);
+const verb = { walk: 'امشي', board: 'اركب', alight: 'انزل', arrive: 'وصلت' } as const;
+---
+
+<article class="py-8">
+	<p class="text-lg text-muted">ازاي تروح</p>
+	<h1 class="ruqaa mt-1 text-4xl leading-[1.5] text-sea-dark">
+		من {page.from.ar}<br />{li(page.to.ar)}
+	</h1>
+	<p class="mt-3 flex items-center gap-2 text-muted">
+		<Icon name="clock" class="size-5" />
+		حوالي {round5(best.minutes)} دقيقة، {walkText(best.walkMeters)}
+	</p>
+
+	<ol class="relative mt-8">
+		<span aria-hidden="true" class="road absolute start-[26px] top-2 bottom-8 w-3.5 rounded-full"></span>
+		{
+			steps.map((s) => {
+				const color = s.type === 'board' || s.type === 'alight' ? vehicleColor[s.vehicle] : '#0b5e7a';
+				const icon = s.type === 'walk' ? 'walk' : s.type === 'arrive' ? 'pin' : s.type === 'board' && s.ride.fromOnRoad ? 'hand' : s.vehicle === 'bus' || s.vehicle === 'minibus' ? 'bus' : 'microbus';
+				return (
+					<li class="relative flex gap-4 pb-8">
+						<span class="relative z-10 grid size-[66px] shrink-0 place-items-center rounded-2xl text-white shadow" style={`background:${color}`}>
+							<Icon name={icon} class="size-9" />
+						</span>
+						<div class="pt-1">
+							<p class="ruqaa text-3xl leading-tight" style={`color:${color}`}>
+								{s.type === 'board' && s.ride.fromOnRoad ? 'شاور' : verb[s.type]}
+							</p>
+							{s.type === 'walk' && (
+								<p class="mt-1">{s.meters} متر لحد <strong>{s.to}</strong> <span class="text-muted">({mins(s.minutes)})</span></p>
+							)}
+							{s.type === 'board' && (
+								<>
+									<p class="mt-1">{boardText(s.ride)}</p>
+									<p class="sign mt-3 inline-block rounded-md px-4 py-2 text-2xl text-white" style={`background:${color}`}>
+										{s.ride.route}
+									</p>
+									<p class="mt-2 text-sm text-muted">
+										{s.ride.vehicle}، اتجاه {s.ride.headsign}، حوالي {round5(s.ride.minutes)} دقيقة
+									</p>
+								</>
+							)}
+							{s.type === 'alight' && (
+								<p class="mt-1">
+									عند <strong>{s.ride.to}</strong>
+								</p>
+							)}
+							{s.type === 'arrive' && <p class="mt-1 text-lg font-bold">{s.place}</p>}
+						</div>
+					</li>
+				);
+			})
+		}
+	</ol>
+
+	{
+		others.length > 0 && (
+			<section class="mt-2">
+				<h2 class="ruqaa text-2xl text-sea-dark">وفيه كمان</h2>
+				<ul class="mt-3 space-y-2">
+					{others.map((o) => (
+						<li>
+							{rides(o).map((r, i) => (
+								<span>
+									{i > 0 && ' وبعدين '}
+									<strong style={`color:${vehicleColor[vehicleOf(r.vehicle)]}`}>{vehicleShort(r.vehicle)}</strong> {r.route}
+								</span>
+							))}
+							<span class="text-muted">، حوالي {round5(o.minutes)} دقيقة</span>
+						</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
+</article>
+
+<style>
+	.ruqaa,
+	.sign {
+		font-family: 'Aref Ruqaa', serif;
+		font-weight: 700;
+	}
+	/* A strip of asphalt with a dashed centre line: the steps are stops along the road. */
+	.road {
+		background:
+			repeating-linear-gradient(to bottom, #f7f1e6 0 10px, transparent 10px 22px) center / 2px 100% no-repeat,
+			#3a4046;
+	}
+</style>

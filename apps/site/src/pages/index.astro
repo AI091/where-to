@@ -58,6 +58,24 @@ const points = [
 
 	{
 		drafts.length > 0 && (
+			<section class="pb-8">
+				<h2 class="text-xl font-bold text-sea-dark">خيارات التصميم</h2>
+				<ul class="mt-3 space-y-2">
+					{[
+						['a', 'الخط'],
+						['b', 'لافتة المشروع'],
+						['c', 'الخريطة'],
+					].map(([k, name]) => (
+						<li>
+							<a class="text-sea underline" href={`/options/${k}/el-sa-ah-to-train-station/`}>{name}</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
+	{
+		drafts.length > 0 && (
 			<section class="pb-12">
 				<h2 class="text-xl font-bold text-sea-dark">مسودات ({drafts.length})</h2>
 				<ul class="mt-3 grid gap-2 sm:grid-cols-2">

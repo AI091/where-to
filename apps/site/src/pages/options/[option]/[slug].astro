@@ -1,0 +1,42 @@
+---
+/**
+ * Design options for the route pages, side by side on the same sample trips.
+ * Drafts only: nothing here is built for production.
+ */
+import Layout from '../../../layouts/Layout.astro';
+import OptionLine from '../../../components/options/OptionLine.astro';
+import OptionSign from '../../../components/options/OptionSign.astro';
+import OptionMap from '../../../components/options/OptionMap.astro';
+import data from '../../../data/routes.json';
+import { li } from '../../../lib/trip';
+
+export const OPTIONS = { a: 'الخط', b: 'لافتة المشروع', c: 'الخريطة' } as const;
+export const SAMPLES = ['el-awayed-to-train-station', 'el-sa-ah-to-train-station', 'train-station-to-el-awayed'];
+
+export function getStaticPaths() {
+	if (process.env.DRAFTS !== '1') return [];
+	return Object.keys(OPTIONS).flatMap((option) =>
+		SAMPLES.map((slug) => ({ params: { option, slug }, props: { page: data.pages.find((p) => p.slug === slug)! } })),
+	);
+}
+
+const { option } = Astro.params as { option: keyof typeof OPTIONS };
+const { page } = Astro.props;
+const Component = { a: OptionLine, b: OptionSign, c: OptionMap }[option];
+---
+
+<Layout title={`خيار ${OPTIONS[option]}: من ${page.from.ar} ${li(page.to.ar)}`} description="خيار تصميم">
+	<nav class="mt-4 flex gap-2 text-sm">
+		{
+			Object.entries(OPTIONS).map(([k, name]) => (
+				<a
+					href={`/options/${k}/${page.slug}/`}
+					class:list={['rounded-full px-3 py-1', k === option ? 'bg-sea text-white' : 'bg-black/5 text-sea-dark']}
+				>
+					{name}
+				</a>
+			))
+		}
+	</nav>
+	<Component page={page} />
+</Layout>

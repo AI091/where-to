@@ -121,16 +121,21 @@ const PLAN = `query Plan($from: InputCoordinates!, $to: InputCoordinates!, $date
       mode distance duration
       from { name stop { gtfsId } } to { name stop { gtfsId } }
       route { gtfsId shortName longName longNameEn: longName(language: "en") } trip { tripHeadsign }
+      legGeometry { points }
     } }
   }
 }`;
 
 type Leg = {
 	mode: string; distance: number; duration: number;
-	from: { name: string }; to: { name: string };
+	from: { name: string; stop: { gtfsId: string } | null }; to: { name: string; stop: { gtfsId: string } | null };
 	route: { gtfsId: string; shortName: string; longName: string; longNameEn: string } | null;
 	trip: { tripHeadsign: string } | null;
+	legGeometry: { points: string };
 };
+
+// Synthetic stops (SYN_) are points on the road, not real stops: you stand there and wave.
+const onRoad = (stop: { gtfsId: string } | null) => !!stop && stop.gtfsId.includes('SYN_');
 type Itinerary = { duration: number; walkDistance: number; legs: Leg[] };
 
 // Headsigns aren't translated either; they name one end of the route, so take
@@ -164,7 +169,12 @@ async function plan(pair: Pair) {
 			walkMeters: Math.round(it.walkDistance),
 			steps: it.legs.map((l, i) =>
 				l.mode === 'WALK'
-					? { kind: 'walk' as const, meters: Math.round(l.distance), to: i === it.legs.length - 1 ? pair.to.ar : l.to.name }
+					? {
+							kind: 'walk' as const,
+							meters: Math.round(l.distance),
+							to: i === it.legs.length - 1 ? pair.to.ar : l.to.name,
+							geometry: l.legGeometry.points,
+						}
 					: {
 							kind: 'ride' as const,
 							vehicle: vehicleLabel(l.route?.shortName ?? ''),
@@ -172,7 +182,10 @@ async function plan(pair: Pair) {
 							headsign: arabicHeadsign(l),
 							from: l.from.name,
 							to: l.to.name,
+							fromOnRoad: onRoad(l.from.stop),
+							toOnRoad: onRoad(l.to.stop),
 							minutes: Math.round(l.duration / 60),
+							geometry: l.legGeometry.points,
 						},
 			),
 		});

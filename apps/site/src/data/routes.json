@@ -23,7 +23,8 @@
 						{
 							"kind": "walk",
 							"meters": 1,
-							"to": "العوايد"
+							"to": "العوايد",
+							"geometry": "idp}DsdavDA?AU"
 						},
 						{
 							"kind": "ride",
@@ -32,7 +33,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "العوايد",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 35
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 35,
+							"geometry": "mdp}DieavD~EUjAAr@DPBv@H`KjAR@d@Bb@@n@?lBGzFc@^CxEo@nHk@pXy@pM?bKKN?nDBnG?fA?zFI|BC`JI~ACfGKxDCnB?nDGvAOh@MXKLElBeAfBoAdAg@\\Kd@Mb@E??rAGpABfALp@NzAj@n@b@NJh@d@fF~Fh@p@xDpE`ApAdAhAPRzAjBpEpF~HnJBDr@dApAzBZv@lAtDVv@lD~KnBhG^vANv@NfAD`@J~A@p@AxAI|AKbAMr@K^Mf@o@fBc@`AsCdFeFdJc@~@e@fAsAvDw@pBs@pAiGdLkGdLgCvEk@vAW|@UrACHG~@GhBL`CV`Bb@bB?@zCdJp@lBnEpMb@pAnAbD|AxE^jAb@pA~BzHTv@|DtK\\~@`AtCrAvD^`AlA`DRd@v@nB`ApCzAdEfBpFLVnAdCv@nAp@v@LPbBdBnIzIx@|@nA~AfBjCt@`AJPb@p@v@`Ax@|@zDdDv@r@X\\JTF`@Cd@M^e@j@mJlEyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOL}@Xy@JgDGwAFaAN[LiBTMHEL?JLPLDRAbDm@f@EfAAD?~CJ|@HjCfAdAXpBh@tBfJ~ChNiBgIbCrKtCvKpDbNzBhI"
 						}
 					]
 				}
@@ -64,7 +68,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "الموقف الجديد",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 17
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 17,
+							"geometry": "yzh}DcoquDaBgF_BmEIUk@uAW_@M_@{AyDg@u@Yu@mAaDo@iBMk@_AyCs@}BwCwIwAiEwBgG[}@fH}Cd@YLQBG~Aq@j@CnF_CREf@Eh@B~Af@b@@`@KLKT[Jc@@g@KgAu@qBm@o@g@Ya@A_@FMHMJQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRAxCk@HAf@EfAAdDJ|@HxAl@p@XvDbAfAzE`DjN}@}DbCrKbBnGpD`NpD`NCM"
 						}
 					]
 				}
@@ -96,12 +103,16 @@
 							"headsign": "أبو قير",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "طريق خورشيد, العوائد",
-							"minutes": 21
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 21,
+							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[ECWOaA{@BgA[c@]u@Yw@Wy@a@iAoCsHQu@q@o@AGE_@Ky@GkA?e@HuBTmBTeAPg@HYhAuBhAkB`BuCHSv@}Av@cCb@kBf@mCDSRcCRkDFcEFwDA{@G{@Mw@c@uA_@s@AAOU{@}@o@c@oD}AwAg@m@SkBu@gBaAkBkAa@SC?oAYiDe@wDw@eB]{@U}@c@wDyBuCcBoCiBi@c@g@k@KKU]]q@Ws@a@_Bi@{Am@wAS[{@{A{@iAsAsA{AcAg@WWM_A]{FoAwAc@sAk@yAw@qF}A{C}@]EgCEaAOo@SCAo@]y@m@m@e@s@y@m@aAc@iASq@I[c@}Bs@oHIq@Ie@YiAm@eBi@}B[iBGk@[cCYeDOyCE_B@\\EiCK{A[qCYyAOo@Kc@kBkGk@gB[aAMe@QiAEe@?WCs@@q@Fq@XkBTkAtCoNP{@TwAvBuIPu@f@kAb@w@h@q@`A}@f@k@d@}@v@wA`@m@fB_CZe@x@mB"
 						},
 						{
 							"kind": "walk",
 							"meters": 564,
-							"to": "العوايد"
+							"to": "العوايد",
+							"geometry": "usp}D_n`vD?@_@x@LFp@yAZu@^}@Z{@Tq@h@yAVs@Na@HSZsA\\qBHe@BIBOVkAd@C`AIRAB?"
 						}
 					]
 				}
@@ -133,7 +144,10 @@
 							"headsign": "الموقف الجديد",
 							"from": "استاد الإسكندرية",
 							"to": "الموقف الجديد",
-							"minutes": 7
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 7,
+							"geometry": "oel}DmaquDcAuDmC}JYsA}AmCKYG]@_@F[JYnCkBPQLUxCyBvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`BzB~@tAj@hA|AnEtAlEZj@BJ|@~CtAxE\\tADLzAxEfB~Fz@rC"
 						}
 					]
 				}
@@ -161,7 +175,8 @@
 						{
 							"kind": "walk",
 							"meters": 185,
-							"to": "شارع مصطفى كامل"
+							"to": "شارع مصطفى كامل",
+							"geometry": "_ju}Dur_vDA@eBeFa@PKYGQAEKW??"
 						},
 						{
 							"kind": "ride",
@@ -170,12 +185,16 @@
 							"headsign": "المنشية",
 							"from": "شارع مصطفى كامل",
 							"to": "مسجد الرحمن - الكورنيش",
-							"minutes": 7
+							"fromOnRoad": true,
+							"toOnRoad": false,
+							"minutes": 7,
+							"geometry": "kou}Dq{_vDUs@e@iCWkAsA}EGUIAK?KJCJ@`AxBpHGVGJCFON_KdEaA`@UVy@B]AW@WFoBbAkAj@kAh@{@^qEbBE@]y@EEQMoCoFi@aAOMSGSAUDUH_AXw@t@sFjEGBA?SAiDbDyB|CQT{BvCsAjBiBvB}@dAG?QBEDYh@CP@NFNJHNDNAFENQnB~B|DzE_ApAYS"
 						},
 						{
 							"kind": "walk",
 							"meters": 1,
-							"to": "مسجد الرحمن - الكورنيش"
+							"to": "مسجد الرحمن - الكورنيش",
+							"geometry": "m|w}Dwf~uDABAAEJ"
 						},
 						{
 							"kind": "ride",
@@ -184,7 +203,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "مسجد الرحمن - الكورنيش",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 25
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 25,
+							"geometry": "w|w}Dif~uDJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@bCrKLf@pD`NpDbNpAvE"
 						}
 					]
 				}
@@ -216,7 +238,10 @@
 							"headsign": "الساعة",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "ميدان الساعة",
-							"minutes": 48
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 48,
+							"geometry": "_fk}DoyouDDy@eAeDIUqEoMaDaJo@oBi@_BmAkDW{@i@eCAKcA{NAK?IDo@JABCBMAEKKI@EFAJcCe@mDaAg@MTa@JI~CgCZ[Va@~CsI^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKT[Jc@@g@KgAu@qBg@aAeEoHkAaCcA_BaDqEc@o@wB_D}B}Cy@cAmEmFeBgBSQ_ByAkDyCa@]s@q@uFoF_BcBsEsEqA_Bc@o@gBeCgA}Ae@y@aAsBAEqEqMgCmHgAcDc@qAYcAeAmCuAkE]uAe@cC]uAa@sA_AwBCGeAeBwCkD_@k@k@iAgDiJ{HgUqEgNOs@KaAu@qBCKeD}KS_ACOIi@KsAEsA?gH?oGBoAXkD??F_B@iGAwJ@tECmOA_H?mF@mO@m@B_N@gBFqBZyE@uADsB@oDAiFAkCOcFA{C?I?}A@}BDeBLy@Rw@PYRSDCRKXGdEMhEG~@An@@TDh@PNLLPHTFT@VAVKh@OV[XWLS@eCJmR?iK\\yFHeI^aO|Au@H}DRmAAq@E[Co@IyLsAl@HiAOaHZcI\\{Oh@KAQKEKAi@CaBUyME_@GOCK_FwLO[SWUS[KYG]AuGN_MZaMZ_MZaMZA?_L^yGNzFMaMX_MVE?Ff@?p@CJ?DFxDF~EVlO@`@ARKl@Sr@KJQd@w@TgENmEP}ABsC_@eGy@OGIN?J@JTCfBTtDb@dCTf@nCJn@r@`DbBvGhAjEkF~Bo@X`B`FqAp@"
 						}
 					]
 				}
@@ -248,7 +273,10 @@
 							"headsign": "الموقف الجديد",
 							"from": "العوايد",
 							"to": "الموقف الجديد",
-							"minutes": 20
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 20,
+							"geometry": "idp}DsdavDpFU|@?j@QPBn@HhKjAR@\\@j@Bn@?lBGtFc@d@CxEo@nHk@pXy@pM?bKKF?vDBhG?lA?zFItBChJIvACnGKpDAvBAnDGvAOh@MPGTIlBeAfBoAdAg@\\Kd@MZCFArAGpABfALp@NzAj@h@^TNh@d@fF~Fb@h@~DxE`ApA~@bAVXzAjBjEhF~HpJHJr@dApAzBZv@hAlDdEvMrBpG^vANv@L~@Fh@J~A@p@AxAI|AKbAMr@IVOn@o@fBc@`AmC|EkFlJ_@v@i@nAsAvDw@pBm@hAkGdLkGfLkC|Ek@vAW|@SjAEPG~@GhBL`CV`B`@|A@DzCfJl@dBnEpMf@xAnAbDxApEb@rAb@pAzBrHX~@zDlK^fA`AtCrAvDZx@pAhDRd@v@nB~@hC|AlEfBpFHPrAjCv@nAp@v@LP|A~AnIzI~@bAnA~AfBjCt@`AFHf@x@v@`Ax@|@tD`D|@v@X\\JTF`@Cd@M^e@j@mJlEyPdI}]hPS@]JkNjGc@No@FgAEkAa@]Gc@D_@TOPIPETC^DdAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAxEJ`@Pr@z@hCrBzGtAtE"
 						}
 					]
 				}
@@ -280,7 +308,10 @@
 							"headsign": "العوايد",
 							"from": "الموقف الجديد",
 							"to": "العوايد",
-							"minutes": 25
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 25,
+							"geometry": "yzh}DcoquDQi@oA}D_BmEa@cASg@W_@M_@{AyDg@u@o@cBw@sBo@iBMk@sAiE_@mAkDeKcA{CkCuHGOfH}Cd@YPY|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDVFVAFCHM@I?QGOuAeBQc@aGiG[g@q@s@YWmIgHUYy@_AwFaICCm@u@_FoFw@y@yC}C_AeAcAmAc@m@CGu@mAs@}AyBwGsDyKK]K[uEmMwBcGyAkEyAmEuC}HZz@uEmM[{@sDuKuBeGyAkEiAiDS_AY}AI{@EiBA[FeAT}A\\yAh@sAdAmBjGcLjGeLFMfC{E`BoEv@yBfEuHhAuBrD_HHQVq@Ty@R_ABGXsBHeB@{A?MAc@IcBYmBOw@_@{Ak@gBcEwMyBeHy@qBa@u@gAkBmFoGsEqFkB}BCE}AmB_BgB}BsCqBcCoAqA{AiBg@i@oAsA}AmAk@Yk@ScAU{@K??oBCaAFaAPoBp@gAp@KFUPuAx@c@Pe@N{AXmAJw@?eDBiEAqAB_BBqDBqCG]?cB?iHLq@?gHFyCJe@@kFHyCLS?yQ?iK\\yFHeI^wPfBcBHyAHmAAq@E[CgEe@sFm@iAOaHX"
 						}
 					]
 				}
@@ -312,12 +343,16 @@
 							"headsign": "المنشية",
 							"from": "مدخل أبو سليمان",
 							"to": "شارع الاسكندر الاكبر",
-							"minutes": 36
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 36,
+							"geometry": "stq}Din~uDYdBAJCt@Jf@hEdJNZ\\dAVfAXpBTpBPbBP|AXrCr@nG@H`@lAd@pB`A~G@DdAvG`A|Eh@jClAxDn@nAb@n@DDh@h@NJ`@\\t@`@vAd@hDv@xEfArEtAPFpCn@`Cp@`A\\~@^~B`AfAX`A^^T|@r@b@h@lB~Bl@lF^zA?@JrAFpBM|AMhAa@`BQh@Ur@i@nAIj@Cd@HXRPXLw@zDqCpNqCnN`@sB}AxHyAjHAFINMLUBQFUNOVKf@APDb@DLT^\\RJBh@j@LZTr@bEvMhCjIn@nBF^??V`@jFhK`GnL`DlGJT?^CZYbAAR@J@HbDzM?B^pB@d@AJOZE?KFADAL@FBD^PJNNVrAfCtEzIj@rABFpAzDnBpG`@rA|CfKhDfLTr@b@|AnCbKf@hBP~@T|@pAtDW|@CHq@rA_B`CIPGRCxCBj@@NhAxIsBfAOHrD`LP\\@BANBT{DjAiElAa@JmA\\xCvI~ArELj@Bh@Iz@@HHLz@nAV`@x@rAjBtDdA~B"
 						},
 						{
 							"kind": "walk",
 							"meters": 208,
-							"to": "المنشية"
+							"to": "المنشية",
+							"geometry": "a_m}Du|nuD@ALTUXk@p@CBPb@HRDJFL@DOHWLBLPj@DJFT@DJ\\"
 						}
 					]
 				},
@@ -332,7 +367,10 @@
 							"headsign": "المنشية",
 							"from": "مدخل أبو سليمان",
 							"to": "محطة الرمل - الكورنيش",
-							"minutes": 41
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 41,
+							"geometry": "stq}Din~uDYdBC^A`@Jf@rEvJDH\\dAVfAXpBTpBTvBLhAXrCt@xGBF\\dAd@pB`A~GDX`AbGfAnFb@xBlAxDn@nAb@n@RPZ\\NJ`@\\t@`@vAd@zD|@fE`AbFzA@@pCn@`Cp@`A\\nAf@nBx@fAX`A^^T|@r@n@v@`BpBl@lF^|ABPF`AFpBM|AMhAa@`BY|@M^i@nAIj@Cd@HXRPXL}@nEqCpNqCnNf@gC}AxH{ArHEFCFMLUBQFUNOVKf@APDb@DLT^\\RJBh@j@LZ\\dAbExM`CvHn@nBF^HNLPtFzK`GlLvC|FJT?^CZYbAARBTBH~CpMDVX|A@d@AJOZE?KFADAL@FBD^PJNNV|AxCjEhIn@zABHlApDvBdHX~@dDzK`DrKZdA\\jAvCtK^vACZIVOR]\\i@VcExA{EdBURkDlAcJ|C_A\\aL`EbE{A_GtBSDQ?q@_B}@sBY_AUqAyA_I]aBI_@Sm@?AYm@}E_Hi@_AOWaAsAIEI@GHAJBJhAbB\\v@dAvAlCjDr@pAPn@d@zB`@nBnAvGRv@Tj@zBrFHZTvAJvBLzCHx@Jv@Nv@`AnDJ`@b@hA^j@rEhC^RNJzDhCx@n@nA`Al@f@jB`BzEbFLLfCzCxArBd@n@l@~@@BbAjBhB|Dh@pAVv@Xz@Tv@"
 						}
 					]
 				}
@@ -364,7 +402,10 @@
 							"headsign": "الموقف الجديد",
 							"from": "القنصلية الفرنسية",
 							"to": "الموقف الجديد",
-							"minutes": 18
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 18,
+							"geometry": "gyl}Dy|muDKkBIw@[iDOeAk@yC|Ai@`A]VjAaDdAo@qCAEUu@}@aD{AwCe@kACEaAkBa@s@oAoB[g@kA}A[c@qCgDyC{C_@a@v@mAt@_AiBkCGB_Ai@iJiFV_@jHeKn@}@|CmE_AsCeEaMNEpVuIxAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`DpEj@hA|AnEtAlEZj@r@hCL`@tAxE\\tAz@hC??~DzMHT"
 						}
 					]
 				},
@@ -375,7 +416,8 @@
 						{
 							"kind": "walk",
 							"meters": 258,
-							"to": "شارع الغرفة التجارية"
+							"to": "شارع الغرفة التجارية",
+							"geometry": "eyl}Dy|muDPDMoBMqAKgAPGl@Q~@UB?FCFAGeA??"
 						},
 						{
 							"kind": "ride",
@@ -384,7 +426,10 @@
 							"headsign": "أبو سليمان",
 							"from": "شارع الغرفة التجارية",
 							"to": "مسجد الرحمن",
-							"minutes": 5
+							"fromOnRoad": true,
+							"toOnRoad": false,
+							"minutes": 5,
+							"geometry": "oul}DyhnuDMoBK_A_AyD[mAUc@IKg@o@aAeAPYf@o@}CkDk@m@{@mAm@qAcBaFmEsMw@_C{AgE_AgCyCcI"
 						},
 						{
 							"kind": "ride",
@@ -393,7 +438,10 @@
 							"headsign": "الموقف الجديد",
 							"from": "مسجد الرحمن",
 							"to": "الموقف الجديد",
-							"minutes": 8
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 8,
+							"geometry": "izm}DgxpuDvJkNm@iBuCkIdN{ExAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`BzB~@tAj@hA|AnEtAlEZj@d@dBZdAtAxE\\tAj@dBt@`ChCxIVx@"
 						}
 					]
 				}
@@ -425,7 +473,10 @@
 							"headsign": "العوايد",
 							"from": "محطة المنشية",
 							"to": "العوايد",
-							"minutes": 45
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 45,
+							"geometry": "{tl}Do{muDEaCGaFKmBGgAK_A_A{DGWSs@Uc@a@i@OQaAeASWc@j@}@~@{@aBc@gAACq@qAu@sAoAoB[g@eAuAa@k@qCgDqCsCg@i@uEcEe@_@aAo@sD_C_@SfCoDjHeKb@o@|CmEhBiCnBuC_CaHcAsCdN{ExAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYl\\{Nz@_@~Ao@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKJKHOJc@@g@KgAu@qBg@aAeEoHkAaCa@o@qAmBmGcJ]c@_ByByE}Fm@s@eBgBsBkBoAgA{AqAa@]_F{EiAeAkGoGg@g@qA_BkCuDo@}@W_@e@y@aAsBiBoFqEqMkCyHs@wCCEgB{Fe@iBc@{BScAYeAYy@w@cBS[c@s@w@{@yAcBe@q@c@w@a@w@}@wBM]wBkGuAgEeEwMEKeEgMm@iBu@qBcB{FeAmDWoAIi@KsAEsA?a@?mO?GBoAXkDF_B@eD?cBAwJ?q@CmO?W@uN@sH@yEBmJFqBDk@TmDFiE@sC?[CuJG{BGgBAeD?}A@}B@a@BcALy@Rw@PYRSXOXGnDKTAhGIn@@TDh@PNLLPBDDNFT@VAVKh@OV[XWLyCL{A?qO?iK\\yFHeI^wPfBiDPS@mAAq@E[CmGs@mD_@iAOeRx@_Nd@{@BKAQKEKAWAQMiJIqEtFcC^QB|@fJSz@CxAfDc@|A[vAKz@ObASdA"
 						}
 					]
 				}
@@ -457,7 +508,10 @@
 							"headsign": "المنشية",
 							"from": "الموقف الجديد",
 							"to": "القنصلية الفرنسية",
-							"minutes": 27
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 27,
+							"geometry": "yzh}DcoquDaBgF_BmEACs@gBW_@M_@{AyDg@u@Qc@uAsDo@iBMk@y@gCy@oCoCeI_B{EoBuFc@oAfH}Cd@Y@ANW~Aq@j@CnF_CREf@Eh@B~Af@b@@`@KLKT[Jc@@g@KgAu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RuJfDyCbAgGxBUHgBn@{BgFiAf@gBv@Y_AuAqHY_B]aBI_@So@Ym@eBcCwB{C_AaB{@iAIEI@GHAJBJNTx@lA\\v@pE`G@@r@pAPn@fAjF^nBn@fDRv@zBvFTf@HZTvAXrGHx@BRFb@Nv@lApEb@hA^j@h@ZhDlB^RxDhCPJx@n@nA`AxChCp@p@h@h@~BfCtChDFHx@hAV^tArBbAjBj@nA|@lB~@`Cn@zBVx@Lh@`@hBb@pCPnAVlDDn@Br@"
 						}
 					]
 				}
@@ -489,7 +543,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "مستشفى عقبة بن نافع",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 38
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 38,
+							"geometry": "ozx}DgedvDc@v@c@`AoAhCs@zAwBjEw@|Ay@xAwCpF]l@iAvCQj@CFSb@cBvCgFvIs@|@IJCBqCtB}DdDcBrAtAiAuHdGYgAOm@aA_Da@q@i@w@eBkBUSaBaB}DoDg@c@yAmAoAeA]U{D{AWKkAa@YSYYg@w@MKGAGBEDCHBXj@n@bAn@NHj@Rj@Jl@RlBp@b@VhBxApFlEpBpB~C|C`AlAb@|@^lABHPx@dAhDZlAFVLjA@`AARGv@UpBAn@Fn@Nl@LN~ApCMU\\n@JXJv@IbGAfA@hA@zASnCEnA@|BB`@Hl@Jj@JXj@~@f@j@l@b@DBd@PfAThALD@R?TAj@MdBkAPIXGzAKdA?^BF@d@JjAb@hFlBz@d@FDlA`Aj@h@f@l@xCzDBFZd@FLLV`@rA\\tBVbAN^d@|@NRZ^p@l@v@d@t@VhATj@TnAbAf@b@LJv@f@nDzCd@h@Xh@b@z@b@j@^ZJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@bCrKLf@pD`NpDbNpAvE"
 						}
 					]
 				}
@@ -521,7 +578,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "الكيلو 21",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 32
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 32,
+							"geometry": "ozt|DiaotDFsBHkGRkODoCHwANuAn@cE|BwN|BwNz@mF~@iGzByNzBwN~@eGXyAPm@Ti@Vg@DET_@lA{AzEuFj@o@PUbA_AdAs@h@UxAe@n@QdCo@dFiAbAWnLqCvOuDxAHb@PTTLXH\\B^?PIb@O\\WV[PMBO@_@C[MWU_@e@uAeGKc@qCgM{CkN}CkNcAuEm@gCs@aCAEy@{BcA_Cc@_AkAwBCEmAmBk@w@uD{EwHyJwHwJyHyJiDmEWIQMmAuASK_@GolB{aCkGiIoGeIqDoEuHuJg_@}c@EWMa@wAuBK[G]qGqGyD{D}CuCSQaDmCwDoC{AgAqAgAqAsAqA{AIKwHyJIKeGuHm@o@YYsB_BoAw@_CcAe@M_Be@iJcB}Dy@wAc@sAk@e@Yi@YeSeNed@w[_BqAwA{AqAcBkAkBaAqBy@wBq@}Bi@eCgCqJgSur@i@_Bg@uAm@qAo@oAu@mAyEgHeQeX}s@yfAa@gAeAsB}@yBs@_Ck@cCQcAc@mAq@}A{@wAmA_BwK{KqCgDcc@ym@cFwFgBeCwA_Ds@mBcAmD{FcVYq@_@o@c@i@wAqAkBWq@]_IaE}@k@KKm@i@s@y@o@aAi@eAa@sAyKk_@S?YJQVEZrExObClHdBxGtKl`@PfAFj@BZz@rBpBbHLf@FTDbACfASfAoKfW}@pBkAbCqC|DkClD_A~@oB~Ag@ZUDUDSCuDcBgBaAg@_@{E{BS?IBs@j@}FtEqBvAk@^mGhF{@N]Fa@Ba@GeAe@aDeBOMYa@K_@GSu@cDs@kCk@wAc@{@{@gB]g@UUKEi@AWs@eBsCqD}FISUaAe@{AoBoG_AsEOu@YgAmCaJYaAm@qBkByFQi@}CwJsAf@]LT~@oBv@aAqEQo@{@iDaEfBCK}@`@aDvAq@_C{@aDcD_M"
 						}
 					]
 				}
@@ -553,7 +613,10 @@
 							"headsign": "الملاحة",
 							"from": "استاد الإسكندرية",
 							"to": "مستشفى عقبة بن نافع",
-							"minutes": 31
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 31,
+							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@"
 						}
 					]
 				}
@@ -585,7 +648,10 @@
 							"headsign": "الكيلو 21",
 							"from": "مستشفى كرموز",
 							"to": "شارع الزهور",
-							"minutes": 36
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 36,
+							"geometry": "ygj}D{umuD|AnFbCdIV|@n@`CjCzI\\hAf@xAb@fBD`@?PMh@fBl@fDhAvBV\\NJHLPl@jAR`@d@dARj@pBdIJd@HRNRPLbDlBn@f@xAx@`GfDt@d@TVd@v@|@|AvAdCxB|DlAxBz@nAfDrDvHjIRV|@dA|AzAnD|DjIbJp@t@~GhIOQ`InJxEzF|@hA`@n@b@r@NZjB~Fr@|BdCzH~@zC`@rARj@`ChD|AlBl@v@dGdIfHnJJLlDrEhCfDtH|JbBzBlE`Gd@n@v@bBp@jBcCxC{AhBKREVEd@@PFd@bBbETh@rBbEj@z@dBhBHJdExDd@TZPf@P|@TD@d@F`@P^VpDjFTTXRVNn@VzA^`A^rDhB@@lEfCt@h@Z^`@r@L^FT`A~DfBnGFPb@vAh@jAbEvFjGxI`@h@pH`KrBpCdCpDP\\L^BNPv@nBfJFd@H`@BDHZT`@|DmCt@bBX~@`ExMCIpBvGPZb@n@lAvAr@x@LPXd@TbAr@hGFT^hBh@~AxBjETp@L^@d@GRMPzGjFjBxAR?LKpBeDNMPIRER@LBB@PHv@h@z@n@v@t@`CrDFJhEbHjAtB@?`BhCnAbB~BrCdEdFz@hAt@fA|@pAb@v@vAbCtArCvFjLBF|D`HtAzBZd@d@~@\\bAj@xBZ~@f@bAPXvA`C`FtFDFjC|Cr@z@pBtC~BdDlD|EHJjBxCdDpFtA|BhCxEn@hAlGdLXh@lDnGbAhBrDnG`BlCpEpHhAbBn@bAfAvAbCpCx@dABBbAzABFh@~@vAtCz@pB?AhBhEZr@b@z@dAhBHL|@rARZt@`AjAzA`BfB@BbIlJ}@eAxBjCvAdBh@x@rAvBVf@|CpFhBvDBFb@nAt@`DP|@p@nDnBnKb@~AL^x@`CtCfHDJjBvEpBvE@D|CjHrAlCnCtF~AdE`FdMf@jA`BdE~AlDnArChFvK"
 						}
 					]
 				}
@@ -617,7 +683,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "أبو كمال - السيوف",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 42
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 42,
+							"geometry": "oxt}Di`bvDFxDLpIR|LARKl@CHOh@KJQ^AVB`@N\\LJLHRBRAPEPMLQFW@WfBG~L]|DKbGS~La@zBIpOc@mEL`M]~L[jK[t@AzBGrHNJ?B?hBAlXkA~EUjAAr@DPBv@H`KjAR@d@Bb@@n@?lBGzFc@^CxEo@nHk@pXy@pM?bKKN?nDBnG?fA?zFI|BC`JI~ACfGKxDCnB?nDGvAOh@MXKLElBeAfBoAdAg@\\Kd@Mb@E??rAGpABfALp@NzAj@n@b@NJh@d@fF~Fh@p@xDpE`ApAdAhAPRzAjBpEpF~HnJBDr@dApAzBZv@lAtDVv@lD~KnBhG^vANv@NfAD`@J~A@p@AxAI|AKbAMr@K^Mf@o@fBc@`AsCdFeFdJc@~@e@fAsAvDw@pBs@pAiGdLkGdLgCvEk@vAW|@UrACHG~@GhBL`CV`Bb@bB?@zCdJp@lBnEpMb@pAnAbD|AxE^jAb@pA~BzHTv@|DtK\\~@`AtCrAvD^`AlA`DRd@v@nB`ApCzAdEfBpFLVnAdCv@nAp@v@LPbBdBnIzIx@|@nA~AfBjCt@`AJPb@p@v@`Ax@|@zDdDv@r@X\\JTF`@Cd@M^e@j@mJlEyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOL}@Xy@JgDGwAFaAN[LiBTMHEL?JLPLDRAbDm@f@EfAAD?~CJ|@HjCfAdAXpBh@tBfJ~ChNiBgIbCrKtCvKpDbNzBhI"
 						}
 					]
 				}
@@ -649,7 +718,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "بحري (راس التين)",
 							"to": "مصنع درويش",
-							"minutes": 13
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 13,
+							"geometry": "wcm}DodjuDQaFYkCIaAe@eG|CuD`AiAtA}AZ[NIH?RHlBrBD?J@LK~DqFfAiANQNMbAy@xFeDbAm@xBuAxDk@dAUh@OxC}@`@KlARfDk@xAYTKJW`@{BzD`ApAZvEURuA"
 						}
 					]
 				}
@@ -681,7 +753,10 @@
 							"headsign": "السيوف (الفلكي)",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "أبو كمال - السيوف",
-							"minutes": 46
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 46,
+							"geometry": "_fk}DoyouDDy@s@}BQg@_EgL}D_LSo@eA_DmAkDW{@YoAOu@_AoMEw@AUDo@JABCBMAEKKI@EFAJcCe@sBk@aBc@Ta@JI~CgCZ[Va@~CsI^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKT[Jc@@g@KgAu@qBg@aAeEoHkAaCcA_B}CkECE{CoE}B}COQwF_HkAmAYYsBkBkDyCa@]EEcH{Gs@u@_GaGmA{ACCkCuDgA}Ae@y@c@_A]s@uDyKqEqM_AoCs@wCiAsDa@mAe@iBw@_EYeAQe@GSw@cBS[c@s@qC_DYc@KMc@w@a@w@}@wByAgEk@aB}CsJcCwHcA_DoDqK]_AWq@gDiLA?WoAIi@KsAEsA?aF?uIBoALeBJeAF_B@iGAwJ@xGCkOAeJ?gD@mO@sBByK@mDFqBZyE?OFyD@oDAcDAqEOcFAwA?mA?}A@}BDeBLy@Rw@@ANWRSXOXGdEMlCEzBCn@@TDh@PNLLPHTFT@VAVKh@OVQPIFWLyCLmR?iK\\yFHeI^gMrAoBR}DRmAAaAGN@[CoLqAKAiAOaHZcI\\{Oh@KAQKEKAi@A[UmOAQE_@K[aE{Jm@wASWUS[KYG]AyELaMX_MZaMZ_MZ}@BaK\\]@yGNiCFaFJ@`BkCHgBF"
 						}
 					]
 				}
@@ -709,7 +784,8 @@
 						{
 							"kind": "walk",
 							"meters": 174,
-							"to": "المحطة (ميدان الشهداء)"
+							"to": "المحطة (ميدان الشهداء)",
+							"geometry": "_fk}DoyouDm@[GRA@A@_CdAC@CAME?DADI\\GSEM??"
 						},
 						{
 							"kind": "ride",
@@ -718,7 +794,10 @@
 							"headsign": "العامرية",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "استاد الإسكندرية",
-							"minutes": 2
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 2,
+							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_A"
 						},
 						{
 							"kind": "ride",
@@ -727,12 +806,16 @@
 							"headsign": "الملاحة",
 							"from": "استاد الإسكندرية",
 							"to": "بنك أبوظبي - سيدي بشر",
-							"minutes": 25
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 25,
+							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@"
 						},
 						{
 							"kind": "walk",
 							"meters": 737,
-							"to": "سيدي بشر"
+							"to": "سيدي بشر",
+							"geometry": "iry}Di|_vD?CNDB@Xo@vAeDjCeF|BwEFM|AyCvAiCTk@t@yAD?DAPIPILGFIDIDKDKXr@"
 						}
 					]
 				}
@@ -764,7 +847,10 @@
 							"headsign": "بحري (راس التين)",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "بحري (راس التين)",
-							"minutes": 22
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 22,
+							"geometry": "mek}DikouDx@l@vEtCNJvAx@PNR^\\x@nAjENl@nAxEzAjGDPrDjMn@zB|AnFl@pBtArEfA~Dw@j@mBrASa@eBxA_CfBk@`@KPmCs@wEwAaBg@iB~JoB|KKVUJ]FcF|@mASa@J}Ad@eBf@eATyDj@eAn@wBrAyFdDONcAv@OPgAhAgDtEWZMJQAmBsBSII?OH[ZuA|ASVkEfFZ|DRhCXjCRnF?M"
 						}
 					]
 				}
@@ -796,7 +882,10 @@
 							"headsign": "الساعة",
 							"from": "نزلة كوبري العوايد",
 							"to": "ميدان الساعة",
-							"minutes": 12
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 12,
+							"geometry": "w`q}D{eavDCaBUyME_@GOCK_FwLO[SWUS[KYG]AuGN_MZaMZ_MZaMZA?_L^yGNzFMaMX_MVE?Ff@?p@CJ?DFxDF~EVlO@`@ARKl@Sr@KJQd@w@TgENmEP}ABsC_@eGy@OGIN?J@JTCfBTtDb@dCTf@nCJn@r@`DbBvGhAjEkF~Bo@X`B`FqAp@"
 						}
 					]
 				}
@@ -828,7 +917,10 @@
 							"headsign": "الساعة",
 							"from": "الموقف الجديد",
 							"to": "السيوف",
-							"minutes": 39
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 39,
+							"geometry": "yzh}DcoquDaBgFi@{Au@qBu@kBW_@M_@qAeDISg@u@gBwEo@iBMk@GMkBiGyAmEuCsIw@}B{AgEhF{B|@a@d@YPY~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKJKHOJc@@g@KgAu@qBg@aAeEoHkAaCa@o@{@qAcH_KEGwBuCcEaFcAoAeBgBsBkBu@q@uBgBa@]eEaEcB_BqFuFaAaAqA_BkCuDYa@m@{@e@y@aAsB{AmEoEqM{C{Ii@yBI]kBaGe@iBYuA]iBYeAYy@w@cBS[c@s@_@a@qB}Be@q@c@w@a@w@{@sBACeCiHeAeDgEwMSm@wDeL{@kCu@qBuAwEsAqEWoAIi@KsAEoA?C?iO?m@BoAXkDF_B?_C@iCAwJ?KCmO?}@@oM@yI?sDDsKFqB@EXsEFiE?mB@aACuJEsAIoCAeD?}A@}BDeBLy@Rw@PYRSXOXGnCIt@ChGIn@@TDh@PJHBBLPHTFT@VAVKh@OV[XWLyCLy@?sP?iK\\yFHeI^wPfBiCLs@DmAAq@E[CmFm@mEe@iAOaHZcI\\_M`@{AFKAQKEKAi@McIKwFE_@K[}AuDqC}GSWUS[KYG]AS@aMXaMZ_MZaMZaGN}DNaFNyGNz@CaMXeGLFf@?p@CJ?DBlBBjA"
 						}
 					]
 				}
@@ -860,7 +952,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "ميدان السيوف",
 							"to": "التأمين الصحي - السيوف",
-							"minutes": 2
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 2,
+							"geometry": "stt}Dc|`vDfBG~L]|DKbGS~La@zBIpOc@"
 						}
 					]
 				}
@@ -892,7 +987,10 @@
 							"headsign": "الموقف الجديد",
 							"from": "ميدان الساعة",
 							"to": "الموقف الجديد",
-							"minutes": 33
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 33,
+							"geometry": "aku}D_r_vDc@kAeBgFUq@e@iCWkAsA}EgBuGSaAIq@GeBCw@NKPGTC|Gx@p@FrALjJYxAEf@@LBx@\\LJLHRBRAPEPMLQFW@W|@E`M]dFMxEQ`Ma@bDKpOc@uFP`M]~L]rL]J?dDIzGLV@J?lBAlXkA~EUjAAr@DPBNBhLpAR@C?lADn@?lBGrE]fAIxEo@nHk@pXy@pM?hJKX?~DBfF?nB?zFItAAhKKt@ApHMnCAxCAnDGvAO\\IJCf@QlBeAfBoAdAg@~@WBAb@ErAGpABfALp@NzAj@LJp@b@h@d@fF~FLNtErF`ApAf@h@n@r@zAjBtDnE~HnJ^f@r@dApAzBZv@z@jCdEvM`CrH^vANv@DXNnAJ~A@p@AxAI|AKbAKf@AJYfAo@fBc@`AyB|D_GlKMV{@nBsAvDw@pBYh@kGfLkGdL_D|Fk@vAW|@Id@Ov@G~@GhBL`CV`BRx@Nh@zCfJ\\bApEpMt@zBnAbDjAnDp@tBb@pAlBnGf@bBjDjJn@hB`AtCrAvDJV`BjERd@v@nBn@fBlBnF~A`FFN|A|Cv@nAp@v@LPbAdAnI|IxAzAnA~AfBjCd@n@NPn@bAv@`Ax@|@xChCxAnAX\\JTF`@Cd@M^e@j@mJlEyPdI}]hPS@]JkNjGc@No@FgAEkAa@]Gc@D_@TOPIPETC^DdAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAvE?@\\tAz@hCdBxFbBvF"
 						}
 					]
 				}
@@ -924,7 +1022,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "حلوانى كلاسيك",
 							"to": "مستشفى كرموز",
-							"minutes": 41
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 41,
+							"geometry": "ojy|DuevtDa@u@k@sAuAcDaAyBqAkCIM[g@IO}A{BoDgEaAkAu@iAkDyFuG{Kc@u@kFkJ_AcBAAyC_H[o@eAyBcByBW[{AcCmAmBkEkHoBeD_D}EMOsAuAmCuDOQiAwAeAqAgAaBi@o@sAmAu@y@AAq@aA}AoC]}@k@_CQe@_@{@iFiJm@eAgDmGq@uAcAoBiBgEoAyB[g@S]sB{CgCcD_AiA{BkDsBmCq@}@wDqF_AwA{FuIcAgB\\l@gCiE_BsDWq@aBiEeBaFQ]Uc@m@q@yB}BmCmCsIwIkBmBg@q@gCqFiAcCq@sAc@q@eCoBECo@o@qDgEs@cAg@u@sD}FoBqCqAkBaFsGgB_CeEaGcE}Fg@cAWu@Me@uB}HAa@Dm@\\gA@QB_@A_@E]iCoBkAk@iBu@qBy@oBu@cE}@CAk@Sg@[u@q@kBeCuAiB{@iAo@{@q@uAMQw@_AgAyAKMm@qAw@oBk@wB_@}BAMc@cEg@yC[gAUm@QYgBcD}DgFw@cAyF}HcAwAqFcHwD{E_C}CsH_KmA_BuEcGQWU[e@cAq@mBy@uCm@gBgEuMj@hBkB{FQ]iAeBuBeCwF{GmEsFdC~C{HuJcBuBcFqFqCyCyDgEiIcJiIcJCCc@k@oFkJNT[i@[e@iCyE_BkCEIgBuCMIQAyAVa@Ba@GeAe@AA_DcBOMYa@Ss@u@cDCIo@aCk@wA_BcD]g@SQACKEi@AWs@uEsHaA}AISUaAsBwGa@sAoAiGYgAYaAmCaJ"
 						}
 					]
 				}
@@ -956,7 +1057,10 @@
 							"headsign": "الهانوفيل",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "موبيل",
-							"minutes": 47
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 47,
+							"geometry": "mek}DikouDx@l@~DdCVNfBdAPNR^\\x@lAfE@B~AfGhAxEVbA~CxKbAlD|AnFX~@hBdGfA~DHV~ClK`@jADLb@fBD`@?PMh@nFhB^LvBV\\NJHLP`AlBd@dAPf@@B|BjJHRNRPLd@X|BrAn@f@vEjCbCtAt@d@TVbBtCvAdC}@_BdGvKFJr@bApGdHlExEpA|Aj@h@p@p@xGnHrGfH~GhIiFkG~HnJ`InJrBdC|@hAdAbBNZjB~FqAaEdEtMdAdD`BnFRj@LPrBvCjCdDr@`ArH|JdEtFnBfChAxAjF`HtH|J@@rFpHn@vAFJp@jB_FbGGLCDEVEd@@PFd@xBlFx@`Bx@`Bj@z@nBtBdB|A~AzAd@TZPf@PbAVd@F`@P^VLTbDtETTp@b@n@Vz@T^H`A^tDjBzBpApAt@t@h@Z^`@r@L^|@pDJb@fBnGj@hB`@z@FNbHtJjDzEbCdDpH~JPVdCpDP\\L^TfA^dBnA`GFd@H`@L`@`ApB~C|Gn@tBLp@DPHbADvADhI@RBVDRjCrI`@|AlDbNhAfEHFH?lEoCzBuATGX?nEnDtCzBR?LKpBeDNMPIDALCR@PDPHv@h@z@n@v@t@hBrCV^pEnHn@fAZl@bBhCnAbBzAhBhFnGz@hATZ|A|Bb@v@vAbCx@bBzFrLVf@`EhHv@lAx@rAd@~@\\bAj@xBZ~@Zn@JRhBzC|DlEh@n@jC|Cr@z@pAjB~CnElCrDh@t@jBxCfCdErBhDhCxEPZlGdLv@vAlDnGd@z@pE|H`A`BpF|Ih@v@nAnBfAvAbCpCZ^\\d@fA~ABFh@~@vAtCz@pBYs@bCzFZr@b@z@b@x@LPzA~BRX"
 						}
 					]
 				}
@@ -988,12 +1092,16 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "كوبري العامرية",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 54
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 54,
+							"geometry": "aui|DmdztD{F|AoJ`CmDhA_EdBiCfBcDnCwD`EwBvBsHhIkHxHuCdDON{@z@iC`C{AjA}BpAeAd@uDjAoATqD`@_Gb@eER}MX{A?cAEeAMeASaAYgAa@eAi@_Ao@}@w@y@}@u@aAo@kAoPac@wX_u@qA_DuAuCwD{GmCyDqJyLoBkCoCkDoCmDeNsRyDeF_ByBmCyEu@_BmCgGaCaGgHgQwB_Fsc@kgAmGuOqCkHkEqKc@cAmA_Cm@aAaEmGkCgDi@k@[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRABA~Ck@f@EfAAdDJD?v@HjCfAvDbAPr@~ChNESbCrKd@hBrD`NpD`Nv@vC"
 						},
 						{
 							"kind": "walk",
 							"meters": 265,
-							"to": "المحطة (ميدان الشهداء)"
+							"to": "المحطة (ميدان الشهداء)",
+							"geometry": "imk}DkwouD??ETCNILGHDLABA@yBv@Nh@DNd@lBBLd@hB"
 						}
 					]
 				}
@@ -1025,7 +1133,10 @@
 							"headsign": "المنشية",
 							"from": "ميدان الساعة",
 							"to": "محطة الرمل - الكورنيش",
-							"minutes": 34
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 34,
+							"geometry": "aku}D_r_vDc@kAeBeFUs@e@iCWkAsA}EGUIAK?KJCJ@`AxBpHGVGJCFON_KdEaA`@UVy@B]AW@WFoBbAkAj@kAh@{@^qEbBE@]y@EEQMoCoFi@aAOMSGSAUDUH_AXw@t@sFjEGBA?SAiDbDyB|CQT{BvCsAjBiBvB}@dAG?QBEDYh@CP@NFNJHNDNAFENQnB~B|DzE_ApAYSIGUUIK]e@qA_CkAcB_@GGFX\\HZf@`@NLd@h@|@dBb@j@j@f@jC`BJFj@j@pBfCV`@h@jAl@fBp@lB@DJn@B\\FpBJtALj@Nf@JPHPp@~@v@v@hErCb@^TTfApAtDlF^d@\\`@dA|@b@\\vC`Bt@j@Z\\rEbFb@p@d@fAT\\DF\\d@^^hAv@fFtCi@[hDnBh@b@b@h@|AbCb@l@z@jAfAnAdAbA`@f@h@~@Vv@z@bCn@nAv@fA`BpAXZRRTZDLVj@J`@F`@B`@?b@Cb@G`@K^O^_@p@IXAJCLAVFl@Ph@fDfFl@fApBjD\\j@RTh@f@n@\\hA^|@Zp@`@n@j@j@r@d@x@`@fAPz@BPJr@HhBD^H\\NXb@p@h@l@P^t@hAfHjKX`@nDtDjA`A~@x@z@t@pA~@nEpEtItInFrFNTLXFZD~@PxE|@nDb@nAJTh@bApB|CfB|Bd@f@|A|AvBnCjB`Cz@fArD|EbAvAfHjKACn@|@v@|@dAvB`AfBb@dAr@dBh@bAnDxFzC|EvBxD@B|AfE^p@`AjAb@n@^p@DFf@hAdAzBnBtFPd@n@rBt@pAvCpDb@f@xBvCr@pAPn@BLXrAh@hCnAvGRv@z@vBq@cBfCjGHZTvAFzAPvDHx@Jv@Nv@v@vCTx@b@hA^j@lFxCYO^RjEtCx@n@nA`AXV~BpBxE~E@BnB|BfB~BV^bAxAPXbAjBhB|Dv@pBFNn@zB"
 						}
 					]
 				}
@@ -1057,7 +1168,10 @@
 							"headsign": "العامرية",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "محرم بك",
-							"minutes": 7
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 7,
+							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_AyC}Kw@uCYsA}AmCKYG]@_@F[JYnCkBPQLUxCyBvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEhQyHz@]"
 						},
 						{
 							"kind": "ride",
@@ -1066,7 +1180,10 @@
 							"headsign": "العامرية",
 							"from": "محرم بك",
 							"to": "كوبري العامرية",
-							"minutes": 36
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 36,
+							"geometry": "yqi}Du_tuD|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDdA|@fC|Ad@^rApA~JlK`e@ze@pHxIVVpS|SnAhAxiCzlC`Az@dAt@~GvDlBbAtDnBpBpAvAfApArAdJ~K`BdCj]hb@^b@z@t@zAdBf\\ha@pAhBb@x@dArB|@~Bp@~BhFdTdI~_@p@jCt@fCd@rAnAzCpAlCdD|FzCxFtLtS^r@dAbBnAxAvAlA~AbAt@\\hC~@rF~AtOhDpLdCF@xJzBbD|@`Bl@vAv@nChBrBhBtGxHzXn]`AdAzGfIj@r@zAtBvDzEz@lAx@rAr@tAp@vA`k@|uAxCxH|HdRpIzSjFtMbDvHhBrDjArBnBxChNpQhMtOzCrD|EjGzDdFl@~@xAdCnAjCrJ`W~^lbAz@nBdAfBnAzApAnAl@b@t@b@v@^x@Zz@Vz@R|@NdCLjA?tBA|LQnIUpBMd@CrB]l@OfCy@h@U~@m@bGsEvBuBpDoDfGqGnDmD~EaGrAiBjCwCrEkEbDuBdCeAfA_@vQ{EtDiA"
 						}
 					]
 				},
@@ -1081,7 +1198,10 @@
 							"headsign": "العامرية",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "كوبري العامرية",
-							"minutes": 56
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 56,
+							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_AyC}Kw@uCYsA}AmCKYG]@_@F[JYnCkBPQLUxCyBvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEhQyHz@]|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDdA|@fC|Ad@^rApA~JlK`e@ze@pHxIVVpS|SnAhAxiCzlC`Az@dAt@~GvDlBbAtDnBbAn@l@`@vAfApArAdJ~K`BdCj]hb@^b@z@t@zAdBf\\ha@pAhBb@x@dArB|@~Bp@~BhFdTdI~_@p@jCt@fCd@rAnAzCpAlCdD|FzCxFtLtS^r@dAbBnAxAvAlA~AbAt@\\hC~@rF~AtOhDpLdCF@xJzBbD|@`Bl@vAv@nChBrBhBtGxHzXn]`AdAzGfIj@r@zAtBvDzEz@lAx@rAr@tAp@vA`k@|uAxCxH|HdRpIzSjFtMbDvHhBrDjArBnBxChNpQhMtOzCrD|EjGzDdFl@~@xAdCnAjCrJ`W~^lbAz@nBdAfBnAzApAnAl@b@t@b@v@^x@Zz@Vz@R|@NdCL`EAbHKxCEnIUpBMd@CrB]l@OfCy@h@U~@m@bGsEvBuBpDoDfGqGnDmD~EaGrAiBjCwCrEkEbDuBdCeAfA_@vQ{EtDiA"
 						}
 					]
 				}
@@ -1113,7 +1233,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "موقف أبو قير",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 60
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 60,
+							"geometry": "egd~DotnvDvFrB@C\\uAHm@RgDTwEPwDFUHKHERGxEy@zFcAg@yEWeCKmEzCC`MGhEC|AMr@MpAa@HGpKiFdAg@`F}BnBu@BAZGZAZBVHHPLJPFP@VLV\\b@xBXp@Zb@??^\\PJrIfDPDNBb@Dx@Gf@MdGaDvGkDbBgALELCX?JDNT\\\\V^Xd@tBfG`BvE`@v@n@r@t@h@l@Z|Ax@|@b@hAb@tAZnAPjAHfBBtBS~@Qz@Wf@QLGlKoEjBw@fHiDxAs@~G}C\\OrD{AjCw@dB]t@OzD]jBG~A?z@@x@D`Eb@`Cf@fB^fG`B|@V`Cr@hB\\lATxBPh@DvBBbECxAEnAElIGb@A`MQfLQVArKc@l@AlEMx@GdBUjA]VIBAn@YdAi@hAq@`Ai@hAc@`B[v@IrBEdABfALlAVTFtKvCpCv@zGfBjLzClEjA|ErAjL`DjL`DLB~KvCvBj@rHpBlL~CjL~CFBbLzCjL`DjL~CjL~CjL`DjL~CjL`DjL~CjL~CjL`DjL~CjElA`FjAxJ`CzFbB~BbArAv@@@rBtAlB~AfBpBTZl@z@^l@vApC~@dCTn@z@bCt@`B|@|A`AvALNz@`AjAjAfBtA|@j@z@d@PHf@TrAb@tAZdBVdBRp@DxDL^Hb@XXf@F\\GlAEd@SbCDnAc@bEMdAERq@|Ce@`BGz@Y~A@JBBd@P@@NCHIb@uAHKJEDUx@R{ArFu@pCeCjIoA`EtAp@PB^NdB`AbB`ApB`A{AxEgErM?BeEvMeEtMeEvMgEvM?@}AdFg@nBk@hC[xA}@fFYtBK~@]jDSpCSjDAZIbCGbG?dCElOClOEjOElOAfDGdJEnDB|FAfDCdMEnM?z@KlOA|ACnLElOClO?l@G~M?o@AzB@~L?tASzEIxE?BHxFCnG?NHpBDf@N~@bBfGbCxIv@bC~BnHfAdDrDvKXx@bA`Db@z@rBjF@FfAhCjC~Eh@|@JPtBdEVz@Pz@l@vBp@`CdAjDhArCFPzEjMj@zAdDrJrAxDn@vA\\p@rApB`@n@jDxEt@z@r@r@dEhErB`CRRhAfAhCxBdA|@jA|@NJ~CrCbBfB~@jAlBzBjEvF@BrBxCPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JBFHHLDRAbDm@f@EfAAhADzAD|@HjCfAdCp@p@PlCpL`DjNcCsKbCrKpD`NpD`N~A`G"
 						}
 					]
 				}
@@ -1145,7 +1268,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "الملاحة",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 43
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 43,
+							"geometry": "}iy}D{xgvDlAh@l@\\t@l@`@b@RZ`@dAL\\RlA~@lFLl@z@hCZ~@`BhERl@`AxBh@tA|EfMXt@rBlFtA`DpA|CNZ|@vAj@n@?`@AXMr@CFUb@aHtI}CxD[^iAbBq@~@qAfBa@h@aA~A[j@c@v@c@`AoAhCs@zAwBjEw@|Ay@xAwCpF]l@iAvCQj@CFSb@cBvCgFvIs@|@IJCBqCtB}DdDcBrAtAiAuHdGYgAOm@aA_Da@q@i@w@eBkBUSaBaB}DoDg@c@yAmAoAeA]U{D{AWKkAa@YSYYg@w@MKGAGBEDCHBXj@n@bAn@NHj@Rj@Jl@RlBp@b@VhBxApFlEpBpB~C|C`AlAb@|@^lABHPx@dAhDZlAFVLjA@`AARGv@UpBAn@Fn@Nl@LN~ApCMU\\n@JXJv@IbGAfA@hA@zASnCEnA@|BB`@Hl@Jj@JXj@~@f@j@l@b@DBd@PfAThALD@R?TAj@MdBkAPIXGzAKdA?^BF@d@JjAb@hFlBz@d@FDlA`Aj@h@f@l@xCzDBFZd@FLLV`@rA\\tBVbAN^d@|@NRZ^p@l@v@d@t@VhATj@TnAbAf@b@LJv@f@nDzCd@h@Xh@b@z@b@j@^ZJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@bCrKLf@pD`NpDbNpAvE"
 						}
 					]
 				}
@@ -1177,7 +1303,10 @@
 							"headsign": "الملاحة",
 							"from": "استاد الإسكندرية",
 							"to": "الملاحة",
-							"minutes": 38
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 38,
+							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@r@uAZg@h@s@pAcB`AwA\\g@Zk@`@g@V[xAaBhB}B~DaF`@c@TQVMXGXCX?@?XBpCjDvCnDdArArCdDH@JCDI?KYm@GQW_@QYmHuIwGyHg@u@QWEEy@gBgCuGSa@oBgEGKg@_AuAcDkF_MCGCIgDgJ_@mAAI{A{Ie@gBYc@EEY[YS_Ai@q@WiAi@"
 						}
 					]
 				}
@@ -1209,7 +1338,10 @@
 							"headsign": "أبو قير",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "موقف أبو قير",
-							"minutes": 60
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 60,
+							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[ECWOaA{@BgA[c@]u@Yw@Wy@a@iAoCsHQu@q@o@AGE_@Ky@GkA?e@HuBTmBTeAPg@HYhAuBhAkB`BuCHSv@}Av@cCb@kBf@mCDSRcCRkDFcEFwDA{@G{@Mw@c@uA_@s@AAOU{@}@o@c@oD}AwAg@m@SkBu@gBaAkBkAa@SC?oAYiDe@wDw@eB]{@U}@c@wDyBuCcBoCiBi@c@g@k@KKU]]q@Ws@a@_Bi@{Am@wAS[{@{A{@iAsAsA{AcAg@WWM_A]{FoAwAc@sAk@yAw@qF}A{C}@]EgCEaAOo@SCAo@]y@m@m@e@s@y@m@aAc@iASq@I[c@}Bs@oHIq@Ie@YiAm@eBi@}B[iBGk@[cCYeDOyCE_B@\\EiCK{A[qCYyAOo@Kc@kBkGk@gB[aAMe@QiAEe@?WCs@@q@Fq@XkBTkAtCoNP{@TwAvBuIPu@f@kAb@w@h@q@`A}@f@k@d@}@v@wA`@m@fB_CZe@x@mBnBwElBoF?APo@Pu@tBeK??^uAd@qAf@iBx@sEbAsFPwAPgARw@Pe@nA{DjAmCjAuBlGeLlFsJ^o@jF}JVm@pC_Gh@_A`@{@Zw@Pe@nBwElB_EDIZi@rAoB~CwFnAyBjDwHrFyLP]dBqFdAqCRo@`@qAnB_H`@{ADOxBkJr@wBFSl@}Aj@kAx@yBz@sCtDgMHSnEqMZ{@hD{KRk@|AkFdAaDJ]HYl@mCDUv@mEVeBt@oFRgBTwC@QNwEFeD@mCBwEAuEC_BQwK?sB@_GDcDGYAyACIIGo@CIDGt@CLGHAnI?VDnIDdDJfLAdBAtAWfA@jDELMZQVKHe@Ng@BC?wEWkB]oBi@m@OaBm@yAs@uA{@mA_A??gBeB_AiAy@mAy@wAUg@[s@qAsDkAuCi@eAO]_A}Aq@cAq@{@gBkBWSyAiAkAu@mAk@qAe@gAYs@QsEuAaD_AkLcDiLcDkBi@aIqBmLyCuIyBwA_@kL_DmL}CkL_D_FsAkEoA_D_AkG}AkG}AaD{@kLaDoEmA{EoAo@O}JmCkL}CkL_DeG_BeDcAyH_CoBi@kL_D??mLwC[GqKsCkL}Cq@SyEgAaBOaAGaABaBJ}AVoA^a@PaDjBoAj@CBeBf@{@LaAJE?gADyJDeA@mFHmCBsBByGLq@@aM^oADkJJC?qA?_CMaBSgCe@UEqFuAiDq@mGqA_AQyAQMA}AMy@C_CAmCJYBu@FqCZgATsCv@OFeC|@sGvCuK`F_EhBwEpBqElBGEIAkB`@oALE?s@BsACeADi@Aq@KoBg@De@BSMCKhAARSDIJENOvAwCfDo@t@wGpHsDdEoCdDyCnDYd@cCcDcBaC_FjFA@w@bAW`@Sf@Oh@}@xGQnAW`AUd@MN{FaAwLsBeDk@MfAqEw@{AWyI_BuLwB_Dk@qD_AWIeA]kGoBMGuBiAMGaAc@q@]gHmCr@X"
 						}
 					]
 				}
@@ -1241,7 +1373,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "الحضرة",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 14
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 14,
+							"geometry": "q_m}DojuuDXtDNfCNdB@HP|@v@pCrApGr@jDXnDBn@ArB?pBEpC?|FAHGjDE`FE~BOfJUBUJQPKVE\\@V?BHXLRRNXFXAXMX@JBlErDfA~@h@\\lEpAFDBHOpAEXEt@@RBRzBvJ~CjNoByIbCrKzChLpD`NtBxH"
 						}
 					]
 				}
@@ -1273,12 +1408,16 @@
 							"headsign": "أبو قير",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "شارع قنال المحمودية البحرى",
-							"minutes": 9
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 9,
+							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[EC"
 						},
 						{
 							"kind": "walk",
 							"meters": 595,
-							"to": "الحضرة"
+							"to": "الحضرة",
+							"geometry": "qzl}De{uuDCHFDXNZLZJZJZF\\F`@FD@ZDCXARLBN@N@L@[`BYjA]tA?@Qr@e@lByAMw@GUCMAQAA?[CsAM"
 						}
 					]
 				}
@@ -1310,7 +1449,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "بوابة ميناء الدخيلة",
 							"to": "مستشفى كرموز",
-							"minutes": 25
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 25,
+							"geometry": "uo}|D}k|tDS]sB{C_AkAgCaD{BkDi@s@{BwCsDkFCE_HiK[c@cAgBiB{CaA{B]w@yB{FcAuCa@kAg@aAm@q@yB}B}@}@sIwI{D}Dg@q@mAkCcCiFq@sAc@q@u@k@oAcAu@s@qDgEU]]e@{EsHg@u@yCgEwCyDqDyE_CeDiGyI]q@IQWu@cCcJAa@@SBY\\gADq@A_@E]iCoBkAk@GCsEkBoBu@}A]iBa@k@Sg@[u@q@yBwCcCaDo@{@q@uAMQw@_A??sAgBm@qAw@oBk@wBEUYgBe@qEg@yCMe@Ma@Um@yB}DuBmC_C}CqDaFkCsDiDiE_GuHu@cAuH_KuCyD_DaEu@aAg@s@e@cAq@mBw@oCAEgEoMACkB{FQ]iAeBi@o@_IoJCAmEsFkB}BmDmEuC}C_FmFkBsBiIcJkIcJoAwAc@k@mDiGq@kA[i@[e@iCyE]k@gAiBgBuCMIQAyAVa@BGAYEeAe@aDeBOMYa@Ss@Sy@a@iBs@kCk@wAkAaCSa@]g@UUKEi@AWs@sCsEcC}DISUaAeAiDoAaEoAiGIWOo@kDmLBH"
 						}
 					]
 				}
@@ -1342,7 +1484,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "مستشفى عقبة بن نافع",
 							"to": "استاد الإسكندرية",
-							"minutes": 37
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 37,
+							"geometry": "ozx}DgedvDc@v@c@`AoAhCs@zAwBjEw@|Ay@xAwCpF]l@iAvCQj@CFSb@cBvCgFvIs@|@IJCBqCtB}DdDcBrAtAiAuHdGYgAOm@aA_Da@q@i@w@eBkBUSaBaB}DoDg@c@yAmAoAeA]U{D{AWKkAa@YSYYg@w@MKGAGBEDCHBXj@n@bAn@NHj@Rj@Jl@RlBp@b@VhBxApFlEpBpB~C|C`AlAb@|@^lABHPx@dAhDZlAFVLjA@`AARGv@UpBAn@Fn@Nl@LN~ApCMU\\n@JXJv@IbGAfA@hA@zASnCEnA@|BB`@Hl@Jj@JXj@~@f@j@l@b@DBd@PfAThALD@R?TAj@MdBkAPIXGzAKdA?^BF@d@JjAb@hFlBz@d@FDlA`Aj@h@f@l@xCzDBFZd@FLLV`@rA\\tBVbAN^d@|@NRZ^p@l@v@d@t@VhATj@TnAbAf@b@LJv@f@nDzCd@h@Xh@b@z@b@j@^ZJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@"
 						}
 					]
 				}
@@ -1370,7 +1515,8 @@
 						{
 							"kind": "walk",
 							"meters": 174,
-							"to": "المحطة (ميدان الشهداء)"
+							"to": "المحطة (ميدان الشهداء)",
+							"geometry": "_fk}DoyouDm@[GRA@A@_CdAC@CAME?DADI\\GSEM??"
 						},
 						{
 							"kind": "ride",
@@ -1379,7 +1525,10 @@
 							"headsign": "العامرية",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "استاد الإسكندرية",
-							"minutes": 2
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 2,
+							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_A"
 						},
 						{
 							"kind": "ride",
@@ -1388,7 +1537,10 @@
 							"headsign": "الملاحة",
 							"from": "استاد الإسكندرية",
 							"to": "شارع 45 العصافرة",
-							"minutes": 31
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 31,
+							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@r@uAZg@h@s@"
 						}
 					]
 				},
@@ -1399,7 +1551,8 @@
 						{
 							"kind": "walk",
 							"meters": 1148,
-							"to": "استاد الإسكندرية"
+							"to": "استاد الإسكندرية",
+							"geometry": "_fk}DoyouD@a@@S?ICGm@oBQg@?CCGCIi@_BSg@CGa@aA[_Ak@aBM]IWISAEEKKWg@yAGSACACKWo@kBQi@Sg@Sm@??Qk@CGCIK[]eAQg@CEw@}BCECIOk@YoAMo@AEEBCBcAz@KHGJELENAN?N?H?DATCPENENQMEHEHEHGFEFGDGFGBEBMFmAf@GBGDGDC@@?"
 						},
 						{
 							"kind": "ride",
@@ -1408,7 +1561,10 @@
 							"headsign": "الملاحة",
 							"from": "استاد الإسكندرية",
 							"to": "شارع 45 العصافرة",
-							"minutes": 31
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 31,
+							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@r@uAZg@h@s@"
 						}
 					]
 				}
@@ -1440,7 +1596,10 @@
 							"headsign": "البيطاش",
 							"from": "المحطة (ميدان الشهداء)",
 							"to": "بوابة ميناء الدخيلة",
-							"minutes": 30
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 30,
+							"geometry": "mek}DikouDx@l@vEtCfBdAPNR\\?@\\x@nAjElAtEPp@`B|Gx@rCzD|MQi@|AnFnBtGRn@fA~D~AlFhAvDf@xAb@fBD`@?PMh@FBfGrBvBV\\NHH@?LP`AlBd@dARj@hAvEr@rCHRNRPLbDlBn@f@??zI`Fj@\\HFTVbBtCvAdCz@|AjCxEz@nAzAbBjI`Jv@x@pA|A|AzAdBlBhI`J|BfC~GhIwAeB~HnJbHnIZ`@`@f@dAbBNZjB~FFPpDfLRn@lA~DRj@`ChDTVtBlC~DlFrH~Jx@fAxD`F`ApAtHzJjDrEfChDjBfCv@bBp@jB{@dAcD|DKREVEd@@PFd@n@|AhAnCrBbEj@z@XXtAzAdExDd@TZPB@b@NbAVd@F`@P^VtCdEZd@TTp@b@n@VzA^`A^vAr@|Av@lEfCt@h@Z^@B^n@L^hAtEdAtD`@xAj@hBh@jA|B~CnHbK`@l@lGrIxDhFrBxCPVP\\L^TfAbBbIJb@Fd@H`@L`@pDxHn@tAn@tBRbAHbADvA@|@BjGDj@DRdAjDdAfDnBvHhDpMHFB?D?hIeFTGX?FF|IbHR???LKpBeDNMPIRER@PD`Aj@FFr@h@FDv@t@`CrDfBvChBvCjAtBbBhC?@nA`BjFpGxAfBz@hArBxCb@v@"
 						}
 					]
 				}
@@ -1468,7 +1627,8 @@
 						{
 							"kind": "walk",
 							"meters": 1564,
-							"to": "مدخل عبد القادر"
+							"to": "مدخل عبد القادر",
+							"geometry": "o~s|DgmeuDMCuCi@a@G]AW?SBMBE@QHQLMPKVEZ@ZHXNTTLKdAIbAEb@?H?J@HBNFLFJHPFRBPBRBP@P?NANANOl@I?E?E@CBAB?F?DDBD@NFDBDF@F?HAHM^K\\CPCR@T@TDj@@X?TATCTGTsAnCGFGFMFYF_G~@cCb@SHCF?JD`@l@dEl@nEi@JcGhA??o@TMJGNARBRRp@Z\\"
 						},
 						{
 							"kind": "ride",
@@ -1477,7 +1637,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "مدخل عبد القادر",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 36
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 36,
+							"geometry": "_au|DqocuD[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRABA~Ck@f@EfAAdDJD?v@HjCfAvDbAPr@~ChNESbCrKd@hBrD`NpD`Nv@vC"
 						}
 					]
 				}
@@ -1509,7 +1672,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "ابيس الثمانيات",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 32
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 32,
+							"geometry": "ip~|DiewuDgJ_AA?uLgAEA{LoA{LoA{LqAsCYiHq@{LkA}LkA{LiA}LkAiBQyEa@QjCSrCm@rJG|@w@hM}@hOw@vMGn@UpDELWb@g@f@q@Vm@Fa@A]EUIOG}BsBmEoEe@e@UKQEU?YDUJQLW`@EPE|@AtCA\\GxBCrKCrDB`FAvBEzH@h@Hv@Rh@LRTVlCpCxDtDLLj@p@TRXp@K`@KPMJKDc@H[A_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOLa@N[Hy@JgDGwAFaAN[LiBTMHEL?JLPLDRAz@OfB]f@EfAAdDJ|@HjCfAvDbAd@pB~ChNYqAbCrK|@dDpDbNpD`N`@xA"
 						}
 					]
 				}
@@ -1541,7 +1707,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "شارع الحديد والصلب",
 							"to": "مستشفى كرموز",
-							"minutes": 44
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 44,
+							"geometry": "{yw|DqustDKe@_BwIuAsH[uAM]GUWk@AEe@{@cA{BwCmFKSsAwBg@u@iD{D[_@mA}AqEwFSUmB{Bs@w@iA{Ay@qAo@_Ai@cAc@u@aCsF?CaAyBqAkCe@u@IOcAwAYc@qFsGm@}@GKoGoKuE{H}@aBmFmJAA[u@}BiFaBiDY_@iAyAW[iDqFYc@uG{KKQ_D}EaBeBa@k@kBiCOQoCiDg@w@_@i@i@o@sAmAw@{@q@aAs@mAi@aA]}@k@_Cq@aB}@_ByEoIs@sAsByDuBeEWm@qAyCkBaDS]w@kA{@oAgEmFo@_AkAkBeDkE{@mA{BcDiDgFqCeEcAgBgAgBa@s@_BsDgBuEQe@eBaFg@aAm@q@m@q@kAkAgGkGeIgIMOYa@qEuJO[a@w@c@q@eCoBu@s@gAoAiBwBs@cAoCiEkAiBaE}F[_@mHsJGGkHgKuAoBg@cAWu@mAsEu@oCAa@Dm@\\gATGb@ER?b@Do@k@cA{@cBsAe@[kAk@eBs@uB{@oBu@aE}@EAk@Sg@[u@q@_EmF}@kAo@{@q@uAMQw@_AeAuAMQm@qAw@oBk@wB_@}BAKc@eEg@yC[gAUm@OWiBeD{DeFy@eAwFyHeA{AoF_HyD_F}B{CsH}JoAcBuEcGOSW_@e@cAq@mBy@uCk@cBiEuMj@dBkB{FQ]iAeBqBcC{F}GmEsFhC`D}HuJeBwBaFoFsC{CwDeEiIcJiIcJEEc@k@mFiJLR[i@[e@iCyEw@oAOBMHER?J@?r@d@TVbBtCtBtDhDfGz@nAv@z@jI`JzA`BpA|A|AzANQo@s@kIcJmGcHc@k@Q[iFcJ[e@MS{BeEeBuCo@cAw@qAMIQAyAVa@Ba@GeAe@mAo@sAu@OMYa@Ss@u@cDe@eBMe@k@wA_BcD]g@UUKEi@AK[KWmGaKIOISUaAuCkJAGmAaGYgA_A{CgBgG"
 						}
 					]
 				}
@@ -1573,7 +1742,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "كوبري السكة الحديد",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 13
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 13,
+							"geometry": "eel}DmayuDl@vBp@`CdAjDhArCFPzEjMj@zAdDrJrAxDn@vA\\p@rApB`@n@jDxEt@z@r@r@dEhErB`CRRhAfAhCxBdA|@jA|@NJ~CrCbBfB~@jAlBzBjEvF@BrBxCPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JBFHHLDRAbDm@f@EfAAhADzAD|@HjCfAdCp@p@PlCpL`DjNcCsKbCrKpD`NpD`N~A`G"
 						}
 					]
 				}
@@ -1605,7 +1777,10 @@
 							"headsign": "الموقف الجديد",
 							"from": "موقف العصافرة",
 							"to": "الموقف الجديد",
-							"minutes": 39
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 39,
+							"geometry": "onz}D{lcvDhF|EpBlB~C`DdA`AvBlBBR@`@At@M\\qBfDEL?LBJe@h@CBqCtBgCtBu@n@cBrA_FzDm@x@GVC^Dl@VrBb@xCFj@Df@Bn@BVNl@LNpAzB\\n@JXJv@Ab@G~EAfABdDG|@KpAEnA@|BB`@TxAJXh@~@@?f@j@l@b@DBd@PfAThALX@TAj@Md@[~@o@PIXGzAKdA?f@Dd@JjAb@B?dFlBbAj@lA`ARRVTf@l@xCzD^l@FLLVTt@J\\\\tBVbAN^d@|@j@r@p@l@XP\\Rt@VhATj@TvBfBLJv@f@??nDzCd@h@|@dBb@j@LLPLJJvChBj@j@pBfCFLNRh@jA~AtE@DJn@B\\DnA@`@JtALj@Nf@Tb@p@~@v@v@dAp@bC`Bx@t@fApAnAfBdBdC|@fAdA|@b@\\`Aj@tAt@t@j@rE`FZ^b@p@d@fAZd@\\d@^^hAv@x@b@bCtAhDnBh@b@b@h@??|AbC~AxBfAnAn@l@TT`@f@h@~@rAzDn@nAX^\\f@`BpAl@n@TZDLVj@J`@F`@B`@?b@AJAVG`@K^O^_@p@IXEXAVFl@Ph@vAxBnAlB~CrF\\j@HJHHh@f@n@\\fCz@p@`@n@j@j@r@@@b@v@`@fAPz@NdAHhBD^H\\NXPXPVh@l@P^xEdH|CpE|C`DPRjA`AzBnBpA~@v@x@tItIrItIr@t@NTLXFZVxGTbAf@jBb@nAt@xApB|C??fB|BbCdCvBnC_@e@fEnFnBhCbArAfFrH`CjDn@|@v@|@x@bBJR`AfBvAjDh@bAn@bAzGrK@@tBvD~AjE^p@??`AjAb@n@d@x@f@hAdAzBPf@nBrFn@rBt@pAHJpDlExBvCJRf@|@Pn@BLbA|Ef@hCf@lCRv@z@vBjAvCHNHZTvANzCT`AHFJAFGBK@m@Gw@KiAQiAUaA@UDUJQLKhDmAz@YHCrGcCfA_@`L_Ef@QbNyExAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`DpEj@hA|AnEtAlEZj@`AjDtAxEBHXjA`BfFbAdD~AlF"
 						}
 					]
 				}
@@ -1637,12 +1812,16 @@
 							"headsign": "العصافرة",
 							"from": "نزلة كوبري العوايد",
 							"to": "شارع 6 العصافرة",
-							"minutes": 17
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 17,
+							"geometry": "w`q}D{eavDSoLcD{MsI{FaMZ_MZaMZ_MZaM^}KXa@@aMVeEJyFN_M`@cIcFiDeNmE_Ji@uAuG{KyC_DaDqE}HsJg@m@eGuIaIoJ}HqJOS`JzKoJmB}HrJyBpCyDlFo@|@_CtDcBhDs@xAiEvIsAfCuD~G{AbE"
 						},
 						{
 							"kind": "walk",
 							"meters": 548,
-							"to": "العصافرة"
+							"to": "العصافرة",
+							"geometry": "wpy}D__cvD??cBaBi@p@iAwAo@y@e@k@i@o@[a@OQi@q@i@o@y@{@{@y@y@y@EEaAaA"
 						}
 					]
 				},
@@ -1657,7 +1836,10 @@
 							"headsign": "العصافرة",
 							"from": "نزلة كوبري العوايد",
 							"to": "موقف العصافرة",
-							"minutes": 25
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 25,
+							"geometry": "w`q}D{eavD?DWmOgEoMwJiD_MZaMX_MZaMZ_M`@sIRmBD_MV{BFeIR_Mf@kLQqAcOgB}NI_@sFmKeFcGwAmBuH{JyBiCaEkFsH}JcIkJ{AuBb@xD|H`F}QfDiEnFkBjC}B~CyDrAgHzJcHc@qIbDyH~Fz@mA`IyBqEnBqHg@"
 						}
 					]
 				}
@@ -1689,7 +1871,10 @@
 							"headsign": "الكيلو 21",
 							"from": "الموقف الجديد",
 							"to": "كافيه زورو",
-							"minutes": 39
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 39,
+							"geometry": "w`h}Dq`ruDh@tBd@|A}DbCyEtCpApEbB`GzDcB|FcC|@zDTbA|@xClLtb@pApEdChHxGfV`B~FvD~MjClJ^fB@LRbBHT^n@h@d@XJpAV~FzAjCfAbOfJLHhCvBvAxAfBtBBBv@bAbh@zv@lOvTvP~VzHnLhFxH|PlWfQdXvEbHr@lAn@pAl@pAh@tAd@vAfNpe@xDdNtAhFbArEp@~Bz@xBbArBjAjBrAdBxAzA~ApA`v@pi@~S`Pl`@dYbAz@n@n@j@l@tA`BbC`D`@d@XTx@r@~HfFtItFd@`@l@d@nAnAd@h@bCdD^^vH`IVX`IlJbIlJ~DvE|BxCzHvJxHtJxHvJxHvJxHvJxHvJxHvJfElFpBhCxHvJxHvJvHvJxHvJxHvJpBhCbErFnCpDfDfEzHrJzHtJzHtJ`CvC~BlDh@~@hAtBfA|B~@`C\\bA\\`Ax@pCnAjFDhAf@jGVxENpB`@zC|AfJDdAEn@Kn@cAvDU^[\\k@`@a@NoI`CMNET{IvBw@RkA\\kAh@g@\\o@j@uA|Ao@r@qGxHEDMT[f@O`@[dAYxAu@xEkBnLQfAmAlHALm@xD{BxN{BvN{BxNrCyQ_DbSm@~DMlAKzAEjB[jOFcD"
 						}
 					]
 				}
@@ -1721,7 +1906,10 @@
 							"headsign": "سيدي جابر",
 							"from": "الموقف الجديد",
 							"to": "ذا ووك - سيدي جابر",
-							"minutes": 12
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 12,
+							"geometry": "a`h}Dy`ruDaAeD{AsFg@gBMm@]}B]gAw@cBK[Yw@gDcL{CeKUc@w@yB[aA[yAg@iDi@{Bu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RoItC_EtAcFhBy@X_GtBSDQ?q@_BJViAkCY_AmAuGa@{B]aBI_@So@Ym@uAmBgCqD_AaBe@mAc@{@{@aBaAaBg@yAqAuCUi@GKiAsBuAiBiAgBM_@e@yA_@}@gBoDkAkBiFkIo@kAMSq@qBi@mB[{@k@sA[g@UUw@y@}@gAGIgA{AmAyAg@s@qHaKyEsGsAiBACoFeHgAsAY_@Y[s@eA"
 						},
 						{
 							"kind": "ride",
@@ -1730,12 +1918,16 @@
 							"headsign": "الملاحة",
 							"from": "ذا ووك - سيدي جابر",
 							"to": "شارع 45 - كوبري ميامي",
-							"minutes": 18
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 18,
+							"geometry": "q_r}DwivuDEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaD"
 						},
 						{
 							"kind": "walk",
 							"meters": 1059,
-							"to": "العصافرة"
+							"to": "العصافرة",
+							"geometry": "}|y}DgkbvD??HMHOZZh@f@l@j@b@h@lB{Al@g@bAy@f@a@ZU_EsCgCgCi@g@SS_@[YUOMu@s@qAuAm@k@_@_@e@c@i@g@c@a@o@m@oAoAgA_A_@_@"
 						}
 					]
 				},
@@ -1750,7 +1942,10 @@
 							"headsign": "سيدي جابر",
 							"from": "الموقف الجديد",
 							"to": "ذا ووك - سيدي جابر",
-							"minutes": 12
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 12,
+							"geometry": "a`h}Dy`ruDaAeD{AsFg@gBMm@]}B]gAw@cBK[Yw@gDcL{CeKUc@w@yB[aA[yAg@iDi@{Bu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RoItC_EtAcFhBy@X_GtBSDQ?q@_BJViAkCY_AmAuGa@{B]aBI_@So@Ym@uAmBgCqD_AaBe@mAc@{@{@aBaAaBg@yAqAuCUi@GKiAsBuAiBiAgBM_@e@yA_@}@gBoDkAkBiFkIo@kAMSq@qBi@mB[{@k@sA[g@UUw@y@}@gAGIgA{AmAyAg@s@qHaKyEsGsAiBACoFeHgAsAY_@Y[s@eA"
 						},
 						{
 							"kind": "ride",
@@ -1759,12 +1954,16 @@
 							"headsign": "الملاحة",
 							"from": "ذا ووك - سيدي جابر",
 							"to": "حلواني أبو عمر - العصافرة",
-							"minutes": 19
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 19,
+							"geometry": "q_r}DwivuDEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNY"
 						},
 						{
 							"kind": "walk",
 							"meters": 28,
-							"to": "حلواني أبو عمر - العصافرة"
+							"to": "حلواني أبو عمر - العصافرة",
+							"geometry": "igy}DgmcvD??CD[YDGA?"
 						},
 						{
 							"kind": "ride",
@@ -1773,7 +1972,10 @@
 							"headsign": "العصافرة",
 							"from": "حلواني أبو عمر - العصافرة",
 							"to": "موقف العصافرة",
-							"minutes": 4
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 4,
+							"geometry": "ehy}DcncvDuD~G{AbEeM|OsJiFRUhFmJ{ImI_@]"
 						}
 					]
 				}
@@ -1805,7 +2007,10 @@
 							"headsign": "المحطة (ميدان الشهداء)",
 							"from": "الناصرية القديمة",
 							"to": "المحطة (ميدان الشهداء)",
-							"minutes": 66
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 66,
+							"geometry": "{ke|Dm|xtD{HnFyGrEGKy@aBwEmJi@}@aDkF}BgDc@o@kH{J^h@oHaKcAwAiFkHgHyJEKEOKu@G}ADq@j@cBrWwUjEmD|CiClBqAfHwDhLeEjMqDlDgADM@KCMGGi@GaUvHaHdCaA`@mAh@qC|A_BdAuFlE{HvG{ElE_Av@mOlNMJ}FbGcBxAq@b@y@\\sAd@qQbFeBj@cPvEC@{F|AoJ`CmDhA_EdBiCfBcDnCwD`EwBvBsHhIkHxHuCdDON{@z@iC`C{AjA}BpAeAd@uDjAoATqD`@_Gb@eER}MX{A?cAEeAMeASaAYgAa@eAi@_Ao@}@w@y@}@u@aAo@kAoPac@wX_u@qA_DuAuCwD{GmCyDqJyLoBkCoCkDoCmDeNsRyDeF_ByBmCyEu@_BmCgGaCaGgHgQwB_Fsc@kgAmGuOqCkHkEqKc@cAmA_Cm@aAaEmGkCgDi@k@[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRABA~Ck@f@EfAAdDJD?v@HjCfAvDbAPr@~ChNESbCrKd@hBrD`NpD`Nv@vC"
 						}
 					]
 				}
