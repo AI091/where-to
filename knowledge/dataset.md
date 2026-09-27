@@ -26,7 +26,7 @@
 
 ## Planned Changes
 
-- **Hail-and-ride support** — Most transit in Alexandria (microbuses, buses, minibuses) operates on a hail-and-ride basis: passengers can board/alight anywhere along the route, not just at fixed stops. The current GTFS has fixed stops. To support this, we'd need to generate synthetic stops every X meters along route shapes.
+- **Drop synthetic stops a pedestrian can't reach (decided 2026-09-27)** — With synthetic stops every 250 m, OTP 2.10.0 flagged 1,193 of 10,436 as `IsolatedStop` ("only 0s of walking possible"), almost all on two highway corridors crossing Lake Mariout where walking is banned in OSM. Vehicles don't stop there either, so these stops add search work and help nobody. Plan: remove the stops listed in OTP's `IsolatedStop` report, then rebuild. See [hail-and-ride](concepts/hail-and-ride.md).
 - **Tram/Train status** — Some tram/train lines are currently out of service. May need to remove or flag these routes.
 - **New routes/lines** — Any new transit lines not in the 2022 data.
 
