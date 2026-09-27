@@ -4,9 +4,11 @@ import '../styles/global.css';
 interface Props {
 	title: string;
 	description: string;
+	/** Structured data for search engines (schema.org JSON-LD). */
+	jsonLd?: object;
 }
 
-const { title, description } = Astro.props;
+const { title, description, jsonLd } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 // Draft builds (DRAFTS=1) go to preview URLs only and must never be indexed.
 const drafts = process.env.DRAFTS === '1';
@@ -29,6 +31,11 @@ const drafts = process.env.DRAFTS === '1';
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={new URL('/og.png', Astro.site)} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="twitter:card" content="summary_large_image" />
+		{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 	</head>
 	<body class="flex min-h-dvh flex-col">
 		<header class="mx-auto w-full max-w-3xl px-5 pt-6">

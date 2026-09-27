@@ -78,13 +78,13 @@ stop,Abu Qir Train Station,محطة قطار أبو قير,draft,high,osm: railw
 stop,Abu Suliman,أبو سليمان,draft,high,official place 'أبو سليمان' (terminal 25 m); osm: شارع احمد ابو سليمان 4 m,
 stop,Abu Youssef,ابو يوسف,dt4a,high,alex_terminals.geojson,
 stop,Abu Youssef St.,شارع أبو يوسف,dt4a,high,alex_processed_stops.geojson,
-stop,Administration Station,محطة الإدارة,draft,low,"literal translation; osm: إدارة المنتزة التعليمية 293 m, امتداد شارع الاداره التعليميه 263 m",Unconfirmed. 'Administration' probably means إدارة المنتزه التعليمية nearby. There are also 'شارع المرور' and 'شارع القسم' next to the stop. Check with a local.
+stop,Administration Station,شارع بورسعيد - مساكن الإسكان الصناعي,draft,medium,osm: شارع بورسعيد 26 m; مساكن الاسكان الصناعى 65 m,was «محطة الإدارة» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. Unconfirmed. 'Administration' probably means إدارة المنتزه التعليمية nearby. There are also 'شارع المرور' and 'شارع القسم' next to the stop. Check with a local.
 stop,Admon Fremon St,شارع إدمون فريمون,draft,high,osm: شارع ادمون فريمون 0 m,
 stop,Agamy School,مدرسة العجمى,dt4a,high,alex_processed_stops.geojson,
 stop,Agamy Star,عجمي ستار,draft,high,osm: عجمي ستار shop=mall 27 m; facebook.com/agamystarmall,Also called 'عجمي ستار مول'.
 stop,Airport,المطار,dt4a,high,alex_terminals.geojson,
-stop,Al Amrawy Mosque,مسجد العمراوي,draft,low,transliteration; no source found,I could not confirm a mosque with this name near Mostafa Kamel St and the Sadat axis bridge.
-stop,Al Berolos Canal,ترعة البرلس,draft,low,transliteration; osm: شارع ترعه البرنس 50 m,Unconfirmed. The only named waterway street nearby is 'ترعة البرنس'. 'Berolos' may be a mishearing of 'البرنس'. Check with a local.
+stop,Al Amrawy Mosque,شارع مصطفى كامل - ميامي الجديدة,draft,medium,osm: شارع مصطفى كامل 38 m; ميامى الجديدة 117 m,was «مسجد العمراوي» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. I could not confirm a mosque with this name near Mostafa Kamel St and the Sadat axis bridge.
+stop,Al Berolos Canal,ترعة البرنس,draft,medium,osm: شارع ترعه البرنس 50 m ('Berolos' is likely a mishearing of البرنس),was «ترعة البرلس» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. Unconfirmed. The only named waterway street nearby is 'ترعة البرنس'. 'Berolos' may be a mishearing of 'البرنس'. Check with a local.
 stop,Al Gamal Mosque,مسجد الجمل,draft,high,aleqaria.com.eg (Awqaf Eid 2024 list: 'مسجد الجمل شارع المكس الورديان'); osm: شارع المكس 4 m,"It is 'الجمل' (pronounced el-gamal), not 'الجمال'."
 stop,Al Gomrok Police Station,قسم الجمرك,draft,high,osm: الجمرك amenity=police 52 m,
 stop,Al Hagar Pedestrian Bridge,كوبري مشاة الحجر,draft,medium,osm: حجر النواتيه 26 m; translation of generic words,'الحجر' is the local short name for حجر النواتية (official). Alternative: 'كوبري مشاة حجر النواتية'.
@@ -172,7 +172,7 @@ stop,E-Maamora El-Balad,المعمورة البلد ( الشرطة العسكر�
 stop,E-Post Victora,مكتب البريد - فيكتوريا,draft,high,"osm: مكتب بريد مساكن دربالة 44 m; wslny.com lists it on Malek Hefny St, Victoria",The office's own name is مكتب بريد مساكن دربالة
 stop,Egyptian Red Crescent - Bakus,الهلال الأحمر - باكوس,draft,high,osm: الهلال الأحمر المصري - فرع الإسكندرية - باكوس (hospital) 211 m,"It is the Red Crescent hospital, 154 Mahatet El Souq St"
 stop,El Awayed Bridge End,نزلة كوبري العوايد,draft,high,official: العوايد; 'كوبري العوايد' used in news (youm7 2026/3/28),'Bridge End' rendered as نزلة (the bridge's down-ramp in Egyptian usage); the official bridge name in OSM is كوبرى لواء شهيد محمد كامل عبد الستار
-stop,El Bambi,البامبي,draft,low,transliteration; nothing found on web or OSM,"Could also be البمبي (Egyptian for 'pink'), e.g. a pink building"
+stop,El Bambi,البامبي - الطريق الدائري,draft,medium,osm: الطريق الدائري 21 m,"was «البامبي» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. Could also be البمبي (Egyptian for 'pink'), e.g. a pink building"
 stop,El Malaha - Asafra,الملاحة - العصافرة,draft,high,official place names: الملاحة / العصافره; osm: عزبه الملاحه nearby,Official list has both الملاحه and الملاحة; العصافره follows the official spelling (standard: العصافرة); was «الملاحة - العصافره»: standard spelling / locals say موقف for microbus terminals
 stop,El Mandara Bridge,كوبري المندرة,draft,high,official: المندرة + translation of generic words; osm: موقف المندرة 33 m,
 stop,El Mandara South,المندرة قبلي,draft,high,osm: المندره قبلى (neighbourhood),In Alexandria 'South' = قبلي
@@ -181,7 +181,7 @@ stop,El Mansheya Station,محطة المنشية,draft,high,official: المنش
 stop,El Ola Company Amreya,شركة العلا - العامرية,draft,medium,"https://yellowpages.com.eg/ar/profile/شركة-العلا-لتجارة-الحديد-والاسمنت/188869 (Amreya branch, km 30 desert road)",Company is العلا لتجارة الحديد والأسمنت; its exact site vs. the stop is not confirmed
 stop,El Saah Square,ميدان الساعة,draft,high,"official: الساعة; osm: موقف الساعة 43 m, ميدان الساعة 187 m",
 stop,El Sadat Mosque Abu Qir,مسجد السادات - أبو قير,draft,high,osm: شارع مسجد السادات 39 m; official: أبو قير,
-stop,El Tayeb El Nasreya,الطيب - الناصرية,draft,low,transliteration; nothing found on web or OSM,الطيب is probably a family or shop name
+stop,El Tayeb El Nasreya,شارع زاهر فتحي مهدي - الناصرية,draft,medium,osm: شارع زاهر فتحي مهدي 0 m; الناصرية from the survey name,was «الطيب - الناصرية» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. الطيب is probably a family or shop name
 stop,El-Awayed,العوايد,dt4a,high,alex_terminals.geojson,
 stop,El-Mandara,المندرة,dt4a,high,alex_terminals.geojson,
 stop,El-Mansheya,المنشية,dt4a,high,alex_terminals.geojson,
@@ -207,7 +207,7 @@ stop,Gad Asafra,جاد - العصافرة,draft,high,"https://www.facebook.com/p
 stop,Gamarek Club,نادي الجمارك,draft,high,apa.gov.eg: 'شارع البحرية بجوار نادي الجمارك'; stop is on شارع البحريه,
 stop,Gehan Square,ميدان جيهان,draft,high,osm: ميدان جيهان 31 m,
 stop,Gleem Pedestrian Tunnel,نفق مشاة جليم,draft,high,"osm: شاطيء جليم 18 m, محطة جليم 165 m + translation of generic words",
-stop,Green Gate El Nasreya,البوابة الخضراء - الناصرية,draft,low,literal translation; nothing found on web or OSM,Could be a place called جرين جيت instead; unverified
+stop,Green Gate El Nasreya,شارع 105 - الناصرية,draft,medium,osm: شارع 105 16 m; الناصرية from the survey name,was «البوابة الخضراء - الناصرية» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. Could be a place called جرين جيت instead; unverified
 stop,Green Plaza,جرين بلازا,draft,high,osm: جرين بلازا مول 84 m,
 stop,Green Plaza Mall,مول جرين بلازا,dt4a,high,alex_terminals.geojson,
 stop,Gyad Club,نادي أصحاب الجياد,draft,high,"https://ar.wikipedia.org/wiki/نادي_أصحاب_الجياد (Smouha, entrance on 14 May Rd, next to Smouha Club)",Often shortened to نادي الجياد
@@ -265,8 +265,8 @@ stop,Mostafa Kamel - 45 Street,شارع مصطفى كامل - شارع 45,draft,
 stop,Mostafa Kamel - Al Bahreya St,شارع مصطفى كامل - شارع البحرية,draft,high,"osm: شارع البحريه 41 m, شارع مصطفى كامل 41 m",
 stop,Namos Bridge,كوبري الناموس,draft,high,official: 'حجر النواتية (كوبري الناموس)'; osm: كوبرى الناموس 13 m,
 stop,Navy Forces - Bahary,القوات البحرية - بحري,draft,medium,"translation; official Bahary=بحري; osm: شارع قصر رأس التين 14 m (Ras El Tin palace = Navy HQ, knowledge)",Locals may just say 'البحرية'.
-stop,Navy Police Station,الشرطة البحرية,draft,low,no named OSM object within 700 m; web searches found nothing,On the Cairo–Alex desert road between Toshky Entrance and the High Speed Rail Station. 'Navy police' could be military police (الشرطة العسكرية) or water-bodies police (شرطة المسطحات المائية). Needs a ground check.
-stop,Nozha Administration,إدارة النزهة,draft,low,no match; osm: عزبة النزهه 174 m; مطار النزهة nearby,On the Agricultural Road between Moharam Bek and Seka Hadeed Bridge. Unknown which 'administration' (airport? traffic office?). Fallback: 'الطريق الزراعي - عزبة النزهة'.
+stop,Navy Police Station,الشرطة البحرية - الطريق الصحراوي,draft,medium,osm: طريق القاهرة الاسكندرية الصحراوي 16 m,was «الشرطة البحرية» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. On the Cairo–Alex desert road between Toshky Entrance and the High Speed Rail Station. 'Navy police' could be military police (الشرطة العسكرية) or water-bodies police (شرطة المسطحات المائية). Needs a ground check.
+stop,Nozha Administration,الطريق الزراعي - عزبة النزهة,draft,medium,osm: طريق القاهرة الاسكندرية الزراعى 18 m; عزبة النزهه 174 m,was «إدارة النزهة» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. On the Agricultural Road between Moharam Bek and Seka Hadeed Bridge. Unknown which 'administration' (airport? traffic office?). Fallback: 'الطريق الزراعي - عزبة النزهة'.
 stop,Om Zeghyo,مفرق أم زغيو,dt4a,high,alex_processed_stops.geojson,
 stop,Oqba Ibn Nafea Hospital,مستشفى عقبة بن نافع,draft,high,"https://www.okbahospital.com/ ; yellowpages: Street 24 off Street 45, Asafra Qebly; osm: شارع 24 30 m",
 stop,Pedestrian Bridge - Ring Road,كوبري المشاة - الطريق الدائري,draft,high,translation of generic words; osm: الطريق الدائري 10 m,
@@ -275,7 +275,7 @@ stop,Pulmonary Hospital (Mandara),مستشفى الصدر (مندرة),dt4a,high
 stop,Qasr Sakafet El Anfoshy,قصر ثقافة الأنفوشي,draft,high,official: Anfoshy=الأنفوشي; osm: شارع قصر الثقافة 25 m,
 stop,Qism Awwel Amreyya,قسم أول عامرية,dt4a,high,alex_terminals.geojson,
 stop,Quta (Soter),كوته (سوتر),dt4a,high,alex_terminals.geojson,
-stop,Rahman Mosque,مسجد الرحمن,draft,low,no named mosque in OSM within 400 m (one unnamed mosque ~150 m); no web match,"At Omar Lotfy / Mosharafa St, Shatby. Could be 'مسجد الرحمة'. Nearby landmarks: محطة الشهيد مصطفى زيان (tram) 46 m, كلية العلوم 66 m."
+stop,Rahman Mosque,شارع عمر لطفي - الشاطبي,draft,medium,osm: شارع عمر لطفي 0 m; Alexandria University (Shatby) 23 m,"was «مسجد الرحمن» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. At Omar Lotfy / Mosharafa St, Shatby. Could be 'مسجد الرحمة'. Nearby landmarks: محطة الشهيد مصطفى زيان (tram) 46 m, كلية العلوم 66 m."
 stop,Raml Station,محطة الرمل,dt4a,high,alex_terminals.geojson,
 stop,Raml Station - Courniche,محطة الرمل - الكورنيش,draft,high,official: Raml Station=محطة الرمل; osm: حديقة سعد زغلول 11 m,
 stop,Royal Complex Hall,قاعة رويال كومبلكس,draft,low,no OSM; web: a 'Royal Garden' wedding hall is listed opposite the Dekheila port logistics building (possibly the same place),Transliteration only. Name not confirmed.

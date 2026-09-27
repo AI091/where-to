@@ -1,0 +1,28 @@
+---
+/**
+ * The route's name as a painted destination sign, like the ones hand-lettered on a
+ * microbus windscreen. The one bold element on the route page.
+ */
+import '@fontsource/aref-ruqaa/700.css';
+import { type Vehicle, vehicleColor, vehicleInk } from '../lib/trip';
+
+interface Props {
+	route: string;
+	vehicle: Vehicle;
+}
+const { route, vehicle } = Astro.props;
+---
+
+<p
+	class="sign mt-3 inline-block rounded-md px-4 py-1.5 text-2xl leading-relaxed shadow-sm"
+	style={`background:${vehicleColor[vehicle]}; color:${vehicleInk[vehicle]}`}
+>
+	{route}
+</p>
+
+<style>
+	.sign {
+		font-family: 'Aref Ruqaa', serif;
+		font-weight: 700;
+	}
+</style>

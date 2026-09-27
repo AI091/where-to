@@ -19,7 +19,15 @@ export const vehicleColor: Record<Vehicle, string> = {
 	microbus: '#e8871e',
 	tomnaya: '#2f6fb3',
 	bus: '#0b5e7a',
-	minibus: '#2e8a6e',
+	minibus: '#277a61',
+};
+
+// Text on a vehicle's colour: dark ink on the microbus orange, white on the rest (all ≥ 4.5:1).
+export const vehicleInk: Record<Vehicle, string> = {
+	microbus: '#1d2830',
+	tomnaya: '#ffffff',
+	bus: '#ffffff',
+	minibus: '#ffffff',
 };
 
 // "المشروع" is what Alexandrians call the microbus; the bracket in the label is for everyone else.
@@ -83,3 +91,6 @@ export function decodePolyline(s: string): [number, number][] {
 /** "دقيقة"، "دقيقتين"، "3 دقايق"، "15 دقيقة": Egyptian counting of minutes. */
 export const mins = (n: number) =>
 	n <= 1 ? 'دقيقة' : n === 2 ? 'دقيقتين' : n <= 10 ? `${n} دقايق` : `${n} دقيقة`;
+
+/** "بيعدي كل دقيقة"، "بيعدي كل 9 دقايق": how often the vehicle comes, from the survey. */
+export const everyText = (n: number | null) => (n ? `بيعدي كل ${n <= 1 ? 'دقيقة' : mins(n)} تقريباً` : '');

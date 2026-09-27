@@ -1,92 +1,160 @@
 ---
 /**
  * One page per trip, "ازاي تروح من X لـY", from src/data/routes.json
- * (made by scripts/generate-routes.ts). Built only in draft builds (DRAFTS=1)
- * until the pages are reviewed; production builds skip them entirely.
+ * (made by scripts/generate-routes.ts).
+ *
+ * Design: the trip as a line coloured by vehicle (Option A), the route's name on a
+ * painted sign like a microbus windscreen (Option B), and a small drawing of the
+ * trip on top (Option C).
  */
 import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import RouteMap from '../components/RouteMap.astro';
+import RouteSign from '../components/RouteSign.astro';
+import WalkThere from '../components/WalkThere.astro';
 import data from '../data/routes.json';
-
-type Page = (typeof data.pages)[number];
+import {
+	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, everyText,
+	vehicleOf, vehicleColor, vehicleInk, vehicleShort,
+} from '../lib/trip';
 
 export function getStaticPaths() {
-	if (process.env.DRAFTS !== '1') return [];
 	return data.pages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
 }
 
 const { page } = Astro.props as { page: Page };
 const [best, ...others] = page.options;
-const rides = (o: Page['options'][number]) => o.steps.filter((s) => s.kind === 'ride');
-const round5 = (m: number) => Math.max(5, Math.round(m / 5) * 5);
-// Egyptian "to X": لسيدي بشر, and للعصافرة when the name starts with ال.
-const li = (name: string) => (name.startsWith('ال') ? `لل${name.slice(2)}` : `ل${name}`);
+const steps = viewSteps(page, best);
+const firstBoard = steps.findIndex((s) => s.type === 'board');
+const gray = '#9aa6ad';
+const isBus = (v: string) => v === 'bus' || v === 'minibus';
 
 const reverse = data.pages.find((p) => p.from.en === page.to.en && p.to.en === page.from.en);
 const sameOrigin = data.pages.filter((p) => p.from.en === page.from.en && p.slug !== page.slug).slice(0, 5);
 
 const title = `ازاي تروح من ${page.from.ar} ${li(page.to.ar)}؟`;
 const firstRide = rides(best)[0];
-const description = `من ${page.from.ar} ${li(page.to.ar)}: اركب ${firstRide.vehicle} ${firstRide.route}. حوالي ${round5(best.minutes)} دقيقة.`;
+const description =
+	`من ${page.from.ar} ${li(page.to.ar)}: اركب ${vehicleShort(firstRide.vehicle)} «${firstRide.route}» من ${firstRide.from}. ` +
+	`حوالي ${round5(best.minutes)} دقيقة${firstRide.everyMinutes ? `، و${everyText(firstRide.everyMinutes)}` : ''}.`;
+const breadcrumbs = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'انزل فين؟', item: 'https://anzelfein.com/' },
+		{ '@type': 'ListItem', position: 2, name: title, item: `https://anzelfein.com/${page.slug}/` },
+	],
+};
 ---
 
-<Layout title={`${title} | انزل فين؟`} description={description}>
-	<article class="py-10">
-		<h1 class="text-3xl font-bold leading-snug text-sea-dark sm:text-4xl">{title}</h1>
+<Layout title={`${title} | انزل فين؟`} description={description} jsonLd={breadcrumbs}>
+	<article class="pb-8">
+		<RouteMap option={best} label={`خريطة المشوار من ${page.from.ar} ${li(page.to.ar)}`} />
 
-		<section class="mt-6 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
-			<p class="text-sm font-medium text-muted">أسهل طريقة</p>
-			<p class="mt-1 text-xl font-bold leading-relaxed">
-				{
-					rides(best).map((r, i) => (
-						<span>
-							{i > 0 && ' وبعدين '}
-							اركب {r.vehicle} <span class="text-sea">«{r.route}»</span>
-						</span>
-					))
-				}
-			</p>
-			<p class="mt-2 text-muted">حوالي {round5(best.minutes)} دقيقة، ومشي حوالي {best.walkMeters} متر.</p>
+		<h1 class="mt-6 text-3xl font-bold leading-snug text-sea-dark">{title}</h1>
 
-			<ol class="mt-5 space-y-4 border-s-2 border-sea/20 ps-5">
-				{
-					best.steps.map((s) =>
-						s.kind === 'walk' ? (
-							s.meters >= 30 && (
-								<li class="text-muted">
-									امشي حوالي {s.meters} متر لحد <strong class="text-ink">{s.to}</strong>
-								</li>
-							)
-						) : (
-							<li>
-								<p>
-									اركب <strong>{s.vehicle}</strong> «{s.route}» رايح <strong>{s.headsign}</strong>، من{' '}
-									<strong>{s.from}</strong>
-								</p>
-								<p class="mt-1">
-									انزل عند <strong class="text-sea-dark">{s.to}</strong>{' '}
-									<span class="text-muted">(حوالي {round5(s.minutes)} دقيقة في المشوار)</span>
-								</p>
+		<div class="mt-4 flex items-end gap-3">
+			<p class="text-5xl font-bold leading-none">{round5(best.minutes)}</p>
+			<p class="pb-1 text-muted">دقيقة تقريباً، {walkText(best.walkMeters)}</p>
+		</div>
+
+		<ol class="mt-4 flex flex-wrap items-center gap-1.5" aria-label="ملخص المشوار">
+			{
+				best.steps.filter((s) => s.kind === 'ride' || s.meters >= 50).map((s, i) => (
+					<>
+						{i > 0 && <li aria-hidden="true" class="text-muted">‹</li>}
+						{s.kind === 'walk' ? (
+							<li class="inline-flex items-center gap-1 rounded-full bg-black/5 px-2 py-1 text-sm text-muted">
+								<Icon name="walk" class="size-4" />
+								{s.meters} م
 							</li>
-						),
-					)
-				}
-			</ol>
-		</section>
+						) : (
+							<li
+								class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm font-bold"
+								style={`background:${vehicleColor[vehicleOf(s.vehicle)]}; color:${vehicleInk[vehicleOf(s.vehicle)]}`}
+							>
+								<Icon name={isBus(vehicleOf(s.vehicle)) ? 'bus' : 'microbus'} class="size-4" />
+								{vehicleShort(s.vehicle)}
+							</li>
+						)}
+					</>
+				))
+			}
+		</ol>
+
+		<ol class="mt-8">
+			{
+				steps.map((s, i) => {
+					const line = !steps[i + 1] ? null : s.type === 'board' ? vehicleColor[s.vehicle] : gray;
+					const color = s.type === 'board' || s.type === 'alight' ? vehicleColor[s.vehicle] : s.type === 'arrive' ? '#0b5e7a' : gray;
+					const icon =
+						s.type === 'walk' ? 'walk' : s.type === 'arrive' ? 'flag'
+						: s.type === 'board' && s.ride.fromOnRoad ? 'hand' : isBus(s.vehicle) ? 'bus' : 'microbus';
+					return (
+						<li class="relative ps-14 pb-7">
+							{line && (
+								<span
+									aria-hidden="true"
+									class="absolute start-[21px] top-11 bottom-0 w-[6px] rounded-full"
+									style={s.type === 'board'
+										? `background:${line}`
+										: `background: repeating-linear-gradient(to bottom, ${line} 0 6px, transparent 6px 12px)`}
+								/>
+							)}
+							<span
+								class="absolute start-0 top-0 grid size-12 place-items-center rounded-full border-[3px] bg-white"
+								style={`border-color:${color}; color:${color}`}
+							>
+								<Icon name={icon} />
+							</span>
+
+							{s.type === 'walk' && (
+								<p class="pt-3 text-muted">
+									امشي {s.meters} متر (حوالي {mins(s.minutes)}) لحد <strong class="text-ink">{s.to}</strong>
+								</p>
+							)}
+							{s.type === 'board' && (
+								<div class="pt-1">
+									<p class="text-lg font-bold">{boardText(s.ride)}</p>
+									<RouteSign route={s.ride.route} vehicle={s.vehicle} />
+									<p class="mt-2 text-sm leading-relaxed text-muted">
+										{s.ride.vehicle}، اتجاه {s.ride.headsign}. {everyText(s.ride.everyMinutes)}
+									</p>
+									{i === firstBoard && <WalkThere geometry={s.ride.geometry} />}
+								</div>
+							)}
+							{s.type === 'alight' && (
+								<p class="pt-3 text-lg">
+									انزل عند <strong>{s.ride.to}</strong>{' '}
+									<span class="text-sm text-muted">(بعد حوالي {mins(round5(s.ride.minutes))})</span>
+								</p>
+							)}
+							{s.type === 'arrive' && <p class="pt-3 text-lg font-bold text-sea-dark">وصلت {s.place}</p>}
+						</li>
+					);
+				})
+			}
+		</ol>
 
 		{
 			others.length > 0 && (
-				<section class="mt-8">
-					<h2 class="text-xl font-bold text-sea-dark">طرق تانية</h2>
+				<section class="mt-2 border-t border-black/10 pt-6">
+					<h2 class="text-xl font-bold text-sea-dark">لو عايز طريقة تانية</h2>
 					<ul class="mt-3 space-y-3">
 						{others.map((o) => (
-							<li class="rounded-xl bg-white/70 p-4 ring-1 ring-black/5">
+							<li class="flex flex-wrap items-center gap-1.5">
 								{rides(o).map((r, i) => (
-									<span>
-										{i > 0 && ' ثم '}
-										{r.vehicle} «{r.route}» لحد {r.to}
-									</span>
+									<>
+										{i > 0 && <span class="text-muted">‹</span>}
+										<span
+											class="rounded-full px-2.5 py-1 text-sm font-bold"
+											style={`background:${vehicleColor[vehicleOf(r.vehicle)]}; color:${vehicleInk[vehicleOf(r.vehicle)]}`}
+										>
+											{vehicleShort(r.vehicle)} «{r.route}»
+										</span>
+									</>
 								))}
-								<span class="text-muted"> · حوالي {round5(o.minutes)} دقيقة</span>
+								<span class="text-sm text-muted">حوالي {round5(o.minutes)} دقيقة، {walkText(o.walkMeters)}</span>
 							</li>
 						))}
 					</ul>
@@ -95,27 +163,22 @@ const description = `من ${page.from.ar} ${li(page.to.ar)}: اركب ${firstRid
 		}
 
 		<p class="mt-8 text-sm leading-relaxed text-muted">
-			الأوقات تقريبية: محسوبة على إن الميكروباص بيعدي كل كام دقيقة، والخطوط من مسح ميداني سنة 2022. ولو خط اتغير، الصفحة
-			دي ممكن تكون محتاجة تتحدث.
+			الأوقات تقريبية. الخطوط ومواعيدها من مسح ميداني سنة 2022، ولو خط اتغير الصفحة دي ممكن تكون محتاجة تتحدث.
 		</p>
 
 		{
 			(reverse || sameOrigin.length > 0) && (
 				<nav class="mt-8">
 					<h2 class="text-lg font-bold text-sea-dark">مشاوير قريبة</h2>
-					<ul class="mt-2 space-y-1">
+					<ul class="mt-2 space-y-1.5">
 						{reverse && (
 							<li>
-								<a class="text-sea underline" href={`/${reverse.slug}/`}>
-									من {reverse.from.ar} {li(reverse.to.ar)}
-								</a>
+								<a class="text-sea underline" href={`/${reverse.slug}/`}>من {reverse.from.ar} {li(reverse.to.ar)}</a>
 							</li>
 						)}
 						{sameOrigin.map((p) => (
 							<li>
-								<a class="text-sea underline" href={`/${p.slug}/`}>
-									من {p.from.ar} {li(p.to.ar)}
-								</a>
+								<a class="text-sea underline" href={`/${p.slug}/`}>من {p.from.ar} {li(p.to.ar)}</a>
 							</li>
 						))}
 					</ul>

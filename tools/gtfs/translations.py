@@ -97,7 +97,8 @@ def main(argv=None):
     for s in stops:
         sid = s["stop_id"]
         if sid.startswith("SYN_"):
-            road = roads.get(sid, "")
+            # OSM joins some names with an English comma ("طريق خورشيد, العوايد").
+            road = roads.get(sid, "").replace(", ", "، ").replace(",", "،")
             text = road if ARABIC.search(road) else f"قرب {nearest_real_ar(float(s['stop_lat']), float(s['stop_lon']))}"
         else:
             text = real_ar.get(sid)

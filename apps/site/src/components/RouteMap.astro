@@ -1,0 +1,59 @@
+---
+/**
+ * A small drawing of the trip from the real route shapes. North is up, and in
+ * Alexandria north is the sea, which is how people give directions ("ناحية البحر").
+ */
+import { type Option, decodePolyline, vehicleOf, vehicleColor } from '../lib/trip';
+
+interface Props {
+	option: Option;
+	label: string;
+}
+const { option, label } = Astro.props;
+
+const W = 360, H = 190, PAD = 24;
+const legs = option.steps.map((s) => ({ step: s, pts: decodePolyline(s.geometry) }));
+const all = legs.flatMap((l) => l.pts);
+const k = Math.cos((all.reduce((a, p) => a + p[0], 0) / all.length) * (Math.PI / 180));
+const xs = all.map((p) => p[1] * k), ys = all.map((p) => p[0]);
+const [minX, maxX, minY, maxY] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+const scale = Math.min((W - 2 * PAD) / (maxX - minX || 1e-6), (H - 2 * PAD) / (maxY - minY || 1e-6));
+const offX = (W - (maxX - minX) * scale) / 2, offY = (H - (maxY - minY) * scale) / 2;
+const proj = ([lat, lon]: [number, number]) => [offX + (lon * k - minX) * scale, offY + (maxY - lat) * scale];
+const path = (pts: [number, number][]) =>
+	pts.map((p, i) => `${i ? 'L' : 'M'}${proj(p).map((v) => v.toFixed(1)).join(' ')}`).join(' ');
+const [sx, sy] = proj(all[0]);
+const [ex, ey] = proj(all[all.length - 1]);
+const changes = legs.filter((l) => l.step.kind === 'ride').slice(1).map((l) => proj(l.pts[0]));
+---
+
+<figure class="-mx-5 mt-2 bg-[#e6eff1]">
+	<svg viewBox={`0 0 ${W} ${H}`} class="block w-full" role="img" aria-label={label}>
+		<defs>
+			<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0" stop-color="#0b5e7a" stop-opacity="0.3" />
+				<stop offset="1" stop-color="#0b5e7a" stop-opacity="0" />
+			</linearGradient>
+		</defs>
+		<rect width={W} height="34" fill="url(#sea)" />
+		<text x={W - 12} y="20" font-size="11" fill="#073f52" direction="rtl" text-anchor="start">ناحية البحر ↑</text>
+		{
+			legs.map(({ step, pts }) =>
+				step.kind === 'walk' ? (
+					<path d={path(pts)} fill="none" stroke="#5b6770" stroke-width="3" stroke-dasharray="1 6" stroke-linecap="round" />
+				) : (
+					<>
+						<path d={path(pts)} fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+						<path d={path(pts)} fill="none" stroke={vehicleColor[vehicleOf(step.vehicle)]} stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+					</>
+				),
+			)
+		}
+		{changes.map(([x, y]) => <circle cx={x} cy={y} r="5" fill="#fff" stroke="#1d2830" stroke-width="2" />)}
+		<circle cx={sx} cy={sy} r="7" fill="#0b5e7a" stroke="#fff" stroke-width="3" />
+		<g transform={`translate(${ex} ${ey})`}>
+			<path d="M0 0c-6-8-10-12-10-17a10 10 0 0 1 20 0c0 5-4 9-10 17z" fill="#e8871e" stroke="#fff" stroke-width="2" />
+			<circle cy="-17" r="3.5" fill="#fff" />
+		</g>
+	</svg>
+</figure>

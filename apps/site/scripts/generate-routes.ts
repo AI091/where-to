@@ -19,6 +19,12 @@ const LIMIT = Number(process.env.LIMIT ?? 50);
 // matters for which trips are running.
 const DATE = '2026-10-05';
 const TIME = '08:00:00';
+// Search 90 minutes of departures. A 10-minute window (what the live server may use
+// for speed) misses routes that come every 45 minutes; pages are computed once, so
+// they can afford the wide window.
+const SEARCH_WINDOW_S = 90 * 60;
+// The feed OTP was built from, for how often each trip runs (frequencies.txt).
+const FEED = process.env.FEED ?? new URL('../../../tools/benchmark/data/otp/s3_250m_ar/alex_gtfs.zip', import.meta.url).pathname;
 
 type Stop = { gtfsId: string; name: string; lat: number; lon: number };
 type Pattern = { headsign: string; stops: Stop[] };
@@ -114,13 +120,14 @@ async function pairs(): Promise<Pair[]> {
 	return [...byKey.values()].sort((a, b) => score(b) - score(a) || a.from.en.localeCompare(b.from.en));
 }
 
-const PLAN = `query Plan($from: InputCoordinates!, $to: InputCoordinates!, $date: String!, $time: String!) {
-  plan(from: $from, to: $to, date: $date, time: $time, numItineraries: 6, locale: "ar",
+const PLAN = `query Plan($from: InputCoordinates!, $to: InputCoordinates!, $date: String!, $time: String!, $sw: Long, $banned: String) {
+  plan(from: $from, to: $to, date: $date, time: $time, numItineraries: 12, searchWindow: $sw, locale: "ar",
+       banned: {routes: $banned},
        transportModes: [{mode: BUS}, {mode: WALK}]) {
     itineraries { duration walkDistance legs {
       mode distance duration
       from { name stop { gtfsId } } to { name stop { gtfsId } }
-      route { gtfsId shortName longName longNameEn: longName(language: "en") } trip { tripHeadsign }
+      route { gtfsId shortName longName longNameEn: longName(language: "en") } trip { gtfsId tripHeadsign }
       legGeometry { points }
     } }
   }
@@ -130,7 +137,7 @@ type Leg = {
 	mode: string; distance: number; duration: number;
 	from: { name: string; stop: { gtfsId: string } | null }; to: { name: string; stop: { gtfsId: string } | null };
 	route: { gtfsId: string; shortName: string; longName: string; longNameEn: string } | null;
-	trip: { tripHeadsign: string } | null;
+	trip: { gtfsId: string; tripHeadsign: string } | null;
 	legGeometry: { points: string };
 };
 
@@ -148,17 +155,42 @@ function arabicHeadsign(l: Leg): string {
 	return i >= 0 && ar.length === en.length ? ar[i] : headsign;
 }
 
-async function plan(pair: Pair) {
-	const data = await otp<{ plan: { itineraries: Itinerary[] } }>(PLAN, {
-		from: { lat: pair.from.lat, lon: pair.from.lon },
-		to: { lat: pair.to.lat, lon: pair.to.lon },
-		date: DATE,
-		time: TIME,
-	});
+// How often each trip runs, in minutes, from the survey's frequencies.txt.
+const csvRows = (name: string) => {
+	const text = Bun.spawnSync(['unzip', '-p', FEED, name]).stdout.toString();
+	const [head, ...rows] = parseCsv(text).filter((r) => r.length > 1);
+	return rows.map((r) => Object.fromEntries(head.map((h, i) => [h.trim(), r[i]])));
+};
+const everyMinutes = new Map(csvRows('frequencies.txt').map((f) => [`1:${f.trip_id}`, Math.round(Number(f.headway_secs) / 60)]));
+
+// "Best" means least hassle, not just fastest: walking counts double and each
+// change of vehicle costs 5 minutes, so a 47-minute trip with 1 km of walking
+// loses to a 47-minute trip without it.
+const hassle = (it: Itinerary) =>
+	it.duration / 60 + it.walkDistance / 80 + 5 * (it.legs.filter((l) => l.mode !== 'WALK').length - 1);
+
+async function plan(pair: Pair, allRoutes: string[]) {
+	const search = (banned: string[]) =>
+		otp<{ plan: { itineraries: Itinerary[] } }>(PLAN, {
+			from: { lat: pair.from.lat, lon: pair.from.lon },
+			to: { lat: pair.to.lat, lon: pair.to.lon },
+			date: DATE,
+			time: TIME,
+			sw: SEARCH_WINDOW_S,
+			banned: banned.join(',') || null,
+		});
+	// OTP drops a direct route that comes every 45 minutes, because its cost counts
+	// the full wait. The page exists because of that route, so also search with every
+	// other route banned and let it compete on hassle.
+	const [open, direct] = await Promise.all([
+		search([]),
+		search(allRoutes.filter((r) => !pair.routes.includes(r))),
+	]);
+	const itineraries = [...open.plan.itineraries, ...direct.plan.itineraries];
 	// Headway trips come back as near-copies a minute apart; keep one per sequence of routes.
 	const seen = new Set<string>();
 	const options = [];
-	for (const it of data.plan.itineraries.sort((a, b) => a.duration - b.duration)) {
+	for (const it of itineraries.sort((a, b) => hassle(a) - hassle(b))) {
 		const rides = it.legs.filter((l) => l.mode !== 'WALK');
 		if (rides.length === 0) continue;
 		const key = rides.map((l) => l.route?.gtfsId).join('>');
@@ -185,6 +217,7 @@ async function plan(pair: Pair) {
 							fromOnRoad: onRoad(l.from.stop),
 							toOnRoad: onRoad(l.to.stop),
 							minutes: Math.round(l.duration / 60),
+							everyMinutes: everyMinutes.get(l.trip?.gtfsId ?? '') ?? null,
 							geometry: l.legGeometry.points,
 						},
 			),
@@ -195,9 +228,10 @@ async function plan(pair: Pair) {
 }
 
 const all = await pairs();
+const allRoutes = [...new Set(all.flatMap((p) => p.routes))];
 const pages = [];
 for (const pair of all.slice(0, LIMIT)) {
-	const options = await plan(pair);
+	const options = await plan(pair, allRoutes);
 	if (options.length === 0) {
 		console.warn(`no transit option: ${pair.from.en} -> ${pair.to.en}`);
 		continue;
