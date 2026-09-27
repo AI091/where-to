@@ -46,3 +46,8 @@ node_modules/
 .turbo/
 .astro/
 .wrangler/
+
+# Local only, never commit (personal snapshots, third-party material, build output)
+coverage-audit/
+.playwright-cli/
+engine/target/
