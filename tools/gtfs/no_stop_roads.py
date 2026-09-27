@@ -22,7 +22,9 @@ Usage:
 
 Output JSON:
     {"rule": ..., "stops": {"SYN_...": [lat, lon], ...}, "reasons": {"SYN_...": "road name", ...},
-     "by_road": {"road name": n, ...}}
+     "roads": {"SYN_...": "road name", ...}, "by_road": {"road name": n, ...}}
+"roads" covers every synthetic stop, kept or dropped: the road its route runs on
+there, used to give synthetic stops a readable name.
 The "stops" map is what tools/benchmark/variants.py --drop-stops reads.
 """
 
@@ -194,9 +196,10 @@ def main(argv=None):
     stops = synthetic_stops_with_bearing(z, proj)
     ways, segs, grid = load_roads(args.osm, proj, bbox)
 
-    drop, reasons, by_road = {}, {}, Counter()
+    drop, reasons, roads, by_road = {}, {}, {}, Counter()
     for sid, stop in stops.items():
         dropped, reason = classify(stop, ways, segs, grid)
+        roads[sid] = reason
         if dropped:
             drop[sid] = [stop[0], stop[1]]
             reasons[sid] = reason
@@ -209,6 +212,7 @@ def main(argv=None):
         "synthetic_stops_checked": len(stops),
         "stops": drop,
         "reasons": reasons,
+        "roads": roads,
         "by_road": dict(by_road.most_common()),
     }
     with open(args.out, "w") as f:

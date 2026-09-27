@@ -1,0 +1,324 @@
+kind,name_en,name_ar,source,confidence,evidence,note
+vehicle,Bus,أتوبيس,draft,,,
+vehicle,Microbus,مشروع (ميكروباص),draft,,,
+vehicle,Minibus,ميني باص,draft,,,
+vehicle,Tomnaya,تمناية,draft,,,
+place,Abd El-Qader Al-Gadida,عبد القادر الجديدة,dt4a,high,alex_identified_routes.geojson,
+place,Abis 4,ابيس الرابعة,dt4a,high,alex_identified_routes.geojson,was «ابيس الرابعه»: standard spelling / locals say موقف for microbus terminals
+place,Abis 8,ابيس الثمانيات,dt4a,high,alex_identified_routes.geojson,
+place,Abo Soliman,أبو سليمان,dt4a,high,alex_identified_routes.geojson,
+place,Abu Qir,أبو قير,dt4a,high,alex_identified_routes.geojson,
+place,Abu Talat,ابو تلات,dt4a,high,alex_identified_routes.geojson,
+place,Abu Youssef,ابو يوسف,dt4a,high,alex_identified_routes.geojson,
+place,Airport,المطار,dt4a,high,alex_identified_routes.geojson,
+place,Al-Bitash,البيطاش,dt4a,high,alex_identified_routes.geojson,
+place,Al-Maraghi,المراغي,dt4a,high,alex_identified_routes.geojson,
+place,Al-Milaha,الملاحة,dt4a,high,alex_identified_routes.geojson,was «الملاحه»: standard spelling / locals say موقف for microbus terminals
+place,Al-Rahma,الرحمة,dt4a,high,alex_identified_routes.geojson,
+place,Al-Seyouf (Falaky),السيوف (الفلكي),dt4a,high,alex_identified_routes.geojson,
+place,Al-Wardiyan,الورديان,dt4a,high,alex_identified_routes.geojson,
+place,Amreyya,العامرية,dt4a,high,alex_identified_routes.geojson,
+place,Anfoshy,الأنفوشي,dt4a,high,alex_identified_routes.geojson,
+place,Asafra,العصافرة,dt4a,high,alex_identified_routes.geojson,was «العصافره»: standard spelling / locals say موقف for microbus terminals
+place,Bahary (Ras Al-Tin),بحري (راس التين),dt4a,high,alex_identified_routes.geojson,
+place,Bakus,باكوس,dt4a,high,alex_identified_routes.geojson,
+place,Borg Al-Arab New Terminal,برج العرب الموقف الجديد,dt4a,high,alex_identified_routes.geojson,
+place,Borg Al-Arab Old Terminal,برج العرب الموقف القديم,dt4a,high,alex_identified_routes.geojson,
+place,Borg El Arab Al Arbaneyat Prison,سجن برج العرب الغربانيات,dt4a,high,alex_identified_routes.geojson,
+place,El-Awayed,العوايد,dt4a,high,alex_identified_routes.geojson,
+place,El-Mandara,المندرة,dt4a,high,alex_identified_routes.geojson,
+place,El-Mansheya,المنشية,dt4a,high,alex_identified_routes.geojson,
+place,El-Mawqaf El-Geded,الموقف الجديد,dt4a,high,alex_identified_routes.geojson,
+place,El-Nasreya El-Qadema,الناصرية القديمة,dt4a,high,alex_identified_routes.geojson,
+place,El-Rassafa,الرصافة,dt4a,high,alex_identified_routes.geojson,
+place,El-Sa'ah (Clock Square),الساعة,dt4a,high,alex_identified_routes.geojson,
+place,Ezbet Saad,عزبة سعد,dt4a,high,alex_identified_routes.geojson,
+place,Green Plaza Mall,جرين بلازا مول,draft,high,https://yellowpages.com.eg/ar/profile/%D8%AC%D8%B1%D9%8A%D9%86-%D8%A8%D9%84%D8%A7%D8%B2%D8%A7-%D9%85%D9%88%D9%84/65766 ; ar.wikipedia 'جرين بلازا' (طريق 14 مايو، سموحة),Locals often just say 'جرين بلازا'.
+place,Hadid wal-Solb,الحديد والصلب,dt4a,high,alex_identified_routes.geojson,
+place,Hadra,الحضرة,dt4a,high,alex_identified_routes.geojson,
+place,Hagar Al-Nawateyah (Namos Bridge),حجر النواتية (كوبري الناموس),dt4a,high,alex_identified_routes.geojson,
+place,Hanuvil,الهانوفيل,dt4a,high,alex_identified_routes.geojson,
+place,Hanuvil Gameyya,هانوفيل جمعية,dt4a,high,alex_identified_routes.geojson,
+place,Izbat Hawd 10,عزبة حوض 10,dt4a,high,alex_identified_routes.geojson,
+place,Izbat Hawd 12,عزبة حوض 12,dt4a,high,alex_identified_routes.geojson,
+place,Kabo,كابو,dt4a,high,alex_identified_routes.geojson,
+place,Karmus,كرموز,dt4a,high,alex_identified_routes.geojson,
+place,Khorshid,خورشيد,dt4a,high,alex_identified_routes.geojson,
+place,Kilo 21,الكيلو 21,dt4a,high,alex_identified_routes.geojson,
+place,Masaken Toshka,مساكن توشكى,dt4a,high,alex_identified_routes.geojson,
+place,Miami,ميامي,dt4a,high,alex_identified_routes.geojson,
+place,Qism Awwel Amreyya,قسم أول عامرية,dt4a,high,alex_identified_routes.geojson,
+place,Quta (Soter),كوته (سوتر),dt4a,high,alex_identified_routes.geojson,
+place,Raml Station,محطة الرمل,dt4a,high,alex_identified_routes.geojson,
+place,Shahr Al-Asal,شهر العسل,dt4a,high,alex_identified_routes.geojson,
+place,Shatibi,الشاطبي,dt4a,high,alex_identified_routes.geojson,
+place,Sidi Bishr,سيدي بشر,dt4a,high,alex_identified_routes.geojson,
+place,Sidi Bishr Tram,ترام سيدي بشر,dt4a,high,alex_identified_routes.geojson,
+place,Sidi Gabir,سيدي جابر,dt4a,high,alex_identified_routes.geojson,
+place,Smouha,سموحة,dt4a,high,alex_identified_routes.geojson,was «سموحه»: standard spelling / locals say موقف for microbus terminals
+place,Street 45,شارع 45,dt4a,high,alex_identified_routes.geojson,
+place,Train Station (El-Shohada Square),المحطة (ميدان الشهداء),dt4a,high,alex_identified_routes.geojson,
+place,Victoria station,محطة فيكتوريا,dt4a,high,alex_identified_routes.geojson,
+stop,AAST Intersection,تقاطع الأكاديمية البحرية,draft,high,osm: شارع الاكاديميه 2 m; yellowpages.com.eg (AAST Abu Qir: شارع الأكاديمية البحرية - طوسون),AAST is locally called 'الأكاديمية البحرية'.
+stop,Abd El-Qader Al-Gadida,عبد القادر الجديدة,dt4a,high,alex_terminals.geojson,
+stop,Abdel Kader Entrance,مدخل عبد القادر,draft,high,vetogate.com/4780023 ('حادث تصادم الصحراوي بمدخل عبد القادر'); osm: desert road 21 m,
+stop,Abdel Kader Station,موقف عبد القادر الجديدة,draft,medium,official terminal 'عبد القادر الجديدة' 65 m (alex_terminals.geojson); osm: مساكن عبد القادر الجديده 90 m,"This is the microbus terminal (موقف), not a train station. I added 'الجديدة' to match the official route endpoint and to separate it from Zawiyat Abd El-Qader.; was «محطة عبد القادر الجديدة»: standard spelling / locals say موقف for microbus terminals"
+stop,Abis 8,ابيس الثمانيات,dt4a,high,alex_terminals.geojson,
+stop,Abis Bridge,كوبري أبيس,draft,high,masrawy.com / shorouknews.com news: 'كوبري أبيس',Official route names write 'ابيس' without hamza (e.g. ابيس الثمانيات).
+stop,Abis Traffic Light,إشارة أبيس,draft,medium,translation of generic words ('إشارة' = traffic light) + Abis,No source names this exact signal. It is on the Ring Road next to Abis villages 5 and 10. Locals may call it by the village name.
+stop,Abo Soliman,أبو سليمان,dt4a,high,alex_terminals.geojson,
+stop,Abou Kamal - Al Seyouf,أبو كمال - السيوف,draft,high,"dalilak.aldalildotcom.com (مطعم ابو كمال, 14 شارع اديب - السيوف); osm: شارع اديب 18 m",Abou Kamal is a restaurant.
+stop,Abu Dhabi Bank - Sidi Bishr,بنك أبوظبي - سيدي بشر,draft,medium,"waze.com: Abu Dhabi Islamic Bank, 575 El Gaish Rd at شارع خليل حمادة, سيدي بشر بحري; osm: شارع خليل حماده 26 m",The bank here is ADIB. Its sign reads 'مصرف أبوظبي الإسلامي'. ADCB (بنك أبوظبي التجاري) is about 1 km west at 483 طريق الجيش.
+stop,Abu Omar Pastry Asafra,حلواني أبو عمر - العصافرة,draft,high,facebook.com/AboOmarPastry (new branch on شارع 45); osm: شارع 45 16 m,'العصافره' is the official spelling. Standard spelling is 'العصافرة'.; was «حلواني أبو عمر - العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Abu Qir,أبو قير,dt4a,high,alex_terminals.geojson,
+stop,Abu Qir Club,نادي أبو قير,draft,medium,translation of generic words + official 'أبو قير',"I could not confirm a club named exactly 'نادي أبو قير' at this spot on Port Said St. Candidates: نادي أبو قير للأسمدة, or the armed forces club نادي 6 أكتوبر أبو قير."
+stop,Abu Qir Engineering Company,شركة أبو قير للصناعات الهندسية,draft,high,fact10.momp.gov.eg (official name); osm: شارع مصنع الانتاج الحربي 660 m,Locals also call it 'مصنع 10 الحربي'.
+stop,Abu Qir Station,موقف أبو قير,draft,medium,official terminal 'أبو قير' 114 m (alex_terminals.geojson),"This is the microbus terminal (موقف أبو قير). The train station is a separate stop, 'Abu Qir Train Station', about 300 m away.; was «محطة أبو قير»: standard spelling / locals say موقف for microbus terminals"
+stop,Abu Qir Train Station,محطة قطار أبو قير,draft,high,osm: railway=station أبو قير 64 m,The Abu Qir line closed in 2024 for the Alexandria Metro works.
+stop,Abu Suliman,أبو سليمان,draft,high,official place 'أبو سليمان' (terminal 25 m); osm: شارع احمد ابو سليمان 4 m,
+stop,Abu Youssef,ابو يوسف,dt4a,high,alex_terminals.geojson,
+stop,Abu Youssef St.,شارع أبو يوسف,dt4a,high,alex_processed_stops.geojson,
+stop,Administration Station,محطة الإدارة,draft,low,"literal translation; osm: إدارة المنتزة التعليمية 293 m, امتداد شارع الاداره التعليميه 263 m",Unconfirmed. 'Administration' probably means إدارة المنتزه التعليمية nearby. There are also 'شارع المرور' and 'شارع القسم' next to the stop. Check with a local.
+stop,Admon Fremon St,شارع إدمون فريمون,draft,high,osm: شارع ادمون فريمون 0 m,
+stop,Agamy School,مدرسة العجمى,dt4a,high,alex_processed_stops.geojson,
+stop,Agamy Star,عجمي ستار,draft,high,osm: عجمي ستار shop=mall 27 m; facebook.com/agamystarmall,Also called 'عجمي ستار مول'.
+stop,Airport,المطار,dt4a,high,alex_terminals.geojson,
+stop,Al Amrawy Mosque,مسجد العمراوي,draft,low,transliteration; no source found,I could not confirm a mosque with this name near Mostafa Kamel St and the Sadat axis bridge.
+stop,Al Berolos Canal,ترعة البرلس,draft,low,transliteration; osm: شارع ترعه البرنس 50 m,Unconfirmed. The only named waterway street nearby is 'ترعة البرنس'. 'Berolos' may be a mishearing of 'البرنس'. Check with a local.
+stop,Al Gamal Mosque,مسجد الجمل,draft,high,aleqaria.com.eg (Awqaf Eid 2024 list: 'مسجد الجمل شارع المكس الورديان'); osm: شارع المكس 4 m,"It is 'الجمل' (pronounced el-gamal), not 'الجمال'."
+stop,Al Gomrok Police Station,قسم الجمرك,draft,high,osm: الجمرك amenity=police 52 m,
+stop,Al Hagar Pedestrian Bridge,كوبري مشاة الحجر,draft,medium,osm: حجر النواتيه 26 m; translation of generic words,'الحجر' is the local short name for حجر النواتية (official). Alternative: 'كوبري مشاة حجر النواتية'.
+stop,Al Islah,الإصلاح,draft,high,ar.wikipedia (قطار أبو قير: محطة الإصلاح); elwatannews.com/news/details/2035751 ('محطة الإصلاح عند مدخل خالد بن الوليد'); osm: شارع خالد بن الوليد 23 m,
+stop,Al Khaledeen,الخالدين,draft,high,masrawy.com (تماثيل الخالدين) + osm statues of the garden 33-42 m,"This is حديقة الخالدين at Raml Station, facing القائد إبراهيم mosque."
+stop,Al Khaledeen - Courniche,الخالدين - الكورنيش,draft,high,same as Al Khaledeen; osm: طريق الجيش 33 m,
+stop,Al Maamoura,المعمورة البلد,draft,high,official terminal 'المعمورة البلد ( الشرطة العسكرية)' 28 m,"I added 'البلد' because plain 'المعمورة' usually means the beach resort, which is a different place."
+stop,Al Mahrousa Tunnel,نفق المحروسة,draft,high,"youm7.com (نفق المحروسة, السيوف بحري); osm: فندق المحروسة 122 m",
+stop,Al Mohandes Mall,المهندس مول,draft,high,"facebook.com/elmohandsmall (Dekheila, شارع مسجد ناجي); osm: شارع مسجد ابو ناجي 11 m",It is an electrical appliances store. Also written 'مول المهندس'.
+stop,Al Montazah Train Station,محطة قطار المنتزه,draft,high,osm: محطة قطار المنتزة 77 m,OSM writes 'المنتزة'. The standard spelling is 'المنتزه'.
+stop,Al Qibary Bridge,كوبري القباري,draft,high,osm: كوبرى القبارى 41 m,
+stop,Al Rahma St - Khorshid,شارع الرحمة - خورشيد,draft,high,"osm: شارع الرحمه 70 m; official places 'الرحمة', 'خورشيد'",
+stop,Al Rahman Mosque - Courniche,مسجد الرحمن - الكورنيش,draft,medium,translation; mosque not confirmed,"The name is certain as Arabic, but I could not confirm the mosque on the Corniche near شارع الطفولة السعيدة."
+stop,Al Seyouf,السيوف,draft,high,official place 'السيوف (الفلكي)' (terminal 118 m); osm: شارع السيوف,
+stop,Al Seyouf Square,ميدان السيوف,draft,high,"osm: ميدان سيوف 0 m, دوران السيوف 6 m",Also called 'دوران السيوف'.
+stop,Al Sheikh Wafiq - Bahary,الشيخ وفيق - بحري,draft,high,osm: الشيخ وفيق shop=confectionery 79 m; official 'بحري (راس التين)',Named after the famous sweets shop.
+stop,Al Souq Entrance Abu Qir,مدخل السوق - أبو قير,draft,medium,translation of generic words + official 'أبو قير',"The stop is in Maamoura El-Balad / Tosson, not central Abu Qir. I could not tell which market is meant."
+stop,Al Wardiyan Police Station,نقطة شرطة الورديان,draft,high,masrawy.com / youm7.com news: 'نقطة شرطة الورديان'; official place 'الورديان',"It is a نقطة (police point), not a full قسم."
+stop,Al Wezara Tram,ترام الوزارة,draft,high,osm: محطة الوزارة tram_stop 52 m,Follows the official pattern 'ترام سيدي بشر'.
+stop,Al-Beit Al-Abyad Center,مركز البيت الأبيض,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Bitash,البيطاش,dt4a,high,alex_terminals.geojson,
+stop,Al-Emam Al-Shafaay Azhari Institute,معهد الإمام الشافعى الأزهرى,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Hadeed Wel Solb St.,شارع الحديد والصلب,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Madfan,المدفن,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Maraghi,المراغي,dt4a,high,alex_terminals.geojson,
+stop,Al-Marwa Mosque,مسجد المروة,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Masaken,المساكن,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Mashtal St.,شارع المشتل,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Milaha,الملاحة,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Rahma,الرحمة,dt4a,high,alex_terminals.geojson,
+stop,Al-Sabereen Mosque,مسجد الصابرين,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Saleh,الصالح,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Seyouf (Falaky),السيوف (الفلكي),dt4a,high,alex_terminals.geojson,
+stop,Al-Taawon Gas Station,محطة بنزين التعاون,dt4a,high,alex_processed_stops.geojson,
+stop,Al-Wardiyan,الورديان,dt4a,high,alex_terminals.geojson,
+stop,Al-Zohour St.,شارع الزهور,dt4a,high,alex_processed_stops.geojson,
+stop,Alexandria Agricultural School,مدرسة الإسكندرية الزراعية,draft,high,"yellowpages.com.eg (مدرسة اسكندرية الثانوية الزراعية, شارع مصطفى كامل); osm: شارع مصطفى كامل 55 m",Full official name: 'مدرسة الإسكندرية الثانوية الزراعية'. Locals say 'المدرسة الزراعية'.
+stop,Alexandria Navy Scouts,الكشافة البحرية,draft,high,"yellowpages.com.eg (الكشافة البحرية المصرية, الانفوشى)",
+stop,Alexandria Stadium,استاد الإسكندرية,draft,high,osm: استاد الاسكندرية الرياضي الدولي 27 m,
+stop,Alexandria University - Courniche,جامعة الإسكندرية - الكورنيش,draft,high,osm: جامعة الإسكندرية 36 m,
+stop,Ali Ibn Taleb Mosque - Smouha,مسجد علي بن أبي طالب - سموحة,draft,high,osm: مسجد على بن ابى طالب 34 m; official 'سموحه','سموحه' is the official spelling. Standard spelling is 'سموحة'.; was «مسجد علي بن أبي طالب - سموحه»: standard spelling / locals say موقف for microbus terminals
+stop,Amreya Bridge,كوبري العامرية,draft,high,translation of generic words + official 'العامرية'; osm: desert road 30 m,"Same place as 'Amreyya Bridge' (stop 121, about 30 m away). The two stops get identical names."
+stop,Amreya Hospital,مستشفى العامرية,draft,high,ar.wikipedia / yellowpages (مستشفى العامرية العام),Full name: 'مستشفى العامرية العام'.
+stop,Amreya Station,موقف العامرية,draft,medium,official terminal 'قسم أول عامرية' 67 m,"This is the microbus terminal, not the train station (about 1.2 km away). Locals may call it 'موقف العامرية' or 'القسم'.; was «محطة العامرية»: standard spelling / locals say موقف for microbus terminals"
+stop,Amreyya,العامرية,dt4a,high,alex_terminals.geojson,
+stop,Amreyya Bridge,كوبري العامرية,draft,high,translation of generic words + official 'العامرية',Same place as 'Amreya Bridge' (stop 120).
+stop,Anany Factory,مصنع العناني,draft,low,transliteration; not confirmed,I could not verify a factory with this name on the Ring Road at Abis. 'العناني' is a common Egyptian family name.
+stop,Anfoshy,الأنفوشي,dt4a,high,alex_terminals.geojson,
+stop,Anfoushy Police Station,نقطة شرطة الأنفوشي,draft,high,yellowpages.com.eg (السجل المدني inside نقطة شرطة الأنفوشى); official 'الأنفوشي',
+stop,Antoniadis,أنطونيادس,draft,high,sis.gov.eg / ar.wikipedia (حدائق أنطونيادس); osm: شارع قنال المحمودية 24 m,"This is حديقة أنطونيادس, next to Nozha garden."
+stop,Asafra,العصافرة,dt4a,high,alex_terminals.geojson,was «العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Asafra Station,موقف العصافرة,draft,medium,official terminal 'العصافره' 195 m; osm: several Asafra bus_station objects 159-224 m,This is the microbus hub (موقف العصافرة). The train station is the separate stop 'Asafra Train Station'.; was «محطة العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Asafra Train Station,محطة قطار العصافرة,draft,high,osm: محطة قطار العصافرة 56 m,The official spelling 'العصافره' is kept for consistency. The station sign uses 'العصافرة'.; was «محطة قطار العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Asher Men Ramadan St,شارع العاشر من رمضان,draft,high,osm: شارع العاشر من رمضان 6 m,
+stop,Awal Al-Tawkeel,أول التوكيل,dt4a,high,alex_processed_stops.geojson,
+stop,Awal Radwan,أول رضوان,dt4a,high,alex_processed_stops.geojson,
+stop,Awayed Bridge Start,أول كوبري العوايد,draft,high,translation ('أول' = start) + official 'العوايد'; youtube 'كوبري العوايد'; osm: Ring Road bridge 10 m,The bridge's formal name in OSM is 'كوبرى لواء شهيد محمد كامل عبد الستار'.
+stop,Awayed Post Office,مكتب بريد العوايد,draft,high,"egpostal.com (مكتب بريد العوايد, 21938)",
+stop,Awel 45,أول شارع 45,draft,high,osm: شارع 45 23 m; official 'شارع 45',Locals say 'أول 45'.
+stop,Awel Gamal Abdelnaser St,أول شارع جمال عبد الناصر,draft,high,osm: شارع جمال عبد الناصر 0 m,
+stop,Awlad Ragab,أولاد رجب,dt4a,high,alex_processed_stops.geojson,
+stop,Azza Asafra,جيلاتي عزة - العصافرة,draft,high,"aljazeeramubasher / facebook IceCreamAzza1965 (branch on شارع صديقات الكتاب المقدس, العصافرة); osm: that street 18 m",Locals just say 'عزة'.; was «جيلاتي عزة - العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,B-Tech Mostafa Kamel,بي تك - مصطفى كامل,draft,high,B.TECH branch at أمين حسونة × مصطفى كامل (hypermarketoffers / shewaya); osm: both streets 0 m,
+stop,Bab Sharq,باب شرق,draft,high,osm: باب شرق و وابور المياه 103 m,The police section is written 'باب شرقي'.
+stop,Bab Wahed,باب 1,draft,high,3lagnb.com ('ميناء الإسكندرية باب واحد'); osm: 'Bab 10' tram stop nearby shows the gate numbering,This is Alexandria port gate No. 1. It is spoken 'باب واحد'. Written with a digit per the rules.
+stop,Bahary (Ras Al-Tin),بحري (راس التين),dt4a,high,alex_terminals.geojson,
+stop,Baheeg Square,دوران بهيج,dt4a,high,alex_processed_stops.geojson,
+stop,Baheeg Traffic Department,مكتب مرور بهيج,dt4a,high,alex_processed_stops.geojson,
+stop,Bait Al Gomla Market,بيت الجملة,draft,high,osm: بيت الجملة (shop) 57 m,English 'Market' dropped; the shop's own name is بيت الجملة
+stop,Bakus,باكوس,dt4a,high,alex_terminals.geojson,
+stop,Banque Misr,بنك مصر,dt4a,high,alex_processed_stops.geojson,
+stop,Ber Masoud,بئر مسعود,draft,high,https://gate.ahram.org.eg/Massai/News/3326667.aspx ; youm7 2023/6/19,Colloquial spelling بير مسعود is also common
+stop,Borg Al-Arab New Terminal,برج العرب الموقف الجديد,dt4a,high,alex_terminals.geojson,
+stop,Borg Al-Arab Old Terminal,محطة برج العرب القديمة,dt4a,high,alex_processed_stops.geojson,
+stop,Borg El Arab Al Arbaneyat Prison,سجن برج العرب الغربانيات,dt4a,high,alex_terminals.geojson,
+stop,Camp Shezar,كامب شيزار,draft,high,osm: نفق كامب شيزار 36 m; tram stop كمب شيزار 324 m,OSM tram stop spells it كمب شيزار; كامب شيزار is the common spelling
+stop,Carrefour - Desert Road,كارفور - الطريق الصحراوي,draft,high,osm: كارفور سيتي سنتر 193 m + translation of generic words,
+stop,Classic Patesserie,حلوانى كلاسيك,dt4a,high,alex_processed_stops.geojson,
+stop,Cleopatra Pedestrian Bridge,كوبري مشاة كليوباترا,draft,high,osm: كليوباترا الحمامات 266 m + translation of generic words,
+stop,Court Complex - Courniche,مجمع المحاكم - الكورنيش,draft,high,osm: مجمع محاكم الاسكندرية 186 m,Full name: مجمع محاكم الإسكندرية
+stop,Darwish Factory,مصنع درويش,draft,low,transliteration; no factory named Darwish found near the stop,
+stop,Dental School,كلية طب الأسنان,draft,high,"https://ar.wikipedia.org/wiki/كلية_طب_الأسنان_(جامعة_الإسكندرية) (Champollion St, Azarita); osm: medical complex 19 m",
+stop,Dish Horus,دش حورس,draft,medium,https://www.facebook.com/hourasdish/ (a satellite-dish shop page named دش حورس),"Spelling confirmed from the shop's page, but its location near this stop is not confirmed"
+stop,E-Maamora El-Balad,المعمورة البلد ( الشرطة العسكرية),dt4a,high,alex_terminals.geojson,
+stop,E-Post Victora,مكتب البريد - فيكتوريا,draft,high,"osm: مكتب بريد مساكن دربالة 44 m; wslny.com lists it on Malek Hefny St, Victoria",The office's own name is مكتب بريد مساكن دربالة
+stop,Egyptian Red Crescent - Bakus,الهلال الأحمر - باكوس,draft,high,osm: الهلال الأحمر المصري - فرع الإسكندرية - باكوس (hospital) 211 m,"It is the Red Crescent hospital, 154 Mahatet El Souq St"
+stop,El Awayed Bridge End,نزلة كوبري العوايد,draft,high,official: العوايد; 'كوبري العوايد' used in news (youm7 2026/3/28),'Bridge End' rendered as نزلة (the bridge's down-ramp in Egyptian usage); the official bridge name in OSM is كوبرى لواء شهيد محمد كامل عبد الستار
+stop,El Bambi,البامبي,draft,low,transliteration; nothing found on web or OSM,"Could also be البمبي (Egyptian for 'pink'), e.g. a pink building"
+stop,El Malaha - Asafra,الملاحة - العصافرة,draft,high,official place names: الملاحة / العصافره; osm: عزبه الملاحه nearby,Official list has both الملاحه and الملاحة; العصافره follows the official spelling (standard: العصافرة); was «الملاحة - العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,El Mandara Bridge,كوبري المندرة,draft,high,official: المندرة + translation of generic words; osm: موقف المندرة 33 m,
+stop,El Mandara South,المندرة قبلي,draft,high,osm: المندره قبلى (neighbourhood),In Alexandria 'South' = قبلي
+stop,El Mandara Square,ميدان المندرة,draft,high,osm: ميدان المندرة 24 m,
+stop,El Mansheya Station,محطة المنشية,draft,high,official: المنشية + translation of generic words,Nearest tram stop is المحكمة (12 m)
+stop,El Ola Company Amreya,شركة العلا - العامرية,draft,medium,"https://yellowpages.com.eg/ar/profile/شركة-العلا-لتجارة-الحديد-والاسمنت/188869 (Amreya branch, km 30 desert road)",Company is العلا لتجارة الحديد والأسمنت; its exact site vs. the stop is not confirmed
+stop,El Saah Square,ميدان الساعة,draft,high,"official: الساعة; osm: موقف الساعة 43 m, ميدان الساعة 187 m",
+stop,El Sadat Mosque Abu Qir,مسجد السادات - أبو قير,draft,high,osm: شارع مسجد السادات 39 m; official: أبو قير,
+stop,El Tayeb El Nasreya,الطيب - الناصرية,draft,low,transliteration; nothing found on web or OSM,الطيب is probably a family or shop name
+stop,El-Awayed,العوايد,dt4a,high,alex_terminals.geojson,
+stop,El-Mandara,المندرة,dt4a,high,alex_terminals.geojson,
+stop,El-Mansheya,المنشية,dt4a,high,alex_terminals.geojson,
+stop,El-Mawqaf El-Geded,الموقف الجديد,dt4a,high,alex_terminals.geojson,
+stop,El-Nasreya El-Qadema,الناصرية القديمة,dt4a,high,alex_terminals.geojson,
+stop,El-Rassafa,الرصافة,dt4a,high,alex_processed_stops.geojson,
+stop,El-Sa'ah (Clock Square),الساعة,dt4a,high,alex_terminals.geojson,
+stop,Elite Hospital,مستشفى إيليت,draft,high,https://www.facebook.com/EliteHospitals/ (own page: مستشفى إيليت); osm: مستشفى إليت 109 m,OSM spells it إليت; the hospital itself uses إيليت
+stop,Entry to Abu Suliman,مدخل أبو سليمان,draft,high,official: أبو سليمان + translation of generic words,
+stop,Ezbet Saad,عزبة سعد,dt4a,high,alex_terminals.geojson,
+stop,Fahmy Restaurant,مطعم فهمي,draft,low,transliteration; no restaurant named Fahmy found in Dekheila,
+stop,Faisal Police Station Asafrah,نقطة شرطة مدينة فيصل - العصافرة,draft,high,osm: نقطة شرطة مدينة فيصل (name:ar) 65 m,OSM 'name' tag says نقطة شرطة العصافرة; العصافره follows the official spelling; was «نقطة شرطة مدينة فيصل - العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Falaki - Al Seyouf,الفلكي - السيوف,draft,high,official: السيوف (الفلكي); osm: فتحة الفلكي 18 m,
+stop,Farouq Cafe - Courniche,قهوة فاروق - الكورنيش,draft,high,osm: قهوة فاروق 67 m,
+stop,Fathallah - Bahary,فتح الله - بحري,draft,high,osm: أسواق فتح الله للجملة 223 m; official: بحري,Fathallah is the supermarket chain
+stop,Fatma Al Zahraa - Marsa Matrouh Rd,مستشفى فاطمة الزهراء - طريق مطروح,draft,high,"https://yellowpages.com.eg/ar/profile/مستشفى-فاطمة-الزهراء/27525 (Gate 8, Hanoville, Alex-Matrouh Rd); osm: شارع المستشفى 14 m",Added مستشفى for clarity; the English name omits it
+stop,Felfel Butchery,جزارة فلفل,dt4a,high,alex_processed_stops.geojson,
+stop,Fish Market - Courniche,فيش ماركت - الكورنيش,draft,medium,osm: سوق السمك / Fish Market (restaurant) ~340 m; elmenus/yellowpages call it فيش ماركت,"Probably the Fish Market restaurant, but it is ~340 m from the stop. OSM names it سوق السمك. Not the Anfoushi fish auction (حلقة السمك, ~1 km)"
+stop,Free Zone,المنطقة الحرة,draft,high,"https://ar.wikipedia.org/wiki/المنطقة_الحرة_العامة_بالإسكندرية (Amreya, desert road)",
+stop,French Consulate,القنصلية الفرنسية,draft,high,osm: قنصلية فرنسا العامة 49 m,Formal name: قنصلية فرنسا العامة
+stop,Gabriel Station Bazar,بازار محطة غبريال,draft,medium,osm: غبريال (railway halt) 66 m; 'Bazar' not verified,غبريال confirmed; which bazaar/shop is meant is unknown
+stop,Gad Asafra,جاد - العصافرة,draft,high,"https://www.facebook.com/profile.php?id=394665790729307 (مطعم جاد كورنيش العصافرة, after Street 45)",العصافره follows the official spelling; was «جاد - العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Gamarek Club,نادي الجمارك,draft,high,apa.gov.eg: 'شارع البحرية بجوار نادي الجمارك'; stop is on شارع البحريه,
+stop,Gehan Square,ميدان جيهان,draft,high,osm: ميدان جيهان 31 m,
+stop,Gleem Pedestrian Tunnel,نفق مشاة جليم,draft,high,"osm: شاطيء جليم 18 m, محطة جليم 165 m + translation of generic words",
+stop,Green Gate El Nasreya,البوابة الخضراء - الناصرية,draft,low,literal translation; nothing found on web or OSM,Could be a place called جرين جيت instead; unverified
+stop,Green Plaza,جرين بلازا,draft,high,osm: جرين بلازا مول 84 m,
+stop,Green Plaza Mall,مول جرين بلازا,dt4a,high,alex_terminals.geojson,
+stop,Gyad Club,نادي أصحاب الجياد,draft,high,"https://ar.wikipedia.org/wiki/نادي_أصحاب_الجياد (Smouha, entrance on 14 May Rd, next to Smouha Club)",Often shortened to نادي الجياد
+stop,Hadra,الحضرة,dt4a,high,alex_terminals.geojson,
+stop,Hagar Al-Nawateyah (Namos Bridge),حجر النواتية (كوبري الناموس),dt4a,high,alex_terminals.geojson,
+stop,Hanuvil,الهانوفيل,dt4a,high,alex_terminals.geojson,
+stop,Hanuvil Gameaya,هانوفيل جمعية,draft,high,official place name: هانوفيل جمعية,
+stop,Hanuvil Gameyya,هانوفيل جمعية,dt4a,high,alex_terminals.geojson,
+stop,Hanuvil Hospital,مستشفى الهانوفيل,dt4a,high,alex_processed_stops.geojson,
+stop,Hanuvil Market,سوق الهانوفيل,dt4a,high,alex_processed_stops.geojson,
+stop,Hanuvil St.,شارع الهانوفيل,dt4a,high,alex_processed_stops.geojson,
+stop,Hany Village,قرية هاني,draft,high,"https://yellowpages.com.eg/ar/profile/قرية-هانى-للمأكولات-البدوية-والمشويات/514516 (km 30 desert road, opposite McDonald's); osm: ماك دونالدز 46 m",A restaurant; its sign spells it قرية هانى
+stop,Hauvil St.,شارع الهانوفيل,dt4a,high,alex_processed_stops.geojson,
+stop,Health Insurance Al Seyouf,التأمين الصحي - السيوف,draft,high,https://www.parlmany.com/News/3/565592 (Seyouf health-insurance clinic on Gamila Bouhired St); official: السيوف,
+stop,High Speed Rail Station,محطة القطار السريع,draft,high,translation of generic words,The official name of the high-speed rail's Alexandria station is محطة الإسكندرية (youm7 2026/5/1)
+stop,IBCA International School,مدرسة إيبكا الدولية,draft,medium,"https://www.easyschools.org/ar/schoolProfile/ibca-international-school (مدرسة ايبكا السويسرية الدولية, Ring Rd, Abis)",Another directory calls it مدرسة الرواد الدولية (IBCA); many people just write IBCA
+stop,Ibrahimeya Fly-over,كوبري الإبراهيمية,draft,high,osm: كوبري الابراهيمية 62 m,
+stop,Italian Hospital,المستشفى الإيطالي,draft,high,osm: المستشفى الإيطالي 23 m,
+stop,Itihad Club,نادي الاتحاد - فرع سموحة,draft,high,youm7 2026/7/10: Ittihad's Smouha branch is on the Agricultural Rd; osm: Agricultural Rd 68 m,Added فرع سموحة to separate it from the main club in Shatby
+stop,Izbat Hawd 10,عزبة حوض 10,dt4a,high,alex_terminals.geojson,
+stop,Izbat Hawd 12,عزبة حوض 12,dt4a,high,alex_terminals.geojson,
+stop,Izbet Hawd 12,عزبة حوض 12,draft,high,official place name: عزبة حوض 12,
+stop,Jewelery Museum,متحف المجوهرات الملكية,draft,high,osm: متحف المجوهرات الملكية 165 m,
+stop,Kabo,كابو,dt4a,high,alex_terminals.geojson,
+stop,Kafr Ashry,كفر عشري,draft,high,youm7 2015/4/17 (كوبرى كفر عشرى),
+stop,Karmouz Hospital,مستشفى كرموز,draft,high,official: كرموز; https://yellowpages.com.eg/ar/profile/مستشفى-كرموز-للتأمين-الصحى/647724 (Sherif St),Full name: مستشفى كرموز للتأمين الصحي
+stop,Karmus,كرموز,dt4a,high,alex_terminals.geojson,
+stop,Khorshid,خورشيد,dt4a,high,alex_terminals.geojson,
+stop,Khorshid Central,سنترال خورشيد,draft,high,official: خورشيد; osm: شارع السنترال 34 m,'Central' = telephone exchange
+stop,Kilo 21,الكيلو 21,dt4a,high,alex_processed_stops.geojson,
+stop,King Heights,كينج هايتس,dt4a,high,alex_processed_stops.geojson,
+stop,King House Cafe,كافيه كينج هاوس,draft,low,transliteration; no cafe named King House found in Alexandria,
+stop,Luran Station,محطة لوران,draft,high,"osm: محطة لوران (tram stop, name:ar) 17 m",
+stop,Maamoura Children Park,كوتة بارك - المعمورة,draft,medium,"osm: كوتا بارك (theme park) 116 m; waffarha/wingie: ملاهي كوتة بارك, Maamoura","Assumes 'Children Park' means Kouta Park, the kids' amusement park. Literal alternative: حديقة الأطفال - المعمورة"
+stop,Maamoura Gates,بوابات المعمورة,draft,high,https://ar.wikipedia.org/wiki/المعمورة_(الإسكندرية) (walled resort with four gates),Locals may say بوابة المعمورة (singular)
+stop,Madares St - Al Seyouf,شارع المدارس - السيوف,draft,high,translation of generic words; 'شارع المدارس السيوف' used in listings (dubizzle),
+stop,Makram Ice Cream El Mandara,جيلاتي مكرم - المندرة,draft,high,"https://yellowpages.com.eg/ar/profile/جيلاتى-مكرم/221768 (772 Tariq El Geish, Mandara)",The brand's Arabic is جيلاتي مكرم
+stop,Maks Post Office,مكتب بريد المكس,draft,high,"https://egpostal.com/ar/%D8%A7%D9%84%D9%85%D9%83%D8%B3 (مكتب بريد المكس, 21535, دوران ترام المكس); osm: المكس 59 m",
+stop,Malak Hefny St,شارع ملك حفني,draft,high,osm: شارع ملك حفنى بحرى 39 m,OSM splits it into بحري/قبلي sections; standard ي spelling used.
+stop,Mansour Opel Car Showroom,معرض المنصور للسيارات (أوبل),draft,medium,"Al-Mansour Automotive (المنصور للسيارات) is the Opel distributor; directory lists an Alexandria branch on طريق الحرية (old name of Gamal Abdel Nasser St), Mostafa Kamel; osm: شارع جمال عبد الناصر 0 m","Showroom not in OSM and the directory page was blocked, so exact spot unconfirmed. Riders may just say 'معرض أوبل'."
+stop,Masaken Toshka,مساكن توشكى,dt4a,high,alex_terminals.geojson,
+stop,Maurice,موريس,dt4a,high,alex_processed_stops.geojson,
+stop,Mazroa Gold,شارع مصطفى كامل - فلمنج,draft,low,"no OSM/web match; 'Mazro3a' (مزروعة) is a local surname (osm shop 'محمود مزروعة'); stop is on شارع مصطفى كامل, Bakos/Fleming jewellery stretch","Probably a gold shop; could also be 'مزرعة جولد'. If unverifiable, rename by landmark: 'شارع مصطفى كامل - فلمنج' (Fleming tram 167 m) or 'مسجد القباني' (66 m).; unconfirmed landmark «مزروعة جولد», using the street instead"
+stop,Miami - Courniche,ميامي - الكورنيش,draft,high,"official: Miami=ميامي; osm: طريق الجيش 20 m, شاطىء ميامى 42 m",
+stop,Misr Gas Station - Courniche,محطة بنزين مصر للبترول - الكورنيش,draft,high,osm: fuel 'Misr Petroleum' 58 m,Avoided bare 'محطة بنزين مصر' because 'محطة مصر' is the main train station. Style follows official 'محطة بنزين التعاون'.
+stop,Misr Gas Station - Ibrahimeya,محطة بنزين مصر للبترول - الإبراهيمية,draft,medium,translation; osm: نقطة شرطة الابراهيمية 21 m,Fuel station itself not mapped in OSM.
+stop,Misr Gas Station - Mostafa Kamel,محطة بنزين مصر للبترول - شارع مصطفى كامل,draft,medium,translation; osm: شارع مصطفى كامل 6 m,"This is Mostafa Kamel Street in Sidi Bishr Qebly, not the Mostafa Kamel district near Roshdy, so 'شارع' is added. Fuel station not mapped in OSM."
+stop,Mobil Gas,موبيل,dt4a,high,alex_processed_stops.geojson,
+stop,Mohamed Naguib Square,ميدان محمد نجيب,draft,high,osm: ميدان محمد نجيب 103 m,
+stop,Mohandeseen Pedestrian Tunnel,نفق المهندسين,draft,high,https://daralmaref.com/News/808984.aspx ('نفق المهندسين على كورنيش الإسكندرية'); osm: نادي المهندسين 28 m,Pedestrian tunnel. OSM names the footway 'نفق سابا باشا' (21 m); both names are used.
+stop,Moharam Bek,محرم بك,draft,high,"osm: كوبرى محرم بك 36 m, فندق سيستا محرم بك 153 m",
+stop,Moharam Bek Bridge,كوبري محرم بك,draft,high,osm: كوبرى محرم بك (Moharam Bek Bridge) near stop,
+stop,Mostaamara,المستعمرة,draft,high,"osm: عزبة المستعمرة 90 m, شارع المستعمره 49 m",Full local name is 'عزبة المستعمرة'.
+stop,Mostafa Kamel - 45 Street,شارع مصطفى كامل - شارع 45,draft,high,"official: Street 45=شارع 45; osm: شارع مصطفى كامل 10 m, شارع 45 44 m",'شارع' added to avoid confusion with the Mostafa Kamel district.
+stop,Mostafa Kamel - Al Bahreya St,شارع مصطفى كامل - شارع البحرية,draft,high,"osm: شارع البحريه 41 m, شارع مصطفى كامل 41 m",
+stop,Namos Bridge,كوبري الناموس,draft,high,official: 'حجر النواتية (كوبري الناموس)'; osm: كوبرى الناموس 13 m,
+stop,Navy Forces - Bahary,القوات البحرية - بحري,draft,medium,"translation; official Bahary=بحري; osm: شارع قصر رأس التين 14 m (Ras El Tin palace = Navy HQ, knowledge)",Locals may just say 'البحرية'.
+stop,Navy Police Station,الشرطة البحرية,draft,low,no named OSM object within 700 m; web searches found nothing,On the Cairo–Alex desert road between Toshky Entrance and the High Speed Rail Station. 'Navy police' could be military police (الشرطة العسكرية) or water-bodies police (شرطة المسطحات المائية). Needs a ground check.
+stop,Nozha Administration,إدارة النزهة,draft,low,no match; osm: عزبة النزهه 174 m; مطار النزهة nearby,On the Agricultural Road between Moharam Bek and Seka Hadeed Bridge. Unknown which 'administration' (airport? traffic office?). Fallback: 'الطريق الزراعي - عزبة النزهة'.
+stop,Om Zeghyo,مفرق أم زغيو,dt4a,high,alex_processed_stops.geojson,
+stop,Oqba Ibn Nafea Hospital,مستشفى عقبة بن نافع,draft,high,"https://www.okbahospital.com/ ; yellowpages: Street 24 off Street 45, Asafra Qebly; osm: شارع 24 30 m",
+stop,Pedestrian Bridge - Ring Road,كوبري المشاة - الطريق الدائري,draft,high,translation of generic words; osm: الطريق الدائري 10 m,
+stop,Port Gate,بوابة ميناء الدخيلة,draft,medium,"osm: الدخيله 16 m, الميناء 90 m (Dekheila port)","Literal is 'بوابة الميناء'. 'الدخيلة' added because this is Dekheila port, not the main Alexandria port."
+stop,Pulmonary Hospital (Mandara),مستشفى الصدر (مندرة),dt4a,high,alex_terminals.geojson,
+stop,Qasr Sakafet El Anfoshy,قصر ثقافة الأنفوشي,draft,high,official: Anfoshy=الأنفوشي; osm: شارع قصر الثقافة 25 m,
+stop,Qism Awwel Amreyya,قسم أول عامرية,dt4a,high,alex_terminals.geojson,
+stop,Quta (Soter),كوته (سوتر),dt4a,high,alex_terminals.geojson,
+stop,Rahman Mosque,مسجد الرحمن,draft,low,no named mosque in OSM within 400 m (one unnamed mosque ~150 m); no web match,"At Omar Lotfy / Mosharafa St, Shatby. Could be 'مسجد الرحمة'. Nearby landmarks: محطة الشهيد مصطفى زيان (tram) 46 m, كلية العلوم 66 m."
+stop,Raml Station,محطة الرمل,dt4a,high,alex_terminals.geojson,
+stop,Raml Station - Courniche,محطة الرمل - الكورنيش,draft,high,official: Raml Station=محطة الرمل; osm: حديقة سعد زغلول 11 m,
+stop,Royal Complex Hall,قاعة رويال كومبلكس,draft,low,no OSM; web: a 'Royal Garden' wedding hall is listed opposite the Dekheila port logistics building (possibly the same place),Transliteration only. Name not confirmed.
+stop,San Stefano,سان ستيفانو,draft,high,"osm: مول سان ستيفانو 36 m, سان ستيفانو neighbourhood 153 m",
+stop,School of Islamic Studies,كلية الدراسات الإسلامية,draft,high,"http://www.azhar.edu.eg/derasatfemales-alex (Al-Azhar girls' faculty on Dr. Al-Nabawi Al-Mohandes St, Mandara Qebly); osm: شارع النبوى المهندس 19 m",Full official name: 'كلية الدراسات الإسلامية والعربية للبنات'.
+stop,Seka Hadeed Bridge,كوبري السكة الحديد,draft,high,transliterated Arabic generic words; osm: bridge named كوبرى مقدم شهيد شريف محمد عمر 11 m,Official martyr name of the bridge is unlikely to be used by riders.
+stop,Shahd El Maleka,شهد الملكة,draft,high,"https://yellowpages.com.eg/ar/profile/%D8%B4%D9%87%D8%AF-%D8%A7%D9%84%D9%85%D9%84%D9%83%D8%A9/96287 (Alexandria confectionery chain, Miami / Mostafa Kamel St branches); osm: شارع مصطفى كامل 7 m",
+stop,Shahr Al-Asal,شهر العسل,dt4a,high,alex_terminals.geojson,
+stop,Sharqi Water Station,وابور المياه,draft,medium,"osm: مدرسة وابور المياه 141 m, neighbourhood 'باب شرق و وابور المياه' 294 m, ميدان الدكتور احمد زويل 0 m; https://www.elwatannews.com/news/details/7772102 (square formerly 'ميدان وابور المياه', water-lifting station)",Literal would be 'محطة مياه باب شرقي'. Square's current official name is 'ميدان أحمد زويل'. Alternative: 'ميدان أحمد زويل (وابور المياه)'.
+stop,Shatby Hospital Mosque,مسجد مستشفى الشاطبي,draft,high,osm: مسجد مستشفى الشاطبي 53 m,
+stop,Shatby Pedestrian Tunnel,نفق الشاطبي,draft,high,osm: نفق الشاطبى (footway) 36 m,Pedestrian tunnel. Add '(مشاة)' if disambiguation is needed.
+stop,Shatibi,الشاطبي,dt4a,high,alex_terminals.geojson,
+stop,Sheraton Montazah,شيراتون المنتزه,draft,high,osm: شيراتون المنتزه 45 m,
+stop,Sidi Bishr,سيدي بشر,dt4a,high,alex_terminals.geojson,
+stop,Sidi Bishr Beach,شاطئ سيدي بشر,draft,high,osm: شاطئ سيدى بشر 36 m,
+stop,Sidi Bishr Station,محطة سيدي بشر,draft,high,osm: bus_station 'سيدى بشر - المحطه' 108 m; official terminal 'Sidi Bishr'=سيدي بشر,Train-station / microbus-terminal area on the Abu Qir line (line closed). Not the tram stop (see Sidi Bishr Tram Station).
+stop,Sidi Bishr Tram,ترام سيدي بشر,dt4a,high,alex_terminals.geojson,
+stop,Sidi Bishr Tram Station,محطة ترام سيدي بشر,draft,high,official: 'ترام سيدي بشر'; osm: محطة سيدي بشر (tram_stop) 51 m,
+stop,Sidi Gaber Station,محطة سيدي جابر,draft,high,official: Sidi Gabir=سيدي جابر; osm: محطة قطار سيدى جابر 28 m,
+stop,Sidi Gabir,سيدي جابر,dt4a,high,alex_terminals.geojson,
+stop,Skandar Ibrahim - Courniche,إسكندر إبراهيم - الكورنيش,draft,high,osm: شارع اسكندر ابراهيم 9 m,
+stop,Smouha,سموحة,dt4a,high,alex_terminals.geojson,was «سموحه»: standard spelling / locals say موقف for microbus terminals
+stop,Sporting - Courniche,سبورتنج - الكورنيش,draft,high,"yellowpages area 'سبورتنج' (نادى الاسكندرية الرياضى, سبورتنج); osm: طريق الجيش 32 m",
+stop,Stanley Bridge,كوبري ستانلي,draft,high,osm: كوبرى ستانلى 47 m,
+stop,Street 15,شارع 15,draft,high,translation of generic words,No OSM 'شارع 15' within 100 m (Sidi Bishr Qebly).
+stop,Street 16 (Montazah),شارع 16 (المنتزه),draft,high,osm: شارع 16 0 m,
+stop,Street 18 Asafra,شارع 18 العصافرة,draft,high,generic + official Asafra; osm: شارع 17 / شارع 19 within 50 m,Asafra uses the official survey spelling 'العصافره'; standard spelling is 'العصافرة' (normalize route + stop names together if you change it).; was «شارع 18 العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Street 25 Entrance,مدخل شارع 25,draft,high,translation of generic words,"No named OSM object within ~500 m (between Khorshid and Maamoura), so the street itself is unverified."
+stop,Street 45,شارع 45,dt4a,high,alex_terminals.geojson,
+stop,Street 45 - Miami Bridge,شارع 45 - كوبري ميامي,draft,high,"osm: شارع 45 0 m, كوبرى ميامى 6 m",
+stop,Street 45 Asafra,شارع 45 العصافرة,draft,high,"official: Street 45, Asafra; osm: شارع 45 22 m",Asafra uses the official survey spelling 'العصافره'; standard spelling is 'العصافرة' (normalize route + stop names together if you change it).; was «شارع 45 العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Street 45 Asafra Church,كنيسة شارع 45 العصافرة,draft,medium,https://st-takla.org/Coptic-History/places/africa/egypt/alexandria/saint-maximos-and-st-domadios-church-asafra.html + yellowpages ('آخر شارع 45، العصافرة قبلي'); stop at south end of Street 45 (osm: كوبري محور السادات 29 m),"Church is probably Sts. Maximus & Domadius. If confirmed, name could be 'كنيسة مكسيموس ودوماديوس - شارع 45'. Asafra uses the official survey spelling 'العصافره'; standard spelling is 'العصافرة' (normalize route + stop names together if you change it).; was «كنيسة شارع 45 العصافره»: standard spelling / locals say موقف for microbus terminals"
+stop,Street 6 Asafra,شارع 6 العصافرة,draft,high,generic + official Asafra; osm: شارع 6 75 m,Asafra uses the official survey spelling 'العصافره'; standard spelling is 'العصافرة' (normalize route + stop names together if you change it).; was «شارع 6 العصافره»: standard spelling / locals say موقف for microbus terminals
+stop,Suez Canal Pedestrian Bridge,كوبري مشاة طريق قناة السويس,draft,high,translation; osm: طريق قناه السويس 20 m,'Suez Canal' here is the road name.
+stop,Sun Rise Hotel,فندق صن رايز,draft,high,https://sa.trip.com/hotels/alexandria-hotel-detail-4213511/mediterranean-azur-hotel/ ('فندق صن رايز الاسكندرية'); osm: فندق ميديترينيان أزور 49 m,Same hotel as the former Mediterranean Azur; OSM still shows the old name.
+stop,Tamween Montazah,تموين المنتزه,draft,high,"yellowpages: 'مكتب تموين المنتزه 2', شارع محمد عبد السلام off Gamal Abdel Nasser, Sidi Bishr; osm: شارع الصاغ محمد عبد السلام 25 m",
+stop,The Walk - Sidi Gaber,ذا ووك - سيدي جابر,draft,high,"web: 'ذا ووك سيدي جابر' (Facebook/Instagram/TikTok), beside Golden Jewel hotel; osm: جولدن جويل 93 m",Also written 'زا ووك'.
+stop,Toshky Entrance,مدخل توشكى,draft,high,official: 'مساكن توشكى'; osm: طريق القاهرة الاسكندرية الصحراوي 2 m,Spelling 'توشكى' follows the official name.
+stop,Train Station (Al Shohadaa),المحطة (ميدان الشهداء),draft,high,official: 'المحطة (ميدان الشهداء)'; osm: ميدان الشهداء 52 m,Locals say 'محطة مصر'.
+stop,Train Station (El-Shohada Square),المحطة (ميدان الشهداء),dt4a,high,alex_terminals.geojson,
+stop,Victor Emmanuel Square,ميدان فيكتور عمانويل,draft,high,youm7 / masrawy / elwatan news ('ميدان فيكتور عمانويل' بسموحة); osm: ميدان فيكتور ايمانويل 34 m,OSM spelling differs ('ايمانويل'). News spelling used.
+stop,Victoria College,كلية فيكتوريا,draft,high,osm: كلية فكتوريا 11 m,'فيكتوريا' spelling matches the official 'محطة فيكتوريا'.
+stop,Victoria station,محطة فيكتوريا,dt4a,high,alex_terminals.geojson,
+stop,Water Company El Mandara,شركة المياه - المندرة,draft,medium,web: Alexandria Water Co. Mandara branch (10-12 السيد مرسي، المندرة بحري); official: المندرة,Branch not mapped in OSM near the stop.
+stop,Wekala Ishterakeya,شارع أحمد أبو سليمان,draft,low,no OSM/web match; transliteration only; osm: شارع احمد ابو سليمان 8 m,"Fallback: 'شارع أحمد أبو سليمان'.; unconfirmed landmark «الوكالة الاشتراكية», using the street instead"
+stop,Zoro Cafe,كافيه زورو,dt4a,high,alex_processed_stops.geojson,
