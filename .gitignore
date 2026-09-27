@@ -40,3 +40,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# JS / monorepo
+node_modules/
+.turbo/
+.astro/
+.wrangler/
