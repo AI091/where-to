@@ -1,0 +1,94 @@
+---
+/**
+ * "فيه حاجة غلط؟": lets riders report a mistake (or, on the home page, ask for a
+ * trip we don't have). Posts to /api/feedback (worker/index.ts), which stores it in D1.
+ * Works as a plain form without JavaScript; with it, sends in place.
+ */
+interface Props {
+	page: string;
+	variant?: 'trip' | 'home';
+}
+const { page, variant = 'trip' } = Astro.props;
+
+const kinds =
+	variant === 'trip'
+		? [
+				['wrong_route', 'الخط مش بيعدي من هنا'],
+				['wrong_name', 'اسم مكان غلط'],
+				['wrong_time', 'الوقت أو المواعيد غلط'],
+				['route_changed', 'الخط اتغير أو اتلغى'],
+				['other', 'حاجة تانية'],
+			]
+		: [
+				['missing_trip', 'عايز مشوار مش موجود'],
+				['wrong_route', 'فيه خط غلط'],
+				['other', 'اقتراح أو حاجة تانية'],
+			];
+const title = variant === 'trip' ? 'فيه حاجة غلط في الصفحة دي؟' : 'عايز مشوار مش موجود؟ أو فيه حاجة غلط؟';
+---
+
+<section id="feedback" class="mt-10 rounded-2xl bg-white p-5 ring-1 ring-black/5">
+	<details>
+		<summary class="cursor-pointer text-lg font-bold text-sea-dark">{title} قولنا</summary>
+		<form method="POST" action="/api/feedback" class="mt-4 space-y-4" data-feedback>
+			<input type="hidden" name="page" value={page} />
+			<fieldset>
+				<legend class="text-sm text-muted">إيه المشكلة؟</legend>
+				<div class="mt-2 flex flex-wrap gap-2">
+					{
+						kinds.map(([value, label]) => (
+							<label class="cursor-pointer">
+								<input type="radio" name="kind" value={value} required class="peer sr-only" />
+								<span class="inline-block rounded-full px-3 py-1.5 text-sm ring-1 ring-sea/30 peer-checked:bg-sea peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-sea">
+									{label}
+								</span>
+							</label>
+						))
+					}
+				</div>
+			</fieldset>
+			<label class="block">
+				<span class="text-sm text-muted">{variant === 'trip' ? 'إيه الصح؟' : 'قولنا أكتر'} (اختياري)</span>
+				<textarea name="message" rows="3" maxlength="1000" class="mt-1 w-full rounded-xl border border-black/15 bg-sand/40 p-3"></textarea>
+			</label>
+			<label class="block">
+				<span class="text-sm text-muted">رقمك أو إيميلك لو عايز نرد عليك (اختياري)</span>
+				<input name="contact" maxlength="200" dir="ltr" autocomplete="email" class="mt-1 w-full rounded-xl border border-black/15 bg-sand/40 p-3 text-left" />
+			</label>
+			<p class="text-xs text-muted">بنستخدمه بس علشان نرد عليك. <a class="underline" href="/privacy/">الخصوصية</a></p>
+			<button type="submit" class="rounded-full bg-sea px-5 py-2 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sea disabled:opacity-60">
+				ابعت
+			</button>
+			<p data-status role="status" class="text-sm"></p>
+		</form>
+	</details>
+</section>
+
+<script>
+	for (const form of document.querySelectorAll<HTMLFormElement>('form[data-feedback]')) {
+		const status = form.querySelector<HTMLElement>('[data-status]')!;
+		const button = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			button.disabled = true;
+			status.textContent = 'بنبعت…';
+			try {
+				const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+				if (!res.ok) throw new Error(String(res.status));
+				form.reset();
+				status.textContent = 'وصلت، شكراً! هنراجعها ونصلّح.';
+			} catch {
+				status.textContent = 'ما وصلتش. اتأكد إنك اخترت نوع المشكلة وجرّب تاني.';
+			} finally {
+				button.disabled = false;
+			}
+		});
+	}
+	// Sent without JavaScript: the server sends us back here with ?shukran=1.
+	if (new URLSearchParams(location.search).has('shukran')) {
+		const section = document.getElementById('feedback');
+		section?.querySelector('details')?.setAttribute('open', '');
+		const status = section?.querySelector<HTMLElement>('[data-status]');
+		if (status) status.textContent = 'وصلت، شكراً! هنراجعها ونصلّح.';
+	}
+</script>

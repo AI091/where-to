@@ -12,6 +12,7 @@ import Icon from '../components/Icon.astro';
 import RouteMap from '../components/RouteMap.astro';
 import RouteSign from '../components/RouteSign.astro';
 import WalkThere from '../components/WalkThere.astro';
+import FeedbackForm from '../components/FeedbackForm.astro';
 import data from '../data/routes.json';
 import {
 	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, everyText,
@@ -165,6 +166,8 @@ const breadcrumbs = {
 		<p class="mt-8 text-sm leading-relaxed text-muted">
 			الأوقات تقريبية. الخطوط ومواعيدها من مسح ميداني سنة 2022، ولو خط اتغير الصفحة دي ممكن تكون محتاجة تتحدث.
 		</p>
+
+		<FeedbackForm page={`/${page.slug}/`} />
 
 		{
 			(reverse || sameOrigin.length > 0) && (

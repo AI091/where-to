@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import data from '../data/routes.json';
 import { li } from '../lib/trip';
+import FeedbackForm from '../components/FeedbackForm.astro';
 
 // The trip pages, grouped by where you start; the busiest starting points first.
 const byOrigin = new Map<string, typeof data.pages>();
@@ -85,6 +86,8 @@ const points = [
 			}
 		</div>
 	</section>
+
+	<div class="pb-12"><FeedbackForm page="/" variant="home" /></div>
 
 	{
 		drafts && (
