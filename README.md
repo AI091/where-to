@@ -12,7 +12,10 @@ Trip planning for Alexandria, Egypt using OpenTripPlanner.
 # 1. Download Egypt OSM data (~168MB)
 wget -O otp/egypt-latest.osm.pbf https://download.geofabrik.de/africa/egypt-latest.osm.pbf
 
-# 2. Start OTP (first run builds the graph, ~3min)
+# 2. Build the graph (~2min, writes otp/graph.obj)
+docker compose run --rm otp --build --save
+
+# 3. Start OTP
 docker compose up -d
 ```
 
@@ -35,6 +38,7 @@ Replace `date` with any date in 2023 (the GTFS calendar range).
 ## Stop / Rebuild
 
 ```bash
-docker compose down           # stop
-docker compose up -d --build  # rebuild graph (after changing config)
+docker compose down                         # stop
+docker compose run --rm otp --build --save  # rebuild graph (after changing GTFS/OSM/config)
+docker compose up -d --force-recreate otp   # restart OTP on the new graph
 ```

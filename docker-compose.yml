@@ -1,10 +1,14 @@
 services:
   otp:
-    image: opentripplanner/opentripplanner:latest
+    # Pinned: `latest` is a nightly development build, not the stable release.
+    image: opentripplanner/opentripplanner:2.10.0
     ports:
       - "8080:8080"
     volumes:
       - ./otp:/var/opentripplanner
     environment:
       - JAVA_TOOL_OPTIONS=-Xmx4G
-    command: --build --serve
+    # Serves the prebuilt otp/graph.obj. Rebuild it after changing the GTFS or OSM data:
+    #   docker compose run --rm otp --build --save
+    # (One-step --build --serve leaves Raptor's transit data empty in OTP 2.10+.)
+    command: --load --serve
