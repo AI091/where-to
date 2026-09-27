@@ -1,7 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const points = [
+	{
+		title: 'خطوط حقيقية',
+		body: 'مبنية على مسح ميداني لـ 104 خط ميكروباص وتمناية وأتوبيس في إسكندرية.',
+	},
+	{
+		title: 'زي ما الميكروباص بيمشي فعلاً',
+		body: 'بتشاور له من أي حتة على طريقه، مش من المحطات بس، إلا على الكباري والطرق السريعة.',
+	},
+	{
+		title: 'بالعربي وعلى قد السؤال',
+		body: 'تركب إيه، ومنين، وتنزل عند إيه. من غير لف ولا تفاصيل مالهاش لازمة.',
+	},
+];
 ---
 
-<Layout title="انزل فين؟">
-	<h1>انزل فين؟</h1>
+<Layout
+	title="انزل فين؟ | دليل مواصلات إسكندرية"
+	description="تركب إيه وتنزل فين في إسكندرية: دليل خطوط الميكروباص والتمناية والأتوبيس، مبني على مسح ميداني لـ 104 خط."
+>
+	<section class="py-12 sm:py-16">
+		<p class="mb-4 inline-block rounded-full bg-plate/15 px-3 py-1 text-sm font-medium text-sea-dark">قريباً</p>
+		<h1 class="text-4xl font-bold leading-tight text-sea-dark sm:text-5xl">تركب إيه، وتنزل فين؟</h1>
+		<p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">
+			دليل مواصلات إسكندرية. بنجهّز صفحة لكل مشوار: تركب ميكروباص ولا أتوبيس، تقف فين، وتنزل عند إيه بالظبط.
+		</p>
+
+		<svg aria-hidden="true" viewBox="0 0 640 120" class="mt-10 w-full">
+			<path d="M8 90 C 120 90, 150 30, 260 30 S 420 95, 520 70 S 610 40, 632 40" fill="none" stroke="#0b5e7a" stroke-width="6" stroke-linecap="round" />
+			<g fill="#f7f1e6" stroke="#0b5e7a" stroke-width="4">
+				<circle cx="8" cy="90" r="8" />
+				<circle cx="632" cy="40" r="8" />
+			</g>
+			<g transform="translate(372 58)">
+				<path fill="#f29a2e" d="M0-38a15 15 0 0 0-15 15c0 11 15 27 15 27s15-16 15-27a15 15 0 0 0-15-15Z" />
+				<circle cy="-23" r="5.5" fill="#fff" />
+			</g>
+		</svg>
+	</section>
+
+	<section class="grid gap-4 pb-12 sm:grid-cols-3">
+		{
+			points.map((p) => (
+				<div class="rounded-2xl bg-white/70 p-5 shadow-sm ring-1 ring-black/5">
+					<h2 class="text-lg font-bold text-sea-dark">{p.title}</h2>
+					<p class="mt-2 leading-relaxed text-muted">{p.body}</p>
+				</div>
+			))
+		}
+	</section>
 </Layout>

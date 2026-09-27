@@ -1,1 +1,24 @@
+@import "@fontsource/ibm-plex-sans-arabic/400.css";
+@import "@fontsource/ibm-plex-sans-arabic/500.css";
+@import "@fontsource/ibm-plex-sans-arabic/700.css";
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans Arabic", system-ui, sans-serif;
+
+  /* Alexandria: the sea, the sand, and the microbus's orange plates. */
+  --color-sea: #0b5e7a;
+  --color-sea-dark: #073f52;
+  --color-sand: #f7f1e6;
+  --color-plate: #f29a2e;
+  --color-ink: #1d2830;
+  --color-muted: #5b6770;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-sand font-sans text-ink antialiased;
+}
