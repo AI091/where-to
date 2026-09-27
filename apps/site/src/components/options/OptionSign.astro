@@ -6,6 +6,7 @@
  */
 import '@fontsource/aref-ruqaa/700.css';
 import Icon from '../Icon.astro';
+import WalkThere from '../WalkThere.astro';
 import {
 	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, vehicleOf, vehicleColor, vehicleShort,
 } from '../../lib/trip';
@@ -14,6 +15,7 @@ interface Props { page: Page }
 const { page } = Astro.props;
 const [best, ...others] = page.options;
 const steps = viewSteps(page, best);
+const firstBoard = steps.findIndex((s) => s.type === 'board');
 const verb = { walk: 'امشي', board: 'اركب', alight: 'انزل', arrive: 'وصلت' } as const;
 ---
 
@@ -30,7 +32,7 @@ const verb = { walk: 'امشي', board: 'اركب', alight: 'انزل', arrive: 
 	<ol class="relative mt-8">
 		<span aria-hidden="true" class="road absolute start-[26px] top-2 bottom-8 w-3.5 rounded-full"></span>
 		{
-			steps.map((s) => {
+			steps.map((s, i) => {
 				const color = s.type === 'board' || s.type === 'alight' ? vehicleColor[s.vehicle] : '#0b5e7a';
 				const icon = s.type === 'walk' ? 'walk' : s.type === 'arrive' ? 'pin' : s.type === 'board' && s.ride.fromOnRoad ? 'hand' : s.vehicle === 'bus' || s.vehicle === 'minibus' ? 'bus' : 'microbus';
 				return (
@@ -54,6 +56,7 @@ const verb = { walk: 'امشي', board: 'اركب', alight: 'انزل', arrive: 
 									<p class="mt-2 text-sm text-muted">
 										{s.ride.vehicle}، اتجاه {s.ride.headsign}، حوالي {round5(s.ride.minutes)} دقيقة
 									</p>
+									{i === firstBoard && <div><WalkThere geometry={s.ride.geometry} /></div>}
 								</>
 							)}
 							{s.type === 'alight' && (

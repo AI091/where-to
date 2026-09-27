@@ -1,0 +1,26 @@
+---
+/**
+ * Opens Google Maps with walking directions from wherever the rider is to the
+ * spot where they board. Google asks for their location, not us: nothing about
+ * the rider reaches this site.
+ */
+import Icon from './Icon.astro';
+import { decodePolyline } from '../lib/trip';
+
+interface Props {
+	/** The ride leg's encoded geometry; its first point is where you board. */
+	geometry: string;
+}
+const [lat, lon] = decodePolyline(Astro.props.geometry)[0];
+const href = `https://www.google.com/maps/dir/?api=1&destination=${lat.toFixed(6)},${lon.toFixed(6)}&travelmode=walking`;
+---
+
+<a
+	href={href}
+	target="_blank"
+	rel="noopener"
+	class="mt-3 inline-flex items-center gap-2 rounded-full bg-sea px-4 py-2 text-sm font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sea"
+>
+	<Icon name="walk" class="size-5" />
+	افتح طريق المشي في خرائط جوجل
+</a>

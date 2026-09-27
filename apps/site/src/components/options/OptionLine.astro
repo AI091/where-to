@@ -4,6 +4,7 @@
  * vehicle's plate colour; walking is dotted. Each route name sits on a plate.
  */
 import Icon from '../Icon.astro';
+import WalkThere from '../WalkThere.astro';
 import {
 	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, vehicleOf, vehicleColor, vehicleShort,
 } from '../../lib/trip';
@@ -13,6 +14,7 @@ const { page } = Astro.props;
 const [best, ...others] = page.options;
 const steps = viewSteps(page, best);
 const gray = '#9aa6ad';
+const firstBoard = steps.findIndex((s) => s.type === 'board');
 ---
 
 <article class="py-8">
@@ -88,6 +90,7 @@ const gray = '#9aa6ad';
 									<span class="px-3 py-1.5 font-bold text-ink">{s.ride.route}</span>
 								</span>
 								<p class="mt-2 text-sm text-muted">اتجاه {s.ride.headsign}، حوالي {round5(s.ride.minutes)} دقيقة</p>
+								{i === firstBoard && <div><WalkThere geometry={s.ride.geometry} /></div>}
 							</div>
 						)}
 						{s.type === 'alight' && (

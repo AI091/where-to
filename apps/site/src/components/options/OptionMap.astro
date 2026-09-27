@@ -5,6 +5,7 @@
  * people give directions ("ناحية البحر").
  */
 import Icon from '../Icon.astro';
+import WalkThere from '../WalkThere.astro';
 import {
 	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, vehicleOf, vehicleColor, vehicleShort, decodePolyline,
 } from '../../lib/trip';
@@ -13,6 +14,7 @@ interface Props { page: Page }
 const { page } = Astro.props;
 const [best, ...others] = page.options;
 const steps = viewSteps(page, best);
+const firstBoard = steps.findIndex((s) => s.type === 'board');
 
 // Project every leg into a 360×250 box, north up, keeping the aspect ratio.
 const W = 360, H = 250, PAD = 28;
@@ -72,7 +74,7 @@ const transfers = legs.filter((l) => l.step.kind === 'ride').map((l) => proj(l.p
 
 	<ol class="mt-6 divide-y divide-black/10 border-y border-black/10">
 		{
-			steps.map((s) => {
+			steps.map((s, i) => {
 				const color = s.type === 'board' || s.type === 'alight' ? vehicleColor[s.vehicle] : s.type === 'arrive' ? '#e8871e' : '#5b6770';
 				const icon = s.type === 'walk' ? 'walk' : s.type === 'arrive' ? 'pin' : s.type === 'board' && s.ride.fromOnRoad ? 'hand' : s.vehicle === 'bus' || s.vehicle === 'minibus' ? 'bus' : 'microbus';
 				return (
@@ -85,6 +87,7 @@ const transfers = legs.filter((l) => l.step.kind === 'ride').map((l) => proj(l.p
 									<p>{boardText(s.ride)}</p>
 									<p class="mt-1 font-bold" style={`color:${color}`}>{vehicleShort(s.ride.vehicle)} «{s.ride.route}»</p>
 									<p class="text-sm text-muted">اتجاه {s.ride.headsign}، حوالي {round5(s.ride.minutes)} دقيقة</p>
+									{i === firstBoard && <div><WalkThere geometry={s.ride.geometry} /></div>}
 								</>
 							)}
 							{s.type === 'alight' && <p>انزل عند <strong>{s.ride.to}</strong></p>}
