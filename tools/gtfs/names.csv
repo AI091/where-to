@@ -57,7 +57,7 @@ place,Sidi Bishr Tram,ترام سيدي بشر,dt4a,high,alex_identified_routes.
 place,Sidi Gabir,سيدي جابر,dt4a,high,alex_identified_routes.geojson,
 place,Smouha,سموحة,dt4a,high,alex_identified_routes.geojson,was «سموحه»: standard spelling / locals say موقف for microbus terminals
 place,Street 45,شارع 45,dt4a,high,alex_identified_routes.geojson,
-place,Train Station (El-Shohada Square),المحطة (ميدان الشهداء),dt4a,high,alex_identified_routes.geojson,
+place,Train Station (El-Shohada Square),محطة مصر,dt4a,high,alex_identified_routes.geojson,"Official DT4A name «المحطة (ميدان الشهداء)»; ميدان الشهداء is the square in front of محطة مصر. Shown as «محطة مصر», what Alexandrians and the press call it (plain «المحطة» is ambiguous with محطة الرمل)."
 place,Victoria station,محطة فيكتوريا,dt4a,high,alex_identified_routes.geojson,
 stop,AAST Intersection,تقاطع الأكاديمية البحرية,draft,high,osm: شارع الاكاديميه 2 m; yellowpages.com.eg (AAST Abu Qir: شارع الأكاديمية البحرية - طوسون),AAST is locally called 'الأكاديمية البحرية'.
 stop,Abd El-Qader Al-Gadida,عبد القادر الجديدة,dt4a,high,alex_terminals.geojson,
@@ -314,8 +314,8 @@ stop,Sun Rise Hotel,فندق صن رايز,draft,high,https://sa.trip.com/hotels
 stop,Tamween Montazah,تموين المنتزه,draft,high,"yellowpages: 'مكتب تموين المنتزه 2', شارع محمد عبد السلام off Gamal Abdel Nasser, Sidi Bishr; osm: شارع الصاغ محمد عبد السلام 25 m",
 stop,The Walk - Sidi Gaber,ذا ووك - سيدي جابر,draft,high,"web: 'ذا ووك سيدي جابر' (Facebook/Instagram/TikTok), beside Golden Jewel hotel; osm: جولدن جويل 93 m",Also written 'زا ووك'.
 stop,Toshky Entrance,مدخل توشكى,draft,high,official: 'مساكن توشكى'; osm: طريق القاهرة الاسكندرية الصحراوي 2 m,Spelling 'توشكى' follows the official name.
-stop,Train Station (Al Shohadaa),المحطة (ميدان الشهداء),draft,high,official: 'المحطة (ميدان الشهداء)'; osm: ميدان الشهداء 52 m,Locals say 'محطة مصر'.
-stop,Train Station (El-Shohada Square),المحطة (ميدان الشهداء),dt4a,high,alex_terminals.geojson,
+stop,Train Station (Al Shohadaa),محطة مصر,draft,high,official: 'المحطة (ميدان الشهداء)'; osm: ميدان الشهداء 52 m,"Official DT4A name «المحطة (ميدان الشهداء)»; ميدان الشهداء is the square in front of محطة مصر. Shown as «محطة مصر», what Alexandrians and the press call it (plain «المحطة» is ambiguous with محطة الرمل). Locals say 'محطة مصر'."
+stop,Train Station (El-Shohada Square),محطة مصر,dt4a,high,alex_terminals.geojson,"Official DT4A name «المحطة (ميدان الشهداء)»; ميدان الشهداء is the square in front of محطة مصر. Shown as «محطة مصر», what Alexandrians and the press call it (plain «المحطة» is ambiguous with محطة الرمل)."
 stop,Victor Emmanuel Square,ميدان فيكتور عمانويل,draft,high,youm7 / masrawy / elwatan news ('ميدان فيكتور عمانويل' بسموحة); osm: ميدان فيكتور ايمانويل 34 m,OSM spelling differs ('ايمانويل'). News spelling used.
 stop,Victoria College,كلية فيكتوريا,draft,high,osm: كلية فكتوريا 11 m,'فيكتوريا' spelling matches the official 'محطة فيكتوريا'.
 stop,Victoria station,محطة فيكتوريا,dt4a,high,alex_terminals.geojson,
