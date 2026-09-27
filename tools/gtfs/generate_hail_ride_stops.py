@@ -10,8 +10,8 @@ What this does:
 5. Writes output CSVs that can be merged into the GTFS zip
 
 Usage:
-    cd /home/ahmed/where-to/otp
-    python3 ../scripts/generate_hail_ride_stops.py
+    cd infra/otp
+    python3 ../../tools/gtfs/generate_hail_ride_stops.py
 
 Output:
     - synthetic_stops.csv
@@ -21,6 +21,9 @@ Output:
 import csv
 import math
 import itertools
+import os
+
+OTP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'infra', 'otp')
 
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -120,7 +123,7 @@ def read_gtfs_file(zip_path, filename):
 
 
 def main():
-    GTFS_ZIP = '/home/ahmed/where-to/otp/alex_gtfs.zip'
+    GTFS_ZIP = os.path.join(OTP_DIR, 'alex_gtfs.zip')
     INTERVAL = 200  # meters between synthetic stops
 
     print(f"Reading GTFS from {GTFS_ZIP}...")

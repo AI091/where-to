@@ -10,7 +10,7 @@
 - **`.pbf`** — Binary file format for OSM data. Compressed and fast to parse.
 - **Extract** — A cut-out of the global map (e.g., Egypt instead of the whole planet).
 
-**Our file:** `otp/egypt-latest.osm.pbf` (~168MB), downloaded from [Geofabrik](https://download.geofabrik.de/africa/egypt-latest.osm.pbf).
+**Our file:** `infra/otp/egypt-latest.osm.pbf` (~168MB), downloaded from [Geofabrik](https://download.geofabrik.de/africa/egypt-latest.osm.pbf).
 
 **Resources**
 - [OSM Wiki — Beginners' Guide](https://wiki.openstreetmap.org/wiki/Beginners%27_guide)

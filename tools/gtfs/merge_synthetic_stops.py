@@ -13,6 +13,8 @@ import zipfile
 import shutil
 import os
 
+OTP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'infra', 'otp')
+
 
 def time_to_seconds(t):
     """Convert HH:MM:SS to seconds since midnight."""
@@ -61,9 +63,9 @@ def write_csv_to_zip(zip_path, filename, rows, fieldnames):
 
 
 def main():
-    GTFS_ZIP = '/home/ahmed/where-to/otp/alex_gtfs.zip'
-    SYNTHETIC_STOPS_CSV = '/home/ahmed/where-to/otp/synthetic_stops.csv'
-    SYNTHETIC_STOP_TIMES_CSV = '/home/ahmed/where-to/otp/synthetic_stop_times.csv'
+    GTFS_ZIP = os.path.join(OTP_DIR, 'alex_gtfs.zip')
+    SYNTHETIC_STOPS_CSV = os.path.join(OTP_DIR, 'synthetic_stops.csv')
+    SYNTHETIC_STOP_TIMES_CSV = os.path.join(OTP_DIR, 'synthetic_stop_times.csv')
 
     print("Reading original GTFS...")
     original_stops = read_csv_from_zip(GTFS_ZIP, 'stops.txt')

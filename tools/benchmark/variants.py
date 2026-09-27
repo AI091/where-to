@@ -4,7 +4,7 @@ Generate GTFS variants at different synthetic-stop spacings (Phase 3 benchmark).
 
 WHY THIS EXISTS
 ---------------
-`otp/alex_gtfs.zip` in the repo is *already* discretized: it contains 7,419
+`infra/otp/alex_gtfs.zip` in the repo is *already* discretized: it contains 7,419
 synthetic hail-and-ride stops at ~200 m spacing, merged in on 2026-05-30.  The
 benchmark needs the *pre-synthetic* fixed-stops feed as the seed for every
 variant, so that the only variable across variants is the spacing.
@@ -13,7 +13,7 @@ WHERE THE ORIGINAL FEED LIVES (found 2026-07-30)
 ------------------------------------------------
 Two pristine copies of the fixed-stops feed exist:
 
-  1. `alexandria/data/alex_gtfs.zip` — the untouched DT4A download.
+  1. `data/alexandria/data/alex_gtfs.zip` — the untouched DT4A download.
      441 stops, 2,547 stop_times, 0 synthetic stops.
      calendar.txt still ends 2023-12-30.
   2. `git show b1479e6:otp/alex_gtfs.zip` — byte-identical GTFS content except
@@ -27,16 +27,16 @@ query.  So no regeneration from a "non-synthetic subset" was needed; the real
 original feed is recoverable from git history intact.
 
 Source data is never modified: the base is copied out of git into
-`benchmark/data/base/` and all variants are written to `benchmark/data/variants/`.
+`tools/benchmark/data/base/` and all variants are written to `tools/benchmark/data/variants/`.
 
 REUSE OF EXISTING PREPROCESSING
 -------------------------------
 The geometry/time primitives are imported from the existing scripts rather than
 reimplemented:
 
-  scripts/generate_hail_ride_stops.py -> haversine, build_shape_with_distances,
+  tools/gtfs/generate_hail_ride_stops.py -> haversine, build_shape_with_distances,
       generate_synthetic_stops, time_to_seconds
-  scripts/merge_synthetic_stops.py    -> seconds_to_time, read_csv_from_zip
+  tools/gtfs/merge_synthetic_stops.py    -> seconds_to_time, read_csv_from_zip
 
 Only the *driver* is new, because the originals hardcode INTERVAL=200 and the
 input/output paths, write intermediate CSVs, and (in the merge step) re-derive
@@ -60,11 +60,11 @@ should approximately reproduce the counts in the committed feed (7,419 stops /
 
 USAGE
 -----
-    python3 benchmark/variants.py extract-base
-    python3 benchmark/variants.py build --spacing 500
-    python3 benchmark/variants.py build --all
-    python3 benchmark/variants.py build --spacing 200 --shape-mode legacy-per-route --validate
-    python3 benchmark/variants.py list
+    python3 tools/benchmark/variants.py extract-base
+    python3 tools/benchmark/variants.py build --spacing 500
+    python3 tools/benchmark/variants.py build --all
+    python3 tools/benchmark/variants.py build --spacing 200 --shape-mode legacy-per-route --validate
+    python3 tools/benchmark/variants.py list
 """
 
 from __future__ import annotations
@@ -83,8 +83,8 @@ from pathlib import Path
 
 # --- reuse the existing preprocessing primitives -----------------------------
 BENCHMARK_DIR = Path(__file__).resolve().parent
-REPO_ROOT = BENCHMARK_DIR.parent
-sys.path.insert(0, str(REPO_ROOT / "scripts"))
+REPO_ROOT = BENCHMARK_DIR.parents[1]
+sys.path.insert(0, str(REPO_ROOT / "tools" / "gtfs"))
 
 from generate_hail_ride_stops import (  # noqa: E402
     build_shape_with_distances,
@@ -107,7 +107,7 @@ VARIANTS_DIR = DATA_DIR / "variants"
 BASE_COMMIT = "b1479e6"
 BASE_PATH_IN_COMMIT = "otp/alex_gtfs.zip"
 # Pristine DT4A download, kept only as a cross-check (calendar ends 2023).
-PRISTINE_ZIP = REPO_ROOT / "alexandria" / "data" / "alex_gtfs.zip"
+PRISTINE_ZIP = REPO_ROOT / "data" / "alexandria" / "data" / "alex_gtfs.zip"
 
 # Spacings from research-plan.md Phase 3: study spacings + dense baselines.
 STUDY_SPACINGS = [1000, 500, 250, 100]
@@ -150,7 +150,7 @@ def sha256(path: Path) -> str:
 def extract_base(force: bool = False) -> Path:
     """Copy the pre-synthetic-stops feed out of git history into data/base/.
 
-    Never reads or writes otp/alex_gtfs.zip.
+    Never reads or writes infra/otp/alex_gtfs.zip.
     """
     BASE_DIR.mkdir(parents=True, exist_ok=True)
     if BASE_ZIP.exists() and not force:
@@ -242,7 +242,7 @@ def build_variant(
 
     spacing == 0 -> straight copy of the base feed (the fixed-stops control).
 
-    Merge rule (unchanged from scripts/merge_synthetic_stops.py):
+    Merge rule (unchanged from tools/gtfs/merge_synthetic_stops.py):
       for every trip that gains synthetic stops, real + synthetic stop_times are
       combined, sorted by along-shape distance, re-sequenced 1..N, and *all*
       times are regenerated as
@@ -478,20 +478,20 @@ def _write_stats(out_zip: Path, stats: dict, verbose: bool) -> None:
 
 # --- validation --------------------------------------------------------------
 def validate_against_committed(stats: dict) -> None:
-    """Compare a 200 m legacy-per-route variant against otp/alex_gtfs.zip.
+    """Compare a 200 m legacy-per-route variant against infra/otp/alex_gtfs.zip.
 
     Read-only sanity check that the reimplemented driver reproduces the feed the
     project has been running since 2026-05-30 (7,419 synthetic stops /
     15,508 stop_times).
     """
-    committed = REPO_ROOT / "otp" / "alex_gtfs.zip"
+    committed = REPO_ROOT / "infra" / "otp" / "alex_gtfs.zip"
     if not committed.exists():
-        print("validate: otp/alex_gtfs.zip not found, skipping")
+        print("validate: infra/otp/alex_gtfs.zip not found, skipping")
         return
     stops = read_csv_from_zip(str(committed), "stops.txt")
     sts = read_csv_from_zip(str(committed), "stop_times.txt")
     ref_syn = sum(1 for s in stops if s["stop_id"].startswith(SYN_PREFIX))
-    print("\n--- validation vs committed otp/alex_gtfs.zip ---")
+    print("\n--- validation vs committed infra/otp/alex_gtfs.zip ---")
     print(f"  synthetic stops:  ours={stats.get('synthetic_stops')}  committed={ref_syn}")
     print(f"  total stops:      ours={stats.get('total_stops')}  committed={len(stops)}")
     print(f"  total stop_times: ours={stats.get('total_stop_times')}  committed={len(sts)}")

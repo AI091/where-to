@@ -5,7 +5,7 @@ Generate the fixed, seeded OD (origin-destination) pair set for the benchmark.
 Every variant must be queried with *identical* OD pairs, otherwise duration
 differences between spacings are confounded by different trips.  So the pairs
 are generated once, with a fixed RNG seed, and written to
-`benchmark/data/od_pairs.csv`.  All runs read that CSV; nothing re-randomises.
+`tools/benchmark/data/od_pairs.csv`.  All runs read that CSV; nothing re-randomises.
 
 SAMPLING DESIGN
 ---------------
@@ -53,9 +53,9 @@ says "purely spatial ... algorithmic deviation, not user outcomes".
 
 USAGE
 -----
-    python3 benchmark/od_pairs.py                 # 800 pairs, seed 42
-    python3 benchmark/od_pairs.py --n 800 --seed 42 --grid 12 --out /tmp/od.csv
-    python3 benchmark/od_pairs.py --summary       # describe the existing CSV
+    python3 tools/benchmark/od_pairs.py                 # 800 pairs, seed 42
+    python3 tools/benchmark/od_pairs.py --n 800 --seed 42 --grid 12 --out /tmp/od.csv
+    python3 tools/benchmark/od_pairs.py --summary       # describe the existing CSV
 """
 
 from __future__ import annotations

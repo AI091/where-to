@@ -19,7 +19,7 @@
 | `stop_times.txt` | Arrival/departure time at each stop |
 | `calendar.txt` | Which dates each trip runs |
 
-**Our file:** `otp/alex_gtfs.zip` — 441 stops, 192 patterns, 104 routes across Alexandria. Source: DT4A 2022 initiative.
+**Our file:** `infra/otp/alex_gtfs.zip` — 441 stops, 192 patterns, 104 routes across Alexandria. Source: DT4A 2022 initiative.
 
 **Resources**
 - [GTFS Reference](https://gtfs.org/)

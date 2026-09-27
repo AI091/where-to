@@ -5,10 +5,10 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./otp:/var/opentripplanner
+      - ./infra/otp:/var/opentripplanner
     environment:
       - JAVA_TOOL_OPTIONS=-Xmx4G
-    # Serves the prebuilt otp/graph.obj. Rebuild it after changing the GTFS or OSM data:
+    # Serves the prebuilt infra/otp/graph.obj. Rebuild it after changing the GTFS or OSM data:
     #   docker compose run --rm otp --build --save
     # (One-step --build --serve leaves Raptor's transit data empty in OTP 2.10+.)
     command: --load --serve

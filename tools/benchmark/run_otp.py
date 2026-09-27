@@ -13,11 +13,11 @@ The project's own OTP runs from docker-compose.yml on host port 8080 with
     (see _assert_ours);
   * it publishes only host port 8081 (default `--port`) and aborts if that port
     is already in use by something that is not one of its own containers;
-  * it bind-mounts `benchmark/data/otp/<variant>/`, never `otp/`.  The OSM
+  * it bind-mounts `tools/benchmark/data/otp/<variant>/`, never `infra/otp/`.  The OSM
     extract is *hard-linked* into that directory (copy-on-fallback), so the
-    176 MB pbf is not duplicated six times and `otp/egypt-latest.osm.pbf` is
+    176 MB pbf is not duplicated six times and `infra/otp/egypt-latest.osm.pbf` is
     never written to.  The GTFS zip is a real copy of the variant, so nothing
-    can write back into `benchmark/data/variants/`.
+    can write back into `tools/benchmark/data/variants/`.
 
 WHAT IS MEASURED
 ----------------
@@ -31,16 +31,16 @@ of the heap ceiling and GC timing, not of graph size.  RSS is therefore only
 comparable across variants if `--xmx` is identical for all of them (it is, by
 default).  graph.obj size is the more honest size signal; treat RSS as a
 smoke-level indicator.  Both, plus everything else, land in
-`benchmark/data/otp/<variant>/run_meta.json`.
+`tools/benchmark/data/otp/<variant>/run_meta.json`.
 
 USAGE
 -----
-    python3 benchmark/run_otp.py prepare --variant spacing_500m
-    python3 benchmark/run_otp.py build   --variant spacing_500m
-    python3 benchmark/run_otp.py serve   --variant spacing_500m
-    python3 benchmark/run_otp.py status
-    python3 benchmark/run_otp.py stop    --variant spacing_500m
-    python3 benchmark/run_otp.py up      --variant spacing_500m   # prepare+build+serve
+    python3 tools/benchmark/run_otp.py prepare --variant spacing_500m
+    python3 tools/benchmark/run_otp.py build   --variant spacing_500m
+    python3 tools/benchmark/run_otp.py serve   --variant spacing_500m
+    python3 tools/benchmark/run_otp.py status
+    python3 tools/benchmark/run_otp.py stop    --variant spacing_500m
+    python3 tools/benchmark/run_otp.py up      --variant spacing_500m   # prepare+build+serve
 """
 
 from __future__ import annotations
@@ -60,8 +60,8 @@ from variants import DATA_DIR, REPO_ROOT, VARIANTS_DIR
 OTP_IMAGE = "opentripplanner/opentripplanner:latest"  # same image as docker-compose.yml
 CONTAINER_PREFIX = "otp-bench-"
 OTP_DIR = DATA_DIR / "otp"
-OSM_PBF = REPO_ROOT / "otp" / "egypt-latest.osm.pbf"
-BUILD_CONFIG = REPO_ROOT / "otp" / "build-config.json"
+OSM_PBF = REPO_ROOT / "infra" / "otp" / "egypt-latest.osm.pbf"
+BUILD_CONFIG = REPO_ROOT / "infra" / "otp" / "build-config.json"
 DEFAULT_PORT = 8081
 DEFAULT_XMX = "6G"
 FORBIDDEN_PORTS = {8080, 8090}  # project OTP, project Go server
@@ -145,7 +145,7 @@ def prepare(variant: str, force: bool = False) -> Path:
     if not src_zip.exists():
         raise SystemExit(
             f"{src_zip} not found — build it first:\n"
-            f"  python3 benchmark/variants.py build --spacing <m>"
+            f"  python3 tools/benchmark/variants.py build --spacing <m>"
         )
     if not OSM_PBF.exists():
         raise SystemExit(f"{OSM_PBF} not found (see README.md first-time setup)")

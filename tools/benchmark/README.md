@@ -7,8 +7,8 @@ boarding. Spec: [`knowledge/research-plan.md`](../knowledge/research-plan.md)
 Phase 3. Why discretization is the only option in OTP today:
 [`knowledge/research/phase1-verdict.md`](../knowledge/research/phase1-verdict.md).
 
-Nothing here modifies source data. `otp/alex_gtfs.zip`, `otp/egypt-latest.osm.pbf`,
-`scripts/`, `docker-compose.yml` and the service on `:8080` are all read-only from
+Nothing here modifies source data. `infra/otp/alex_gtfs.zip`, `infra/otp/egypt-latest.osm.pbf`,
+`tools/gtfs/`, `docker-compose.yml` and the service on `:8080` are all read-only from
 this directory's point of view, so AGENTS.md rule 13 (log dataset changes) is not
 triggered — every feed produced here is a derived variant under `data/`.
 
@@ -21,7 +21,7 @@ triggered — every feed produced here is a derived variant under `data/`.
 | `run_otp.py` | Builds and serves one variant in an isolated OTP container on `:8081` |
 | `query.py` | Runs the OD pairs against a served variant, saves raw + tabulated results |
 | `metrics.py` | Deviation metrics — **stubs only**, see [TODO](#todo) |
-| `data/` | All generated output (gitignored via `benchmark/.gitignore`) |
+| `data/` | All generated output (gitignored via `tools/benchmark/.gitignore`) |
 
 Stdlib only — no `pip install`, no venv needed. Tested on Python 3.14.
 
@@ -38,11 +38,11 @@ data/
 
 ## Where the original (pre-synthetic-stops) feed was found
 
-`otp/alex_gtfs.zip` is *already* discretized — 7,419 synthetic stops at ~200 m,
+`infra/otp/alex_gtfs.zip` is *already* discretized — 7,419 synthetic stops at ~200 m,
 merged in on 2026-05-30 — so it cannot seed the variants. Two intact copies of
 the fixed-stops feed exist:
 
-1. **`alexandria/data/alex_gtfs.zip`** — the untouched DT4A download. 441 stops,
+1. **`data/alexandria/data/alex_gtfs.zip`** — the untouched DT4A download. 441 stops,
    2,547 stop_times, 0 synthetic stops, `calendar.txt` ending `20231230`.
 2. **`git show b1479e6:otp/alex_gtfs.zip`** — same GTFS content with
    `calendar.txt` extended to `20991231` (dataset.md change #1). `b1479e6` is the
@@ -59,13 +59,13 @@ asserts it contains zero `SYN_*` stops.
 ```bash
 cd /home/ahmed/where-to
 
-python3 benchmark/variants.py extract-base          # data/base/alex_gtfs_base.zip
-python3 benchmark/od_pairs.py                       # data/od_pairs.csv (seed 42, n=800)
+python3 tools/benchmark/variants.py extract-base          # data/base/alex_gtfs_base.zip
+python3 tools/benchmark/od_pairs.py                       # data/od_pairs.csv (seed 42, n=800)
 
-python3 benchmark/variants.py build --spacing 500   # data/variants/spacing_500m.zip
-python3 benchmark/run_otp.py up --variant spacing_500m   # build graph + serve on :8081
-python3 benchmark/query.py --variant spacing_500m --limit 20
-python3 benchmark/run_otp.py stop --variant spacing_500m
+python3 tools/benchmark/variants.py build --spacing 500   # data/variants/spacing_500m.zip
+python3 tools/benchmark/run_otp.py up --variant spacing_500m   # build graph + serve on :8081
+python3 tools/benchmark/query.py --variant spacing_500m --limit 20
+python3 tools/benchmark/run_otp.py stop --variant spacing_500m
 ```
 
 `run_otp.py status` shows which benchmark containers exist, which variants have a
@@ -81,24 +81,24 @@ Build every feed first — that part is seconds — then loop.
 cd /home/ahmed/where-to
 
 # 1. seed feed + frozen OD pairs (once)
-python3 benchmark/variants.py extract-base
-python3 benchmark/od_pairs.py --n 800 --seed 42
+python3 tools/benchmark/variants.py extract-base
+python3 tools/benchmark/od_pairs.py --n 800 --seed 42
 
 # 2. all seven feeds: fixed control, four study spacings, two dense baselines
-python3 benchmark/variants.py build --all
-python3 benchmark/variants.py list
+python3 tools/benchmark/variants.py build --all
+python3 tools/benchmark/variants.py list
 
 # 3. build a graph, serve it, query all 800 pairs, tear it down — per variant
 for v in fixed spacing_1000m spacing_500m spacing_250m spacing_100m spacing_25m spacing_10m; do
-  python3 benchmark/run_otp.py up --variant "$v" --xmx 6G  || { echo "FAILED $v"; continue; }
-  python3 benchmark/query.py    --variant "$v"
-  python3 benchmark/run_otp.py stop --variant "$v"
+  python3 tools/benchmark/run_otp.py up --variant "$v" --xmx 6G  || { echo "FAILED $v"; continue; }
+  python3 tools/benchmark/query.py    --variant "$v"
+  python3 tools/benchmark/run_otp.py stop --variant "$v"
 done
-python3 benchmark/run_otp.py stop-all
+python3 tools/benchmark/run_otp.py stop-all
 
 # 4. metrics (NOT IMPLEMENTED YET — see TODO)
-python3 benchmark/metrics.py list
-python3 benchmark/metrics.py report --baseline spacing_10m
+python3 tools/benchmark/metrics.py list
+python3 tools/benchmark/metrics.py report --baseline spacing_10m
 ```
 
 Keep `--xmx` identical across variants or the RSS numbers are not comparable.
@@ -135,20 +135,20 @@ roughly **4 GB** plus the hardlinked pbf (shared, not duplicated).
 - it publishes `127.0.0.1:8081` only, and refuses ports 8080 (project OTP) and
   8090 (project Go server) outright;
 - it aborts if 8081 is occupied by anything that is not its own container;
-- it bind-mounts `benchmark/data/otp/<variant>/`, never `otp/`. The 176 MB OSM
+- it bind-mounts `tools/benchmark/data/otp/<variant>/`, never `infra/otp/`. The 176 MB OSM
   extract is **hardlinked** into each variant dir (falling back to a copy), so it
-  is not duplicated seven times and `otp/egypt-latest.osm.pbf` is never written.
+  is not duplicated seven times and `infra/otp/egypt-latest.osm.pbf` is never written.
   The GTFS zip is a real copy, so OTP cannot write back into `data/variants/`.
 
 ## Design decisions
 
-**Per-trip shapes, not per-route (deviation from `scripts/`).**
+**Per-trip shapes, not per-route (deviation from `tools/gtfs/`).**
 `generate_hail_ride_stops.py` derives `route_to_shape` from each route's *first*
 trip and generates one synthetic stop set per route. This feed has 192 trips and
 192 distinct `shape_id`s — 88 of 104 routes carry two shapes, one per
 `direction_id`. Under the legacy rule the direction-1 trip of those 88 routes gets
 stops sampled along the direction-0 alignment. That is a latent data bug in the
-feed currently shipped in `otp/alex_gtfs.zip`, and fatal for a benchmark whose
+feed currently shipped in `infra/otp/alex_gtfs.zip`, and fatal for a benchmark whose
 subject *is* spatial discretization error. Default is therefore
 `--shape-mode per-trip`; `--shape-mode legacy-per-route` reproduces the old
 behaviour for validation and writes to `spacing_<n>m_legacy.zip`.
@@ -156,7 +156,7 @@ behaviour for validation and writes to `spacing_<n>m_legacy.zip`.
 **Reuse of the existing preprocessing.** `variants.py` imports the geometry and
 time primitives (`haversine`, `build_shape_with_distances`,
 `generate_synthetic_stops`, `time_to_seconds`, `seconds_to_time`,
-`read_csv_from_zip`) directly from `scripts/`. Only the driver is new, because the
+`read_csv_from_zip`) directly from `tools/gtfs/`. Only the driver is new, because the
 originals hardcode `INTERVAL = 200` and absolute paths, round-trip through
 intermediate CSVs, and re-derive each synthetic stop's along-shape position with
 an O(stops x shape_points) nearest-point scan — about 10^9 haversine calls at
@@ -168,7 +168,7 @@ as a constant-speed interpolation between the trip's first and last real stop.
 **Validated against the committed feed.** `variants.py build --spacing 200
 --shape-mode legacy-per-route --validate` reproduces the 2026-05-30 pipeline:
 
-| | this harness | committed `otp/alex_gtfs.zip` |
+| | this harness | committed `infra/otp/alex_gtfs.zip` |
 |---|---|---|
 | synthetic stops generated | 7,419 | 7,419 |
 | synthetic stops kept | 7,269 | 7,419 |
@@ -288,7 +288,7 @@ headway for Bus 409 — the frequency-trip artefact noted in [TODO](#todo).
 
 `run_otp.py status` before and after: only `otp-bench-spacing_500m` ever existed,
 bound to `127.0.0.1:8081->8080`; host `:8080` and `:8090` stayed free throughout;
-`otp/egypt-latest.osm.pbf` link count went to 2 (hardlinked, not copied) and its
+`infra/otp/egypt-latest.osm.pbf` link count went to 2 (hardlinked, not copied) and its
 mtime is unchanged.
 
 ## TODO
@@ -326,7 +326,7 @@ mtime is unchanged.
   deltas will be small differences of a large number. Cropping the pbf to an
   Alexandria bbox would make the size metric legible, but changes the street
   network and so must be done identically for every variant, or not at all.
-- **Stop-to-shape snapping is vertex-based**, inherited from `scripts/`: a real
+- **Stop-to-shape snapping is vertex-based**, inherited from `tools/gtfs/`: a real
   stop's along-shape position is the distance of the nearest shape *vertex*, not a
   perpendicular projection. Error is bounded by the shape's vertex spacing and is
   identical across variants, so it does not bias the comparison, but it does add

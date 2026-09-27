@@ -10,9 +10,9 @@ Trip planning for Alexandria, Egypt using OpenTripPlanner.
 
 ```bash
 # 1. Download Egypt OSM data (~168MB)
-wget -O otp/egypt-latest.osm.pbf https://download.geofabrik.de/africa/egypt-latest.osm.pbf
+wget -O infra/otp/egypt-latest.osm.pbf https://download.geofabrik.de/africa/egypt-latest.osm.pbf
 
-# 2. Build the graph (~2min, writes otp/graph.obj)
+# 2. Build the graph (~2min, writes infra/otp/graph.obj)
 docker compose run --rm otp --build --save
 
 # 3. Start OTP

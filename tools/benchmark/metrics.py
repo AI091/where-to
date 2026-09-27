@@ -33,7 +33,7 @@ INPUTS
 
 USAGE (once implemented)
 ------------------------
-    python3 benchmark/metrics.py report --baseline spacing_10m
+    python3 tools/benchmark/metrics.py report --baseline spacing_10m
 """
 
 from __future__ import annotations

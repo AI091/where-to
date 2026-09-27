@@ -2,7 +2,7 @@
 """
 Run the frozen OD pair set against a served OTP variant and record everything.
 
-Query shape follows README.md / bruno/Where-to/OTP raw plan.bru: a POST of a
+Query shape follows README.md / tools/bruno/Where-to/OTP raw plan.bru: a POST of a
 GraphQL `plan(...)` to `/otp/gtfs/v1`, modes BUS + WALK.  Extra fields are added
 because the metrics need them:
 
@@ -30,7 +30,7 @@ carry a constant per-route wait offset.  That offset is identical across variant
 so it cancels in the per-OD delta, but absolute durations should not be read as
 real-world travel times.
 
-OUTPUT (per variant, under benchmark/data/results/<variant>/)
+OUTPUT (per variant, under tools/benchmark/data/results/<variant>/)
   raw/<pair_id>.json  the untouched GraphQL response body
   queries.csv         one row per OD pair (latency, itinerary count, best duration)
   itineraries.csv     one row per itinerary (duration, walkDistance, leg summary)
@@ -38,9 +38,9 @@ OUTPUT (per variant, under benchmark/data/results/<variant>/)
 
 USAGE
 -----
-    python3 benchmark/query.py --variant spacing_500m --limit 20    # smoke test
-    python3 benchmark/query.py --variant spacing_500m               # all 800
-    python3 benchmark/query.py --variant spacing_500m --summary
+    python3 tools/benchmark/query.py --variant spacing_500m --limit 20    # smoke test
+    python3 tools/benchmark/query.py --variant spacing_500m               # all 800
+    python3 tools/benchmark/query.py --variant spacing_500m --summary
 """
 
 from __future__ import annotations
@@ -208,7 +208,7 @@ def run(
     save_raw: bool = True,
 ) -> dict:
     if not Path(od_csv).exists():
-        raise SystemExit(f"{od_csv} missing — run: python3 benchmark/od_pairs.py")
+        raise SystemExit(f"{od_csv} missing — run: python3 tools/benchmark/od_pairs.py")
     pairs = load_od_pairs(od_csv, limit=limit)
 
     out_dir = RESULTS_DIR / variant

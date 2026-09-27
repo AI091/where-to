@@ -49,7 +49,7 @@ The routing engine. Takes a street map + transit schedules and answers "what's t
 
 ### 3. [OpenStreetMap](concepts/openstreetmap.md)
 
-A free, editable world map built by volunteers. OTP needs this to know where roads and footpaths are — without it, the app can't calculate walking legs. Our file: `otp/egypt-latest.osm.pbf` (~168MB), downloaded from Geofabrik.
+A free, editable world map built by volunteers. OTP needs this to know where roads and footpaths are — without it, the app can't calculate walking legs. Our file: `infra/otp/egypt-latest.osm.pbf` (~168MB), downloaded from Geofabrik.
 
 ---
 

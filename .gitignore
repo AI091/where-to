@@ -2,17 +2,17 @@
 *.pbf
 *.obj
 *.jar
-otp/egypt-latest.osm.pbf
+infra/otp/egypt-latest.osm.pbf
 
 # Ignore all zips except the one OTP needs
 *.zip
-!otp/alex_gtfs.zip
+!infra/otp/alex_gtfs.zip
 
 # Alexandria dataset data files
-alexandria/data/
-alexandria/visualizations/
-alexandria/report/
-alexandria/material/
+data/alexandria/data/
+data/alexandria/visualizations/
+data/alexandria/report/
+data/alexandria/material/
 
 # Python
 __pycache__/
