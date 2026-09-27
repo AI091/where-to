@@ -1,0 +1,1815 @@
+{
+	"generatedFor": "2026-10-05 08:00:00",
+	"pages": [
+		{
+			"slug": "el-awayed-to-train-station",
+			"from": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2174986,
+				"lon": 29.9938614
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 36,
+					"walkMeters": 1,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 1,
+							"to": "العوايد"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "السيوف (الفلكي) - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "العوايد",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 35
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-train-station",
+			"from": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.180134,
+				"lon": 29.913627
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 17,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الموقف الجديد - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "الموقف الجديد",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 17
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-el-awayed",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2176441,
+				"lon": 29.9942318
+			},
+			"options": [
+				{
+					"minutes": 28,
+					"walkMeters": 564,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - المحطة (ميدان الشهداء)",
+							"headsign": "أبو قير",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "طريق خورشيد, العوائد",
+							"minutes": 21
+						},
+						{
+							"kind": "walk",
+							"meters": 564,
+							"to": "العوايد"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-el-mawqaf-el-geded",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.197209,
+				"lon": 29.911435
+			},
+			"to": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.176456,
+				"lon": 29.917673
+			},
+			"options": [
+				{
+					"minutes": 7,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الموقف الجديد - المحطة (ميدان الشهداء)",
+							"headsign": "الموقف الجديد",
+							"from": "استاد الإسكندرية",
+							"to": "الموقف الجديد",
+							"minutes": 7
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-sa-ah-to-train-station",
+			"from": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.244006,
+				"lon": 29.98587
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 43,
+					"walkMeters": 186,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 185,
+							"to": "شارع مصطفى كامل"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "المنشية - الساعة",
+							"headsign": "المنشية",
+							"from": "شارع مصطفى كامل",
+							"to": "مسجد الرحمن - الكورنيش",
+							"minutes": 7
+						},
+						{
+							"kind": "walk",
+							"meters": 1,
+							"to": "مسجد الرحمن - الكورنيش"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "مسجد الرحمن - الكورنيش",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 25
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-el-sa-ah",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.244006,
+				"lon": 29.98587
+			},
+			"options": [
+				{
+					"minutes": 48,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الساعة - المحطة (ميدان الشهداء)",
+							"headsign": "الساعة",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "ميدان الساعة",
+							"minutes": 48
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-awayed-to-el-mawqaf-el-geded",
+			"from": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2174986,
+				"lon": 29.9938614
+			},
+			"to": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.176456,
+				"lon": 29.917673
+			},
+			"options": [
+				{
+					"minutes": 20,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العوايد - الموقف الجديد",
+							"headsign": "الموقف الجديد",
+							"from": "العوايد",
+							"to": "الموقف الجديد",
+							"minutes": 20
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-el-awayed",
+			"from": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.180134,
+				"lon": 29.913627
+			},
+			"to": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2175298,
+				"lon": 29.994092
+			},
+			"options": [
+				{
+					"minutes": 25,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العوايد - الموقف الجديد",
+							"headsign": "العوايد",
+							"from": "الموقف الجديد",
+							"to": "العوايد",
+							"minutes": 25
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-awayed-to-el-mansheya",
+			"from": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2252272,
+				"lon": 29.9800516
+			},
+			"to": {
+				"ar": "المنشية",
+				"en": "El-Mansheya",
+				"lat": 31.2012982,
+				"lon": 29.8987265
+			},
+			"options": [
+				{
+					"minutes": 39,
+					"walkMeters": 208,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو سليمان - المنشية",
+							"headsign": "المنشية",
+							"from": "مدخل أبو سليمان",
+							"to": "شارع الاسكندر الاكبر",
+							"minutes": 36
+						},
+						{
+							"kind": "walk",
+							"meters": 208,
+							"to": "المنشية"
+						}
+					]
+				},
+				{
+					"minutes": 41,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العوايد - المنشية",
+							"headsign": "المنشية",
+							"from": "مدخل أبو سليمان",
+							"to": "محطة الرمل - الكورنيش",
+							"minutes": 41
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mansheya-to-el-mawqaf-el-geded",
+			"from": {
+				"ar": "المنشية",
+				"en": "El-Mansheya",
+				"lat": 31.200361,
+				"lon": 29.895333
+			},
+			"to": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.176456,
+				"lon": 29.917673
+			},
+			"options": [
+				{
+					"minutes": 18,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "المنشية - الموقف الجديد",
+							"headsign": "الموقف الجديد",
+							"from": "القنصلية الفرنسية",
+							"to": "الموقف الجديد",
+							"minutes": 18
+						}
+					]
+				},
+				{
+					"minutes": 24,
+					"walkMeters": 258,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 258,
+							"to": "شارع الغرفة التجارية"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو سليمان - المنشية",
+							"headsign": "أبو سليمان",
+							"from": "شارع الغرفة التجارية",
+							"to": "مسجد الرحمن",
+							"minutes": 5
+						},
+						{
+							"kind": "ride",
+							"vehicle": "أتوبيس 759",
+							"route": "الموقف الجديد - كوته (سوتر)",
+							"headsign": "الموقف الجديد",
+							"from": "مسجد الرحمن",
+							"to": "الموقف الجديد",
+							"minutes": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mansheya-to-el-awayed",
+			"from": {
+				"ar": "المنشية",
+				"en": "El-Mansheya",
+				"lat": 31.1996681,
+				"lon": 29.8951257
+			},
+			"to": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2187734,
+				"lon": 29.9947434
+			},
+			"options": [
+				{
+					"minutes": 45,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العوايد - المنشية",
+							"headsign": "العوايد",
+							"from": "محطة المنشية",
+							"to": "العوايد",
+							"minutes": 45
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-el-mansheya",
+			"from": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.180134,
+				"lon": 29.913627
+			},
+			"to": {
+				"ar": "المنشية",
+				"en": "El-Mansheya",
+				"lat": 31.200503,
+				"lon": 29.8951983
+			},
+			"options": [
+				{
+					"minutes": 27,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "المنشية - الموقف الجديد",
+							"headsign": "المنشية",
+							"from": "الموقف الجديد",
+							"to": "القنصلية الفرنسية",
+							"minutes": 27
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "asafra-to-train-station",
+			"from": {
+				"ar": "العصافرة",
+				"en": "Asafra",
+				"lat": 31.2620037,
+				"lon": 30.0093222
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 38,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "مستشفى عقبة بن نافع",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 38
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "kilo-21-to-train-station",
+			"from": {
+				"ar": "الكيلو 21",
+				"en": "Kilo 21",
+				"lat": 31.0776791,
+				"lon": 29.7373385
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193563,
+				"lon": 29.90258
+			},
+			"options": [
+				{
+					"minutes": 32,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "الكيلو 21",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 32
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-asafra",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.197209,
+				"lon": 29.911435
+			},
+			"to": {
+				"ar": "العصافرة",
+				"en": "Asafra",
+				"lat": 31.2618621,
+				"lon": 30.0092024
+			},
+			"options": [
+				{
+					"minutes": 31,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "استاد الإسكندرية",
+							"to": "مستشفى عقبة بن نافع",
+							"minutes": 31
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-kilo-21",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.1873313,
+				"lon": 29.8942234
+			},
+			"to": {
+				"ar": "الكيلو 21",
+				"en": "Kilo 21",
+				"lat": 31.0842992,
+				"lon": 29.7441492
+			},
+			"options": [
+				{
+					"minutes": 36,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "أتوبيس 423",
+							"route": "الكيلو 21 - المحطة (ميدان الشهداء)",
+							"headsign": "الكيلو 21",
+							"from": "مستشفى كرموز",
+							"to": "شارع الزهور",
+							"minutes": 36
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "al-seyouf-to-train-station",
+			"from": {
+				"ar": "السيوف (الفلكي)",
+				"en": "Al-Seyouf (Falaky)",
+				"lat": 31.2412003,
+				"lon": 29.9982981
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 42,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "السيوف (الفلكي) - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "أبو كمال - السيوف",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 42
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "bahary-to-train-station",
+			"from": {
+				"ar": "بحري (راس التين)",
+				"en": "Bahary (Ras Al-Tin)",
+				"lat": 31.2020408,
+				"lon": 29.8760815
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.188877,
+				"lon": 29.886331
+			},
+			"options": [
+				{
+					"minutes": 13,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "بحري (راس التين) - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "بحري (راس التين)",
+							"to": "مصنع درويش",
+							"minutes": 13
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-al-seyouf",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "السيوف (الفلكي)",
+				"en": "Al-Seyouf (Falaky)",
+				"lat": 31.2409918,
+				"lon": 29.9983363
+			},
+			"options": [
+				{
+					"minutes": 46,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "السيوف (الفلكي) - المحطة (ميدان الشهداء)",
+							"headsign": "السيوف (الفلكي)",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "أبو كمال - السيوف",
+							"minutes": 46
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-sidi-bishr",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "سيدي بشر",
+				"en": "Sidi Bishr",
+				"lat": 31.2619194,
+				"lon": 29.9930067
+			},
+			"options": [
+				{
+					"minutes": 45,
+					"walkMeters": 911,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 174,
+							"to": "المحطة (ميدان الشهداء)"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العامرية - المحطة (ميدان الشهداء)",
+							"headsign": "العامرية",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "استاد الإسكندرية",
+							"minutes": 2
+						},
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "استاد الإسكندرية",
+							"to": "بنك أبوظبي - سيدي بشر",
+							"minutes": 25
+						},
+						{
+							"kind": "walk",
+							"meters": 737,
+							"to": "سيدي بشر"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-bahary",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.1920701,
+				"lon": 29.9027713
+			},
+			"to": {
+				"ar": "بحري (راس التين)",
+				"en": "Bahary (Ras Al-Tin)",
+				"lat": 31.2020408,
+				"lon": 29.8760815
+			},
+			"options": [
+				{
+					"minutes": 22,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "بحري (راس التين) - المحطة (ميدان الشهداء)",
+							"headsign": "بحري (راس التين)",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "بحري (راس التين)",
+							"minutes": 22
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-awayed-to-el-sa-ah",
+			"from": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2220433,
+				"lon": 29.9940602
+			},
+			"to": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.244006,
+				"lon": 29.98587
+			},
+			"options": [
+				{
+					"minutes": 12,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الساعة - المحطة (ميدان الشهداء)",
+							"headsign": "الساعة",
+							"from": "نزلة كوبري العوايد",
+							"to": "ميدان الساعة",
+							"minutes": 12
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-el-sa-ah",
+			"from": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.180134,
+				"lon": 29.913627
+			},
+			"to": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.241168,
+				"lon": 29.997369
+			},
+			"options": [
+				{
+					"minutes": 39,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الموقف الجديد - الساعة",
+							"headsign": "الساعة",
+							"from": "الموقف الجديد",
+							"to": "السيوف",
+							"minutes": 39
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-sa-ah-to-el-awayed",
+			"from": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.24058,
+				"lon": 29.992509
+			},
+			"to": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.230062,
+				"lon": 29.993247
+			},
+			"options": [
+				{
+					"minutes": 2,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "السيوف (الفلكي) - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "ميدان السيوف",
+							"to": "التأمين الصحي - السيوف",
+							"minutes": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-sa-ah-to-el-mawqaf-el-geded",
+			"from": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.2441742,
+				"lon": 29.9857634
+			},
+			"to": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.176456,
+				"lon": 29.917673
+			},
+			"options": [
+				{
+					"minutes": 33,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الموقف الجديد - الساعة",
+							"headsign": "الموقف الجديد",
+							"from": "ميدان الساعة",
+							"to": "الموقف الجديد",
+							"minutes": 33
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "hanuvil-to-train-station",
+			"from": {
+				"ar": "الهانوفيل",
+				"en": "Hanuvil",
+				"lat": 31.1007187,
+				"lon": 29.7738781
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.186696,
+				"lon": 29.8947816
+			},
+			"options": [
+				{
+					"minutes": 41,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الهانوفيل - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "حلوانى كلاسيك",
+							"to": "مستشفى كرموز",
+							"minutes": 41
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-hanuvil",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.1920701,
+				"lon": 29.9027713
+			},
+			"to": {
+				"ar": "الهانوفيل",
+				"en": "Hanuvil",
+				"lat": 31.0999705,
+				"lon": 29.77257
+			},
+			"options": [
+				{
+					"minutes": 47,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الهانوفيل - المحطة (ميدان الشهداء)",
+							"headsign": "الهانوفيل",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "موبيل",
+							"minutes": 47
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "amreyya-to-train-station",
+			"from": {
+				"ar": "العامرية",
+				"en": "Amreyya",
+				"lat": 31.0204984,
+				"lon": 29.7941594
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193563,
+				"lon": 29.90258
+			},
+			"options": [
+				{
+					"minutes": 57,
+					"walkMeters": 265,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "أتوبيس 409",
+							"route": "الناصرية القديمة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "كوبري العامرية",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 54
+						},
+						{
+							"kind": "walk",
+							"meters": 265,
+							"to": "المحطة (ميدان الشهداء)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-sa-ah-to-el-mansheya",
+			"from": {
+				"ar": "الساعة",
+				"en": "El-Sa'ah (Clock Square)",
+				"lat": 31.2441742,
+				"lon": 29.9857634
+			},
+			"to": {
+				"ar": "المنشية",
+				"en": "El-Mansheya",
+				"lat": 31.2012982,
+				"lon": 29.8987265
+			},
+			"options": [
+				{
+					"minutes": 34,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "المنشية - الساعة",
+							"headsign": "المنشية",
+							"from": "ميدان الساعة",
+							"to": "محطة الرمل - الكورنيش",
+							"minutes": 34
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-amreyya",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"to": {
+				"ar": "العامرية",
+				"en": "Amreyya",
+				"lat": 31.0202622,
+				"lon": 29.7940089
+			},
+			"options": [
+				{
+					"minutes": 52,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العامرية - المحطة (ميدان الشهداء)",
+							"headsign": "العامرية",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "محرم بك",
+							"minutes": 7
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العامرية - الموقف الجديد",
+							"headsign": "العامرية",
+							"from": "محرم بك",
+							"to": "كوبري العامرية",
+							"minutes": 36
+						}
+					]
+				},
+				{
+					"minutes": 56,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العامرية - المحطة (ميدان الشهداء)",
+							"headsign": "العامرية",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "كوبري العامرية",
+							"minutes": 56
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "abu-qir-to-train-station",
+			"from": {
+				"ar": "أبو قير",
+				"en": "Abu Qir",
+				"lat": 31.320357,
+				"lon": 30.062969
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 60,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "موقف أبو قير",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 60
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "al-milaha-to-train-station",
+			"from": {
+				"ar": "الملاحة",
+				"en": "Al-Milaha",
+				"lat": 31.264476,
+				"lon": 30.027827
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 43,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "الملاحة",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 43
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-al-milaha",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.197209,
+				"lon": 29.911435
+			},
+			"to": {
+				"ar": "الملاحة",
+				"en": "Al-Milaha",
+				"lat": 31.2644942,
+				"lon": 30.0279647
+			},
+			"options": [
+				{
+					"minutes": 38,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "استاد الإسكندرية",
+							"to": "الملاحة",
+							"minutes": 38
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-abu-qir",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "أبو قير",
+				"en": "Abu Qir",
+				"lat": 31.3202903,
+				"lon": 30.0630813
+			},
+			"options": [
+				{
+					"minutes": 60,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - المحطة (ميدان الشهداء)",
+							"headsign": "أبو قير",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "موقف أبو قير",
+							"minutes": 60
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "hadra-to-train-station",
+			"from": {
+				"ar": "الحضرة",
+				"en": "Hadra",
+				"lat": 31.201377,
+				"lon": 29.93336
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 14,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الحضرة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "الحضرة",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 14
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-hadra",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "الحضرة",
+				"en": "Hadra",
+				"lat": 31.201377,
+				"lon": 29.93336
+			},
+			"options": [
+				{
+					"minutes": 16,
+					"walkMeters": 595,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - المحطة (ميدان الشهداء)",
+							"headsign": "أبو قير",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "شارع قنال المحمودية البحرى",
+							"minutes": 9
+						},
+						{
+							"kind": "walk",
+							"meters": 595,
+							"to": "الحضرة"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "al-bitash-to-train-station",
+			"from": {
+				"ar": "البيطاش",
+				"en": "Al-Bitash",
+				"lat": 31.1220316,
+				"lon": 29.8055994
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.186696,
+				"lon": 29.8947816
+			},
+			"options": [
+				{
+					"minutes": 25,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "البيطاش - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "بوابة ميناء الدخيلة",
+							"to": "مستشفى كرموز",
+							"minutes": 25
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "street-45-to-train-station",
+			"from": {
+				"ar": "شارع 45",
+				"en": "Street 45",
+				"lat": 31.2620037,
+				"lon": 30.0093222
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.196257,
+				"lon": 29.9128304
+			},
+			"options": [
+				{
+					"minutes": 37,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "مستشفى عقبة بن نافع",
+							"to": "استاد الإسكندرية",
+							"minutes": 37
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-street-45",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.192164,
+				"lon": 29.905043
+			},
+			"to": {
+				"ar": "شارع 45",
+				"en": "Street 45",
+				"lat": 31.261259,
+				"lon": 30.010096
+			},
+			"options": [
+				{
+					"minutes": 42,
+					"walkMeters": 174,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 174,
+							"to": "المحطة (ميدان الشهداء)"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العامرية - المحطة (ميدان الشهداء)",
+							"headsign": "العامرية",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "استاد الإسكندرية",
+							"minutes": 2
+						},
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "استاد الإسكندرية",
+							"to": "شارع 45 العصافرة",
+							"minutes": 31
+						}
+					]
+				},
+				{
+					"minutes": 48,
+					"walkMeters": 1148,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 1148,
+							"to": "استاد الإسكندرية"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "استاد الإسكندرية",
+							"to": "شارع 45 العصافرة",
+							"minutes": 31
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-al-bitash",
+			"from": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.1920701,
+				"lon": 29.9027713
+			},
+			"to": {
+				"ar": "البيطاش",
+				"en": "Al-Bitash",
+				"lat": 31.1220732,
+				"lon": 29.8053467
+			},
+			"options": [
+				{
+					"minutes": 30,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "البيطاش - المحطة (ميدان الشهداء)",
+							"headsign": "البيطاش",
+							"from": "المحطة (ميدان الشهداء)",
+							"to": "بوابة ميناء الدخيلة",
+							"minutes": 30
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "abd-el-qader-al-gadida-to-train-station",
+			"from": {
+				"ar": "عبد القادر الجديدة",
+				"en": "Abd El-Qader Al-Gadida",
+				"lat": 31.0732087,
+				"lon": 29.8518813
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 58,
+					"walkMeters": 1564,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 1564,
+							"to": "مدخل عبد القادر"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "أتوبيس 409",
+							"route": "الناصرية القديمة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "مدخل عبد القادر",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 36
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "abis-8-to-train-station",
+			"from": {
+				"ar": "ابيس الثمانيات",
+				"en": "Abis 8",
+				"lat": 31.1272547,
+				"lon": 29.9427712
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 32,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "ابيس الثمانيات - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "ابيس الثمانيات",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 32
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "abu-youssef-to-train-station",
+			"from": {
+				"ar": "ابو يوسف",
+				"en": "Abu Youssef",
+				"lat": 31.092941,
+				"lon": 29.76105
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.186696,
+				"lon": 29.8947816
+			},
+			"options": [
+				{
+					"minutes": 44,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "ابو يوسف - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "شارع الحديد والصلب",
+							"to": "مستشفى كرموز",
+							"minutes": 44
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "airport-to-train-station",
+			"from": {
+				"ar": "المطار",
+				"en": "Airport",
+				"lat": 31.197153,
+				"lon": 29.95239
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 13,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "كوبري السكة الحديد",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 13
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "asafra-to-el-mawqaf-el-geded",
+			"from": {
+				"ar": "العصافرة",
+				"en": "Asafra",
+				"lat": 31.2703272,
+				"lon": 30.0054211
+			},
+			"to": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.176456,
+				"lon": 29.917673
+			},
+			"options": [
+				{
+					"minutes": 39,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العصافرة - الموقف الجديد",
+							"headsign": "الموقف الجديد",
+							"from": "موقف العصافرة",
+							"to": "الموقف الجديد",
+							"minutes": 39
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-awayed-to-asafra",
+			"from": {
+				"ar": "العوايد",
+				"en": "El-Awayed",
+				"lat": 31.2220433,
+				"lon": 29.9940602
+			},
+			"to": {
+				"ar": "العصافرة",
+				"en": "Asafra",
+				"lat": 31.269167,
+				"lon": 30.00663
+			},
+			"options": [
+				{
+					"minutes": 23,
+					"walkMeters": 548,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العصافرة - الموقف الجديد",
+							"headsign": "العصافرة",
+							"from": "نزلة كوبري العوايد",
+							"to": "شارع 6 العصافرة",
+							"minutes": 17
+						},
+						{
+							"kind": "walk",
+							"meters": 548,
+							"to": "العصافرة"
+						}
+					]
+				},
+				{
+					"minutes": 25,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العصافرة - العوايد",
+							"headsign": "العصافرة",
+							"from": "نزلة كوبري العوايد",
+							"to": "موقف العصافرة",
+							"minutes": 25
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-kilo-21",
+			"from": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.175966,
+				"lon": 29.916417
+			},
+			"to": {
+				"ar": "الكيلو 21",
+				"en": "Kilo 21",
+				"lat": 31.0777347,
+				"lon": 29.7403116
+			},
+			"options": [
+				{
+					"minutes": 39,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الموقف الجديد - الكيلو 21",
+							"headsign": "الكيلو 21",
+							"from": "الموقف الجديد",
+							"to": "كافيه زورو",
+							"minutes": 39
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-asafra",
+			"from": {
+				"ar": "الموقف الجديد",
+				"en": "El-Mawqaf El-Geded",
+				"lat": 31.1758558,
+				"lon": 29.9164544
+			},
+			"to": {
+				"ar": "العصافرة",
+				"en": "Asafra",
+				"lat": 31.2703272,
+				"lon": 30.0054211
+			},
+			"options": [
+				{
+					"minutes": 47,
+					"walkMeters": 1059,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "سيدي جابر",
+							"from": "الموقف الجديد",
+							"to": "ذا ووك - سيدي جابر",
+							"minutes": 12
+						},
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "ذا ووك - سيدي جابر",
+							"to": "شارع 45 - كوبري ميامي",
+							"minutes": 18
+						},
+						{
+							"kind": "walk",
+							"meters": 1059,
+							"to": "العصافرة"
+						}
+					]
+				},
+				{
+					"minutes": 47,
+					"walkMeters": 28,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "سيدي جابر",
+							"from": "الموقف الجديد",
+							"to": "ذا ووك - سيدي جابر",
+							"minutes": 12
+						},
+						{
+							"kind": "ride",
+							"vehicle": "ميني باص 20",
+							"route": "الملاحة - المحطة (ميدان الشهداء)",
+							"headsign": "الملاحة",
+							"from": "ذا ووك - سيدي جابر",
+							"to": "حلواني أبو عمر - العصافرة",
+							"minutes": 19
+						},
+						{
+							"kind": "walk",
+							"meters": 28,
+							"to": "حلواني أبو عمر - العصافرة"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العصافرة - الموقف الجديد",
+							"headsign": "العصافرة",
+							"from": "حلواني أبو عمر - العصافرة",
+							"to": "موقف العصافرة",
+							"minutes": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-nasreya-el-qadema-to-train-station",
+			"from": {
+				"ar": "الناصرية القديمة",
+				"en": "El-Nasreya El-Qadema",
+				"lat": 30.9985446,
+				"lon": 29.7877521
+			},
+			"to": {
+				"ar": "المحطة (ميدان الشهداء)",
+				"en": "Train Station (El-Shohada Square)",
+				"lat": 31.193334,
+				"lon": 29.904704
+			},
+			"options": [
+				{
+					"minutes": 66,
+					"walkMeters": 0,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "أتوبيس 409",
+							"route": "الناصرية القديمة - المحطة (ميدان الشهداء)",
+							"headsign": "المحطة (ميدان الشهداء)",
+							"from": "الناصرية القديمة",
+							"to": "المحطة (ميدان الشهداء)",
+							"minutes": 66
+						}
+					]
+				}
+			]
+		}
+	]
+}

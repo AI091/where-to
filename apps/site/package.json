@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "astro build && wrangler deploy"
+    "deploy": "astro build && wrangler deploy",
+    "drafts": "DRAFTS=1 astro build && wrangler versions upload --assets ./dist-drafts --preview-alias drafts --message 'draft route pages'"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

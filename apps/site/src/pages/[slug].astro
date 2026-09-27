@@ -1,0 +1,126 @@
+---
+/**
+ * One page per trip, "ازاي تروح من X لـY", from src/data/routes.json
+ * (made by scripts/generate-routes.ts). Built only in draft builds (DRAFTS=1)
+ * until the pages are reviewed; production builds skip them entirely.
+ */
+import Layout from '../layouts/Layout.astro';
+import data from '../data/routes.json';
+
+type Page = (typeof data.pages)[number];
+
+export function getStaticPaths() {
+	if (process.env.DRAFTS !== '1') return [];
+	return data.pages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props as { page: Page };
+const [best, ...others] = page.options;
+const rides = (o: Page['options'][number]) => o.steps.filter((s) => s.kind === 'ride');
+const round5 = (m: number) => Math.max(5, Math.round(m / 5) * 5);
+// Egyptian "to X": لسيدي بشر, and للعصافرة when the name starts with ال.
+const li = (name: string) => (name.startsWith('ال') ? `لل${name.slice(2)}` : `ل${name}`);
+
+const reverse = data.pages.find((p) => p.from.en === page.to.en && p.to.en === page.from.en);
+const sameOrigin = data.pages.filter((p) => p.from.en === page.from.en && p.slug !== page.slug).slice(0, 5);
+
+const title = `ازاي تروح من ${page.from.ar} ${li(page.to.ar)}؟`;
+const firstRide = rides(best)[0];
+const description = `من ${page.from.ar} ${li(page.to.ar)}: اركب ${firstRide.vehicle} ${firstRide.route}. حوالي ${round5(best.minutes)} دقيقة.`;
+---
+
+<Layout title={`${title} | انزل فين؟`} description={description}>
+	<article class="py-10">
+		<h1 class="text-3xl font-bold leading-snug text-sea-dark sm:text-4xl">{title}</h1>
+
+		<section class="mt-6 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
+			<p class="text-sm font-medium text-muted">أسهل طريقة</p>
+			<p class="mt-1 text-xl font-bold leading-relaxed">
+				{
+					rides(best).map((r, i) => (
+						<span>
+							{i > 0 && ' وبعدين '}
+							اركب {r.vehicle} <span class="text-sea">«{r.route}»</span>
+						</span>
+					))
+				}
+			</p>
+			<p class="mt-2 text-muted">حوالي {round5(best.minutes)} دقيقة، ومشي حوالي {best.walkMeters} متر.</p>
+
+			<ol class="mt-5 space-y-4 border-s-2 border-sea/20 ps-5">
+				{
+					best.steps.map((s) =>
+						s.kind === 'walk' ? (
+							s.meters >= 30 && (
+								<li class="text-muted">
+									امشي حوالي {s.meters} متر لحد <strong class="text-ink">{s.to}</strong>
+								</li>
+							)
+						) : (
+							<li>
+								<p>
+									اركب <strong>{s.vehicle}</strong> «{s.route}» رايح <strong>{s.headsign}</strong>، من{' '}
+									<strong>{s.from}</strong>
+								</p>
+								<p class="mt-1">
+									انزل عند <strong class="text-sea-dark">{s.to}</strong>{' '}
+									<span class="text-muted">(حوالي {round5(s.minutes)} دقيقة في المشوار)</span>
+								</p>
+							</li>
+						),
+					)
+				}
+			</ol>
+		</section>
+
+		{
+			others.length > 0 && (
+				<section class="mt-8">
+					<h2 class="text-xl font-bold text-sea-dark">طرق تانية</h2>
+					<ul class="mt-3 space-y-3">
+						{others.map((o) => (
+							<li class="rounded-xl bg-white/70 p-4 ring-1 ring-black/5">
+								{rides(o).map((r, i) => (
+									<span>
+										{i > 0 && ' ثم '}
+										{r.vehicle} «{r.route}» لحد {r.to}
+									</span>
+								))}
+								<span class="text-muted"> · حوالي {round5(o.minutes)} دقيقة</span>
+							</li>
+						))}
+					</ul>
+				</section>
+			)
+		}
+
+		<p class="mt-8 text-sm leading-relaxed text-muted">
+			الأوقات تقريبية: محسوبة على إن الميكروباص بيعدي كل كام دقيقة، والخطوط من مسح ميداني سنة 2022. ولو خط اتغير، الصفحة
+			دي ممكن تكون محتاجة تتحدث.
+		</p>
+
+		{
+			(reverse || sameOrigin.length > 0) && (
+				<nav class="mt-8">
+					<h2 class="text-lg font-bold text-sea-dark">مشاوير قريبة</h2>
+					<ul class="mt-2 space-y-1">
+						{reverse && (
+							<li>
+								<a class="text-sea underline" href={`/${reverse.slug}/`}>
+									من {reverse.from.ar} {li(reverse.to.ar)}
+								</a>
+							</li>
+						)}
+						{sameOrigin.map((p) => (
+							<li>
+								<a class="text-sea underline" href={`/${p.slug}/`}>
+									من {p.from.ar} {li(p.to.ar)}
+								</a>
+							</li>
+						))}
+					</ul>
+				</nav>
+			)
+		}
+	</article>
+</Layout>

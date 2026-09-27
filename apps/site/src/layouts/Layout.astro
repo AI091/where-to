@@ -8,6 +8,8 @@ interface Props {
 
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+// Draft builds (DRAFTS=1) go to preview URLs only and must never be indexed.
+const drafts = process.env.DRAFTS === '1';
 ---
 
 <html lang="ar" dir="rtl">
@@ -16,6 +18,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		{drafts && <meta name="robots" content="noindex, nofollow" />}
 		<link rel="canonical" href={canonical} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="sitemap" href="/sitemap-index.xml" />

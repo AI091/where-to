@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import data from '../data/routes.json';
+
+// In draft builds only, list the draft route pages for review.
+const drafts = process.env.DRAFTS === '1' ? data.pages : [];
 
 const points = [
 	{
@@ -51,4 +55,21 @@ const points = [
 			))
 		}
 	</section>
+
+	{
+		drafts.length > 0 && (
+			<section class="pb-12">
+				<h2 class="text-xl font-bold text-sea-dark">مسودات ({drafts.length})</h2>
+				<ul class="mt-3 grid gap-2 sm:grid-cols-2">
+					{drafts.map((p) => (
+						<li>
+							<a class="text-sea underline" href={`/${p.slug}/`}>
+								{p.from.ar} ← {p.to.ar}
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		)
+	}
 </Layout>
