@@ -2,7 +2,8 @@
 /**
  * "فيه حاجة غلط؟": lets riders report a mistake (or, on the home page, ask for a
  * trip we don't have). Posts to /api/feedback (worker/index.ts), which stores it in D1.
- * Works as a plain form without JavaScript; with it, sends in place.
+ * Sends in place with JavaScript. Cloudflare Turnstile (invisible for most people)
+ * keeps spam out; it loads only when someone opens the form.
  */
 interface Props {
 	page: string;
@@ -56,6 +57,7 @@ const title = variant === 'trip' ? 'فيه حاجة غلط في الصفحة د�
 				<input name="contact" maxlength="200" dir="ltr" autocomplete="email" class="mt-1 w-full rounded-xl border border-black/15 bg-sand/40 p-3 text-left" />
 			</label>
 			<p class="text-xs text-muted">بنستخدمه بس علشان نرد عليك. <a class="underline" href="/privacy/">الخصوصية</a></p>
+			<div data-turnstile class="min-h-[65px]"></div>
 			<button type="submit" class="rounded-full bg-sea px-5 py-2 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sea disabled:opacity-60">
 				ابعت
 			</button>
@@ -65,9 +67,48 @@ const title = variant === 'trip' ? 'فيه حاجة غلط في الصفحة د�
 </section>
 
 <script>
+	// Public site key of the "anzelfein-feedback" Turnstile widget.
+	const SITEKEY = '0x4AAAAAAFFnQoDKDSIx0PsE';
+
+	declare global {
+		interface Window {
+			posthog?: { capture: (event: string, props?: Record<string, unknown>) => void };
+			turnstile?: {
+				render: (el: HTMLElement, opts: Record<string, unknown>) => string;
+				reset: (id: string) => void;
+			};
+		}
+	}
+
+	let loading: Promise<void> | undefined;
+	const loadTurnstile = () =>
+		(loading ??= new Promise((resolve, reject) => {
+			const s = document.createElement('script');
+			s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+			s.async = true;
+			s.onload = () => resolve();
+			s.onerror = () => reject(new Error('turnstile'));
+			document.head.append(s);
+		}));
+
 	for (const form of document.querySelectorAll<HTMLFormElement>('form[data-feedback]')) {
 		const status = form.querySelector<HTMLElement>('[data-status]')!;
 		const button = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+		const box = form.querySelector<HTMLElement>('[data-turnstile]')!;
+		let widgetId: string | undefined;
+
+		// Load and render Turnstile the first time the form is opened.
+		form.closest('details')?.addEventListener('toggle', async (e) => {
+			if (!(e.target as HTMLDetailsElement).open || widgetId !== undefined) return;
+			window.posthog?.capture('feedback_opened', { page: location.pathname });
+			try {
+				await loadTurnstile();
+				widgetId = window.turnstile!.render(box, { sitekey: SITEKEY, action: 'feedback', language: 'ar', theme: 'light' });
+			} catch {
+				status.textContent = 'مش قادرين نحمّل التحقق دلوقتي. جرّب تاني بعد شوية.';
+			}
+		});
+
 		form.addEventListener('submit', async (e) => {
 			e.preventDefault();
 			button.disabled = true;
@@ -75,16 +116,26 @@ const title = variant === 'trip' ? 'فيه حاجة غلط في الصفحة د�
 			try {
 				const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
 				if (!res.ok) throw new Error(String(res.status));
+				// The kind only; what people write never goes to analytics.
+				window.posthog?.capture('feedback_sent', { page: location.pathname, kind: new FormData(form).get('kind') });
 				form.reset();
 				status.textContent = 'وصلت، شكراً! هنراجعها ونصلّح.';
 			} catch {
 				status.textContent = 'ما وصلتش. اتأكد إنك اخترت نوع المشكلة وجرّب تاني.';
 			} finally {
 				button.disabled = false;
+				// A Turnstile token works once; get a fresh one for the next send.
+				if (widgetId !== undefined) window.turnstile?.reset(widgetId);
 			}
 		});
 	}
-	// Sent without JavaScript: the server sends us back here with ?shukran=1.
+	// Sent without JavaScript: the server sends us back here with ?shukran=1 (or ?retry=1).
+	if (new URLSearchParams(location.search).has('retry')) {
+		const section = document.getElementById('feedback');
+		section?.querySelector('details')?.setAttribute('open', '');
+		const status = section?.querySelector<HTMLElement>('[data-status]');
+		if (status) status.textContent = 'ما قدرناش نتأكد إنك مش روبوت. جرّب تبعت تاني.';
+	}
 	if (new URLSearchParams(location.search).has('shukran')) {
 		const section = document.getElementById('feedback');
 		section?.querySelector('details')?.setAttribute('open', '');
