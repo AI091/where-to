@@ -152,6 +152,11 @@ def post(endpoint: str, payload: dict, timeout: float) -> tuple[int, dict, float
     except urllib.error.HTTPError as e:
         raw = e.read()
         status = e.code
+    except (TimeoutError, urllib.error.URLError) as e:
+        # Record a slow or dead request as a failed pair instead of aborting the run
+        # and losing every row collected so far.
+        latency_ms = (time.perf_counter() - t0) * 1000
+        return 0, {"errors": [{"message": f"client-side failure: {e!r}"}]}, latency_ms
     latency_ms = (time.perf_counter() - t0) * 1000
     try:
         data = json.loads(raw)
