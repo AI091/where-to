@@ -1,0 +1,6 @@
+[project]
+name = "where-to-gtfs-tools"
+version = "0.1.0"
+description = "GTFS preprocessing tools that need more than the standard library"
+requires-python = ">=3.12"
+dependencies = ["osmium>=4.3"]

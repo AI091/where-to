@@ -64,6 +64,9 @@ USAGE
     python3 tools/benchmark/variants.py build --spacing 500
     python3 tools/benchmark/variants.py build --all
     python3 tools/benchmark/variants.py build --spacing 200 --shape-mode legacy-per-route --validate
+    uv run --project tools/gtfs python tools/gtfs/no_stop_roads.py \
+        tools/benchmark/data/variants/spacing_250m.zip infra/otp/egypt-latest.osm.pbf -o drop_250m.json
+    python3 tools/benchmark/variants.py build --spacing 250 --drop-stops drop_250m.json   # -> spacing_250m_walkable
     python3 tools/benchmark/variants.py list
 """
 
@@ -128,14 +131,26 @@ STOP_TIMES_FIELDS = [
 ]
 
 
-def variant_name(spacing: int, shape_mode: str = "per-trip") -> str:
+def variant_name(spacing: int, shape_mode: str = "per-trip", walkable: bool = False) -> str:
     """Canonical variant name. spacing==0 means 'fixed stops only' (control)."""
     base = "fixed" if spacing == 0 else f"spacing_{spacing}m"
+    if walkable:
+        base += "_walkable"
     return base if shape_mode == "per-trip" else f"{base}_legacy"
 
 
-def variant_zip(spacing: int, shape_mode: str = "per-trip") -> Path:
-    return VARIANTS_DIR / f"{variant_name(spacing, shape_mode)}.zip"
+def variant_zip(spacing: int, shape_mode: str = "per-trip", walkable: bool = False) -> Path:
+    return VARIANTS_DIR / f"{variant_name(spacing, shape_mode, walkable)}.zip"
+
+
+def load_drop_stops(path: Path) -> dict[str, tuple[float, float]]:
+    """Synthetic stop ID -> (lat, lon) from tools/gtfs/no_stop_roads.py output.
+
+    Those are synthetic stops on roads where vehicles don't stop (highways,
+    flyovers, tunnels, ramps). Real (surveyed) stops are never dropped.
+    """
+    stops = json.loads(Path(path).read_text())["stops"]
+    return {sid: (lat, lon) for sid, (lat, lon) in stops.items() if sid.startswith(SYN_PREFIX)}
 
 
 def sha256(path: Path) -> str:
@@ -237,10 +252,16 @@ def build_variant(
     base_zip: Path = BASE_ZIP,
     out_zip: Path | None = None,
     verbose: bool = True,
+    drop_stops: Path | None = None,
 ) -> dict:
     """Write one GTFS variant with synthetic stops every `spacing` metres.
 
     spacing == 0 -> straight copy of the base feed (the fixed-stops control).
+
+    drop_stops: tools/gtfs/no_stop_roads.py output for the *same* variant built
+    without dropping. Its synthetic stops are left out. Synthetic stop IDs are
+    deterministic for a given spacing and shape mode, which is what makes its IDs
+    line up with this build's.
 
     Merge rule (unchanged from tools/gtfs/merge_synthetic_stops.py):
       for every trip that gains synthetic stops, real + synthetic stop_times are
@@ -252,7 +273,9 @@ def build_variant(
     """
     if shape_mode not in ("per-trip", "legacy-per-route"):
         raise ValueError(shape_mode)
-    out_zip = out_zip or variant_zip(spacing, shape_mode)
+    drop = load_drop_stops(drop_stops) if drop_stops else {}
+    drop_ids = set(drop)
+    out_zip = out_zip or variant_zip(spacing, shape_mode, walkable=bool(drop_stops))
     out_zip.parent.mkdir(parents=True, exist_ok=True)
     t0 = time.perf_counter()
 
@@ -337,6 +360,23 @@ def build_variant(
             all_syn_stops.append(row)
         group_stops[group] = rows
 
+    # A drop list from a different spacing or base feed would silently drop the
+    # wrong stops (same ID, different place), so every stop in it must match one
+    # this build generated, by ID and by position (to ~1 m).
+    generated = {s["stop_id"]: (float(s["stop_lat"]), float(s["stop_lon"])) for s in all_syn_stops}
+    mismatched = [
+        sid
+        for sid, (lat, lon) in drop.items()
+        if sid not in generated
+        or abs(generated[sid][0] - lat) > 1e-5
+        or abs(generated[sid][1] - lon) > 1e-5
+    ]
+    if mismatched:
+        raise SystemExit(
+            f"{len(mismatched)} stops in {drop_stops} don't match this build by ID and "
+            f"position (e.g. {sorted(mismatched)[:3]}); the list is from a different variant."
+        )
+
     # --- real-stop positions along each shape (cached) ---
     pos_cache: dict[tuple[str, str], float] = {}
 
@@ -395,7 +435,7 @@ def build_variant(
                 s["dist"],
             )
             for s in group_stops[group]
-            if lo < s["dist"] < hi
+            if lo < s["dist"] < hi and s["stop_id"] not in drop_ids
         ]
         if not syn:
             new_stop_times.extend(orig_list)
@@ -429,10 +469,12 @@ def build_variant(
     _write_variant_zip(base_zip, out_zip, all_stops, new_stop_times)
 
     stats = {
-        "variant": variant_name(spacing, shape_mode),
+        "variant": variant_name(spacing, shape_mode, walkable=bool(drop_stops)),
         "spacing_m": spacing,
         "shape_mode": shape_mode,
         "synthetic_stops_generated": len(all_syn_stops),
+        "synthetic_stops_dropped_no_stop_roads": len(drop_ids),
+        "drop_stops": str(drop_stops) if drop_stops else None,
         "synthetic_stops": len(kept_syn),
         "synthetic_stop_times": syn_stop_times,
         "total_stops": len(all_stops),
@@ -516,6 +558,12 @@ def main(argv=None):
     )
     p.add_argument("--validate", action="store_true", help="compare to committed feed")
     p.add_argument("--force", action="store_true", help="rebuild if zip exists")
+    p.add_argument(
+        "--drop-stops",
+        type=Path,
+        metavar="NO_STOP_ROADS_JSON",
+        help="leave out synthetic stops listed by tools/gtfs/no_stop_roads.py (needs --spacing)",
+    )
 
     sub.add_parser("list", help="show which variants exist on disk")
 
@@ -543,14 +591,21 @@ def main(argv=None):
     if not BASE_ZIP.exists():
         extract_base()
 
+    if args.drop_stops and args.all:
+        ap.error("--drop-stops needs --spacing: a drop list only matches one variant")
+
     spacings = [0] + ALL_SPACINGS if args.all else [args.spacing]
+    walkable = bool(args.drop_stops)
     for s in spacings:
-        out = variant_zip(s, args.shape_mode)
+        out = variant_zip(s, args.shape_mode, walkable)
         if out.exists() and not args.force:
             print(f"{out.name} exists, skipping (use --force)")
             continue
-        print(f"\n=== building {variant_name(s, args.shape_mode)} (shape_mode={args.shape_mode}) ===")
-        stats = build_variant(s, shape_mode=args.shape_mode)
+        print(
+            f"\n=== building {variant_name(s, args.shape_mode, walkable)} "
+            f"(shape_mode={args.shape_mode}) ==="
+        )
+        stats = build_variant(s, shape_mode=args.shape_mode, drop_stops=args.drop_stops)
         if args.validate:
             validate_against_committed(stats)
 
