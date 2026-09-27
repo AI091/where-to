@@ -12,6 +12,8 @@ const { title, description, jsonLd } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 // Draft builds (DRAFTS=1) go to preview URLs only and must never be indexed.
 const drafts = process.env.DRAFTS === '1';
+// Analytics only on the real site: not in drafts, not in local dev.
+const analytics = import.meta.env.PROD && !drafts;
 ---
 
 <html lang="ar" dir="rtl">
@@ -36,6 +38,34 @@ const drafts = process.env.DRAFTS === '1';
 		<meta property="og:image:height" content="630" />
 		<meta name="twitter:card" content="summary_large_image" />
 		{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+		{
+			analytics && (
+				<script is:inline>
+					// PostHog (EU), set up for privacy: no cookies or local storage (memory only),
+					// no session recording, no person profiles. Counts page views, plus the
+					// clicks we mark with data-ph-event (e.g. opening walking directions).
+					// prettier-ignore
+					!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset identify alias people.set people.set_once set_config debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+					posthog.init('phc_xaJSE6JpqSDoaAsgWzMZ6NnQj2JuEDdHHkRY9nEdg69t', {
+						api_host: 'https://eu.i.posthog.com',
+						persistence: 'memory',
+						disable_session_recording: true,
+						person_profiles: 'identified_only',
+						autocapture: false,
+						// Also off, whatever the project's defaults say: only what the privacy page lists.
+						capture_dead_clicks: false,
+						capture_heatmaps: false,
+						capture_performance: false,
+						disable_surveys: true,
+						respect_dnt: true,
+					});
+					document.addEventListener('click', (e) => {
+						const el = e.target.closest('[data-ph-event]');
+						if (el) posthog.capture(el.dataset.phEvent, { page: location.pathname });
+					});
+				</script>
+			)
+		}
 	</head>
 	<body class="flex min-h-dvh flex-col">
 		<header class="mx-auto w-full max-w-3xl px-5 pt-6">
@@ -57,6 +87,9 @@ const drafts = process.env.DRAFTS === '1';
 				بيانات الخطوط من{' '}<a class="underline" href="https://digitaltransport4africa.org/">DigitalTransport4Africa</a>{' '}و{' '}<a class="underline" href="https://transportforcairo.com/">Transport for Cairo</a>،
 				برخصة{' '}<a class="underline" href="https://creativecommons.org/licenses/by-nc/4.0/deed.ar">CC BY-NC 4.0</a>، وعدّلنا عليها.
 				بيانات الخرائط ©{' '}<a class="underline" href="https://www.openstreetmap.org/copyright">مساهمو OpenStreetMap</a>.
+			</p>
+			<p class="mt-2">
+				بنعدّ الزيارات من غير كوكيز ومن غير ما نعرف إنت مين.{' '}<a class="underline" href="/privacy/">الخصوصية</a>
 			</p>
 		</footer>
 	</body>

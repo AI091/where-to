@@ -50,4 +50,5 @@ node_modules/
 # Local only, never commit (personal snapshots, third-party material, build output)
 coverage-audit/
 .playwright-cli/
+.playwright-mcp/
 engine/target/
