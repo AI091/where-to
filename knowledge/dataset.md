@@ -22,6 +22,7 @@
 | 2026-05-29 | Extended `calendar.txt` end date `20231230` → `20991231` | Dataset was locked to 2023. Extended so OTP routes for any date. |
 | 2026-05-30 | Generated 7,419 synthetic hail-and-ride stops along 104 route shapes (every ~200m) | Alexandria transit is hail-and-ride; passengers board/alight anywhere. GTFS only had fixed stops. |
 | 2026-05-30 | Merged synthetic stops into `alex_gtfs.zip`; re-sequenced 15,508 stop_times with position-based time interpolation | Initial merge sorted by shape position but kept original times, causing non-monotonic times. OTP rejected all transit patterns. Fixed by regenerating times proportional to distance along trip. Transit patterns restored (192) and routing is ~11 min faster. |
+| 2026-09-27 | Regenerated synthetic stops **per shape** instead of per route: 13,616 synthetic stops (was 7,419), 15,607 stop_times (was 15,508). Rebuilt from the pre-synthetic feed at commit `b1479e6`. | `generate_hail_ride_stops.py` used the first trip's shape for the whole route, but 88 of 104 routes have two shapes (one per direction). The other direction's trips got stops sampled along the wrong streets: ~20% of synthetic stop_times sat >50 m off their trip's own alignment, worst 6.6 km. Now every synthetic stop lies on its own trip's shape (max offset 0 m). |
 
 ## Planned Changes
 

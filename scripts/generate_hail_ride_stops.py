@@ -155,26 +155,26 @@ def main():
     # Stops lookup: stop_id -> (lat, lon)
     stops_by_id = {s['stop_id']: (float(s['stop_lat']), float(s['stop_lon'])) for s in stops}
 
-    # Build: route -> shape_id
-    route_to_shape = {}
+    # Build: shape_id -> trips that follow it.
+    # Most routes have two shapes (one per direction_id), so stops must be
+    # sampled per shape, not per route, or the return trip gets the outbound
+    # alignment's stops.
+    routes_by_id = {r['route_id']: r for r in routes}
+    shape_to_trips = {}
     for t in trips:
-        rid = t['route_id']
-        if rid not in route_to_shape and t.get('shape_id'):
-            route_to_shape[rid] = t['shape_id']
+        if t.get('shape_id'):
+            shape_to_trips.setdefault(t['shape_id'], []).append(t)
 
     all_synthetic_stops = []
     all_synthetic_stop_times = []
     stop_id_counter = itertools.count(100000)
 
-    processed_routes = 0
-    for route in routes:
-        rid = route['route_id']
-        if rid not in route_to_shape:
-            continue
-
-        shape_id = route_to_shape[rid]
+    processed_shapes = 0
+    for shape_id, shape_trips in shape_to_trips.items():
         if shape_id not in shapes_by_id or shape_id not in shape_with_dist_cache:
             continue
+        rid = shape_trips[0]['route_id']
+        route = routes_by_id.get(rid, {})
 
         raw_pts = shapes_by_id[shape_id]
         swd, total_dist = shape_with_dist_cache[shape_id]
@@ -183,7 +183,7 @@ def main():
         if not synthetic:
             continue
 
-        processed_routes += 1
+        processed_shapes += 1
         print(f"Route {route.get('route_short_name', rid)} ({shape_id[:12]}...): "
               f"{len(synthetic)} synthetic stops, {total_dist:.0f}m total")
 
@@ -200,9 +200,8 @@ def main():
             })
         all_synthetic_stops.extend(route_syn_stops)
 
-        # For each trip on this route, interleave synthetic stops
-        route_trips = [t for t in trips if t['route_id'] == rid]
-        for trip in route_trips:
+        # For each trip on this shape, interleave synthetic stops
+        for trip in shape_trips:
             trip_id = trip['trip_id']
 
             existing = sorted(
@@ -263,7 +262,7 @@ def main():
                     new_sequence += 1
                     syn_idx += 1
 
-    print(f"\nProcessed {processed_routes} routes")
+    print(f"\nProcessed {processed_shapes} shapes")
     print(f"Generated {len(all_synthetic_stops)} synthetic stops")
     print(f"Generated {len(all_synthetic_stop_times)} synthetic stop_times")
 
