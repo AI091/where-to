@@ -26,7 +26,7 @@
 
 ## Planned Changes
 
-- **Drop synthetic stops a pedestrian can't reach (decided 2026-09-27)** — With synthetic stops every 250 m, OTP 2.10.0 flagged 1,193 of 10,436 as `IsolatedStop` ("only 0s of walking possible"), almost all on two highway corridors crossing Lake Mariout where walking is banned in OSM. Vehicles don't stop there either, so these stops add search work and help nobody. Plan: remove the stops listed in OTP's `IsolatedStop` report, then rebuild. See [hail-and-ride](concepts/hail-and-ride.md).
+- **Drop synthetic stops on roads where vehicles don't stop (decided 2026-09-27)** — Confirmed from local knowledge: microbuses and buses don't stop on highways (Cairo–Alexandria Desert Road, International Coastal Road, Suez Canal Road, Ring Road, Agricultural Road), flyovers, tunnels or ramps. Rule: a synthetic stop is dropped if the road its own route runs on (the nearest parallel drivable OSM road within 30 m) forbids walking. At 250 m spacing this drops 3,089 of 10,436 synthetic stops. The first plan used OTP's `IsolatedStop` report (1,193 stops), but that misses 1,909 stops that OTP linked to a nearby frontage road or the street under a flyover. See [hail-and-ride](concepts/hail-and-ride.md).
 - **Tram/Train status** — Some tram/train lines are currently out of service. May need to remove or flag these routes.
 - **New routes/lines** — Any new transit lines not in the 2022 data.
 
