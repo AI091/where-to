@@ -1,0 +1,11 @@
+{
+	"_about": "Keyed by the Arabic name the pages show. `aliases`: other names riders use for the same place, shown under the page title so searches for either name find the page (sources: rider usage seen on 3lagnb.com and in the press, and the DT4A survey's own names, 2026-09-28). `notes`: a line that clears up a name people often mix up.",
+	"aliases": {
+		"محطة مصر": ["المحطة", "ميدان الشهداء"],
+		"الموقف الجديد": ["موقف محرم بك", "موقف إسكندرية"],
+		"مطار النزهة": ["المطار"]
+	},
+	"notes": {
+		"مطار النزهة": "ده مطار النزهة القديم جنب سموحة، مش مطار برج العرب."
+	}
+}

@@ -94,3 +94,7 @@ export const mins = (n: number) =>
 
 /** "بيعدي كل دقيقة"، "بيعدي كل 9 دقايق": how often the vehicle comes, from the survey. */
 export const everyText = (n: number | null) => (n ? `بيعدي كل ${n <= 1 ? 'دقيقة' : mins(n)} تقريباً` : '');
+// Fares are in whole and half pounds: 8.5 reads «8 جنيه ونص».
+export const fareText = (egp: number) =>
+	Number.isInteger(egp) ? `${egp} جنيه` : Number.isInteger(egp * 2) ? `${Math.floor(egp)} جنيه ونص` : `${egp} جنيه`;
+

@@ -5,7 +5,11 @@
  *    from one end of a route to the other; its headsign is where it's heading.
  * 2. Every pattern gives one page: from its origin place to its headsign place,
  *    placed at the pattern's first and last real (surveyed) stops.
- * 3. Plan each trip with OTP and keep the distinct options.
+ * 3. Add the trips people search for most (src/data/places.json), which may
+ *    need a change of vehicle.
+ * 4. Plan each trip with OTP and keep the distinct options. Each ride gets the
+ *    governorate's official fare when its line is on the fare list
+ *    (src/data/fares.json, from tools/gtfs/fares.py).
  *
  * Writes src/data/routes.json. The site only builds these pages in draft builds
  * until they are reviewed (see src/pages/[slug].astro).
@@ -74,10 +78,13 @@ const vehicleLabel = (shortName: string) => {
 const slugify = (s: string) =>
 	s.toLowerCase().replace(/\(.*?\)/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-type Place = { ar: string; en: string; lat: number; lon: number };
-type Pair = { from: Place; to: Place; routes: string[] };
+// `id` is the place's part of the URL; pages link to each other by it.
+type Place = { id: string; ar: string; en: string; lat: number; lon: number };
+// `routes`: the routes that go straight from one end to the other.
+// `searched`: a trip from places.json rather than one made from a route.
+type Pair = { from: Place; to: Place; routes: string[]; searched?: boolean };
 
-async function pairs(): Promise<Pair[]> {
+async function pairs(): Promise<{ pairs: Pair[]; routes: Route[] }> {
 	const q = `{ routes { gtfsId shortName longName patterns { headsign stops { gtfsId name lat lon } } } }`;
 	const [ar, en] = await Promise.all([
 		otp<{ routes: Route[] }>(q),
@@ -102,8 +109,11 @@ async function pairs(): Promise<Pair[]> {
 			if (real.length < 2) return;
 			const first = real[0];
 			const last = real[real.length - 1];
-			const from: Place = { ar: arParts[1 - toIdx].trim(), en: enParts[1 - toIdx].trim(), lat: first.lat, lon: first.lon };
-			const to: Place = { ar: arParts[toIdx].trim(), en: enParts[toIdx].trim(), lat: last.lat, lon: last.lon };
+			const place = (i: number, stop: Stop): Place => ({
+				id: slugify(enParts[i]), ar: arParts[i].trim(), en: enParts[i].trim(), lat: stop.lat, lon: stop.lon,
+			});
+			const from = place(1 - toIdx, first);
+			const to = place(toIdx, last);
 			const key = `${from.en}>${to.en}`;
 			const pair = byKey.get(key) ?? { from, to, routes: [] };
 			pair.routes.push(route.gtfsId);
@@ -117,7 +127,8 @@ async function pairs(): Promise<Pair[]> {
 		degree.set(p.to.en, (degree.get(p.to.en) ?? 0) + 1);
 	}
 	const score = (p: Pair) => (degree.get(p.from.en) ?? 0) + (degree.get(p.to.en) ?? 0);
-	return [...byKey.values()].sort((a, b) => score(b) - score(a) || a.from.en.localeCompare(b.from.en));
+	const sorted = [...byKey.values()].sort((a, b) => score(b) - score(a) || a.from.en.localeCompare(b.from.en));
+	return { pairs: sorted, routes: ar.routes };
 }
 
 const PLAN = `query Plan($from: InputCoordinates!, $to: InputCoordinates!, $date: String!, $time: String!, $sw: Long, $banned: String) {
@@ -163,6 +174,57 @@ const csvRows = (name: string) => {
 };
 const everyMinutes = new Map(csvRows('frequencies.txt').map((f) => [`1:${f.trip_id}`, Math.round(Number(f.headway_secs) / 60)]));
 
+// Official fare per route (EGP), from the governorate's March 2026 list.
+const fares: Record<string, number> = await Bun.file(new URL('../src/data/fares.json', import.meta.url)).json();
+
+// The trips people search for most, between places pinned to surveyed stops.
+// A big station has several stops with its name (one per platform or street);
+// stand at the one in the middle of them.
+type Curated = { places: { id: string; ar: string; stop: string }[]; pairs: [string, string][] };
+const curated: Curated = await Bun.file(new URL('../src/data/places.json', import.meta.url)).json();
+const feedStops = csvRows('stops.txt').filter((s) => !s.stop_id.includes('SYN_'));
+function curatedPlace(id: string): Place {
+	const p = curated.places.find((x) => x.id === id);
+	if (!p) throw new Error(`places.json: no place "${id}"`);
+	const stops = feedStops
+		.filter((s) => s.stop_name.trim() === p.stop)
+		.map((s) => ({ lat: Number(s.stop_lat), lon: Number(s.stop_lon) }));
+	if (stops.length === 0) throw new Error(`places.json: no stop named "${p.stop}"`);
+	const far = (a: { lat: number; lon: number }) => stops.reduce((sum, b) => sum + Math.hypot(a.lat - b.lat, a.lon - b.lon), 0);
+	const middle = stops.reduce((best, s) => (far(s) < far(best) ? s : best));
+	return { id: p.id, ar: p.ar, en: p.stop, ...middle };
+}
+// The routes that pass within 400 m of `from` and then within 400 m of `to`.
+// Synthetic stops count: you can wave the vehicle down anywhere on its way.
+const metres = (a: { lat: number; lon: number }, b: { lat: number; lon: number }) =>
+	Math.hypot((a.lat - b.lat) * 111_320, (a.lon - b.lon) * 111_320 * Math.cos((a.lat * Math.PI) / 180));
+function straightRoutes(routes: Route[], from: Place, to: Place): string[] {
+	return routes
+		.filter((r) =>
+			r.patterns.some((p) => {
+				const i = p.stops.findIndex((s) => metres(s, from) <= 400);
+				return i >= 0 && p.stops.slice(i + 1).some((s) => metres(s, to) <= 400);
+			}),
+		)
+		.map((r) => r.gtfsId);
+}
+// A searched-for trip only gets a page if it's one people would actually take:
+// at most one change of vehicle, a walk of at most 1.2 km in total, and no
+// hop of a few minutes between two rides. OTP happily rides a microbus that
+// comes every minute for one stop; a rider would pay a fare and wait for it,
+// so they walk that bit instead.
+const MAX_RIDES = 2;
+const MAX_WALK_M = 1200;
+const MIN_RIDE_MIN = 5;
+const takeable = (it: Itinerary) => {
+	const rides = it.legs.filter((l) => l.mode !== 'WALK');
+	return (
+		rides.length <= MAX_RIDES &&
+		it.walkDistance <= MAX_WALK_M &&
+		(rides.length === 1 || rides.every((l) => l.duration >= MIN_RIDE_MIN * 60))
+	);
+};
+
 // "Best" means least hassle, not just fastest: walking counts double and each
 // change of vehicle costs 5 minutes, so a 47-minute trip with 1 km of walking
 // loses to a 47-minute trip without it.
@@ -179,14 +241,16 @@ async function plan(pair: Pair, allRoutes: string[]) {
 			sw: SEARCH_WINDOW_S,
 			banned: banned.join(',') || null,
 		});
-	// OTP drops a direct route that comes every 45 minutes, because its cost counts
-	// the full wait. The page exists because of that route, so also search with every
-	// other route banned and let it compete on hassle.
+	// OTP drops a direct route when a faster trip with a change exists (or when it
+	// comes every 45 minutes, because its cost counts the full wait). Riders would
+	// often rather stay on one vehicle, so also search with every other route
+	// banned and let the direct routes compete on hassle.
 	const [open, direct] = await Promise.all([
 		search([]),
-		search(allRoutes.filter((r) => !pair.routes.includes(r))),
+		pair.routes.length > 0 ? search(allRoutes.filter((r) => !pair.routes.includes(r))) : null,
 	]);
-	const itineraries = [...open.plan.itineraries, ...direct.plan.itineraries];
+	let itineraries = [...open.plan.itineraries, ...(direct?.plan.itineraries ?? [])];
+	if (pair.searched) itineraries = itineraries.filter(takeable);
 	// Headway trips come back as near-copies a minute apart; keep one per sequence of routes.
 	const seen = new Set<string>();
 	const options = [];
@@ -218,6 +282,7 @@ async function plan(pair: Pair, allRoutes: string[]) {
 							toOnRoad: onRoad(l.to.stop),
 							minutes: Math.round(l.duration / 60),
 							everyMinutes: everyMinutes.get(l.trip?.gtfsId ?? '') ?? null,
+							fare: fares[l.route?.gtfsId ?? ''] ?? null,
 							geometry: l.legGeometry.points,
 						},
 			),
@@ -227,16 +292,26 @@ async function plan(pair: Pair, allRoutes: string[]) {
 	return options;
 }
 
-const all = await pairs();
-const allRoutes = [...new Set(all.flatMap((p) => p.routes))];
+const { pairs: all, routes } = await pairs();
+const allRoutes = routes.map((r) => r.gtfsId);
+const searched: Pair[] = curated.pairs.map(([id1, id2]) => {
+	const from = curatedPlace(id1);
+	const to = curatedPlace(id2);
+	return { from, to, routes: straightRoutes(routes, from, to), searched: true };
+});
 const pages = [];
-for (const pair of all.slice(0, LIMIT)) {
+const slugs = new Set<string>();
+for (const pair of [...all.slice(0, LIMIT), ...searched]) {
+	const slug = `${pair.from.id}-to-${pair.to.id}`;
+	// A searched-for trip that a route already covers keeps the route's page.
+	if (slugs.has(slug)) continue;
 	const options = await plan(pair, allRoutes);
 	if (options.length === 0) {
 		console.warn(`no transit option: ${pair.from.en} -> ${pair.to.en}`);
 		continue;
 	}
-	pages.push({ slug: `${slugify(pair.from.en)}-to-${slugify(pair.to.en)}`, from: pair.from, to: pair.to, options });
+	slugs.add(slug);
+	pages.push({ slug, from: pair.from, to: pair.to, options });
 }
 await Bun.write(new URL('../src/data/routes.json', import.meta.url), JSON.stringify({ generatedFor: `${DATE} ${TIME}`, pages }, null, '\t'));
-console.log(`${pages.length} pages from ${all.length} candidate pairs`);
+console.log(`${pages.length} pages from ${Math.min(LIMIT, all.length)} route pairs and ${searched.length} searched-for trips`);

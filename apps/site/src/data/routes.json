@@ -4,12 +4,14 @@
 		{
 			"slug": "el-awayed-to-train-station",
 			"from": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2174986,
 				"lon": 29.9938614
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -31,6 +33,7 @@
 							"toOnRoad": false,
 							"minutes": 33,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "idp}DsdavDpFU|@?j@QPB\\DzKnAR@J?|@Dn@?lBGbF_@v@GxEo@nHk@pXy@pM?xJKH?~DBtF?`B?zFIbBAzJKdAA`HM~CAhCAnDGvAOh@M@Ad@OlBeAfBoAdAg@bAYHAXCrAGpABfALp@NzAj@XRd@Zh@d@hCtCtBdCjEfF`ApAp@t@d@f@|AjBhArArBfC~HnJTZr@dApAzBZv@`AzCdEtMzBdH^vANv@Fj@L|@J~A@p@AxAI|AKbAMr@ABWbAo@fBc@`AcCjEuF~JUd@s@`BsAvDw@pBc@v@kGfLiGdLwCnFk@vAW|@Mt@Kf@G~@GhBL`CV`BXhAHXzCfJd@pAnEpMn@lBnAbDpA~Dj@dBb@pArB~G`@rApDzJh@xA`AtCrAvDRf@xAzDRd@v@nBt@tBfB`FfBpF??|A|Cv@nAp@v@LPnApAnIzIlApAnA~AfBjCp@z@BDn@bAv@`Ax@|@dDrClAdAX\\JTF`@Cd@M^e@j@mJlEyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOL}@Xy@JgDGwAFaAN[LiBTMHEL?JLPLDRAbDm@f@Er@AR?dDJ|@HjCfAj@PjCp@jBjI`DhNaBkHbCrKjCzJpDbNdCdJ"
 						}
 					]
@@ -56,6 +59,7 @@
 							"toOnRoad": false,
 							"minutes": 35,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "mdp}DieavD~EUjAAr@DPBv@H`KjAR@d@Bb@@n@?lBGzFc@^CxEo@nHk@pXy@pM?bKKN?nDBnG?fA?zFI|BC`JI~ACfGKxDCnB?nDGvAOh@MXKLElBeAfBoAdAg@\\Kd@Mb@E??rAGpABfALp@NzAj@n@b@NJh@d@fF~Fh@p@xDpE`ApAdAhAPRzAjBpEpF~HnJBDr@dApAzBZv@lAtDVv@lD~KnBhG^vANv@NfAD`@J~A@p@AxAI|AKbAMr@K^Mf@o@fBc@`AsCdFeFdJc@~@e@fAsAvDw@pBs@pAiGdLkGdLgCvEk@vAW|@UrACHG~@GhBL`CV`Bb@bB?@zCdJp@lBnEpMb@pAnAbD|AxE^jAb@pA~BzHTv@|DtK\\~@`AtCrAvD^`AlA`DRd@v@nB`ApCzAdEfBpFLVnAdCv@nAp@v@LPbBdBnIzIx@|@nA~AfBjCt@`AJPb@p@v@`Ax@|@zDdDv@r@X\\JTF`@Cd@M^e@j@mJlEyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOL}@Xy@JgDGwAFaAN[LiBTMHEL?JLPLDRAbDm@f@EfAAD?~CJ|@HjCfAdAXpBh@tBfJ~ChNiBgIbCrKtCvKpDbNzBhI"
 						}
 					]
@@ -65,12 +69,14 @@
 		{
 			"slug": "el-mawqaf-el-geded-to-train-station",
 			"from": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.180134,
 				"lon": 29.913627
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -92,6 +98,7 @@
 							"toOnRoad": false,
 							"minutes": 17,
 							"everyMinutes": 1,
+							"fare": 5,
 							"geometry": "yzh}DcoquDaBgF_BmEIUk@uAW_@M_@{AyDg@u@Yu@mAaDo@iBMk@_AyCs@}BwCwIwAiEwBgG[}@fH}Cd@YLQBG~Aq@j@CnF_CREf@Eh@B~Af@b@@`@KLKT[Jc@@g@KgAu@qBm@o@g@Ya@A_@FMHMJQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRAxCk@HAf@EfAAdDJ|@HxAl@p@XvDbAfAzE`DjN}@}DbCrKbBnGpD`NpD`NCM"
 						}
 					]
@@ -101,12 +108,14 @@
 		{
 			"slug": "train-station-to-el-awayed",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2176441,
@@ -128,6 +137,7 @@
 							"toOnRoad": false,
 							"minutes": 32,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "_fk}DoyouDDy@eAeDACqEoMiDsJg@}Aq@qBmAkDW{@g@_CAEeA_O?GAUDo@JABCBMAEKKI@EFAJcCe@}C{@w@STa@JI~CgCZ[Va@~CsI^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEhQyHz@]|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDVFVAFCHM@I?QGOuAeBQc@aGiG[g@q@s@kAcA{G{FcAiAKO{FeIg@m@EG_FoFeBgBkBoB_AeAcAmAc@m@i@_AOUs@}AuCwIwCyIK]i@yAuEoMyAcEuBkG}@mCuC}H?CuEiMACoEqMwAeEuBkGm@iBS_AY}AI{@GeCDk@@YT}A\\yAh@sAhBeDjGeLnFyJZk@jBoD~BoGXy@jFoJd@{@rD_H`@cADMNk@R_ABGXsBHeB@{AAq@Aa@GaAYmBOw@_@{AeAgDeEwM}AeFy@qBgAmBa@s@yGaIgD_EwCoDf@j@}AmB_BgBiDeEeAqAoAqA{AiBuAyAa@c@}AmAk@Yk@ScAU{@K{@As@AaAFaAPoBp@sAx@UPQJcAl@c@Pe@N{AXmAJuB@gB@iEAmCFc@?qDBqCGyA?g@?iHLoB@iFD_ELW?sEHyCLqA?{O?iK\\yFHeI^wPfB_DN]BmAAq@E[CcGq@wDc@MAKOMKMGQCsDNeCH"
 						}
 					]
@@ -147,6 +157,7 @@
 							"toOnRoad": true,
 							"minutes": 21,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[ECWOaA{@BgA[c@]u@Yw@Wy@a@iAoCsHQu@q@o@AGE_@Ky@GkA?e@HuBTmBTeAPg@HYhAuBhAkB`BuCHSv@}Av@cCb@kBf@mCDSRcCRkDFcEFwDA{@G{@Mw@c@uA_@s@AAOU{@}@o@c@oD}AwAg@m@SkBu@gBaAkBkAa@SC?oAYiDe@wDw@eB]{@U}@c@wDyBuCcBoCiBi@c@g@k@KKU]]q@Ws@a@_Bi@{Am@wAS[{@{A{@iAsAsA{AcAg@WWM_A]{FoAwAc@sAk@yAw@qF}A{C}@]EgCEaAOo@SCAo@]y@m@m@e@s@y@m@aAc@iASq@I[c@}Bs@oHIq@Ie@YiAm@eBi@}B[iBGk@[cCYeDOyCE_B@\\EiCK{A[qCYyAOo@Kc@kBkGk@gB[aAMe@QiAEe@?WCs@@q@Fq@XkBTkAtCoNP{@TwAvBuIPu@f@kAb@w@h@q@`A}@f@k@d@}@v@wA`@m@fB_CZe@x@mB"
 						},
 						{
@@ -162,12 +173,14 @@
 		{
 			"slug": "train-station-to-el-mawqaf-el-geded",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.197209,
 				"lon": 29.911435
 			},
 			"to": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.176456,
@@ -189,6 +202,7 @@
 							"toOnRoad": false,
 							"minutes": 7,
 							"everyMinutes": 3,
+							"fare": 5,
 							"geometry": "oel}DmaquDcAuDmC}JYsA}AmCKYG]@_@F[JYnCkBPQLUxCyBvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`BzB~@tAj@hA|AnEtAlEZj@BJ|@~CtAxE\\tADLzAxEfB~Fz@rC"
 						}
 					]
@@ -198,12 +212,14 @@
 		{
 			"slug": "el-sa-ah-to-train-station",
 			"from": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.244006,
 				"lon": 29.98587
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -225,6 +241,7 @@
 							"toOnRoad": false,
 							"minutes": 49,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "aju}Dsr_vD??eBeFa@PKYk@cBe@iCWkAaAiDyBiISaAIq@Ck@GqBNKPGTC|Gx@@?bCTxHUjCIf@@LBx@\\LJLHRBRAPEPMLQFW@WLA`M]tGQhDM~La@tEOpOc@eHR~L]`M]~L[b@CpDIjFJfABJ?lBAlXkA~EUjAAb@DX@F@xKnA^DR@hADn@?lBGbDWvBOxEo@nHk@lDMf@Fb@@J?rLUzAEp@@b@ATE?|AAbEElOAbEEhIG|IAnDCjOElOAnHC|ECpEAzB@~D?tIOtDCd@I|EHxF?NCnGHpBDf@N~@HZvD~Md@dBzCrJZ~@pDrKhAhD|AzEb@z@DLnBdFfAhCp@nAxAnCt@nAtBdE@BTv@Pz@~AxFl@pBVx@hArCvB|FvCzH~@nCxD|KXp@Td@\\p@tB`DvBvCr@`At@z@`FbFVXrB`C|AzAhB|A^ZdA|@zAhA~CrCBB~AbBlDfEt@`AtCtDtB|CPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JBFHHLDRAbCe@^Gf@EfAAdDJ|@HbAb@fAb@vDbA~@`E~CjNs@cDbCrKxAtFpD`NrDbNBH"
 						}
 					]
@@ -250,6 +267,7 @@
 							"toOnRoad": false,
 							"minutes": 7,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "kou}Dq{_vDUs@e@iCWkAsA}EGUIAK?KJCJ@`AxBpHGVGJCFON_KdEaA`@UVy@B]AW@WFoBbAkAj@kAh@{@^qEbBE@]y@EEQMoCoFi@aAOMSGSAUDUH_AXw@t@sFjEGBA?SAiDbDyB|CQT{BvCsAjBiBvB}@dAG?QBEDYh@CP@NFNJHNDNAFENQnB~B|DzE_ApAYS"
 						},
 						{
@@ -269,6 +287,7 @@
 							"toOnRoad": false,
 							"minutes": 25,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "w|w}Dif~uDJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@bCrKLf@pD`NpDbNpAvE"
 						}
 					]
@@ -278,12 +297,14 @@
 		{
 			"slug": "train-station-to-el-sa-ah",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.244006,
@@ -305,6 +326,7 @@
 							"toOnRoad": false,
 							"minutes": 48,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "_fk}DoyouDDy@eAeDIUqEoMaDaJo@oBi@_BmAkDW{@i@eCAKcA{NAK?IDo@JABCBMAEKKI@EFAJcCe@mDaAg@MTa@JI~CgCZ[Va@~CsI^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKT[Jc@@g@KgAu@qBg@aAeEoHkAaCcA_BaDqEc@o@wB_D}B}Cy@cAmEmFeBgBSQ_ByAkDyCa@]s@q@uFoF_BcBsEsEqA_Bc@o@gBeCgA}Ae@y@aAsBAEqEqMgCmHgAcDc@qAYcAeAmCuAkE]uAe@cC]uAa@sA_AwBCGeAeBwCkD_@k@k@iAgDiJ{HgUqEgNOs@KaAu@qBCKeD}KS_ACOIi@KsAEsA?gH?oGBoAXkD??F_B@iGAwJ@tECmOA_H?mF@mO@m@B_N@gBFqBZyE@uADsB@oDAiFAkCOcFA{C?I?}A@}BDeBLy@Rw@PYRSDCRKXGdEMhEG~@An@@TDh@PNLLPHTFT@VAVKh@OV[XWLS@eCJmR?iK\\yFHeI^aO|Au@H}DRmAAq@E[Co@IyLsAl@HiAOaHZcI\\{Oh@KAQKEKAi@CaBUyME_@GOCK_FwLO[SWUS[KYG]AuGN_MZaMZ_MZaMZA?_L^yGNzFMaMX_MVE?Ff@?p@CJ?DFxDF~EVlO@`@ARKl@Sr@KJQd@w@TgENmEP}ABsC_@eGy@OGIN?J@JTCfBTtDb@dCTf@nCJn@r@`DbBvGhAjEkF~Bo@X`B`FqAp@"
 						}
 					]
@@ -314,12 +336,14 @@
 		{
 			"slug": "el-awayed-to-el-mawqaf-el-geded",
 			"from": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2174986,
 				"lon": 29.9938614
 			},
 			"to": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.176456,
@@ -341,6 +365,7 @@
 							"toOnRoad": false,
 							"minutes": 20,
 							"everyMinutes": 5,
+							"fare": 8.5,
 							"geometry": "idp}DsdavDpFU|@?j@QPBn@HhKjAR@\\@j@Bn@?lBGtFc@d@CxEo@nHk@pXy@pM?bKKF?vDBhG?lA?zFItBChJIvACnGKpDAvBAnDGvAOh@MPGTIlBeAfBoAdAg@\\Kd@MZCFArAGpABfALp@NzAj@h@^TNh@d@fF~Fb@h@~DxE`ApA~@bAVXzAjBjEhF~HpJHJr@dApAzBZv@hAlDdEvMrBpG^vANv@L~@Fh@J~A@p@AxAI|AKbAMr@IVOn@o@fBc@`AmC|EkFlJ_@v@i@nAsAvDw@pBm@hAkGdLkGfLkC|Ek@vAW|@SjAEPG~@GhBL`CV`B`@|A@DzCfJl@dBnEpMf@xAnAbDxApEb@rAb@pAzBrHX~@zDlK^fA`AtCrAvDZx@pAhDRd@v@nB~@hC|AlEfBpFHPrAjCv@nAp@v@LP|A~AnIzI~@bAnA~AfBjCt@`AFHf@x@v@`Ax@|@tD`D|@v@X\\JTF`@Cd@M^e@j@mJlEyPdI}]hPS@]JkNjGc@No@FgAEkAa@]Gc@D_@TOPIPETC^DdAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAxEJ`@Pr@z@hCrBzGtAtE"
 						}
 					]
@@ -350,12 +375,14 @@
 		{
 			"slug": "el-mawqaf-el-geded-to-el-awayed",
 			"from": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.180134,
 				"lon": 29.913627
 			},
 			"to": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2175298,
@@ -377,6 +404,7 @@
 							"toOnRoad": false,
 							"minutes": 25,
 							"everyMinutes": 5,
+							"fare": 8.5,
 							"geometry": "yzh}DcoquDQi@oA}D_BmEa@cASg@W_@M_@{AyDg@u@o@cBw@sBo@iBMk@sAiE_@mAkDeKcA{CkCuHGOfH}Cd@YPY|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDVFVAFCHM@I?QGOuAeBQc@aGiG[g@q@s@YWmIgHUYy@_AwFaICCm@u@_FoFw@y@yC}C_AeAcAmAc@m@CGu@mAs@}AyBwGsDyKK]K[uEmMwBcGyAkEyAmEuC}HZz@uEmM[{@sDuKuBeGyAkEiAiDS_AY}AI{@EiBA[FeAT}A\\yAh@sAdAmBjGcLjGeLFMfC{E`BoEv@yBfEuHhAuBrD_HHQVq@Ty@R_ABGXsBHeB@{A?MAc@IcBYmBOw@_@{Ak@gBcEwMyBeHy@qBa@u@gAkBmFoGsEqFkB}BCE}AmB_BgB}BsCqBcCoAqA{AiBg@i@oAsA}AmAk@Yk@ScAU{@K??oBCaAFaAPoBp@gAp@KFUPuAx@c@Pe@N{AXmAJw@?eDBiEAqAB_BBqDBqCG]?cB?iHLq@?gHFyCJe@@kFHyCLS?yQ?iK\\yFHeI^wPfBcBHyAHmAAq@E[CgEe@sFm@iAOaHX"
 						}
 					]
@@ -386,12 +414,14 @@
 		{
 			"slug": "el-awayed-to-el-mansheya",
 			"from": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2252272,
 				"lon": 29.9800516
 			},
 			"to": {
+				"id": "el-mansheya",
 				"ar": "المنشية",
 				"en": "El-Mansheya",
 				"lat": 31.2012982,
@@ -413,6 +443,7 @@
 							"toOnRoad": false,
 							"minutes": 41,
 							"everyMinutes": 2,
+							"fare": 9.5,
 							"geometry": "stq}Din~uDYdBC^A`@Jf@rEvJDH\\dAVfAXpBTpBTvBLhAXrCt@xGBF\\dAd@pB`A~GDX`AbGfAnFb@xBlAxDn@nAb@n@RPZ\\NJ`@\\t@`@vAd@zD|@fE`AbFzA@@pCn@`Cp@`A\\nAf@nBx@fAX`A^^T|@r@n@v@`BpBl@lF^|ABPF`AFpBM|AMhAa@`BY|@M^i@nAIj@Cd@HXRPXL}@nEqCpNqCnNf@gC}AxH{ArHEFCFMLUBQFUNOVKf@APDb@DLT^\\RJBh@j@LZ\\dAbExM`CvHn@nBF^HNLPtFzK`GlLvC|FJT?^CZYbAARBTBH~CpMDVX|A@d@AJOZE?KFADAL@FBD^PJNNV|AxCjEhIn@zABHlApDvBdHX~@dDzK`DrKZdA\\jAvCtK^vACZIVOR]\\i@VcExA{EdBURkDlAcJ|C_A\\aL`EbE{A_GtBSDQ?q@_B}@sBY_AUqAyA_I]aBI_@Sm@?AYm@}E_Hi@_AOWaAsAIEI@GHAJBJhAbB\\v@dAvAlCjDr@pAPn@d@zB`@nBnAvGRv@Tj@zBrFHZTvAJvBLzCHx@Jv@Nv@`AnDJ`@b@hA^j@rEhC^RNJzDhCx@n@nA`Al@f@jB`BzEbFLLfCzCxArBd@n@l@~@@BbAjBhB|Dh@pAVv@Xz@Tv@"
 						}
 					]
@@ -432,6 +463,7 @@
 							"toOnRoad": true,
 							"minutes": 36,
 							"everyMinutes": 1,
+							"fare": 9.5,
 							"geometry": "stq}Din~uDYdBAJCt@Jf@hEdJNZ\\dAVfAXpBTpBPbBP|AXrCr@nG@H`@lAd@pB`A~G@DdAvG`A|Eh@jClAxDn@nAb@n@DDh@h@NJ`@\\t@`@vAd@hDv@xEfArEtAPFpCn@`Cp@`A\\~@^~B`AfAX`A^^T|@r@b@h@lB~Bl@lF^zA?@JrAFpBM|AMhAa@`BQh@Ur@i@nAIj@Cd@HXRPXLw@zDqCpNqCnN`@sB}AxHyAjHAFINMLUBQFUNOVKf@APDb@DLT^\\RJBh@j@LZTr@bEvMhCjIn@nBF^??V`@jFhK`GnL`DlGJT?^CZYbAAR@J@HbDzM?B^pB@d@AJOZE?KFADAL@FBD^PJNNVrAfCtEzIj@rABFpAzDnBpG`@rA|CfKhDfLTr@b@|AnCbKf@hBP~@T|@pAtDW|@CHq@rA_B`CIPGRCxCBj@@NhAxIsBfAOHrD`LP\\@BANBT{DjAiElAa@JmA\\xCvI~ArELj@Bh@Iz@@HHLz@nAV`@x@rAjBtDdA~B"
 						},
 						{
@@ -447,12 +479,14 @@
 		{
 			"slug": "el-mansheya-to-el-mawqaf-el-geded",
 			"from": {
+				"id": "el-mansheya",
 				"ar": "المنشية",
 				"en": "El-Mansheya",
 				"lat": 31.200361,
 				"lon": 29.895333
 			},
 			"to": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.176456,
@@ -474,6 +508,7 @@
 							"toOnRoad": false,
 							"minutes": 18,
 							"everyMinutes": 6,
+							"fare": 7,
 							"geometry": "gyl}Dy|muDKkBIw@[iDOeAk@yC|Ai@`A]VjAaDdAo@qCAEUu@}@aD{AwCe@kACEaAkBa@s@oAoB[g@kA}A[c@qCgDyC{C_@a@v@mAt@_AiBkCGB_Ai@iJiFV_@jHeKn@}@|CmE_AsCeEaMNEpVuIxAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`DpEj@hA|AnEtAlEZj@r@hCL`@tAxE\\tAz@hC??~DzMHT"
 						}
 					]
@@ -483,12 +518,14 @@
 		{
 			"slug": "el-mansheya-to-el-awayed",
 			"from": {
+				"id": "el-mansheya",
 				"ar": "المنشية",
 				"en": "El-Mansheya",
 				"lat": 31.1996681,
 				"lon": 29.8951257
 			},
 			"to": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2187734,
@@ -510,6 +547,7 @@
 							"toOnRoad": false,
 							"minutes": 45,
 							"everyMinutes": 2,
+							"fare": 9.5,
 							"geometry": "{tl}Do{muDEaCGaFKmBGgAK_A_A{DGWSs@Uc@a@i@OQaAeASWc@j@}@~@{@aBc@gAACq@qAu@sAoAoB[g@eAuAa@k@qCgDqCsCg@i@uEcEe@_@aAo@sD_C_@SfCoDjHeKb@o@|CmEhBiCnBuC_CaHcAsCdN{ExAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYl\\{Nz@_@~Ao@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKJKHOJc@@g@KgAu@qBg@aAeEoHkAaCa@o@qAmBmGcJ]c@_ByByE}Fm@s@eBgBsBkBoAgA{AqAa@]_F{EiAeAkGoGg@g@qA_BkCuDo@}@W_@e@y@aAsBiBoFqEqMkCyHs@wCCEgB{Fe@iBc@{BScAYeAYy@w@cBS[c@s@w@{@yAcBe@q@c@w@a@w@}@wBM]wBkGuAgEeEwMEKeEgMm@iBu@qBcB{FeAmDWoAIi@KsAEsA?a@?mO?GBoAXkDF_B@eD?cBAwJ?q@CmO?W@uN@sH@yEBmJFqBDk@TmDFiE@sC?[CuJG{BGgBAeD?}A@}B@a@BcALy@Rw@PYRSXOXGnDKTAhGIn@@TDh@PNLLPBDDNFT@VAVKh@OV[XWLyCL{A?qO?iK\\yFHeI^wPfBiDPS@mAAq@E[CmGs@mD_@iAOeRx@_Nd@{@BKAQKEKAWAQMiJIqEtFcC^QB|@fJSz@CxAfDc@|A[vAKz@ObASdA"
 						}
 					]
@@ -519,12 +557,14 @@
 		{
 			"slug": "el-mawqaf-el-geded-to-el-mansheya",
 			"from": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.180134,
 				"lon": 29.913627
 			},
 			"to": {
+				"id": "el-mansheya",
 				"ar": "المنشية",
 				"en": "El-Mansheya",
 				"lat": 31.200503,
@@ -546,6 +586,7 @@
 							"toOnRoad": false,
 							"minutes": 27,
 							"everyMinutes": 6,
+							"fare": 7,
 							"geometry": "yzh}DcoquDaBgF_BmEACs@gBW_@M_@{AyDg@u@Qc@uAsDo@iBMk@y@gCy@oCoCeI_B{EoBuFc@oAfH}Cd@Y@ANW~Aq@j@CnF_CREf@Eh@B~Af@b@@`@KLKT[Jc@@g@KgAu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RuJfDyCbAgGxBUHgBn@{BgFiAf@gBv@Y_AuAqHY_B]aBI_@So@Ym@eBcCwB{C_AaB{@iAIEI@GHAJBJNTx@lA\\v@pE`G@@r@pAPn@fAjF^nBn@fDRv@zBvFTf@HZTvAXrGHx@BRFb@Nv@lApEb@hA^j@h@ZhDlB^RxDhCPJx@n@nA`AxChCp@p@h@h@~BfCtChDFHx@hAV^tArBbAjBj@nA|@lB~@`Cn@zBVx@Lh@`@hBb@pCPnAVlDDn@Br@"
 						}
 					]
@@ -555,12 +596,14 @@
 		{
 			"slug": "asafra-to-train-station",
 			"from": {
+				"id": "asafra",
 				"ar": "العصافرة",
 				"en": "Asafra",
 				"lat": 31.2620037,
 				"lon": 30.0093222
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -582,6 +625,7 @@
 							"toOnRoad": false,
 							"minutes": 38,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "ozx}DgedvDc@v@c@`AoAhCs@zAwBjEw@|Ay@xAwCpF]l@iAvCQj@CFSb@cBvCgFvIs@|@IJCBqCtB}DdDcBrAtAiAuHdGYgAOm@aA_Da@q@i@w@eBkBUSaBaB}DoDg@c@yAmAoAeA]U{D{AWKkAa@YSYYg@w@MKGAGBEDCHBXj@n@bAn@NHj@Rj@Jl@RlBp@b@VhBxApFlEpBpB~C|C`AlAb@|@^lABHPx@dAhDZlAFVLjA@`AARGv@UpBAn@Fn@Nl@LN~ApCMU\\n@JXJv@IbGAfA@hA@zASnCEnA@|BB`@Hl@Jj@JXj@~@f@j@l@b@DBd@PfAThALD@R?TAj@MdBkAPIXGzAKdA?^BF@d@JjAb@hFlBz@d@FDlA`Aj@h@f@l@xCzDBFZd@FLLV`@rA\\tBVbAN^d@|@NRZ^p@l@v@d@t@VhATj@TnAbAf@b@LJv@f@nDzCd@h@Xh@b@z@b@j@^ZJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@bCrKLf@pD`NpDbNpAvE"
 						}
 					]
@@ -601,6 +645,7 @@
 							"toOnRoad": false,
 							"minutes": 48,
 							"everyMinutes": 7,
+							"fare": 10.5,
 							"geometry": "ozx}DgedvDc@v@oBfECBs@zAoDhHy@xA`@s@wErIk@vA]~@Qj@CFSb@yDtGqCxE}@hACBaBlAo@f@}DdDcBrA_FzDm@x@GVC^Dl@Ht@L|@b@xCLrABn@BVNl@LNd@v@j@bA\\n@JXJv@KdH@a@AfABdDSnCEnA@~A?\\B`@TxAJXj@~@f@j@l@b@DBd@Px@PLBhALX@TAj@MdBkAPIXGzAKD?~@?f@Dd@JjAb@nE`BXJbAj@lA`Aj@h@f@l@zApB|@hA^l@FLLV`@rA\\tBVbAJVBFd@|@j@r@p@l@v@d@t@VhATj@TB@rBdBLJv@f@nDzC??d@h@|@dBb@j@^ZJJvChBBBf@f@pBfCV`@h@jAv@zBf@xA@DJn@B\\FpBJtALj@Nf@Tb@??p@~@v@v@hErCp@l@FFfApAtDlFn@t@LPdA|@b@\\vC`Bt@j@h@l@dErEb@p@d@fAZd@DHVZ^^hAv@xF`D{@g@hDnBh@b@b@h@|AbCp@~@l@x@fAnAdAbA`@f@h@~@`@jAp@nBn@nAv@fA`BpAh@h@BDTZDLVj@J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEX?HALFl@Ph@fDfFx@xAdBxC\\j@RTh@f@n@\\|Ah@h@Pp@`@n@j@j@r@d@x@`@fAPz@Hf@D\\HhBD^H\\NXb@p@h@l@P^bAxAdHlKLNnDtDjA`AnAfAj@f@pA~@~E`FrItI`FbFNTLXFZFvAN`E|@nDb@nAVf@\\p@pB|CfB|Bt@t@lAnAvBnCxBpCl@v@rD|EnAhBhHhKOSn@|@v@|@dAvB`AfBl@xAh@pAh@bAzDjGnCjEvBxDJVrArD^p@`AjAb@n@d@x@f@hAa@}@fBxDxBjGFNn@rBt@pAdD`ETVxBvCr@pAPn@BL^hBb@rBnAvGRv@z@vBg@oA|BvFHZTvAJrBBf@T`AHFJAFGBK@m@SaCQiAUaA@UBK@IJQLKdFgBHCfC_AjCcAtG}BzFsBP@RCbCy@dIoCPAP@PDf@V@@jAdDb@|@JFL@LCFGDOAQ[kAa@cAc@iA@WFUJOPKbDm@f@EfAAN@tCH|@HjCfAnA\\fBd@xBpJ~CjNmBsIbCrKxCbLpD`NvB~H"
 						}
 					]
@@ -610,12 +655,14 @@
 		{
 			"slug": "kilo-21-to-train-station",
 			"from": {
+				"id": "kilo-21",
 				"ar": "الكيلو 21",
 				"en": "Kilo 21",
 				"lat": 31.0776791,
 				"lon": 29.7373385
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193563,
@@ -637,6 +684,7 @@
 							"toOnRoad": false,
 							"minutes": 32,
 							"everyMinutes": 4,
+							"fare": null,
 							"geometry": "ozt|DiaotDFsBHkGRkODoCHwANuAn@cE|BwN|BwNz@mF~@iGzByNzBwN~@eGXyAPm@Ti@Vg@DET_@lA{AzEuFj@o@PUbA_AdAs@h@UxAe@n@QdCo@dFiAbAWnLqCvOuDxAHb@PTTLXH\\B^?PIb@O\\WV[PMBO@_@C[MWU_@e@uAeGKc@qCgM{CkN}CkNcAuEm@gCs@aCAEy@{BcA_Cc@_AkAwBCEmAmBk@w@uD{EwHyJwHwJyHyJiDmEWIQMmAuASK_@GolB{aCkGiIoGeIqDoEuHuJg_@}c@EWMa@wAuBK[G]qGqGyD{D}CuCSQaDmCwDoC{AgAqAgAqAsAqA{AIKwHyJIKeGuHm@o@YYsB_BoAw@_CcAe@M_Be@iJcB}Dy@wAc@sAk@e@Yi@YeSeNed@w[_BqAwA{AqAcBkAkBaAqBy@wBq@}Bi@eCgCqJgSur@i@_Bg@uAm@qAo@oAu@mAyEgHeQeX}s@yfAa@gAeAsB}@yBs@_Ck@cCQcAc@mAq@}A{@wAmA_BwK{KqCgDcc@ym@cFwFgBeCwA_Ds@mBcAmD{FcVYq@_@o@c@i@wAqAkBWq@]_IaE}@k@KKm@i@s@y@o@aAi@eAa@sAyKk_@S?YJQVEZrExObClHdBxGtKl`@PfAFj@BZz@rBpBbHLf@FTDbACfASfAoKfW}@pBkAbCqC|DkClD_A~@oB~Ag@ZUDUDSCuDcBgBaAg@_@{E{BS?IBs@j@}FtEqBvAk@^mGhF{@N]Fa@Ba@GeAe@aDeBOMYa@K_@GSu@cDs@kCk@wAc@{@{@gB]g@UUKEi@AWs@eBsCqD}FISUaAe@{AoBoG_AsEOu@YgAmCaJYaAm@qBkByFQi@}CwJsAf@]LT~@oBv@aAqEQo@{@iDaEfBCK}@`@aDvAq@_C{@aDcD_M"
 						}
 					]
@@ -646,12 +694,14 @@
 		{
 			"slug": "train-station-to-asafra",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.197209,
 				"lon": 29.911435
 			},
 			"to": {
+				"id": "asafra",
 				"ar": "العصافرة",
 				"en": "Asafra",
 				"lat": 31.2618621,
@@ -673,6 +723,7 @@
 							"toOnRoad": false,
 							"minutes": 31,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@"
 						}
 					]
@@ -692,6 +743,7 @@
 							"toOnRoad": false,
 							"minutes": 48,
 							"everyMinutes": 7,
+							"fare": 10.5,
 							"geometry": "oel}DmaquD{CvA{CrAgChAgDtAgBz@SJiDlAtAtD{@b@GBGDGX@`@{DjAkD`A_AVmA\\{GnBgBf@WBWAg@MuEwC_@W_@ScDcBa@]e@e@Yo@Si@AISw@Ks@S{Bc@uGACKeAQiAUaAKU]{@q@_Bk@qAQa@Y_AmBiKAG]aBI_@So@Ym@{CiEaAuA_AaBe@mA_B}CAA_A_Bg@yAgB_EGK_@o@i@cAuAiBiAgBs@yBISUi@gBoDoCkEeDkF}@_Be@wAKYi@mB[{@k@sA[g@mAoAUYg@m@GIgA{AmAyAoBmCqHaKqCyDsAiBkA}AeDkEaBsBY[U[]i@e@_AOi@q@_BMg@I_EC}AKg@Oc@S_@Y[qDgDeC}BaCeCoAmAsDoDgCiC[YoB_BgB{AY_@Sc@Oe@I_@CW?U@WVgBBc@@c@Ce@UyAKYYq@w@cAEE_@[k@Um@GU@_@FcAf@c@HS?k@Ee@S[UCESSOYK]Ks@EiBImAMeA]gBCGGWYs@a@m@_@S_@My@OoAK[Gs@UYQWOII[[g@w@oA_CgAiBc@u@qCkEI_@AU@UFQdAsBDQDSHq@?k@Cg@Ic@YgAQ[KUSYSQyAgAKKm@m@e@q@a@y@]cAa@gBc@wAEKk@iAe@u@m@q@kBsAy@u@]a@CCm@aAq@{@w@o@kDsB_@SiEgCq@g@[a@S]i@sAGOS_@k@{@oBgCcAaAm@c@WOMGiCkA}@m@u@m@a@c@_AqAg@s@{BiDq@w@}@{@g@a@A?kCcBs@m@k@k@SY_@y@K_@Ga@AMCu@?qAKwASmACK[cA_@w@a@o@AAyEaGcA{@m@]u@c@YSIGUUg@q@qA_CoAgBIMo@i@WOkAa@_@SuAoAm@]WKg@IaASg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@G_@]kB[cAQ_@GMa@u@_CyCUYgAmAyAoAeAo@sBy@oDsAUIiAMc@AkBJOBk@Hm@ZmAx@UHk@BmAOo@M]K[QFBIEWS_@k@qAkDMm@MqAAi@@{@?[JqB?_ACuBBs@FsC??@eCEi@Uy@[g@}@wAWg@K[GWAMEg@?a@\\{CDgAC}@WiA[gAGQ`EmDZUdBsATSbCsBfEaDR]DGhDkGbByCpBmDBEdBwDd@{@@CvBmDNYz@}AjA}Bl@mAbA{B^u@fBsDr@wA"
 						}
 					]
@@ -701,12 +753,14 @@
 		{
 			"slug": "train-station-to-kilo-21",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.1873313,
 				"lon": 29.8942234
 			},
 			"to": {
+				"id": "kilo-21",
 				"ar": "الكيلو 21",
 				"en": "Kilo 21",
 				"lat": 31.0842992,
@@ -728,6 +782,7 @@
 							"toOnRoad": false,
 							"minutes": 36,
 							"everyMinutes": 5,
+							"fare": null,
 							"geometry": "ygj}D{umuD|AnFbCdIV|@n@`CjCzI\\hAf@xAb@fBD`@?PMh@fBl@fDhAvBV\\NJHLPl@jAR`@d@dARj@pBdIJd@HRNRPLbDlBn@f@xAx@`GfDt@d@TVd@v@|@|AvAdCxB|DlAxBz@nAfDrDvHjIRV|@dA|AzAnD|DjIbJp@t@~GhIOQ`InJxEzF|@hA`@n@b@r@NZjB~Fr@|BdCzH~@zC`@rARj@`ChD|AlBl@v@dGdIfHnJJLlDrEhCfDtH|JbBzBlE`Gd@n@v@bBp@jBcCxC{AhBKREVEd@@PFd@bBbETh@rBbEj@z@dBhBHJdExDd@TZPf@P|@TD@d@F`@P^VpDjFTTXRVNn@VzA^`A^rDhB@@lEfCt@h@Z^`@r@L^FT`A~DfBnGFPb@vAh@jAbEvFjGxI`@h@pH`KrBpCdCpDP\\L^BNPv@nBfJFd@H`@BDHZT`@|DmCt@bBX~@`ExMCIpBvGPZb@n@lAvAr@x@LPXd@TbAr@hGFT^hBh@~AxBjETp@L^@d@GRMPzGjFjBxAR?LKpBeDNMPIRER@LBB@PHv@h@z@n@v@t@`CrDFJhEbHjAtB@?`BhCnAbB~BrCdEdFz@hAt@fA|@pAb@v@vAbCtArCvFjLBF|D`HtAzBZd@d@~@\\bAj@xBZ~@f@bAPXvA`C`FtFDFjC|Cr@z@pBtC~BdDlD|EHJjBxCdDpFtA|BhCxEn@hAlGdLXh@lDnGbAhBrDnG`BlCpEpHhAbBn@bAfAvAbCpCx@dABBbAzABFh@~@vAtCz@pB?AhBhEZr@b@z@dAhBHL|@rARZt@`AjAzA`BfB@BbIlJ}@eAxBjCvAdBh@x@rAvBVf@|CpFhBvDBFb@nAt@`DP|@p@nDnBnKb@~AL^x@`CtCfHDJjBvEpBvE@D|CjHrAlCnCtF~AdE`FdMf@jA`BdE~AlDnArChFvK"
 						}
 					]
@@ -737,12 +792,14 @@
 		{
 			"slug": "al-seyouf-to-train-station",
 			"from": {
+				"id": "al-seyouf",
 				"ar": "السيوف (الفلكي)",
 				"en": "Al-Seyouf (Falaky)",
 				"lat": 31.2412003,
 				"lon": 29.9982981
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -764,6 +821,7 @@
 							"toOnRoad": false,
 							"minutes": 42,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "oxt}Di`bvDFxDLpIR|LARKl@CHOh@KJQ^AVB`@N\\LJLHRBRAPEPMLQFW@WfBG~L]|DKbGS~La@zBIpOc@mEL`M]~L[jK[t@AzBGrHNJ?B?hBAlXkA~EUjAAr@DPBv@H`KjAR@d@Bb@@n@?lBGzFc@^CxEo@nHk@pXy@pM?bKKN?nDBnG?fA?zFI|BC`JI~ACfGKxDCnB?nDGvAOh@MXKLElBeAfBoAdAg@\\Kd@Mb@E??rAGpABfALp@NzAj@n@b@NJh@d@fF~Fh@p@xDpE`ApAdAhAPRzAjBpEpF~HnJBDr@dApAzBZv@lAtDVv@lD~KnBhG^vANv@NfAD`@J~A@p@AxAI|AKbAMr@K^Mf@o@fBc@`AsCdFeFdJc@~@e@fAsAvDw@pBs@pAiGdLkGdLgCvEk@vAW|@UrACHG~@GhBL`CV`Bb@bB?@zCdJp@lBnEpMb@pAnAbD|AxE^jAb@pA~BzHTv@|DtK\\~@`AtCrAvD^`AlA`DRd@v@nB`ApCzAdEfBpFLVnAdCv@nAp@v@LPbBdBnIzIx@|@nA~AfBjCt@`AJPb@p@v@`Ax@|@zDdDv@r@X\\JTF`@Cd@M^e@j@mJlEyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOL}@Xy@JgDGwAFaAN[LiBTMHEL?JLPLDRAbDm@f@EfAAD?~CJ|@HjCfAdAXpBh@tBfJ~ChNiBgIbCrKtCvKpDbNzBhI"
 						}
 					]
@@ -773,12 +831,14 @@
 		{
 			"slug": "bahary-to-train-station",
 			"from": {
+				"id": "bahary",
 				"ar": "بحري (راس التين)",
 				"en": "Bahary (Ras Al-Tin)",
 				"lat": 31.2020408,
 				"lon": 29.8760815
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.188877,
@@ -800,6 +860,7 @@
 							"toOnRoad": false,
 							"minutes": 13,
 							"everyMinutes": 1,
+							"fare": 5,
 							"geometry": "wcm}DodjuDQaFYkCIaAe@eG|CuD`AiAtA}AZ[NIH?RHlBrBD?J@LK~DqFfAiANQNMbAy@xFeDbAm@xBuAxDk@dAUh@OxC}@`@KlARfDk@xAYTKJW`@{BzD`ApAZvEURuA"
 						}
 					]
@@ -809,12 +870,14 @@
 		{
 			"slug": "train-station-to-al-seyouf",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "al-seyouf",
 				"ar": "السيوف (الفلكي)",
 				"en": "Al-Seyouf (Falaky)",
 				"lat": 31.2409918,
@@ -836,6 +899,7 @@
 							"toOnRoad": false,
 							"minutes": 46,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "_fk}DoyouDDy@s@}BQg@_EgL}D_LSo@eA_DmAkDW{@YoAOu@_AoMEw@AUDo@JABCBMAEKKI@EFAJcCe@sBk@aBc@Ta@JI~CgCZ[Va@~CsI^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKT[Jc@@g@KgAu@qBg@aAeEoHkAaCcA_B}CkECE{CoE}B}COQwF_HkAmAYYsBkBkDyCa@]EEcH{Gs@u@_GaGmA{ACCkCuDgA}Ae@y@c@_A]s@uDyKqEqM_AoCs@wCiAsDa@mAe@iBw@_EYeAQe@GSw@cBS[c@s@qC_DYc@KMc@w@a@w@}@wByAgEk@aB}CsJcCwHcA_DoDqK]_AWq@gDiLA?WoAIi@KsAEsA?aF?uIBoALeBJeAF_B@iGAwJ@xGCkOAeJ?gD@mO@sBByK@mDFqBZyE?OFyD@oDAcDAqEOcFAwA?mA?}A@}BDeBLy@Rw@@ANWRSXOXGdEMlCEzBCn@@TDh@PNLLPHTFT@VAVKh@OVQPIFWLyCLmR?iK\\yFHeI^gMrAoBR}DRmAAaAGN@[CoLqAKAiAOaHZcI\\{Oh@KAQKEKAi@A[UmOAQE_@K[aE{Jm@wASWUS[KYG]AyELaMX_MZaMZ_MZ}@BaK\\]@yGNiCFaFJ@`BkCHgBF"
 						}
 					]
@@ -845,12 +909,14 @@
 		{
 			"slug": "train-station-to-sidi-bishr",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "sidi-bishr",
 				"ar": "سيدي بشر",
 				"en": "Sidi Bishr",
 				"lat": 31.2619194,
@@ -872,6 +938,7 @@
 							"toOnRoad": false,
 							"minutes": 50,
 							"everyMinutes": 9,
+							"fare": 9.5,
 							"geometry": "_fk}DoyouDDy@eAeDeA}CsEoMcByEyAoEQg@{@cCW{@i@eCUcDo@cJAUDo@JABCBMAEKKI@EFAH?@cCe@uEoAmAa@i@PQHKPOLa@N[Hy@JgDGwAFaAN[LiBTi@Bk@M_@eAY}@GWoDgMGSuDgMyA_FeB{FcDsKe@_Ak@kAyE_JeAoB_@o@Wc@EEIA?GCMi@WiAeAm@o@kIaJmI_JcBkBiFsFmI_JgEoEcCqCcIkJeIiJhBrBiD{DiG}GsC_DaB}AeBmA]UuDaDo@s@gAoBoGaLiBcDcD_GWe@_AuAsB}BkB_CwCsDgCmCe@g@}@{@[YsDkDmAiAeD{CuDqD_@]_IiHo@k@_G}Ec@a@OSIIsGkKl@`AoAoB[o@{B}Fu@uACEcCiDcA_B{AeCmAqBmEcHsBcDsAoCYo@a@iAe@sA{CeK]gAsBmG}@wBAAcAwBQ]k@{@cAiAi@u@mC_FbBzC{FqKMU_GoLaGoL~D~HmFoKOEQAc@@oFhEyAjA_@H_@EiBbBYKWQWSSWMSeHmK_AsAe@q@_CcDqEuGkCkEIMsEgHq@cAIS"
 						}
 					]
@@ -897,6 +964,7 @@
 							"toOnRoad": false,
 							"minutes": 2,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_A"
 						},
 						{
@@ -910,6 +978,7 @@
 							"toOnRoad": false,
 							"minutes": 25,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@"
 						},
 						{
@@ -941,6 +1010,7 @@
 							"toOnRoad": false,
 							"minutes": 25,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@"
 						},
 						{
@@ -956,12 +1026,14 @@
 		{
 			"slug": "train-station-to-bahary",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.1920701,
 				"lon": 29.9027713
 			},
 			"to": {
+				"id": "bahary",
 				"ar": "بحري (راس التين)",
 				"en": "Bahary (Ras Al-Tin)",
 				"lat": 31.2020408,
@@ -983,6 +1055,7 @@
 							"toOnRoad": false,
 							"minutes": 22,
 							"everyMinutes": 1,
+							"fare": 5,
 							"geometry": "mek}DikouDx@l@vEtCNJvAx@PNR^\\x@nAjENl@nAxEzAjGDPrDjMn@zB|AnFl@pBtArEfA~Dw@j@mBrASa@eBxA_CfBk@`@KPmCs@wEwAaBg@iB~JoB|KKVUJ]FcF|@mASa@J}Ad@eBf@eATyDj@eAn@wBrAyFdDONcAv@OPgAhAgDtEWZMJQAmBsBSII?OH[ZuA|ASVkEfFZ|DRhCXjCRnF?M"
 						}
 					]
@@ -992,12 +1065,14 @@
 		{
 			"slug": "el-awayed-to-el-sa-ah",
 			"from": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2220433,
 				"lon": 29.9940602
 			},
 			"to": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.244006,
@@ -1019,6 +1094,7 @@
 							"toOnRoad": false,
 							"minutes": 12,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "w`q}D{eavDCaBUyME_@GOCK_FwLO[SWUS[KYG]AuGN_MZaMZ_MZaMZA?_L^yGNzFMaMX_MVE?Ff@?p@CJ?DFxDF~EVlO@`@ARKl@Sr@KJQd@w@TgENmEP}ABsC_@eGy@OGIN?J@JTCfBTtDb@dCTf@nCJn@r@`DbBvGhAjEkF~Bo@X`B`FqAp@"
 						}
 					]
@@ -1038,6 +1114,7 @@
 							"toOnRoad": false,
 							"minutes": 18,
 							"everyMinutes": 5,
+							"fare": 4,
 							"geometry": "y`q}D{eavDMyIIaFE_@K[eBiEiCiGSWUS[KYG]Ag@@aMZ_MZaMZ_MZoFLqENmENqFLg@@S@BbHkCF_MXW?K@R`NLlHARKl@Sr@KJQd@]JYHuK`@M?oABkJoAm@IOGIN?J@JTC|Gx@b@D`BNr@~Dr@`DJ^`DbM[N_GhCjAnDTp@qAp@"
 						}
 					]
@@ -1047,12 +1124,14 @@
 		{
 			"slug": "el-mawqaf-el-geded-to-el-sa-ah",
 			"from": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.180134,
 				"lon": 29.913627
 			},
 			"to": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.241168,
@@ -1074,6 +1153,7 @@
 							"toOnRoad": false,
 							"minutes": 39,
 							"everyMinutes": 3,
+							"fare": 9.5,
 							"geometry": "yzh}DcoquDaBgFi@{Au@qBu@kBW_@M_@qAeDISg@u@gBwEo@iBMk@GMkBiGyAmEuCsIw@}B{AgEhF{B|@a@d@YPY~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKJKHOJc@@g@KgAu@qBg@aAeEoHkAaCa@o@{@qAcH_KEGwBuCcEaFcAoAeBgBsBkBu@q@uBgBa@]eEaEcB_BqFuFaAaAqA_BkCuDYa@m@{@e@y@aAsB{AmEoEqM{C{Ii@yBI]kBaGe@iBYuA]iBYeAYy@w@cBS[c@s@_@a@qB}Be@q@c@w@a@w@{@sBACeCiHeAeDgEwMSm@wDeL{@kCu@qBuAwEsAqEWoAIi@KsAEoA?C?iO?m@BoAXkDF_B?_C@iCAwJ?KCmO?}@@oM@yI?sDDsKFqB@EXsEFiE?mB@aACuJEsAIoCAeD?}A@}BDeBLy@Rw@PYRSXOXGnCIt@ChGIn@@TDh@PJHBBLPHTFT@VAVKh@OV[XWLyCLy@?sP?iK\\yFHeI^wPfBiCLs@DmAAq@E[CmFm@mEe@iAOaHZcI\\_M`@{AFKAQKEKAi@McIKwFE_@K[}AuDqC}GSWUS[KYG]AS@aMXaMZ_MZaMZaGN}DNaFNyGNz@CaMXeGLFf@?p@CJ?DBlBBjA"
 						}
 					]
@@ -1083,12 +1163,14 @@
 		{
 			"slug": "el-sa-ah-to-el-awayed",
 			"from": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.24058,
 				"lon": 29.992509
 			},
 			"to": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.230062,
@@ -1110,6 +1192,7 @@
 							"toOnRoad": false,
 							"minutes": 2,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "stt}Dc|`vDfBG~L]|DKbGS~La@zBIpOc@"
 						}
 					]
@@ -1129,6 +1212,7 @@
 							"toOnRoad": false,
 							"minutes": 2,
 							"everyMinutes": 4,
+							"fare": 4,
 							"geometry": "stt}Dc|`vDtHUnL[PA~La@lJ[pOc@"
 						}
 					]
@@ -1138,12 +1222,14 @@
 		{
 			"slug": "el-sa-ah-to-el-mawqaf-el-geded",
 			"from": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.2441742,
 				"lon": 29.9857634
 			},
 			"to": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.176456,
@@ -1165,6 +1251,7 @@
 							"toOnRoad": false,
 							"minutes": 33,
 							"everyMinutes": 3,
+							"fare": 9.5,
 							"geometry": "aku}D_r_vDc@kAeBgFUq@e@iCWkAsA}EgBuGSaAIq@GeBCw@NKPGTC|Gx@p@FrALjJYxAEf@@LBx@\\LJLHRBRAPEPMLQFW@W|@E`M]dFMxEQ`Ma@bDKpOc@uFP`M]~L]rL]J?dDIzGLV@J?lBAlXkA~EUjAAr@DPBNBhLpAR@C?lADn@?lBGrE]fAIxEo@nHk@pXy@pM?hJKX?~DBfF?nB?zFItAAhKKt@ApHMnCAxCAnDGvAO\\IJCf@QlBeAfBoAdAg@~@WBAb@ErAGpABfALp@NzAj@LJp@b@h@d@fF~FLNtErF`ApAf@h@n@r@zAjBtDnE~HnJ^f@r@dApAzBZv@z@jCdEvM`CrH^vANv@DXNnAJ~A@p@AxAI|AKbAKf@AJYfAo@fBc@`AyB|D_GlKMV{@nBsAvDw@pBYh@kGfLkGdL_D|Fk@vAW|@Id@Ov@G~@GhBL`CV`BRx@Nh@zCfJ\\bApEpMt@zBnAbDjAnDp@tBb@pAlBnGf@bBjDjJn@hB`AtCrAvDJV`BjERd@v@nBn@fBlBnF~A`FFN|A|Cv@nAp@v@LPbAdAnI|IxAzAnA~AfBjCd@n@NPn@bAv@`Ax@|@xChCxAnAX\\JTF`@Cd@M^e@j@mJlEyPdI}]hPS@]JkNjGc@No@FgAEkAa@]Gc@D_@TOPIPETC^DdAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAvE?@\\tAz@hCdBxFbBvF"
 						}
 					]
@@ -1174,12 +1261,14 @@
 		{
 			"slug": "hanuvil-to-train-station",
 			"from": {
+				"id": "hanuvil",
 				"ar": "الهانوفيل",
 				"en": "Hanuvil",
 				"lat": 31.1007187,
 				"lon": 29.7738781
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.186696,
@@ -1201,6 +1290,7 @@
 							"toOnRoad": false,
 							"minutes": 41,
 							"everyMinutes": 1,
+							"fare": 9.5,
 							"geometry": "ojy|DuevtDa@u@k@sAuAcDaAyBqAkCIM[g@IO}A{BoDgEaAkAu@iAkDyFuG{Kc@u@kFkJ_AcBAAyC_H[o@eAyBcByBW[{AcCmAmBkEkHoBeD_D}EMOsAuAmCuDOQiAwAeAqAgAaBi@o@sAmAu@y@AAq@aA}AoC]}@k@_CQe@_@{@iFiJm@eAgDmGq@uAcAoBiBgEoAyB[g@S]sB{CgCcD_AiA{BkDsBmCq@}@wDqF_AwA{FuIcAgB\\l@gCiE_BsDWq@aBiEeBaFQ]Uc@m@q@yB}BmCmCsIwIkBmBg@q@gCqFiAcCq@sAc@q@eCoBECo@o@qDgEs@cAg@u@sD}FoBqCqAkBaFsGgB_CeEaGcE}Fg@cAWu@Me@uB}HAa@Dm@\\gA@QB_@A_@E]iCoBkAk@iBu@qBy@oBu@cE}@CAk@Sg@[u@q@kBeCuAiB{@iAo@{@q@uAMQw@_AgAyAKMm@qAw@oBk@wB_@}BAMc@cEg@yC[gAUm@QYgBcD}DgFw@cAyF}HcAwAqFcHwD{E_C}CsH_KmA_BuEcGQWU[e@cAq@mBy@uCm@gBgEuMj@hBkB{FQ]iAeBuBeCwF{GmEsFdC~C{HuJcBuBcFqFqCyCyDgEiIcJiIcJCCc@k@oFkJNT[i@[e@iCyE_BkCEIgBuCMIQAyAVa@Ba@GeAe@AA_DcBOMYa@Ss@u@cDCIo@aCk@wA_BcD]g@SQACKEi@AWs@uEsHaA}AISUaAsBwGa@sAoAiGYgAYaAmCaJ"
 						}
 					]
@@ -1210,12 +1300,14 @@
 		{
 			"slug": "train-station-to-hanuvil",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.1920701,
 				"lon": 29.9027713
 			},
 			"to": {
+				"id": "hanuvil",
 				"ar": "الهانوفيل",
 				"en": "Hanuvil",
 				"lat": 31.0999705,
@@ -1237,6 +1329,7 @@
 							"toOnRoad": false,
 							"minutes": 47,
 							"everyMinutes": 1,
+							"fare": 9.5,
 							"geometry": "mek}DikouDx@l@~DdCVNfBdAPNR^\\x@lAfE@B~AfGhAxEVbA~CxKbAlD|AnFX~@hBdGfA~DHV~ClK`@jADLb@fBD`@?PMh@nFhB^LvBV\\NJHLP`AlBd@dAPf@@B|BjJHRNRPLd@X|BrAn@f@vEjCbCtAt@d@TVbBtCvAdC}@_BdGvKFJr@bApGdHlExEpA|Aj@h@p@p@xGnHrGfH~GhIiFkG~HnJ`InJrBdC|@hAdAbBNZjB~FqAaEdEtMdAdD`BnFRj@LPrBvCjCdDr@`ArH|JdEtFnBfChAxAjF`HtH|J@@rFpHn@vAFJp@jB_FbGGLCDEVEd@@PFd@xBlFx@`Bx@`Bj@z@nBtBdB|A~AzAd@TZPf@PbAVd@F`@P^VLTbDtETTp@b@n@Vz@T^H`A^tDjBzBpApAt@t@h@Z^`@r@L^|@pDJb@fBnGj@hB`@z@FNbHtJjDzEbCdDpH~JPVdCpDP\\L^TfA^dBnA`GFd@H`@L`@`ApB~C|Gn@tBLp@DPHbADvADhI@RBVDRjCrI`@|AlDbNhAfEHFH?lEoCzBuATGX?nEnDtCzBR?LKpBeDNMPIDALCR@PDPHv@h@z@n@v@t@hBrCV^pEnHn@fAZl@bBhCnAbBzAhBhFnGz@hATZ|A|Bb@v@vAbCx@bBzFrLVf@`EhHv@lAx@rAd@~@\\bAj@xBZ~@Zn@JRhBzC|DlEh@n@jC|Cr@z@pAjB~CnElCrDh@t@jBxCfCdErBhDhCxEPZlGdLv@vAlDnGd@z@pE|H`A`BpF|Ih@v@nAnBfAvAbCpCZ^\\d@fA~ABFh@~@vAtCz@pBYs@bCzFZr@b@z@b@x@LPzA~BRX"
 						}
 					]
@@ -1246,12 +1339,14 @@
 		{
 			"slug": "amreyya-to-train-station",
 			"from": {
+				"id": "amreyya",
 				"ar": "العامرية",
 				"en": "Amreyya",
 				"lat": 31.0204984,
 				"lon": 29.7941594
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193563,
@@ -1273,6 +1368,7 @@
 							"toOnRoad": false,
 							"minutes": 54,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "aui|DmdztD{F|AoJ`CmDhA_EdBiCfBcDnCwD`EwBvBsHhIkHxHuCdDON{@z@iC`C{AjA}BpAeAd@uDjAoATqD`@_Gb@eER}MX{A?cAEeAMeASaAYgAa@eAi@_Ao@}@w@y@}@u@aAo@kAoPac@wX_u@qA_DuAuCwD{GmCyDqJyLoBkCoCkDoCmDeNsRyDeF_ByBmCyEu@_BmCgGaCaGgHgQwB_Fsc@kgAmGuOqCkHkEqKc@cAmA_Cm@aAaEmGkCgDi@k@[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRABA~Ck@f@EfAAdDJD?v@HjCfAvDbAPr@~ChNESbCrKd@hBrD`NpD`Nv@vC"
 						},
 						{
@@ -1298,6 +1394,7 @@
 							"toOnRoad": false,
 							"minutes": 72,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "aui|DmdztD{F|AoJ`CmDhA_EdBiCfBcDnCwD`EwBvBsHhIkHxHuCdDON{@z@iC`C{AjA}BpAeAd@uDjAoATqD`@_Gb@eER}MX{A?cAEeAMeASaAYgAa@eAi@_Ao@}@w@y@}@u@aAo@kAoPac@wX_u@qA_DuAuCwD{GmCyDqJyLoBkCoCkDoCmDeNsRyDeF_ByBmCyEu@_BmCgGaCaGgHgQwB_Fsc@kgAmGuOqCkHkEqKc@cAmA_Cm@aAaEmGkCgDi@k@[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RgFfBcIpCJVfA_@`L_EbA_@P@RCzHkClC}@PAP@PDh@XjAdDR`@NZJFL@LCxCrKnB`HhAzDTt@lBfHr@`CpDlMFPtD~MrBrHtCeAfGwBPMr@oA"
 						}
 					]
@@ -1307,12 +1404,14 @@
 		{
 			"slug": "el-mansheya-to-el-sa-ah",
 			"from": {
+				"id": "el-mansheya",
 				"ar": "المنشية",
 				"en": "El-Mansheya",
 				"lat": 31.201157,
 				"lon": 29.8987889
 			},
 			"to": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.2475454,
@@ -1334,6 +1433,7 @@
 							"toOnRoad": false,
 							"minutes": 30,
 							"everyMinutes": 11,
+							"fare": null,
 							"geometry": "e~l}DkrnuD_AaD{AwCEI_@aAq@qAu@sAoAoB[g@[a@kA_BoBaCkAqAy@y@gBgBgC_CaBsAMIgFeD_@S}BkAe@Wa@]e@e@Yo@Si@UaAKs@S{BAIa@kGMiAQiAUaAKUCCYw@q@_B}@sBY_Ae@eCiAkG]aBI_@So@Yk@?A}E_H_AaBEK_@aA_B}CaAaBg@yAMWyAgDGKiAsBuAiBKO}@wAs@yB_@}@aBgDEGwGmK]i@}@_Bq@qBi@mB[{@M]]u@[g@mAoA}@gAGIgA{A[a@q@w@aGgIqHaK??sAiB_FsGQUaBsBY[s@eAe@_AOi@a@_AO_@Mg@M}GKg@Oc@S_@UWCCwHeH_@a@aBcBuFoFMMgCiCgEoDz@t@gB{AY_@Sc@Oe@I_@CW@m@VgBBc@@c@Ce@AIEWMw@KYYq@w@cAe@a@k@Um@GU@_@FUJm@Zc@HS?k@Ee@S[UWYOYK]Ks@CeBACImAMeA]gBK_@Ys@a@m@_@S_@MSEe@IoAK[Gs@Uq@a@II[[g@w@k@eAc@y@gAiBmDwFGII_@AU@UFQdAsBJe@Hq@?k@Cg@Ic@Su@EQQ[KUSYSQeBsAm@m@e@q@a@y@IUSm@a@gBc@wAq@uAe@u@m@q@MI}AiAy@u@]a@q@eAq@{@w@o@kDsBjDpBgKcGMIq@g@[a@S]q@cBS_@k@{@cAqAk@u@cAaAm@c@e@WiCkAg@[UQdFoI@Ab@k@bCeDz@_Az@{@jAcArHsGYaA[gAsBmG}@wBAAcAwB"
 						}
 					]
@@ -1353,6 +1453,7 @@
 							"toOnRoad": false,
 							"minutes": 39,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "g~l}DkrnuD}@aD{AwCGO]{@q@qAu@sAoAoB[g@_@e@gA{AoBaCkAqA}@}@qAsAyCoCaBsAQMcFaD_@SaCoAa@Sa@]e@e@Yo@Si@UaAKs@S{BCO_@eGMiAQiAUaAKUEIWq@q@_B}@sBY_Ag@kCgAeG]aBI_@So@Ym@AA{E}G_AaBGO]}@_B}CaAaBg@yAO]wAaDGKiAsBuAiBOSy@sAs@yB_@}@eBkDAC{GqKYe@}@_Bq@qBi@mB[{@Qa@Yq@[g@mAoA}@gAGIgA{A_@e@m@s@eGkIqHaKBBsAiBcFwGMQaBsBY[s@eAe@_AOi@c@cAM[Mg@M}GKg@Oc@S_@Y[??wHeHc@e@}A_ByFsFIIgCiCkEsD~@x@gB{AY_@Sc@Oe@I_@CW@m@VgBBc@@c@Ce@COCQMw@KYYq@w@cAe@a@k@Um@GU@_@F[Ng@Vc@HS?k@Ee@S[UWYOYK]Ks@EiB?AIkAMeA]gBK_@Ys@a@m@_@S_@MWEa@IoAK[Gs@Uq@a@II[[g@w@o@kA_@s@gAiBoD{FEEI_@AU@UFQdAsBJe@Hq@?k@Cg@Ic@Uy@CMQ[KUSYSQeBsAm@m@e@q@a@y@M[Og@a@gBc@wAq@uAe@u@m@q@QMyAeAy@u@]a@q@eAq@{@w@o@kDsBdDnBeKcGIGq@g@[a@S]q@cBS_@k@{@gAwAg@o@cAaAm@c@e@WiCkAk@_@QMdFoI@Ad@o@`CaDz@_Az@{@nAgAnHoG[eAYcAsBmG}@wBCGaAqB"
 						}
 					]
@@ -1362,12 +1463,14 @@
 		{
 			"slug": "el-sa-ah-to-el-mansheya",
 			"from": {
+				"id": "el-sa-ah",
 				"ar": "الساعة",
 				"en": "El-Sa'ah (Clock Square)",
 				"lat": 31.2441742,
 				"lon": 29.9857634
 			},
 			"to": {
+				"id": "el-mansheya",
 				"ar": "المنشية",
 				"en": "El-Mansheya",
 				"lat": 31.2012982,
@@ -1389,6 +1492,7 @@
 							"toOnRoad": false,
 							"minutes": 34,
 							"everyMinutes": 5,
+							"fare": 9.5,
 							"geometry": "aku}D_r_vDc@kAeBeFUs@e@iCWkAsA}EGUIAK?KJCJ@`AxBpHGVGJCFON_KdEaA`@UVy@B]AW@WFoBbAkAj@kAh@{@^qEbBE@]y@EEQMoCoFi@aAOMSGSAUDUH_AXw@t@sFjEGBA?SAiDbDyB|CQT{BvCsAjBiBvB}@dAG?QBEDYh@CP@NFNJHNDNAFENQnB~B|DzE_ApAYSIGUUIK]e@qA_CkAcB_@GGFX\\HZf@`@NLd@h@|@dBb@j@j@f@jC`BJFj@j@pBfCV`@h@jAl@fBp@lB@DJn@B\\FpBJtALj@Nf@JPHPp@~@v@v@hErCb@^TTfApAtDlF^d@\\`@dA|@b@\\vC`Bt@j@Z\\rEbFb@p@d@fAT\\DF\\d@^^hAv@fFtCi@[hDnBh@b@b@h@|AbCb@l@z@jAfAnAdAbA`@f@h@~@Vv@z@bCn@nAv@fA`BpAXZRRTZDLVj@J`@F`@B`@?b@Cb@G`@K^O^_@p@IXAJCLAVFl@Ph@fDfFl@fApBjD\\j@RTh@f@n@\\hA^|@Zp@`@n@j@j@r@d@x@`@fAPz@BPJr@HhBD^H\\NXb@p@h@l@P^t@hAfHjKX`@nDtDjA`A~@x@z@t@pA~@nEpEtItInFrFNTLXFZD~@PxE|@nDb@nAJTh@bApB|CfB|Bd@f@|A|AvBnCjB`Cz@fArD|EbAvAfHjKACn@|@v@|@dAvB`AfBb@dAr@dBh@bAnDxFzC|EvBxD@B|AfE^p@`AjAb@n@^p@DFf@hAdAzBnBtFPd@n@rBt@pAvCpDb@f@xBvCr@pAPn@BLXrAh@hCnAvGRv@z@vBq@cBfCjGHZTvAFzAPvDHx@Jv@Nv@v@vCTx@b@hA^j@lFxCYO^RjEtCx@n@nA`AXV~BpBxE~E@BnB|BfB~BV^bAxAPXbAjBhB|Dv@pBFNn@zB"
 						}
 					]
@@ -1398,12 +1502,14 @@
 		{
 			"slug": "train-station-to-amreyya",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
 				"lon": 29.904704
 			},
 			"to": {
+				"id": "amreyya",
 				"ar": "العامرية",
 				"en": "Amreyya",
 				"lat": 31.0202622,
@@ -1425,6 +1531,7 @@
 							"toOnRoad": false,
 							"minutes": 56,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_AyC}Kw@uCYsA}AmCKYG]@_@F[JYnCkBPQLUxCyBvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEhQyHz@]|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDdA|@fC|Ad@^rApA~JlK`e@ze@pHxIVVpS|SnAhAxiCzlC`Az@dAt@~GvDlBbAtDnBbAn@l@`@vAfApArAdJ~K`BdCj]hb@^b@z@t@zAdBf\\ha@pAhBb@x@dArB|@~Bp@~BhFdTdI~_@p@jCt@fCd@rAnAzCpAlCdD|FzCxFtLtS^r@dAbBnAxAvAlA~AbAt@\\hC~@rF~AtOhDpLdCF@xJzBbD|@`Bl@vAv@nChBrBhBtGxHzXn]`AdAzGfIj@r@zAtBvDzEz@lAx@rAr@tAp@vA`k@|uAxCxH|HdRpIzSjFtMbDvHhBrDjArBnBxChNpQhMtOzCrD|EjGzDdFl@~@xAdCnAjCrJ`W~^lbAz@nBdAfBnAzApAnAl@b@t@b@v@^x@Zz@Vz@R|@NdCL`EAbHKxCEnIUpBMd@CrB]l@OfCy@h@U~@m@bGsEvBuBpDoDfGqGnDmD~EaGrAiBjCwCrEkEbDuBdCeAfA_@vQ{EtDiA"
 						}
 					]
@@ -1444,6 +1551,7 @@
 							"toOnRoad": false,
 							"minutes": 7,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "imk}DkwouD^xAAb@e@R{@R_ALQo@sDaN_C}Is@cC[gAuBmEuAkD_@_AyC}Kw@uCYsA}AmCKYG]@_@F[JYnCkBPQLUxCyBvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEhQyHz@]"
 						},
 						{
@@ -1457,6 +1565,7 @@
 							"toOnRoad": false,
 							"minutes": 36,
 							"everyMinutes": 7,
+							"fare": 13.5,
 							"geometry": "yqi}Du_tuD|QeIhVoLrCiArTmKfJeEv@YtA_@pCc@rAa@vAm@n@e@zCqAb@M`@IbAI`AB`AL|@V`Ad@xEnDdA|@fC|Ad@^rApA~JlK`e@ze@pHxIVVpS|SnAhAxiCzlC`Az@dAt@~GvDlBbAtDnBpBpAvAfApArAdJ~K`BdCj]hb@^b@z@t@zAdBf\\ha@pAhBb@x@dArB|@~Bp@~BhFdTdI~_@p@jCt@fCd@rAnAzCpAlCdD|FzCxFtLtS^r@dAbBnAxAvAlA~AbAt@\\hC~@rF~AtOhDpLdCF@xJzBbD|@`Bl@vAv@nChBrBhBtGxHzXn]`AdAzGfIj@r@zAtBvDzEz@lAx@rAr@tAp@vA`k@|uAxCxH|HdRpIzSjFtMbDvHhBrDjArBnBxChNpQhMtOzCrD|EjGzDdFl@~@xAdCnAjCrJ`W~^lbAz@nBdAfBnAzApAnAl@b@t@b@v@^x@Zz@Vz@R|@NdCLjA?tBA|LQnIUpBMd@CrB]l@OfCy@h@U~@m@bGsEvBuBpDoDfGqGnDmD~EaGrAiBjCwCrEkEbDuBdCeAfA_@vQ{EtDiA"
 						}
 					]
@@ -1466,12 +1575,14 @@
 		{
 			"slug": "abu-qir-to-train-station",
 			"from": {
+				"id": "abu-qir",
 				"ar": "أبو قير",
 				"en": "Abu Qir",
 				"lat": 31.320357,
 				"lon": 30.062969
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -1493,6 +1604,7 @@
 							"toOnRoad": false,
 							"minutes": 60,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "egd~DotnvDvFrB@C\\uAHm@RgDTwEPwDFUHKHERGxEy@zFcAg@yEWeCKmEzCC`MGhEC|AMr@MpAa@HGpKiFdAg@`F}BnBu@BAZGZAZBVHHPLJPFP@VLV\\b@xBXp@Zb@??^\\PJrIfDPDNBb@Dx@Gf@MdGaDvGkDbBgALELCX?JDNT\\\\V^Xd@tBfG`BvE`@v@n@r@t@h@l@Z|Ax@|@b@hAb@tAZnAPjAHfBBtBS~@Qz@Wf@QLGlKoEjBw@fHiDxAs@~G}C\\OrD{AjCw@dB]t@OzD]jBG~A?z@@x@D`Eb@`Cf@fB^fG`B|@V`Cr@hB\\lATxBPh@DvBBbECxAEnAElIGb@A`MQfLQVArKc@l@AlEMx@GdBUjA]VIBAn@YdAi@hAq@`Ai@hAc@`B[v@IrBEdABfALlAVTFtKvCpCv@zGfBjLzClEjA|ErAjL`DjL`DLB~KvCvBj@rHpBlL~CjL~CFBbLzCjL`DjL~CjL~CjL`DjL~CjL`DjL~CjL~CjL`DjL~CjElA`FjAxJ`CzFbB~BbArAv@@@rBtAlB~AfBpBTZl@z@^l@vApC~@dCTn@z@bCt@`B|@|A`AvALNz@`AjAjAfBtA|@j@z@d@PHf@TrAb@tAZdBVdBRp@DxDL^Hb@XXf@F\\GlAEd@SbCDnAc@bEMdAERq@|Ce@`BGz@Y~A@JBBd@P@@NCHIb@uAHKJEDUx@R{ArFu@pCeCjIoA`EtAp@PB^NdB`AbB`ApB`A{AxEgErM?BeEvMeEtMeEvMgEvM?@}AdFg@nBk@hC[xA}@fFYtBK~@]jDSpCSjDAZIbCGbG?dCElOClOEjOElOAfDGdJEnDB|FAfDCdMEnM?z@KlOA|ACnLElOClO?l@G~M?o@AzB@~L?tASzEIxE?BHxFCnG?NHpBDf@N~@bBfGbCxIv@bC~BnHfAdDrDvKXx@bA`Db@z@rBjF@FfAhCjC~Eh@|@JPtBdEVz@Pz@l@vBp@`CdAjDhArCFPzEjMj@zAdDrJrAxDn@vA\\p@rApB`@n@jDxEt@z@r@r@dEhErB`CRRhAfAhCxBdA|@jA|@NJ~CrCbBfB~@jAlBzBjEvF@BrBxCPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JBFHHLDRAbDm@f@EfAAhADzAD|@HjCfAdCp@p@PlCpL`DjNcCsKbCrKpD`NpD`N~A`G"
 						}
 					]
@@ -1502,12 +1614,14 @@
 		{
 			"slug": "al-milaha-to-train-station",
 			"from": {
+				"id": "al-milaha",
 				"ar": "الملاحة",
 				"en": "Al-Milaha",
 				"lat": 31.264476,
 				"lon": 30.027827
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -1529,6 +1643,7 @@
 							"toOnRoad": false,
 							"minutes": 43,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "}iy}D{xgvDlAh@l@\\t@l@`@b@RZ`@dAL\\RlA~@lFLl@z@hCZ~@`BhERl@`AxBh@tA|EfMXt@rBlFtA`DpA|CNZ|@vAj@n@?`@AXMr@CFUb@aHtI}CxD[^iAbBq@~@qAfBa@h@aA~A[j@c@v@c@`AoAhCs@zAwBjEw@|Ay@xAwCpF]l@iAvCQj@CFSb@cBvCgFvIs@|@IJCBqCtB}DdDcBrAtAiAuHdGYgAOm@aA_Da@q@i@w@eBkBUSaBaB}DoDg@c@yAmAoAeA]U{D{AWKkAa@YSYYg@w@MKGAGBEDCHBXj@n@bAn@NHj@Rj@Jl@RlBp@b@VhBxApFlEpBpB~C|C`AlAb@|@^lABHPx@dAhDZlAFVLjA@`AARGv@UpBAn@Fn@Nl@LN~ApCMU\\n@JXJv@IbGAfA@hA@zASnCEnA@|BB`@Hl@Jj@JXj@~@f@j@l@b@DBd@PfAThALD@R?TAj@MdBkAPIXGzAKdA?^BF@d@JjAb@hFlBz@d@FDlA`Aj@h@f@l@xCzDBFZd@FLLV`@rA\\tBVbAN^d@|@NRZ^p@l@v@d@t@VhATj@TnAbAf@b@LJv@f@nDzCd@h@Xh@b@z@b@j@^ZJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@bCrKLf@pD`NpDbNpAvE"
 						}
 					]
@@ -1538,12 +1653,14 @@
 		{
 			"slug": "train-station-to-al-milaha",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.197209,
 				"lon": 29.911435
 			},
 			"to": {
+				"id": "al-milaha",
 				"ar": "الملاحة",
 				"en": "Al-Milaha",
 				"lat": 31.2644942,
@@ -1565,6 +1682,7 @@
 							"toOnRoad": false,
 							"minutes": 38,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@r@uAZg@h@s@pAcB`AwA\\g@Zk@`@g@V[xAaBhB}B~DaF`@c@TQVMXGXCX?@?XBpCjDvCnDdArArCdDH@JCDI?KYm@GQW_@QYmHuIwGyHg@u@QWEEy@gBgCuGSa@oBgEGKg@_AuAcDkF_MCGCIgDgJ_@mAAI{A{Ie@gBYc@EEY[YS_Ai@q@WiAi@"
 						}
 					]
@@ -1574,12 +1692,14 @@
 		{
 			"slug": "train-station-to-abu-qir",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "abu-qir",
 				"ar": "أبو قير",
 				"en": "Abu Qir",
 				"lat": 31.3202903,
@@ -1601,6 +1721,7 @@
 							"toOnRoad": false,
 							"minutes": 60,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[ECWOaA{@BgA[c@]u@Yw@Wy@a@iAoCsHQu@q@o@AGE_@Ky@GkA?e@HuBTmBTeAPg@HYhAuBhAkB`BuCHSv@}Av@cCb@kBf@mCDSRcCRkDFcEFwDA{@G{@Mw@c@uA_@s@AAOU{@}@o@c@oD}AwAg@m@SkBu@gBaAkBkAa@SC?oAYiDe@wDw@eB]{@U}@c@wDyBuCcBoCiBi@c@g@k@KKU]]q@Ws@a@_Bi@{Am@wAS[{@{A{@iAsAsA{AcAg@WWM_A]{FoAwAc@sAk@yAw@qF}A{C}@]EgCEaAOo@SCAo@]y@m@m@e@s@y@m@aAc@iASq@I[c@}Bs@oHIq@Ie@YiAm@eBi@}B[iBGk@[cCYeDOyCE_B@\\EiCK{A[qCYyAOo@Kc@kBkGk@gB[aAMe@QiAEe@?WCs@@q@Fq@XkBTkAtCoNP{@TwAvBuIPu@f@kAb@w@h@q@`A}@f@k@d@}@v@wA`@m@fB_CZe@x@mBnBwElBoF?APo@Pu@tBeK??^uAd@qAf@iBx@sEbAsFPwAPgARw@Pe@nA{DjAmCjAuBlGeLlFsJ^o@jF}JVm@pC_Gh@_A`@{@Zw@Pe@nBwElB_EDIZi@rAoB~CwFnAyBjDwHrFyLP]dBqFdAqCRo@`@qAnB_H`@{ADOxBkJr@wBFSl@}Aj@kAx@yBz@sCtDgMHSnEqMZ{@hD{KRk@|AkFdAaDJ]HYl@mCDUv@mEVeBt@oFRgBTwC@QNwEFeD@mCBwEAuEC_BQwK?sB@_GDcDGYAyACIIGo@CIDGt@CLGHAnI?VDnIDdDJfLAdBAtAWfA@jDELMZQVKHe@Ng@BC?wEWkB]oBi@m@OaBm@yAs@uA{@mA_A??gBeB_AiAy@mAy@wAUg@[s@qAsDkAuCi@eAO]_A}Aq@cAq@{@gBkBWSyAiAkAu@mAk@qAe@gAYs@QsEuAaD_AkLcDiLcDkBi@aIqBmLyCuIyBwA_@kL_DmL}CkL_D_FsAkEoA_D_AkG}AkG}AaD{@kLaDoEmA{EoAo@O}JmCkL}CkL_DeG_BeDcAyH_CoBi@kL_D??mLwC[GqKsCkL}Cq@SyEgAaBOaAGaABaBJ}AVoA^a@PaDjBoAj@CBeBf@{@LaAJE?gADyJDeA@mFHmCBsBByGLq@@aM^oADkJJC?qA?_CMaBSgCe@UEqFuAiDq@mGqA_AQyAQMA}AMy@C_CAmCJYBu@FqCZgATsCv@OFeC|@sGvCuK`F_EhBwEpBqElBGEIAkB`@oALE?s@BsACeADi@Aq@KoBg@De@BSMCKhAARSDIJENOvAwCfDo@t@wGpHsDdEoCdDyCnDYd@cCcDcBaC_FjFA@w@bAW`@Sf@Oh@}@xGQnAW`AUd@MN{FaAwLsBeDk@MfAqEw@{AWyI_BuLwB_Dk@qD_AWIeA]kGoBMGuBiAMGaAc@q@]gHmCr@X"
 						}
 					]
@@ -1610,12 +1731,14 @@
 		{
 			"slug": "hadra-to-train-station",
 			"from": {
+				"id": "hadra",
 				"ar": "الحضرة",
 				"en": "Hadra",
 				"lat": 31.201377,
 				"lon": 29.93336
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -1637,6 +1760,7 @@
 							"toOnRoad": false,
 							"minutes": 14,
 							"everyMinutes": 3,
+							"fare": 4,
 							"geometry": "q_m}DojuuDXtDNfCNdB@HP|@v@pCrApGr@jDXnDBn@ArB?pBEpC?|FAHGjDE`FE~BOfJUBUJQPKVE\\@V?BHXLRRNXFXAXMX@JBlErDfA~@h@\\lEpAFDBHOpAEXEt@@RBRzBvJ~CjNoByIbCrKzChLpD`NtBxH"
 						}
 					]
@@ -1646,12 +1770,14 @@
 		{
 			"slug": "train-station-to-hadra",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "hadra",
 				"ar": "الحضرة",
 				"en": "Hadra",
 				"lat": 31.201377,
@@ -1673,6 +1799,7 @@
 							"toOnRoad": false,
 							"minutes": 18,
 							"everyMinutes": 6,
+							"fare": 4,
 							"geometry": "_fk}DoyouDDy@eAeDiAcDsEoM_BsEyAoEUm@w@}BW{@i@eCWkDm@{IAUDo@JABCBMAEKKI@EFAJEA}Bc@uEoAmAa@KEECk@c@}F_FIOESBW?O?GCUISMOMKQEQCPaKBeBDaFHuD?M?oFDqCJc@VyA?E?]GoAKwAC{@g@_Au@oDqAmGw@qCQ}@AMOaBOgCYuD"
 						}
 					]
@@ -1692,6 +1819,7 @@
 							"toOnRoad": true,
 							"minutes": 9,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[EC"
 						},
 						{
@@ -1707,12 +1835,14 @@
 		{
 			"slug": "al-bitash-to-train-station",
 			"from": {
+				"id": "al-bitash",
 				"ar": "البيطاش",
 				"en": "Al-Bitash",
 				"lat": 31.1220316,
 				"lon": 29.8055994
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.186696,
@@ -1734,6 +1864,7 @@
 							"toOnRoad": false,
 							"minutes": 25,
 							"everyMinutes": 3,
+							"fare": 8.5,
 							"geometry": "uo}|D}k|tDS]sB{C_AkAgCaD{BkDi@s@{BwCsDkFCE_HiK[c@cAgBiB{CaA{B]w@yB{FcAuCa@kAg@aAm@q@yB}B}@}@sIwI{D}Dg@q@mAkCcCiFq@sAc@q@u@k@oAcAu@s@qDgEU]]e@{EsHg@u@yCgEwCyDqDyE_CeDiGyI]q@IQWu@cCcJAa@@SBY\\gADq@A_@E]iCoBkAk@GCsEkBoBu@}A]iBa@k@Sg@[u@q@yBwCcCaDo@{@q@uAMQw@_A??sAgBm@qAw@oBk@wBEUYgBe@qEg@yCMe@Ma@Um@yB}DuBmC_C}CqDaFkCsDiDiE_GuHu@cAuH_KuCyD_DaEu@aAg@s@e@cAq@mBw@oCAEgEoMACkB{FQ]iAeBi@o@_IoJCAmEsFkB}BmDmEuC}C_FmFkBsBiIcJkIcJoAwAc@k@mDiGq@kA[i@[e@iCyE]k@gAiBgBuCMIQAyAVa@BGAYEeAe@aDeBOMYa@Ss@Sy@a@iBs@kCk@wAkAaCSa@]g@UUKEi@AWs@sCsEcC}DISUaAeAiDoAaEoAiGIWOo@kDmLBH"
 						}
 					]
@@ -1743,12 +1874,14 @@
 		{
 			"slug": "street-45-to-train-station",
 			"from": {
+				"id": "street-45",
 				"ar": "شارع 45",
 				"en": "Street 45",
 				"lat": 31.2620037,
 				"lon": 30.0093222
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.196257,
@@ -1770,6 +1903,7 @@
 							"toOnRoad": false,
 							"minutes": 37,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "ozx}DgedvDc@v@c@`AoAhCs@zAwBjEw@|Ay@xAwCpF]l@iAvCQj@CFSb@cBvCgFvIs@|@IJCBqCtB}DdDcBrAtAiAuHdGYgAOm@aA_Da@q@i@w@eBkBUSaBaB}DoDg@c@yAmAoAeA]U{D{AWKkAa@YSYYg@w@MKGAGBEDCHBXj@n@bAn@NHj@Rj@Jl@RlBp@b@VhBxApFlEpBpB~C|C`AlAb@|@^lABHPx@dAhDZlAFVLjA@`AARGv@UpBAn@Fn@Nl@LN~ApCMU\\n@JXJv@IbGAfA@hA@zASnCEnA@|BB`@Hl@Jj@JXj@~@f@j@l@b@DBd@PfAThALD@R?TAj@MdBkAPIXGzAKdA?^BF@d@JjAb@hFlBz@d@FDlA`Aj@h@f@l@xCzDBFZd@FLLV`@rA\\tBVbAN^d@|@NRZ^p@l@v@d@t@VhATj@TnAbAf@b@LJv@f@nDzCd@h@Xh@b@z@b@j@^ZJJvChBj@j@\\d@rA`BV`@h@jA~AtE@D@BHj@B\\FpBJtALj@Nf@Tb@p@~@PNd@f@hErCx@t@|@dAHJtDlF|@fAz@t@HFb@\\vC`Bt@j@nBxB~BfCb@p@d@fAZd@\\d@^^PJv@j@lIxEoC_BhDnBh@b@b@h@|AbC~AxBRTr@x@dAbA`@f@h@~@lAnDDJn@nAv@fA`BpAl@n@TZDLVj@??J`@F`@B`@?b@Cb@G`@K^O^_@p@IXEXAVFl@Ph@@@dDdFrBrDj@~@\\j@RTh@f@n@\\fCz@j@\\DBn@j@j@r@d@x@`@fAPz@NdADnABXD^H\\NXb@p@h@l@P^`CnDtFfIx@z@tBxBjA`AzBnB`@Xn@d@fHhHtIvIvCxCNTLXFZNfEFpA|@nDb@nAt@xAZf@tAtBfB|B|B~BDDvBnCfDhERV~CdEnC|DxE`Hn@|@`@f@TTdAvB`AfBvAjDFL`@t@xF`JpAtBvBxDx@zBd@nA^p@`AjAb@n@d@x@f@hAP^r@zA`CzG`@rAL^t@pAzDxEj@v@lA~Ar@pAPn@BL`ArE@HnAvGRv@z@vBHPjAtCHZTvANzCT`A??HFJAFGBK@m@SaCQiAUaA@UDUJQLKl@UvDqAHC~EkBr@WlJgDbDiAP@RCzEaBlFgBPAP@PDh@Xj@~A^dAb@|@JFL@LCFGDOAQ[kAeAmC@W?AFSJOPKbDm@f@EfAAnBFt@B|@HjCfAhD~@LBzCzMNl@"
 						}
 					]
@@ -1789,6 +1923,7 @@
 							"toOnRoad": true,
 							"minutes": 66,
 							"everyMinutes": 5,
+							"fare": null,
 							"geometry": "ozx}DgedvDc@v@oAlCc@|@s@zAeDvGIPy@xAuD~GMZ{@zBQj@CFSb@kInN}@hACBo@f@o@d@NZnB{AhCbCb@d@LLp@|@xAdCPRJDVh@pApBBBzCfEnC~DdBfCbAtAh@|@Rd@Rt@T`@JLIKV\\z@v@~A~BxBlDnDzFrBpCb@j@bE~Fz@nAFJbHnKzA`C\\\\b@PrAJj@RV?~@`@D@xAb@bAHfCDj@Ff@Tj@h@nAjApDzDlArAzCfD|@z@n@\\j@VTRNVzAtCT\\jAxAf@r@T`@^p@PX`BnDCBBCj@zAz@tC~DxM^lAfAtCl@nAzAdCtFjJ`@n@|C~EdA|A~@pARV|@tAj@dAtBzF@Br@rAn@`ArDzFBDt@zATZrBfBnCvBnA`AhB~AfD~ChG~FpAjArFbFtAtAPR~E~ElB~B~HpJTXxFfKlGbLxB~DPVn@n@|BhB~FxE`BfBhIbJbEpEdCtCbIjJlEdFxB~BlI~IlI~IlI~IjDvD~ChDbEpEZb@^PJNNVb@z@dGfL@Bl@vApAzDlA|DbAfDzBrH|DzMfApDnBjHfA`EP~@T|@fA~C\\~@b@|@JFL@LCFGDOAQ[kAeAmC@W@GDMJOPKbDm@f@EfAArBFp@B|@HjCfAnD`AF@|C`N"
 						},
 						{
@@ -1804,12 +1939,14 @@
 		{
 			"slug": "train-station-to-street-45",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.192164,
 				"lon": 29.905043
 			},
 			"to": {
+				"id": "street-45",
 				"ar": "شارع 45",
 				"en": "Street 45",
 				"lat": 31.261259,
@@ -1831,6 +1968,7 @@
 							"toOnRoad": false,
 							"minutes": 59,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "_fk}DoyouDDu@?CeAeDeCiHsEoMc@mAyAoEmAkDCGSs@i@eCk@_IYgEAUDo@JABCBMAEKKI@EFAJcCe@??uEoATa@JI~CgCZ[Va@~CsI^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@CnF_CREf@Eh@BRDjA`@b@@`@KLKT[Jc@@g@KgAu@qBg@aAeEoHkAaCcA_BkAaBuAoB{CoEy@gAcAuAwF}GOSeBgBsBkBqBeBy@s@a@]_GyFi@g@iHmHIIqA_BkCuDgA}AACc@u@aAsB}ByGoEqMyBoGs@wCSq@wAoEe@iBq@gDEWYeAYy@w@cBS[c@s@uA}A{@aAe@q@c@w@a@w@}@wB_@iAeB_FgBsFyDwLK]mEsMY_Au@qBsBeHu@cCWoAIi@KsAEsA?qA?eN@g@@g@XkDF_B@uE?s@AwJ?aBCuN?W@mO@cG@iGB}HFqBJ{AN}BFiE@oD?SCaJKkDCw@AeD?}A@}BBqA@SLy@Rw@PYRSXOXGdEMR?tFIn@@TDh@PNLLPHTFT?D@PAVKh@OV[XWLyCLcC?iN?iK\\yFHeI^wPfB}DRU?w@Aq@E[CuH{@eCWiAOaHZcI\\iOf@Q@KAQKEKAi@QyKGaDE_@K[aC_GmBsESWUS[KYG]A}ADaMZ_MZaMXaMZwDJgGRwCJyGNM@aMV{DH]@gFLuITiBJiEV{@k@Ye@o@sCkBkI{@yCIWq@oBq@qAgByC_@aAM[yAcDiD}EKOSWmAaAy@gA}AuBw@kA_AuA{F}Gu@}@sBaCk@{@MDCH?JnAzAbGdHGVYp@ILQTON_EfCi@\\sB`AgAf@qEnCs@r@i@l@MNm@o@iFjISZ{CsCwBeBp@w@hD_EBG?Kt@}@l@n@PSW[oAwAcG}FoAkAyBcDQRT\\w@bAMS}@oA"
 						}
 					]
@@ -1856,6 +1994,7 @@
 							"toOnRoad": false,
 							"minutes": 31,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "oel}DmaquD{CvAmEnBuAl@gDtA{BfA_@LiC~@tAtDcAf@GDGX@N?P{DjA_FtAKBmA\\oIbCs@RWBWAg@MuFoD_@SNHsDmBa@]e@e@Yo@Si@UaA?CKo@S{Bc@uGKaAAGQiAUaAKU]{@q@_B}@sBIUOi@oBqKQu@Kk@I_@So@Ym@_EyF]e@_AaBe@mA_B}Cc@u@]k@g@yAgB_EGK_AcBIOuAiBiAgBs@yB_@}@GM_BaDqD{FcC{D}@_Bq@qBK_@]mA[{@k@sA[g@mAoA{@gAA?GIgA{AmAyAuC}DoHaKmBiCsAiBqBkC_C}CaBsBY[s@eAEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNYz@}AhBqDNYbA{B^u@fCgFRc@r@uAZg@h@s@"
 						}
 					]
@@ -1865,12 +2004,14 @@
 		{
 			"slug": "train-station-to-al-bitash",
 			"from": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.1920701,
 				"lon": 29.9027713
 			},
 			"to": {
+				"id": "al-bitash",
 				"ar": "البيطاش",
 				"en": "Al-Bitash",
 				"lat": 31.1220732,
@@ -1892,6 +2033,7 @@
 							"toOnRoad": false,
 							"minutes": 30,
 							"everyMinutes": 3,
+							"fare": 8.5,
 							"geometry": "mek}DikouDx@l@vEtCfBdAPNR\\?@\\x@nAjElAtEPp@`B|Gx@rCzD|MQi@|AnFnBtGRn@fA~D~AlFhAvDf@xAb@fBD`@?PMh@FBfGrBvBV\\NHH@?LP`AlBd@dARj@hAvEr@rCHRNRPLbDlBn@f@??zI`Fj@\\HFTVbBtCvAdCz@|AjCxEz@nAzAbBjI`Jv@x@pA|A|AzAdBlBhI`J|BfC~GhIwAeB~HnJbHnIZ`@`@f@dAbBNZjB~FFPpDfLRn@lA~DRj@`ChDTVtBlC~DlFrH~Jx@fAxD`F`ApAtHzJjDrEfChDjBfCv@bBp@jB{@dAcD|DKREVEd@@PFd@n@|AhAnCrBbEj@z@XXtAzAdExDd@TZPB@b@NbAVd@F`@P^VtCdEZd@TTp@b@n@VzA^`A^vAr@|Av@lEfCt@h@Z^@B^n@L^hAtEdAtD`@xAj@hBh@jA|B~CnHbK`@l@lGrIxDhFrBxCPVP\\L^TfAbBbIJb@Fd@H`@L`@pDxHn@tAn@tBRbAHbADvA@|@BjGDj@DRdAjDdAfDnBvHhDpMHFB?D?hIeFTGX?FF|IbHR???LKpBeDNMPIRER@PD`Aj@FFr@h@FDv@t@`CrDfBvChBvCjAtBbBhC?@nA`BjFpGxAfBz@hArBxCb@v@"
 						}
 					]
@@ -1901,12 +2043,14 @@
 		{
 			"slug": "abd-el-qader-al-gadida-to-train-station",
 			"from": {
+				"id": "abd-el-qader-al-gadida",
 				"ar": "عبد القادر الجديدة",
 				"en": "Abd El-Qader Al-Gadida",
 				"lat": 31.0732087,
 				"lon": 29.8518813
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -1928,6 +2072,7 @@
 							"toOnRoad": false,
 							"minutes": 37,
 							"everyMinutes": 45,
+							"fare": null,
 							"geometry": "o~s|DgmeuDeEs@u@C_@FG@QH_@^KVEZ@ZHXNTTL[Ng@R{Cr@m@Li@VEROhBKd@C@i@MC@IPyBcAC?KAcG`Hu@~@_InJ}DxE}FwGeQcTkBqBy@q@cBmAuAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDmAeD}@eDyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRAbDm@f@EfAAzBFh@B|@HjCfAtDbA@?~ChNJ^bCrKRt@pD`NpD`NjAjE"
 						}
 					]
@@ -1953,6 +2098,7 @@
 							"toOnRoad": false,
 							"minutes": 36,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "_au|DqocuD[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRABA~Ck@f@EfAAdDJD?v@HjCfAvDbAPr@~ChNESbCrKd@hBrD`NpD`Nv@vC"
 						}
 					]
@@ -1962,12 +2108,14 @@
 		{
 			"slug": "abis-8-to-train-station",
 			"from": {
+				"id": "abis-8",
 				"ar": "ابيس الثمانيات",
 				"en": "Abis 8",
 				"lat": 31.1272547,
 				"lon": 29.9427712
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -1989,6 +2137,7 @@
 							"toOnRoad": false,
 							"minutes": 32,
 							"everyMinutes": 7,
+							"fare": null,
 							"geometry": "ip~|DiewuDgJ_AA?uLgAEA{LoA{LoA{LqAsCYiHq@{LkA}LkA{LiA}LkAiBQyEa@QjCSrCm@rJG|@w@hM}@hOw@vMGn@UpDELWb@g@f@q@Vm@Fa@A]EUIOG}BsBmEoEe@e@UKQEU?YDUJQLW`@EPE|@AtCA\\GxBCrKCrDB`FAvBEzH@h@Hv@Rh@LRTVlCpCxDtDLLj@p@TRXp@K`@KPMJKDc@H[A_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAyBbGeAhAwEpDm@T[HQHKPOLa@N[Hy@JgDGwAFaAN[LiBTMHEL?JLPLDRAz@OfB]f@EfAAdDJ|@HjCfAvDbAd@pB~ChNYqAbCrK|@dDpDbNpD`N`@xA"
 						}
 					]
@@ -1998,12 +2147,14 @@
 		{
 			"slug": "abu-youssef-to-train-station",
 			"from": {
+				"id": "abu-youssef",
 				"ar": "ابو يوسف",
 				"en": "Abu Youssef",
 				"lat": 31.092941,
 				"lon": 29.76105
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.186696,
@@ -2025,6 +2176,7 @@
 							"toOnRoad": false,
 							"minutes": 44,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "{yw|DqustDKe@_BwIuAsH[uAM]GUWk@AEe@{@cA{BwCmFKSsAwBg@u@iD{D[_@mA}AqEwFSUmB{Bs@w@iA{Ay@qAo@_Ai@cAc@u@aCsF?CaAyBqAkCe@u@IOcAwAYc@qFsGm@}@GKoGoKuE{H}@aBmFmJAA[u@}BiFaBiDY_@iAyAW[iDqFYc@uG{KKQ_D}EaBeBa@k@kBiCOQoCiDg@w@_@i@i@o@sAmAw@{@q@aAs@mAi@aA]}@k@_Cq@aB}@_ByEoIs@sAsByDuBeEWm@qAyCkBaDS]w@kA{@oAgEmFo@_AkAkBeDkE{@mA{BcDiDgFqCeEcAgBgAgBa@s@_BsDgBuEQe@eBaFg@aAm@q@m@q@kAkAgGkGeIgIMOYa@qEuJO[a@w@c@q@eCoBu@s@gAoAiBwBs@cAoCiEkAiBaE}F[_@mHsJGGkHgKuAoBg@cAWu@mAsEu@oCAa@Dm@\\gATGb@ER?b@Do@k@cA{@cBsAe@[kAk@eBs@uB{@oBu@aE}@EAk@Sg@[u@q@_EmF}@kAo@{@q@uAMQw@_AeAuAMQm@qAw@oBk@wB_@}BAKc@eEg@yC[gAUm@OWiBeD{DeFy@eAwFyHeA{AoF_HyD_F}B{CsH}JoAcBuEcGOSW_@e@cAq@mBy@uCk@cBiEuMj@dBkB{FQ]iAeBqBcC{F}GmEsFhC`D}HuJeBwBaFoFsC{CwDeEiIcJiIcJEEc@k@mFiJLR[i@[e@iCyEw@oAOBMHER?J@?r@d@TVbBtCtBtDhDfGz@nAv@z@jI`JzA`BpA|A|AzANQo@s@kIcJmGcHc@k@Q[iFcJ[e@MS{BeEeBuCo@cAw@qAMIQAyAVa@Ba@GeAe@mAo@sAu@OMYa@Ss@u@cDe@eBMe@k@wA_BcD]g@UUKEi@AK[KWmGaKIOISUaAuCkJAGmAaGYgA_A{CgBgG"
 						}
 					]
@@ -2034,12 +2186,14 @@
 		{
 			"slug": "airport-to-train-station",
 			"from": {
-				"ar": "المطار",
+				"id": "airport",
+				"ar": "مطار النزهة",
 				"en": "Airport",
 				"lat": 31.197153,
 				"lon": 29.95239
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -2061,6 +2215,7 @@
 							"toOnRoad": false,
 							"minutes": 13,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "eel}DmayuDl@vBp@`CdAjDhArCFPzEjMj@zAdDrJrAxDn@vA\\p@rApB`@n@jDxEt@z@r@r@dEhErB`CRRhAfAhCxBdA|@jA|@NJ~CrCbBfB~@jAlBzBjEvF@BrBxCPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JBFHHLDRAbDm@f@EfAAhADzAD|@HjCfAdCp@p@PlCpL`DjNcCsKbCrKpD`NpD`N~A`G"
 						}
 					]
@@ -2072,7 +2227,7 @@
 						{
 							"kind": "ride",
 							"vehicle": "مشروع (ميكروباص)",
-							"route": "المطار - محطة مصر",
+							"route": "مطار النزهة - محطة مصر",
 							"headsign": "محطة مصر",
 							"from": "كوبري السكة الحديد",
 							"to": "محطة مصر",
@@ -2080,6 +2235,7 @@
 							"toOnRoad": false,
 							"minutes": 20,
 							"everyMinutes": 5,
+							"fare": null,
 							"geometry": "eel}DmayuD~AxFz@rCHVhArCfC|GfCzGnAnDhD|Jl@nA^x@tB`DjCpD^f@t@z@xFzF?@rB`C|AzA`CrBFDdA|@zAhA~CrCZ\\fAhAlDfEjAzA~BzCtB|CPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRA`Dm@@?f@EfAAdDJ|@H`Bp@h@TvDbAjAdF~ChN_AeEbCrKfBvGpD`NhDjM"
 						}
 					]
@@ -2089,12 +2245,14 @@
 		{
 			"slug": "asafra-to-el-mawqaf-el-geded",
 			"from": {
+				"id": "asafra",
 				"ar": "العصافرة",
 				"en": "Asafra",
 				"lat": 31.2703272,
 				"lon": 30.0054211
 			},
 			"to": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.176456,
@@ -2116,6 +2274,7 @@
 							"toOnRoad": false,
 							"minutes": 39,
 							"everyMinutes": 9,
+							"fare": 11.5,
 							"geometry": "onz}D{lcvDhF|EpBlB~C`DdA`AvBlBBR@`@At@M\\qBfDEL?LBJe@h@CBqCtBgCtBu@n@cBrA_FzDm@x@GVC^Dl@VrBb@xCFj@Df@Bn@BVNl@LNpAzB\\n@JXJv@Ab@G~EAfABdDG|@KpAEnA@|BB`@TxAJXh@~@@?f@j@l@b@DBd@PfAThALX@TAj@Md@[~@o@PIXGzAKdA?f@Dd@JjAb@B?dFlBbAj@lA`ARRVTf@l@xCzD^l@FLLVTt@J\\\\tBVbAN^d@|@j@r@p@l@XP\\Rt@VhATj@TvBfBLJv@f@??nDzCd@h@|@dBb@j@LLPLJJvChBj@j@pBfCFLNRh@jA~AtE@DJn@B\\DnA@`@JtALj@Nf@Tb@p@~@v@v@dAp@bC`Bx@t@fApAnAfBdBdC|@fAdA|@b@\\`Aj@tAt@t@j@rE`FZ^b@p@d@fAZd@\\d@^^hAv@x@b@bCtAhDnBh@b@b@h@??|AbC~AxBfAnAn@l@TT`@f@h@~@rAzDn@nAX^\\f@`BpAl@n@TZDLVj@J`@F`@B`@?b@AJAVG`@K^O^_@p@IXEXAVFl@Ph@vAxBnAlB~CrF\\j@HJHHh@f@n@\\fCz@p@`@n@j@j@r@@@b@v@`@fAPz@NdAHhBD^H\\NXPXPVh@l@P^xEdH|CpE|C`DPRjA`AzBnBpA~@v@x@tItIrItIr@t@NTLXFZVxGTbAf@jBb@nAt@xApB|C??fB|BbCdCvBnC_@e@fEnFnBhCbArAfFrH`CjDn@|@v@|@x@bBJR`AfBvAjDh@bAn@bAzGrK@@tBvD~AjE^p@??`AjAb@n@d@x@f@hAdAzBPf@nBrFn@rBt@pAHJpDlExBvCJRf@|@Pn@BLbA|Ef@hCf@lCRv@z@vBjAvCHNHZTvANzCT`AHFJAFGBK@m@Gw@KiAQiAUaA@UDUJQLKhDmAz@YHCrGcCfA_@`L_Ef@QbNyExAa@dGkAfAKfA?bCFbAI`AU\\OhFwDvAmAr@u@V_@nCkH^mAvAqERg@Zg@^a@h@g@zCoB|CaClBwAdAi@b@IT?zGt@n@DrACh@Eh@KfAYbJaEdSwI~Aq@j@Ch@IRG`DsA^G`@BdCf@PD^Z`DpEj@hA|AnEtAlEZj@`AjDtAxEBHXjA`BfFbAdD~AlF"
 						}
 					]
@@ -2125,12 +2284,14 @@
 		{
 			"slug": "el-awayed-to-asafra",
 			"from": {
+				"id": "el-awayed",
 				"ar": "العوايد",
 				"en": "El-Awayed",
 				"lat": 31.2220433,
 				"lon": 29.9940602
 			},
 			"to": {
+				"id": "asafra",
 				"ar": "العصافرة",
 				"en": "Asafra",
 				"lat": 31.269167,
@@ -2152,6 +2313,7 @@
 							"toOnRoad": false,
 							"minutes": 25,
 							"everyMinutes": 7,
+							"fare": null,
 							"geometry": "w`q}D{eavD?DWmOgEoMwJiD_MZaMX_MZaMZ_M`@sIRmBD_MV{BFeIR_Mf@kLQqAcOgB}NI_@sFmKeFcGwAmBuH{JyBiCaEkFsH}JcIkJ{AuBb@xD|H`F}QfDiEnFkBjC}B~CyDrAgHzJcHc@qIbDyH~Fz@mA`IyBqEnBqHg@"
 						}
 					]
@@ -2171,6 +2333,7 @@
 							"toOnRoad": false,
 							"minutes": 17,
 							"everyMinutes": 6,
+							"fare": 11.5,
 							"geometry": "w`q}D{eavDSoLcD{MsI{FaMZ_MZaMZ_MZaM^}KXa@@aMVeEJyFN_M`@cIcFiDeNmE_Ji@uAuG{KyC_DaDqE}HsJg@m@eGuIaIoJ}HqJOS`JzKoJmB}HrJyBpCyDlFo@|@_CtDcBhDs@xAiEvIsAfCuD~G{AbE"
 						},
 						{
@@ -2186,12 +2349,14 @@
 		{
 			"slug": "el-mawqaf-el-geded-to-kilo-21",
 			"from": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.175966,
 				"lon": 29.916417
 			},
 			"to": {
+				"id": "kilo-21",
 				"ar": "الكيلو 21",
 				"en": "Kilo 21",
 				"lat": 31.0777347,
@@ -2213,6 +2378,7 @@
 							"toOnRoad": false,
 							"minutes": 39,
 							"everyMinutes": 4,
+							"fare": 13.5,
 							"geometry": "w`h}Dq`ruDh@tBd@|A}DbCyEtCpApEbB`GzDcB|FcC|@zDTbA|@xClLtb@pApEdChHxGfV`B~FvD~MjClJ^fB@LRbBHT^n@h@d@XJpAV~FzAjCfAbOfJLHhCvBvAxAfBtBBBv@bAbh@zv@lOvTvP~VzHnLhFxH|PlWfQdXvEbHr@lAn@pAl@pAh@tAd@vAfNpe@xDdNtAhFbArEp@~Bz@xBbArBjAjBrAdBxAzA~ApA`v@pi@~S`Pl`@dYbAz@n@n@j@l@tA`BbC`D`@d@XTx@r@~HfFtItFd@`@l@d@nAnAd@h@bCdD^^vH`IVX`IlJbIlJ~DvE|BxCzHvJxHtJxHvJxHvJxHvJxHvJxHvJfElFpBhCxHvJxHvJvHvJxHvJxHvJpBhCbErFnCpDfDfEzHrJzHtJzHtJ`CvC~BlDh@~@hAtBfA|B~@`C\\bA\\`Ax@pCnAjFDhAf@jGVxENpB`@zC|AfJDdAEn@Kn@cAvDU^[\\k@`@a@NoI`CMNET{IvBw@RkA\\kAh@g@\\o@j@uA|Ao@r@qGxHEDMT[f@O`@[dAYxAu@xEkBnLQfAmAlHALm@xD{BxN{BvN{BxNrCyQ_DbSm@~DMlAKzAEjB[jOFcD"
 						}
 					]
@@ -2222,12 +2388,14 @@
 		{
 			"slug": "el-mawqaf-el-geded-to-asafra",
 			"from": {
+				"id": "el-mawqaf-el-geded",
 				"ar": "الموقف الجديد",
 				"en": "El-Mawqaf El-Geded",
 				"lat": 31.1758558,
 				"lon": 29.9164544
 			},
 			"to": {
+				"id": "asafra",
 				"ar": "العصافرة",
 				"en": "Asafra",
 				"lat": 31.2703272,
@@ -2249,6 +2417,7 @@
 							"toOnRoad": false,
 							"minutes": 57,
 							"everyMinutes": 6,
+							"fare": 11.5,
 							"geometry": "a`h}Dy`ruDbApFbExMd@GmEqM{D}MeDgNoEqM}D{MjaAa}@bGqOwIoIqH_KmI}IwB_CyD_GqEoMwBqGwA_EsEoMoEqMsDaKa@kAuEmMmEqMoEsMy@{NdF}LjGeLjGeLbFcMlGeLpFwLH_@XcNkDcNcEwMmF{LaImJ}HqJvAdByKuMkIaJcLoCyKhEwLpAaMF_MCaMNaMT_MR}dA`EwAEeJcAqBUkJJ_ZhAe@cASoLcD{MsI{FaMZ_MZaMZ_MZaM^}KXa@@aMVeEJyFN_M`@cIcFiDeNmE_Ji@uAuG{KyC_DaDqE}HsJg@m@eGuIaIoJ}HqJOS`JzKoJmB}HrJyBpCyDlFo@|@_CtDcBhDs@xAiEvIsAfCuD~G{AbEeM|OsJiFRUhFmJ{ImI_@]"
 						}
 					]
@@ -2268,6 +2437,7 @@
 							"toOnRoad": false,
 							"minutes": 12,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "a`h}Dy`ruDaAeD{AsFg@gBMm@]}B]gAw@cBK[Yw@gDcL{CeKUc@w@yB[aA[yAg@iDi@{Bu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RoItC_EtAcFhBy@X_GtBSDQ?q@_BJViAkCY_AmAuGa@{B]aBI_@So@Ym@uAmBgCqD_AaBe@mAc@{@{@aBaAaBg@yAqAuCUi@GKiAsBuAiBiAgBM_@e@yA_@}@gBoDkAkBiFkIo@kAMSq@qBi@mB[{@k@sA[g@UUw@y@}@gAGIgA{AmAyAg@s@qHaKyEsGsAiBACoFeHgAsAY_@Y[s@eA"
 						},
 						{
@@ -2281,6 +2451,7 @@
 							"toOnRoad": false,
 							"minutes": 19,
 							"everyMinutes": 2,
+							"fare": null,
 							"geometry": "q_r}DwivuDEG_@w@Oi@q@_BMg@M_G?]Kg@Oc@S_@Y[}EqEyAsAaCeCyBwBiCeCgCiCgA_AcAy@gB{AY_@Sc@Oe@I_@CW@m@Fg@N_ABc@@c@Ce@UyAKYYq@w@cAe@a@ME]Om@GU@_@FcAf@c@HS?k@Ee@S[UWYOY?AK[Ks@EiBImAMeA]gBK_@Qa@GQa@m@_@S_@My@OoAK[Gs@Uq@a@IIIKQOg@w@oA_CgAiBgAeBmB{CI_@AU@UFQdAsBJe@Fi@@G?k@Cg@Ic@YgAQ[KUSYSQeBsA]]OOe@q@a@y@]cAa@gBc@wAe@aAKSe@u@m@q@kBsAy@u@]a@e@u@KOq@{@w@o@kDsBoAs@yCgBq@g@[a@S]q@cBS_@CEg@u@oBgCcAaAm@c@e@Wc@SeBw@}@m@u@m@a@c@cBaCCC{BiDq@w@}@{@i@a@m@_@}AcAs@m@k@k@SY_@y@K_@Ga@EcA?I?gAKwASmACK[cA_@w@c@q@e@k@sDuEcA{@}A}@ECYSIGUUg@q@qA_CyAuB_@[OMWOkAa@_@SuAoAm@]WK}AYKCg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@W}AMm@[cAQ_@GMa@u@uCsDQQu@{@yAoAeAo@gDqA{B{@UIiAMc@AkBJ{@LIDc@TmAx@UHk@BmAOo@M]KSMIEWSMUQUqAkDMm@MqAAi@@wABc@FmA?_ACuBBs@FsC@aA?cAEi@Uy@[g@}@wAWg@K[GWGu@?W?I\\{CDgAC}@WiAc@yA\\YbDsCZUdBsA`A{@vAkAfEaDR]f@{@fCwEdCkEnA{BBEdBwDd@{@b@u@tA{BNY"
 						},
 						{
@@ -2300,6 +2471,7 @@
 							"toOnRoad": false,
 							"minutes": 4,
 							"everyMinutes": 6,
+							"fare": 11.5,
 							"geometry": "ehy}DcncvDuD~G{AbEeM|OsJiFRUhFmJ{ImI_@]"
 						}
 					]
@@ -2319,6 +2491,7 @@
 							"toOnRoad": false,
 							"minutes": 12,
 							"everyMinutes": 1,
+							"fare": null,
 							"geometry": "a`h}Dy`ruDaAeD{AsFg@gBMm@]}B]gAw@cBK[Yw@gDcL{CeKUc@w@yB[aA[yAg@iDi@{Bu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RoItC_EtAcFhBy@X_GtBSDQ?q@_BJViAkCY_AmAuGa@{B]aBI_@So@Ym@uAmBgCqD_AaBe@mAc@{@{@aBaAaBg@yAqAuCUi@GKiAsBuAiBiAgBM_@e@yA_@}@gBoDkAkBiFkIo@kAMSq@qBi@mB[{@k@sA[g@UUw@y@}@gAGIgA{AmAyAg@s@qHaKyEsGsAiBACoFeHgAsAY_@Y[s@eA"
 						},
 						{
@@ -2332,6 +2505,7 @@
 							"toOnRoad": true,
 							"minutes": 27,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "q_r}DwivuDe@_AOi@q@_BMg@G_DE}BKg@Oc@S_@Y[}CsCyCqCaCeC{@y@gEcEgCiCEEeCsBgB{AY_@Sc@Oe@I_@AOAG@m@VgBBc@@c@Ce@Ga@Mw@KYYq@i@q@MQe@a@k@Um@GU@_@FcAf@c@HS?k@Ee@SKGOMWYOYK]Ks@EiBImAMeAWqAEUK_@Ys@a@m@_@S_@Ma@IcCYs@UAAo@_@II[[g@w@oA_CgAiBQ[cDeFI_@AU@UFQ|@iBFIJe@Hq@?k@Cg@Ic@YgAQ[KUg@k@cAu@a@]m@m@e@q@QYO_@]cAa@gB]gAEOq@uAe@u@m@q@kBsAy@u@MOOQq@eAq@{@w@o@kDsBGEaFuCq@g@[a@S][y@Ui@S_@k@{@oBgCcAaAm@c@??e@WiCkA}@m@u@m@a@c@m@{@y@iA{BiDq@w@}@{@QOWQkCcBs@m@k@k@SY_@y@K_@COCQEcA?qAKwASmACK[cA_@w@QWQYyEaGcA{@UMmAs@YSIGUUg@q@qA_C}@oA[e@o@i@WOkAa@_@SuAoAm@]WKMC{AYg@Ue@Yc@_@_@a@[g@Yi@Sk@Qo@?Ae@iC[cAQ_@GMa@u@mBaCg@q@gAmAyAoAeAo@{Ak@gEaBUIiAMc@AaBHI@{@Lm@ZmAx@UHk@BmAOo@M]KCAOKIEWSOUOUa@cAo@gBMm@MqAAi@?[@{@JqB?_ACuBBs@DsB@_@@eCEi@Uy@[g@}@wAWg@K[AGEOGu@?a@\\{CDgAC}@WiAOi@kAiEaA_Da@q@c@o@EG{B_CsEkE??"
 						},
 						{
@@ -2347,12 +2521,14 @@
 		{
 			"slug": "el-nasreya-el-qadema-to-train-station",
 			"from": {
+				"id": "el-nasreya-el-qadema",
 				"ar": "الناصرية القديمة",
 				"en": "El-Nasreya El-Qadema",
 				"lat": 30.9985446,
 				"lon": 29.7877521
 			},
 			"to": {
+				"id": "train-station",
 				"ar": "محطة مصر",
 				"en": "Train Station (El-Shohada Square)",
 				"lat": 31.193334,
@@ -2374,7 +2550,1036 @@
 							"toOnRoad": false,
 							"minutes": 66,
 							"everyMinutes": 3,
+							"fare": null,
 							"geometry": "{ke|Dm|xtD{HnFyGrEGKy@aBwEmJi@}@aDkF}BgDc@o@kH{J^h@oHaKcAwAiFkHgHyJEKEOKu@G}ADq@j@cBrWwUjEmD|CiClBqAfHwDhLeEjMqDlDgADM@KCMGGi@GaUvHaHdCaA`@mAh@qC|A_BdAuFlE{HvG{ElE_Av@mOlNMJ}FbGcBxAq@b@y@\\sAd@qQbFeBj@cPvEC@{F|AoJ`CmDhA_EdBiCfBcDnCwD`EwBvBsHhIkHxHuCdDON{@z@iC`C{AjA}BpAeAd@uDjAoATqD`@_Gb@eER}MX{A?cAEeAMeASaAYgAa@eAi@_Ao@}@w@y@}@u@aAo@kAoPac@wX_u@qA_DuAuCwD{GmCyDqJyLoBkCoCkDoCmDeNsRyDeF_ByBmCyEu@_BmCgGaCaGgHgQwB_Fsc@kgAmGuOqCkHkEqKc@cAmA_Cm@aAaEmGkCgDi@k@[]eC{CsGkIeKmLeQcTkBqBy@q@y@o@i@]uAu@yAu@}Ai@}LyCoBc@o]}HsEmA_Bm@iB}@iBqAw@q@s@w@q@y@m@}@_NwUeEuHyBiEgByDo@aBaA_DYiAyDqQ_EcQaEeRW}@s@wB}AqD_BsCmAeBq@kAa[k_@sDmDo]ob@sGmJ_DcEeAgAiA_AoAy@}@e@gCwAm@WgCsAmAg@eAk@aDgBuBkBa}Bc`CiGwGcEwEgJ_JyDyDwC_D]]gD}D_UqU_JmJsGgHsJkJoSkTc@MYAYBYHgM~FyPdI}]hPw@f@qVdLuFvCsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JLPLDRABA~Ck@f@EfAAdDJD?v@HjCfAvDbAPr@~ChNESbCrKd@hBrD`NpD`Nv@vC"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-agami",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "agami",
+				"ar": "العجمي (البيطاش)",
+				"en": "Al Bitash",
+				"lat": 31.114728330327587,
+				"lon": 29.79443156074461
+			},
+			"options": [
+				{
+					"minutes": 58,
+					"walkMeters": 65,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "الكيلو 21",
+							"from": "محطة سيدي جابر",
+							"to": "البيطاش",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 57,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "qnp}DqiwuDsBeD|@}@No@X{A@K?AAI~EeFfCl@hJvBdA\\PFRJTNT^\\RJB^?ZIJINOHQFUB_@C_@~Au@vAq@JQjHgDPK|CgAdB_@f@G@Tz@A`@@F?lDT^PNPR@b@QPA`CRpDX\\Nv@dAp@gBZu@?Af@_AlBwCj@eAL]V}@Hi@@Kj@wGl@iF^_DJ]LK\\OxBf@dB\\`Dn@p@P~BfAZX^l@@BPf@Ll@JvAJDd@ARMHSRkAN_@TY\\YVMJEtGcC^GVHVZTl@@DT^~AxFdAjDDJbAfCvC`IvBvF~AtExCvI~@pBLVtB`DbDnEFHt@z@xF|FVXzAfB|AzA|CjCSQdA|@zAhA|BrB`@^t@v@l@n@lDfEbBxBfB|BtB|CjAlB^j@tB`Df@~@Th@Tr@|BrJ\\pAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAxELd@Nn@z@hCrB~GtApE`BzFDNb@dBxCrJbBnFnApFBLnAc@Ej@@|@Dp@Lx@b@lBvMrd@bClHdBxGtKl`@PfA@LHx@hCfJJb@H^Hb@TpBHT^n@h@d@XJpAV~FzAjCfA|MjIr@d@hCvBvAxAfAnAb@h@v@bAbh@zv@lOvTvP~VzHnLhFxH|PlWfQdXvEbHr@lAn@pAl@pAh@tAd@vAfNpe@xDdNtAhFbArEp@~Bz@xBbArBjAjBrAdBxAzA~ApA`v@pi@~S`Pl`@dYb@p@Nf@BHF\\Fh@@j@Iz@Uv@S`@}C|CqBrBc@j@OVgDfDsIvIcDdDoDpDaHfHs@h@OLu@l@kG~GqC|CsDhEqCbDiE`DA@a@ZaFrF[Vk@y@oGsJQ[{CgFi@`@GLCP?PFL^d@`@Xx@j@VRv@t@`CrDn@dA`DhFjAtBh@z@x@lAnAbBlDfEvCpDz@hA`B~BPXb@v@vAbCxBrErEjJj@bAtCdFpB`DJRXj@\\bAj@xBZ~@f@bAx@tAn@dAfF|Ff@j@hAtAIHHIXZ"
+						},
+						{
+							"kind": "walk",
+							"meters": 65,
+							"to": "العجمي (البيطاش)",
+							"geometry": "qd||DahztD??`@f@PRLQNP"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-kilo-21",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "kilo-21",
+				"ar": "الكيلو 21",
+				"en": "Kilo 21",
+				"lat": 31.078987338890553,
+				"lon": 29.73646382720414
+			},
+			"options": [
+				{
+					"minutes": 67,
+					"walkMeters": 12,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "الكيلو 21",
+							"from": "محطة سيدي جابر",
+							"to": "قرب دش حورس",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 26,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "qnp}DqiwuDsBeD|@}@No@X{A@K?AAI~EeFfCl@hJvBdA\\PFRJTNT^\\RJB^?ZIJINOHQFUB_@C_@~Au@vAq@JQjHgDPK|CgAdB_@f@G@Tz@A`@@F?lDT^PNPR@b@QPA`CRpDX\\Nv@dAp@gBZu@?Af@_AlBwCj@eAL]V}@Hi@@Kj@wGl@iF^_DJ]LK\\OxBf@dB\\`Dn@p@P~BfAZX^l@@BPf@Ll@JvAJDd@ARMHSRkAN_@TY\\YVMJEtGcC^GVHVZTl@@DT^~AxFdAjDDJbAfCvC`IvBvF~AtExCvI~@pBLVtB`DbDnEFHt@z@xF|FVXzAfB|AzA|CjCSQdA|@zAhA|BrB`@^t@v@l@n@lDfEbBxBfB|BtB|CjAlB^j@tB`Df@~@Th@Tr@|BrJ\\pAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAxELd@Nn@z@hCrB~GtApE`BzFDNb@dBxCrJbBnFnApFBLnAc@Ej@@|@Dp@Lx@b@lBvMrd@bClHdBxGtKl`@PfA@LHx@hCfJJb@H^Hb@TpBHT^n@h@d@XJpAV~FzAjCfA|MjI"
+						},
+						{
+							"kind": "walk",
+							"meters": 12,
+							"to": "قرب دش حورس",
+							"geometry": "wee}D{tluDPOGMEEYT"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "ابو يوسف - محطة مصر",
+							"headsign": "ابو يوسف",
+							"from": "قرب دش حورس",
+							"to": "الكيلو 21",
+							"fromOnRoad": true,
+							"toOnRoad": false,
+							"minutes": 36,
+							"everyMinutes": 3,
+							"fare": null,
+							"geometry": "mfe}DiuluDhAr@hCvBvAxAt@z@t@|@v@bArV~^b@Pj@^~JtNpIlJfBrAjBjAvDlB|EpBhiBpo@dEfBzBjAjDzBdDdChBbBfBjBnCjD~BrDpBxDfB`EvAjEfA`Er@jDf@bDf@tErCph@tEn}@PrCZnCb@nCj@jCVdAv@dCfApCp@~At@~A|@xA`AtAfBrBfA`A~AnA`QtLnHlFzEdDpCzBxLxIdCrBzEvDlE`EhKzL`b@dg@f_@he@r{@rgA~n@zx@Pb@Rd@fAxAL`@BRvAhBzHrJzHtJzHtJpEtFbBfCZd@rBtDfA|Bf@pAVn@z@dCx@pCp@pC\\xADhAf@jGVxENpB`@zC|AfJDdAEn@Kn@cAvDU^[\\k@`@a@NoI`CMNEToFpAcDx@kA\\kAh@g@\\o@j@CBaClCaE|EuA`BMT[f@O`@[dAYxAUxA}BxNMt@_BtJALOz@{BvN{BxN{BvNtByM_DbSm@~DMlAGbACVYrN?_@GrDQvJEfDOtEEJIHIFM@KAWO}BuD"
+						}
+					]
+				},
+				{
+					"minutes": 79,
+					"walkMeters": 569,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "الكيلو 21",
+							"from": "محطة سيدي جابر",
+							"to": "طريق الاسكندرية، مرسى مطروح",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 72,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "qnp}DqiwuDsBeD|@}@No@X{A@K?AAI~EeFfCl@hJvBdA\\PFRJTNT^\\RJB^?ZIJINOHQFUB_@C_@~Au@vAq@JQjHgDPK|CgAdB_@f@G@Tz@A`@@F?lDT^PNPR@b@QPA`CRpDX\\Nv@dAp@gBZu@?Af@_AlBwCj@eAL]V}@Hi@@Kj@wGl@iF^_DJ]LK\\OxBf@dB\\`Dn@p@P~BfAZX^l@@BPf@Ll@JvAJDd@ARMHSRkAN_@TY\\YVMJEtGcC^GVHVZTl@@DT^~AxFdAjDDJbAfCvC`IvBvF~AtExCvI~@pBLVtB`DbDnEFHt@z@xF|FVXzAfB|AzA|CjCSQdA|@zAhA|BrB`@^t@v@l@n@lDfEbBxBfB|BtB|CjAlB^j@tB`Df@~@Th@Tr@|BrJ\\pAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAxELd@Nn@z@hCrB~GtApE`BzFDNb@dBxCrJbBnFnApFBLnAc@Ej@@|@Dp@Lx@b@lBvMrd@bClHdBxGtKl`@PfA@LHx@hCfJJb@H^Hb@TpBHT^n@h@d@XJpAV~FzAjCfA|MjIr@d@hCvBvAxAfAnAb@h@v@bAbh@zv@lOvTvP~VzHnLhFxH|PlWfQdXvEbHr@lAn@pAl@pAh@tAd@vAfNpe@xDdNtAhFbArEp@~Bz@xBbArBjAjBrAdBxAzA~ApA`v@pi@~S`Pl`@dYb@p@Nf@BHF\\Fh@@j@Iz@Uv@S`@}C|CqBrBc@j@OVgDfDsIvIcDdDoDpDaHfHs@h@OLu@l@kG~GqC|CsDhEqCbDiE`DA@a@ZaFrF[Vk@y@oGsJQ[{CgFi@`@GLCP?PFL^d@`@Xx@j@VRv@t@`CrDn@dA`DhFjAtBh@z@x@lAnAbBlDfEvCpDz@hA`B~BPXb@v@vAbCxBrErEjJj@bAtCdFpB`DJRXj@\\bAj@xBZ~@f@bAx@tAn@dAfF|Ff@j@hAtAIHHIXZr@z@jCtDdBdCvDhFLT|AbC|DrG|@zAhCxEdAlBlGbLBFlDnGzAjCzClFvBnDzDnG`BdCV`@fAvAbCpCx@dAZd@j@x@BFh@~@vAtCz@pBR`@tAdDZr@b@z@dAhB`@n@d@p@RZt@`AjAzA`BfB\\`@`IlJwAcBxBjCvAdBh@x@bC`EVb@lBjDxAxCRd@L\\Tp@t@`DnAvGhBvJj@lB@Fv@xB`C`Gm@f@l@g@Xp@Wm@bCdGpBvEe@gAdExJf@`AzD`Ix@tB`FdMlAzCzAxDx@lB~@tBfH`OoBaExFrLzE|J`@r@"
+						},
+						{
+							"kind": "walk",
+							"meters": 569,
+							"to": "الكيلو 21",
+							"geometry": "qwu|DwvotDA?Xf@Vb@VS^j@HLnAbB@B`BzBz@jAV\\Zf@tAvBBBjDvF??"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-raml-station",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "raml-station",
+				"ar": "محطة الرمل",
+				"en": "Raml Station",
+				"lat": 31.200331183965478,
+				"lon": 29.899097756194084
+			},
+			"options": [
+				{
+					"minutes": 30,
+					"walkMeters": 634,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 634,
+							"to": "ميدان فيكتور عمانويل",
+							"geometry": "snp}DqiwuDAC[e@~A}ABE@GBInBu@pAq@\\QjAnBt@_@@AlBaA\\OLENCL?N@NBLDJHf@^hBcDTN??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو سليمان - المنشية",
+							"headsign": "المنشية",
+							"from": "ميدان فيكتور عمانويل",
+							"to": "محطة الرمل",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 20,
+							"everyMinutes": 1,
+							"fare": 9.5,
+							"geometry": "ito}DwuwuDT^\\RJBh@j@LZTr@bEvMhCjIn@nBF^??V`@jFhK`GnL`DlGJT?^CZYbAAR@J@HbDzM?B^pB@d@AJOZE?KFADAL@FBD^PJNNVrAfCtEzIj@rABFpAzDnBpG`@rA|CfKhDfLTr@b@|AnCbKf@hBP~@T|@pAtDW|@CHq@rA_B`CIPGRCxCBj@@NhAxIsBfAOHrD`LP\\@BANBT{DjAiElAa@JmA\\xCvI~ArELj@Bh@Iz@@HHLz@nAV`@x@rAjBtDdA~BLXRZhBlBRZNZNn@"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-smouha",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "smouha",
+				"ar": "سموحة (جرين بلازا)",
+				"en": "Green Plaza",
+				"lat": 31.209123950589998,
+				"lon": 29.962998211029113
+			},
+			"options": [
+				{
+					"minutes": 17,
+					"walkMeters": 728,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 728,
+							"to": "ميدان فيكتور عمانويل",
+							"geometry": "snp}DqiwuDAC[e@~A}ABE@GBInBu@pAq@\\Qr@_@|@c@lAm@VQLKHMHMFQDQBOB[BO~A\\`@JNB^Jh@LJADEJWFQLQNKPKTGh@ALBPBADAH?H@HBH??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العوايد - سيدي جابر",
+							"headsign": "العوايد",
+							"from": "ميدان فيكتور عمانويل",
+							"to": "جرين بلازا",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 4,
+							"everyMinutes": 3,
+							"fare": null,
+							"geometry": "_po}D_zwuDESBYrDcRqCjNrCqNrCoN|A}Hn@uDVyAtBwKXuAxByKdBoIj@_CJ[r@}Bt@mB"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-abu-qir",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "abu-qir",
+				"ar": "أبو قير",
+				"en": "Abu Qir Station",
+				"lat": 31.320357,
+				"lon": 30.062969
+			},
+			"options": [
+				{
+					"minutes": 65,
+					"walkMeters": 538,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "الكيلو 21",
+							"from": "محطة سيدي جابر",
+							"to": "شارع البرت الاول",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 6,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "qnp}DqiwuDsBeD|@}@No@X{A@K?AAI~EeFfCl@hJvBdA\\PFRJTNT^\\RJB^?ZIJINOHQFUB_@C_@~Au@vAq@JQjHgDPK|CgAdB_@f@G@Tz@A`@@F?lDT^PNPR@b@QPA`CRpDX\\Nv@dAp@gBZu@?Af@_AlBwCj@eAL]V}@Hi@@Kj@wGl@iF"
+						},
+						{
+							"kind": "walk",
+							"meters": 334,
+							"to": "شارع قنال المحمودية",
+							"geometry": "{om}DyayuD?A?GBSHq@Hs@BKBODODMLKJGNEICCAHi@HBBM@K@M?KAMAMQCECEAECAEEEGEEAEA@]?[oAw@a@S??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - محطة مصر",
+							"headsign": "أبو قير",
+							"from": "شارع قنال المحمودية",
+							"to": "شارع بورسعيد",
+							"fromOnRoad": true,
+							"toOnRoad": true,
+							"minutes": 48,
+							"everyMinutes": 2,
+							"fare": null,
+							"geometry": "krm}DwqyuDC?oAYiDe@wDw@eB]{@U}@c@wDyBuCcBoCiBi@c@g@k@KKU]]q@Ws@a@_Bi@{Am@wAS[{@{A{@iAsAsA{AcAg@WWM_A]{FoAwAc@sAk@yAw@qF}A{C}@]EgCEaAOo@SCAo@]y@m@m@e@s@y@m@aAc@iASq@I[c@}Bs@oHIq@Ie@YiAm@eBi@}B[iBGk@[cCYeDOyCE_B@\\EiCK{A[qCYyAOo@Kc@kBkGk@gB[aAMe@QiAEe@?WCs@@q@Fq@XkBTkAtCoNP{@TwAvBuIPu@f@kAb@w@h@q@`A}@f@k@d@}@v@wA`@m@fB_CZe@x@mBnBwElBoF?APo@Pu@tBeK??^uAd@qAf@iBx@sEbAsFPwAPgARw@Pe@nA{DjAmCjAuBlGeLlFsJ^o@jF}JVm@pC_Gh@_A`@{@Zw@Pe@nBwElB_EDIZi@rAoB~CwFnAyBjDwHrFyLP]dBqFdAqCRo@`@qAnB_H`@{ADOxBkJr@wBFSl@}Aj@kAx@yBz@sCtDgMHSnEqMZ{@hD{KRk@|AkFdAaDJ]HYl@mCDUv@mEVeBt@oFRgBTwC@QNwEFeD@mCBwEAuEC_BQwK?sB@_GDcDGYAyACIIGo@CIDGt@CLGHAnI?VDnIDdDJfLAdBAtAWfA@jDELMZQVKHe@Ng@BC?wEWkB]oBi@m@OaBm@yAs@uA{@mA_A??gBeB_AiAy@mAy@wAUg@[s@qAsDkAuCi@eAO]_A}Aq@cAq@{@gBkBWSyAiAkAu@mAk@qAe@gAYs@QsEuAaD_AkLcDiLcDkBi@aIqBmLyCuIyBwA_@kL_DmL}CkL_D_FsAkEoA_D_AkG}AkG}AaD{@kLaDoEmA{EoAo@O}JmCkL}CkL_DeG_BeDcAyH_CoBi@kL_D??mLwC[GqKsCkL}Cq@SyEgAaBOaAGaABaBJ}AVoA^a@PaDjBoAj@CBeBf@{@LaAJE?gADyJDeA@mFHmCBsBByGLq@@aM^oADkJJC?qA?_CMaBSgCe@UEqFuAiDq@mGqA_AQyAQMA}AMy@C_CAmCJYBu@FqCZgATsCv@OFeC|@sGvCuK`F_EhBwEpBqElBGEIAkB`@oALE?s@BsACeADi@Aq@KoBg@De@BSMCKhAARSDIJENOvAwCfDo@t@wGpHsDdEoCdDyCnDYd@cCcDcBaC_FjFA@w@bAW`@Sf@Oh@}@xGQnAW`AUd@MN{FaAwLsBeDk@MfAqEw@{AWyI_BuLwB_Dk@qD_AWIeA]kGoBMGuBiAMGaAc@q@]gHmC"
+						},
+						{
+							"kind": "walk",
+							"meters": 205,
+							"to": "أبو قير",
+							"geometry": "mhd~DavnvD??kAg@QGYTUNPLFFDJBLfBOFBb@N"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-el-mansheya",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "el-mansheya",
+				"ar": "المنشية",
+				"en": "El Mansheya Station",
+				"lat": 31.199739857156274,
+				"lon": 29.89518481666606
+			},
+			"options": [
+				{
+					"minutes": 35,
+					"walkMeters": 634,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 634,
+							"to": "ميدان فيكتور عمانويل",
+							"geometry": "snp}DqiwuDAC[e@~A}ABE@GBInBu@pAq@\\QjAnBt@_@@AlBaA\\OLENCL?N@NBLDJHf@^hBcDTN??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "المنشية - حجر النواتية (كوبري الناموس)",
+							"headsign": "المنشية",
+							"from": "ميدان فيكتور عمانويل",
+							"to": "محطة المنشية",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 24,
+							"everyMinutes": 3,
+							"fare": null,
+							"geometry": "ito}DwuwuDT^\\RJBPPVXLZhDvKdExMKYn@nBF^V`@jD~G`GnL`FvJJT?^AFARYbAARBTzBfJf@rB^tB@d@AJOZE?KFADAL@FBD^PJNNVR^dGhLNXn@zApAzD~@|CpAfEnBrG|DzMX~@x@pCbBlGrA~EP~@T|@x@`CVr@[fAq@rA_B`CIPGRAdAArADz@hAxISHoBfAnClIb@rAR`@ANBT{DjAaBd@iCr@mA\\dBdFrCdILj@Bh@Iz@@D?BHLrApBx@rAjBtDHRhAdCRZhBlBRZNZNn@Lf@t@|CLrAPbDDfB?BJbF"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-train-station",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "train-station",
+				"ar": "محطة مصر",
+				"en": "Train Station (Al Shohadaa)",
+				"lat": 31.192031,
+				"lon": 29.904412
+			},
+			"options": [
+				{
+					"minutes": 28,
+					"walkMeters": 201,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "الكيلو 21",
+							"from": "محطة سيدي جابر",
+							"to": "كوبري السكة الحديد",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 8,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "qnp}DqiwuDsBeD|@}@No@X{A@K?AAI~EeFfCl@hJvBdA\\PFRJTNT^\\RJB^?ZIJINOHQFUB_@C_@~Au@vAq@JQjHgDPK|CgAdB_@f@G@Tz@A`@@F?lDT^PNPR@b@QPA`CRpDX\\Nv@dAp@gBZu@?Af@_AlBwCj@eAL]V}@Hi@@Kj@wGl@iF^_DJ]LK\\OxBf@dB\\`Dn@p@P~BfAZX^l@@BPf@Ll@JvAJDd@ARMHSRkAN_@TY\\YVMJEtGcC^GVHVZTl@@DT^"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - محطة مصر",
+							"headsign": "محطة مصر",
+							"from": "كوبري السكة الحديد",
+							"to": "محطة مصر",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 13,
+							"everyMinutes": 2,
+							"fare": null,
+							"geometry": "eel}DmayuDl@vBp@`CdAjDhArCFPzEjMj@zAdDrJrAxDn@vA\\p@rApB`@n@jDxEt@z@r@r@dEhErB`CRRhAfAhCxBdA|@jA|@NJ~CrCbBfB~@jAlBzBjEvF@BrBxCPn@z@~A~BlDx@~AVv@vBrIH\\B^A^E\\Y~@S\\w@bAsHdDi@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CaBp@]L}@L_A@qAGy@?w@BwEh@MHEL?JBFHHLDRAbDm@f@EfAAhADzAD|@HjCfAdCp@p@PlCpL`DjNcCsKbCrKpD`NpD`N~A`G"
+						},
+						{
+							"kind": "walk",
+							"meters": 201,
+							"to": "محطة مصر",
+							"geometry": "imk}DkwouD??DLFRNj@@J@HAJ?LtCiAVIN?VFLF"
+						}
+					]
+				},
+				{
+					"minutes": 38,
+					"walkMeters": 1015,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 815,
+							"to": "شارع جمال عبد الناصر",
+							"geometry": "snp}DqiwuDHLGFhAfB@Bp@fACBOLA@|AfCBD@ALPC@dBpC@CDCJLTUr@bATXRTVTVNTN\\XDDDDn@Zj@VZP@@B@DBHDBF@HAHAFEFEFGBKDIBGDGF]f@IJQNQJODYHKHVXz@|@??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "العصافرة - محطة مصر",
+							"headsign": "محطة مصر",
+							"from": "شارع جمال عبد الناصر",
+							"to": "محطة مصر",
+							"fromOnRoad": true,
+							"toOnRoad": false,
+							"minutes": 22,
+							"everyMinutes": 2,
+							"fare": 10.5,
+							"geometry": "u{o}D{gvuDlI~IlI~IlI~IpE~ExB~BhFzFZb@^PJNNVDJfGhLZl@n@zApAzDt@fCzA|EdBzF|DzM|AhFzAtFzAvFP~@T|@n@hBt@tBb@|@JFL@LCFGDOAQ[kAy@uBKW@WFUJOPKbDm@f@EfAA~@BdBF|@HjCfA|Bl@x@TjCfL~CjN_CiKbCrKlDvMpD`NbBjG"
+						},
+						{
+							"kind": "walk",
+							"meters": 201,
+							"to": "محطة مصر",
+							"geometry": "imk}DkwouD??DLFRNj@@J@HAJ?LtCiAVIN?VFLF"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "sidi-gaber-station-to-el-mawqaf-el-geded",
+			"from": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"to": {
+				"id": "el-mawqaf-el-geded",
+				"ar": "الموقف الجديد",
+				"en": "El Mawqaf El Geded",
+				"lat": 31.175966,
+				"lon": 29.916417
+			},
+			"options": [
+				{
+					"minutes": 18,
+					"walkMeters": 8,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "الكيلو 21",
+							"from": "محطة سيدي جابر",
+							"to": "طريق القبارى السريع",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 18,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "qnp}DqiwuDsBeD|@}@No@X{A@K?AAI~EeFfCl@hJvBdA\\PFRJTNT^\\RJB^?ZIJINOHQFUB_@C_@~Au@vAq@JQjHgDPK|CgAdB_@f@G@Tz@A`@@F?lDT^PNPR@b@QPA`CRpDX\\Nv@dAp@gBZu@?Af@_AlBwCj@eAL]V}@Hi@@Kj@wGl@iF^_DJ]LK\\OxBf@dB\\`Dn@p@P~BfAZX^l@@BPf@Ll@JvAJDd@ARMHSRkAN_@TY\\YVMJEtGcC^GVHVZTl@@DT^~AxFdAjDDJbAfCvC`IvBvF~AtExCvI~@pBLVtB`DbDnEFHt@z@xF|FVXzAfB|AzA|CjCSQdA|@zAhA|BrB`@^t@v@l@n@lDfEbBxBfB|BtB|CjAlB^j@tB`Df@~@Th@Tr@|BrJ\\pAz@|BjCjFlBfD`@|@`@jAtArE^bAbBbGtAxELd@Nn@z@hCrB~GtApE`BzFDN"
+						},
+						{
+							"kind": "walk",
+							"meters": 8,
+							"to": "الموقف الجديد",
+							"geometry": "q`h}Da`ruD??ACCK"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-sidi-gaber-station",
+			"from": {
+				"id": "train-station",
+				"ar": "محطة مصر",
+				"en": "Train Station (Al Shohadaa)",
+				"lat": 31.192031,
+				"lon": 29.904412
+			},
+			"to": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"options": [
+				{
+					"minutes": 39,
+					"walkMeters": 816,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 75,
+							"to": "محطة مصر",
+							"geometry": "eek}DquouDMGWGHyA@S??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "سيدي بشر - محطة مصر",
+							"headsign": "سيدي بشر",
+							"from": "محطة مصر",
+							"to": "شارع جمال عبد الناصر",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 19,
+							"everyMinutes": 9,
+							"fare": 9.5,
+							"geometry": "_fk}DoyouDDy@eAeDeA}CsEoMcByEyAoEQg@{@cCW{@i@eCUcDo@cJAUDo@JABCBMAEKKI@EFAH?@cCe@uEoAmAa@i@PQHKPOLa@N[Hy@JgDGwAFaAN[LiBTi@Bk@M_@eAY}@GWoDgMGSuDgMyA_FeB{FcDsKe@_Ak@kAyE_JeAoB_@o@Wc@EEIA?GCMi@WiAeAm@o@kIaJmI_JcBkBiFsFmI_JgEoEcCqC"
+						},
+						{
+							"kind": "walk",
+							"meters": 741,
+							"to": "محطة سيدي جابر",
+							"geometry": "abp}DoovuD@Ax@dARFH@F?bAEFCDCXm@HSDQBQ?QGOEMo@[EEEE]YUOWOWUSUUYs@cAUTKMEBABeBqCBAMQA@CE}AgC@ANMBCq@gAACiAgBFGIM"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-ibrahimeya",
+			"from": {
+				"id": "train-station",
+				"ar": "محطة مصر",
+				"en": "Train Station (Al Shohadaa)",
+				"lat": 31.192031,
+				"lon": 29.904412
+			},
+			"to": {
+				"id": "ibrahimeya",
+				"ar": "الإبراهيمية",
+				"en": "Ibrahimeya Fly-over",
+				"lat": 31.208692923736628,
+				"lon": 29.93420554084764
+			},
+			"options": [
+				{
+					"minutes": 28,
+					"walkMeters": 75,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 75,
+							"to": "محطة مصر",
+							"geometry": "eek}DquouDMGWGHyA@S??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "سيدي بشر - محطة مصر",
+							"headsign": "سيدي بشر",
+							"from": "محطة مصر",
+							"to": "باب شرق",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 8,
+							"everyMinutes": 9,
+							"fare": 9.5,
+							"geometry": "_fk}DoyouDDy@eAeDeA}CsEoMcByEyAoEQg@{@cCW{@i@eCUcDo@cJAUDo@JABCBMAEKKI@EFAH?@cCe@uEoAmAa@i@PQHKPOLa@N[Hy@JgDGwAFaAN[LiBTi@Bk@M_@eA"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو سليمان - المنشية",
+							"headsign": "أبو سليمان",
+							"from": "باب شرق",
+							"to": "كوبري الإبراهيمية",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 6,
+							"everyMinutes": 1,
+							"fare": 9.5,
+							"geometry": "kcm}DebruDK]yD_NSs@iDgLeB_GwA{EqDsLUc@{@gBiEaIuB}DF[@]C]IY?i@Cc@]wAQy@qCiLAE?I@OVo@NOVOJM@ICUOQa@KEC"
+						}
+					]
+				},
+				{
+					"minutes": 31,
+					"walkMeters": 481,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 75,
+							"to": "محطة مصر",
+							"geometry": "eek}DquouDMGWGHyA@S??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "سيدي بشر - محطة مصر",
+							"headsign": "سيدي بشر",
+							"from": "محطة مصر",
+							"to": "شارع جمال عبد الناصر",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 15,
+							"everyMinutes": 9,
+							"fare": 9.5,
+							"geometry": "_fk}DoyouDDy@eAeDeA}CsEoMcByEyAoEQg@{@cCW{@i@eCUcDo@cJAUDo@JABCBMAEKKI@EFAH?@cCe@uEoAmAa@i@PQHKPOLa@N[Hy@JgDGwAFaAN[LiBTi@Bk@M_@eAY}@GWoDgMGSuDgMyA_FeB{FcDsKe@_Ak@kAyE_JeAoB_@o@Wc@EEIA?GCMi@WiAeAm@o@kIaJ"
+						},
+						{
+							"kind": "walk",
+							"meters": 406,
+							"to": "الإبراهيمية",
+							"geometry": "kxn}DmcuuD?@o@s@lAeBt@eA|@qAjAx@d@\\DBFBF@F?FA?I@G@IZu@FK@E@GDMAE?G?E@GBEBEDCDAD?KIGE"
+						}
+					]
+				},
+				{
+					"minutes": 30,
+					"walkMeters": 1126,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 1126,
+							"to": "محطة الرمل",
+							"geometry": "eek}DquouDTRNXF`@A^CNKZOPKJqBz@i@TWHw@b@YPYPQPWd@OVKNQLMF[JYJa@L{@ZQFsAd@C@YJwBv@_@LgA\\_Bh@s@VUJSFm@R_A^oDpAeA^}@\\GBEFi@z@MN[Q_@T??C@"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو سليمان - المنشية",
+							"headsign": "أبو سليمان",
+							"from": "محطة الرمل",
+							"to": "كوبري الإبراهيمية",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 15,
+							"everyMinutes": 1,
+							"fare": 9.5,
+							"geometry": "ixl}DctnuD[mAUc@IKg@o@aAeAPYf@o@}CkDk@m@{@mAm@qAcBaFmEsMw@_C{AgE_AgCyCcIvAsB~GyJEO}DeLf@C@?bL{DBA^KPAP@PDh@XjAdDb@|@JFL@LCFGDOAQ??[kAoC{G_@eAK]yD_NSs@iDgLeB_GwA{EqDsLUc@{@gBiEaIuB}DF[@]C]IY?i@Cc@]wAQy@qCiLAE?I@OVo@NOVOJM@ICUOQa@KEC"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-smouha",
+			"from": {
+				"id": "train-station",
+				"ar": "محطة مصر",
+				"en": "Train Station (Al Shohadaa)",
+				"lat": 31.192031,
+				"lon": 29.904412
+			},
+			"to": {
+				"id": "smouha",
+				"ar": "سموحة (جرين بلازا)",
+				"en": "Green Plaza",
+				"lat": 31.209123950589998,
+				"lon": 29.962998211029113
+			},
+			"options": [
+				{
+					"minutes": 24,
+					"walkMeters": 632,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 75,
+							"to": "محطة مصر",
+							"geometry": "eek}DquouDMGWGHyA@S??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو قير - محطة مصر",
+							"headsign": "أبو قير",
+							"from": "محطة مصر",
+							"to": "شارع قنال المحمودية",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 14,
+							"everyMinutes": 2,
+							"fare": null,
+							"geometry": "_fk}DoyouDJ}BPiFd@aNb@@nDHxAAXATGvBeAvCwApFwBNInG{CaAyCaA_DWmFfAaAbAy@Jd@Xv@^p@l@z@x@Tz@pA?@bCbDH?HBhA~@H@FEBIAOcA}@KYmBaBe@g@q@gAWs@Ww@Gu@?U?]Hs@Pq@jByDL_@ZuADc@@O?m@A[Ms@KY[k@OQg@_@wBeAOKSWIGWg@[w@_@gBQq@Oa@Wg@[_@_@[g@YuAs@]U{@{@u@w@U]u@_BOc@YaAYgB[eDK}AEoAC}@Iq@Oo@Wm@]g@i@g@a@W[WYY[g@EIO_@Qk@Mw@K}@GiCEm@Ou@]aACG]k@g@c@sCgB{AiAm@k@s@m@_CeCcBoAk@_@a@UoBiAaAu@wAaBgAaBEGe@i@c@_@e@Wo@Wy@UyBYgAEqCKy@GuAU}@Q_@Mm@[ECWOaA{@BgA[c@]u@Yw@Wy@a@iAoCsHQu@q@o@AGE_@Ky@GkA?e@HuBTmBTeAPg@HYhAuBhAkB`BuCHSv@}Av@cCb@kBf@mCDSRcCRkDFcEFwDA{@G{@Mw@c@uA_@s@AAOU{@}@o@c@oD}AwAg@m@SkBu@gBaAkBkAa@SC?oAYiDe@wDw@eB]{@U}@c@wDyBuCcBoCiBi@c@g@k@"
+						},
+						{
+							"kind": "walk",
+							"meters": 557,
+							"to": "سموحة (جرين بلازا)",
+							"geometry": "qxn}D_ezuD??Ju@GGI\\OUFIFIDIBG@CBMBQn@yDjAyGHa@Pw@BEBCDAJ@J?FEBE@IEIGEDi@H_BFU^aALW"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-miami",
+			"from": {
+				"id": "train-station",
+				"ar": "محطة مصر",
+				"en": "Train Station (Al Shohadaa)",
+				"lat": 31.192031,
+				"lon": 29.904412
+			},
+			"to": {
+				"id": "miami",
+				"ar": "ميامي",
+				"en": "Miami - Courniche",
+				"lat": 31.270043556513205,
+				"lon": 29.991521805839195
+			},
+			"options": [
+				{
+					"minutes": 46,
+					"walkMeters": 6,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "أتوبيس 739",
+							"route": "العصافرة - محطة مصر",
+							"headsign": "العصافرة",
+							"from": "محطة مصر",
+							"to": "طريق الجيش",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 46,
+							"everyMinutes": 45,
+							"fare": 10.5,
+							"geometry": "eek}DquouDe@QO@oDrAe@R]H]H_ALkCyJqDaNGSoAkEuBmEM[gBoE{CvA_A`@cFzBgDtAKFoB~@iDlAdArCN`@cAf@GDGX@`@{DjAiA\\aDz@mA\\{DhAgElAWBWAg@M}ByAwBuA_@ScDcBa@]a@c@CAYo@Si@UaAKs@S{BUcDMqBMiAQiAUaAKU]{@q@_BHRgAgCY_AmAyGa@wB]aBI_@So@Ym@wAqBeCmD_AaBe@mAe@_Ay@}AaAaBg@yAsAyCSe@GKiAsBuAiBiAgBOc@c@uA_@}@gBoDmAmBgFiIs@oAIOq@qBi@mB[{@k@sA[g@WYu@u@}@gAGIgA{AmAyAi@u@qHaKwEqGsAiBEEkFcHiAwAW[Y[s@eAe@_AOi@q@_BMg@CgAIuEKg@Oc@S_@Y[aB}AuEgEaCeCAAaG{FuAwAq@q@kCyBgB{AY_@Sc@ACMa@I_@CW@m@VgBBc@@c@Ce@UyAKYQc@GMw@cAe@a@k@Um@GU@_@FcAf@c@HS?WASCe@S[UWYOYK]Ks@EiBImAMeA??]gBK_@Ys@a@m@_@S_@My@OoAKKCOCs@Uq@a@II[[g@w@oA_Ck@aA[g@uDaGI_@AU@UFQRa@p@qAJe@Hq@?k@Cg@Ic@YgAQ[KUSYSQEE_BmAm@m@e@q@a@y@]cA_@_BAGc@wAq@uAe@u@m@q@kBsAMMk@g@]a@q@eAq@{@w@o@kDsBv@d@aHaEq@g@[a@GKKQq@cBS_@k@{@oBgCu@s@MMm@c@e@WiCkA}@m@u@m@[]EEgBeC{BiDq@w@SUi@e@i@a@kCcBs@m@k@k@SYO[O]K_@Ga@EcA?qAKwASmACK[cAEIYm@c@q@yEaG[Yg@a@cBaAYSIGUUg@q@qA_CKOmAeBo@i@WOkAa@_@SuAoAOI]SWKiB]g@Ue@Yc@_@_@a@[g@Yi@EMM]Qo@e@kC[cAQ_@GMa@u@y@cA{AoBgAmAyAoAeAo@UKmGaCUIiAMc@AU@uAH{@Lm@ZmAx@UHk@BmAOICe@I]KSMIEWS_@k@qAkDMm@IaACOAi@@wAJqB?_ACuBBs@@]"
+						},
+						{
+							"kind": "walk",
+							"meters": 6,
+							"to": "ميامي",
+							"geometry": "elz}Dkv`vDK??J"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "train-station-to-agami",
+			"from": {
+				"id": "train-station",
+				"ar": "محطة مصر",
+				"en": "Train Station (Al Shohadaa)",
+				"lat": 31.192031,
+				"lon": 29.904412
+			},
+			"to": {
+				"id": "agami",
+				"ar": "العجمي (البيطاش)",
+				"en": "Al Bitash",
+				"lat": 31.114728330327587,
+				"lon": 29.79443156074461
+			},
+			"options": [
+				{
+					"minutes": 45,
+					"walkMeters": 313,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 248,
+							"to": "محطة مصر",
+							"geometry": "eek}DquouDTRNXF`@A^CNKZOPKJqBz@z@n@LH`@V??A?"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الهانوفيل - محطة مصر",
+							"headsign": "الهانوفيل",
+							"from": "محطة مصر",
+							"to": "البيطاش",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 39,
+							"everyMinutes": 1,
+							"fare": 9.5,
+							"geometry": "mek}DikouDx@l@~DdCVNfBdAPNR^\\x@lAfE@B~AfGhAxEVbA~CxKbAlD|AnFX~@hBdGfA~DHV~ClK`@jADLb@fBD`@?PMh@nFhB^LvBV\\NJHLP`AlBd@dAPf@@B|BjJHRNRPLd@X|BrAn@f@vEjCbCtAt@d@TVbBtCvAdC}@_BdGvKFJr@bApGdHlExEpA|Aj@h@p@p@xGnHrGfH~GhIiFkG~HnJ`InJrBdC|@hAdAbBNZjB~FqAaEdEtMdAdD`BnFRj@LPrBvCjCdDr@`ArH|JdEtFnBfChAxAjF`HtH|J@@rFpHn@vAFJp@jB_FbGGLCDEVEd@@PFd@xBlFx@`Bx@`Bj@z@nBtBdB|A~AzAd@TZPf@PbAVd@F`@P^VLTbDtETTp@b@n@Vz@T^H`A^tDjBzBpApAt@t@h@Z^`@r@L^|@pDJb@fBnGj@hB`@z@FNbHtJjDzEbCdDpH~JPVdCpDP\\L^TfA^dBnA`GFd@H`@L`@`ApB~C|Gn@tBLp@DPHbADvADhI@RBVDRjCrI`@|AlDbNhAfEHFH?lEoCzBuATGX?nEnDtCzBR?LKpBeDNMPIDALCR@PDPHv@h@z@n@v@t@hBrCV^pEnHn@fAZl@bBhCnAbBzAhBhFnGz@hATZ|A|Bb@v@vAbCx@bBzFrLVf@`EhHv@lAx@rAd@~@\\bAj@xBZ~@Zn@JRhBzC|DlEh@n@jC|C"
+						},
+						{
+							"kind": "walk",
+							"meters": 65,
+							"to": "العجمي (البيطاش)",
+							"geometry": "qd||DahztD??`@f@PRLQNP"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "agami-to-raml-station",
+			"from": {
+				"id": "agami",
+				"ar": "العجمي (البيطاش)",
+				"en": "Al Bitash",
+				"lat": 31.114728330327587,
+				"lon": 29.79443156074461
+			},
+			"to": {
+				"id": "raml-station",
+				"ar": "محطة الرمل",
+				"en": "Raml Station",
+				"lat": 31.200331183965478,
+				"lon": 29.899097756194084
+			},
+			"options": [
+				{
+					"minutes": 48,
+					"walkMeters": 217,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 208,
+							"to": "طريق الاسكندرية، مرسى مطروح",
+							"geometry": "_b||DefztDOQIMg@m@W[eAqAQWQWCG_@i@Y]??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "البيطاش - الموقف الجديد",
+							"headsign": "الموقف الجديد",
+							"from": "طريق الاسكندرية، مرسى مطروح",
+							"to": "طريق القبارى السريع",
+							"fromOnRoad": true,
+							"toOnRoad": true,
+							"minutes": 22,
+							"everyMinutes": 2,
+							"fare": null,
+							"geometry": "aj||DapztDOQsAmAw@{@q@aA}AoCEKWq@k@_Cq@aBoBmDgDaGcBaDcAkBuBeEcA_Ce@gAkBaDS]mBsCEGgEmFcBkCW_@eDkEqBuCe@q@Ng@bEoEdA_A@?zCwBzDeEFG|DmEjCsCfGqG`AqAf@q@fHkHhDmDhDiDtIuI|C_D|AcBvAsA|HwHXWv@u@xDuCRKj@IZ@f@NHHVTVf@Fp@C`@I\\QVUPOFa@Ds@MqAgAIKgAgAqA{AaAoAqAY_CUsBsByEyDqVeQuAmAuB}BgA{AkAiBc@w@cAwB{@}Bs@cCUaAg@iCMeAWmCsJaiBe@_Fy@uFaAuEw@wC{AsEiBiEmAaC_CwDiCkDq@w@gBmBmBgBw@q@sB}AyBuA{BoA}BgAaAa@cC{@aAYoNkFwtAcf@}DcBcFmCeCiBqB}AeBoB_GuH}DwFYs@Y_AqCgDcc@ym@cFwFgBeCwA_Ds@mBcAmD{FcVYq@_@o@c@i@wAqAOA{AU{H}Du@a@}@k@y@u@s@y@o@aAi@eA{L_b@kEsOi@qDKeAK{BEyBA{BP}CPgBpAwF?KGKICIB_@fA]nAuAvIYdCQzBa@SW[wBiHGQ{A_Ee@sAcAkDyBsH_AiD"
+						},
+						{
+							"kind": "walk",
+							"meters": 9,
+							"to": "طريق القبارى السريع",
+							"geometry": "cdh}DikruD@ADPA?"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - محطة الرمل",
+							"headsign": "محطة الرمل",
+							"from": "طريق القبارى السريع",
+							"to": "محطة الرمل",
+							"fromOnRoad": true,
+							"toOnRoad": false,
+							"minutes": 12,
+							"everyMinutes": 7,
+							"fare": null,
+							"geometry": "}ch}DyjruDiAaEMm@]}B]gAWk@_@w@e@sAcCiI}D{MACUc@w@yB[aA[yAg@iDi@{Bu@qBm@o@g@Ya@A_@FMHMJQ^ENOxAOp@IV]h@c@^SL{BbAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RaGrBmGvBsCbAiC~@_GtBSDE?K?q@_B}@sBY_As@wD{@yE]aBI_@So@Ym@[c@aE{Fy@wAk@w@U[IEI@GHAJBJhAbB\\v@dCbDlA~Ar@pAPn@dA~E@JnAvGRv@bAfClAvCHZTvAT`FBp@Hx@Jv@Nv@lApE\\z@DL^j@rEhC^RzAbAnBpAx@n@nA`AtBhBb@^zEbFnAxAdAnA`ArAV^tArB`@r@NZp@tAhAbCh@pA`@_@fAsAhBlBRZNZPn@"
+						}
+					]
+				},
+				{
+					"minutes": 44,
+					"walkMeters": 879,
+					"steps": [
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الموقف الجديد - الهانوفيل",
+							"headsign": "الموقف الجديد",
+							"from": "البيطاش",
+							"to": "قرب قاعة رويال كومبلكس",
+							"fromOnRoad": false,
+							"toOnRoad": true,
+							"minutes": 8,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "_b||DefztDOQq@{@}AmBgAaBi@o@sAmA]_@Y[q@aA}AoC]}@k@_CACo@}AuEkIaAcBgDmG_@u@uAoCiBgE{@yAo@gAS]sB{CqBgCuAeB{BkD{AqBiAyAwCgENg@v@{@jCsCdA_AnCmBLIzDeEbCoC`AeAjGwGfCmChBcCtAuApIwIh@k@jHkHrIuI\\]|AcBxEsEzDwDpAmAnAaAFE`BmARKj@IZ@f@N`@^Vf@Fp@C`@IZ?@QVUPOFa@Ds@MqAgAqAsAu@{@"
+						},
+						{
+							"kind": "walk",
+							"meters": 29,
+							"to": "قرب قاعة رويال كومبلكس",
+							"geometry": "gh{|Daq`uD??[_@IK??"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - محطة مصر",
+							"headsign": "محطة مصر",
+							"from": "قرب قاعة رويال كومبلكس",
+							"to": "محطة مصر",
+							"fromOnRoad": true,
+							"toOnRoad": false,
+							"minutes": 19,
+							"everyMinutes": 4,
+							"fare": null,
+							"geometry": "mi{|Dmr`uDwHyJIKeGuHm@o@YYsB_BoAw@_CcAe@M_Be@iJcB}Dy@wAc@sAk@e@Yi@YeSeNed@w[_BqAwA{AqAcBkAkBaAqBy@wBq@}Bi@eCgCqJgSur@i@_Bg@uAm@qAo@oAu@mAyEgHeQeX}s@yfAa@gAeAsB}@yBs@_Ck@cCQcAc@mAq@}A{@wAmA_BwK{KqCgDcc@ym@cFwFgBeCwA_Ds@mBcAmD{FcVYq@_@o@c@i@wAqAkBWq@]_IaE}@k@KKm@i@s@y@o@aAi@eAa@sAyKk_@S?YJQVEZrExObClHdBxGtKl`@PfAFj@BZz@rBpBbHLf@FTDbACfASfAoKfW}@pBkAbCqC|DkClD_A~@oB~Ag@ZUDUDSCuDcBgBaAg@_@{E{BS?IBs@j@}FtEqBvAk@^mGhF{@N]Fa@Ba@GeAe@aDeBOMYa@K_@GSu@cDs@kCk@wAc@{@{@gB]g@UUKEi@AWs@eBsCqD}FISUaAe@{AoBoG_AsEOu@YgAmCaJYaAm@qBkByFQi@}CwJsAf@]LT~@oBv@aAqEQo@{@iDaEfBCK}@`@aDvAq@_C{@aDcD_M"
+						},
+						{
+							"kind": "walk",
+							"meters": 850,
+							"to": "محطة الرمل",
+							"geometry": "wnk}DcjouD?@Wd@OVKNQLMF[JYJa@L{@ZQFsAd@C@YJwBv@_@LgA\\_Bh@s@VUJSFm@R_A^oDpAeA^}@\\GBEFi@z@MNIFMFOBKBIBC@C@Ka@"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "el-mawqaf-el-geded-to-sidi-gaber-station",
+			"from": {
+				"id": "el-mawqaf-el-geded",
+				"ar": "الموقف الجديد",
+				"en": "El Mawqaf El Geded",
+				"lat": 31.175966,
+				"lon": 29.916417
+			},
+			"to": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"options": [
+				{
+					"minutes": 20,
+					"walkMeters": 300,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 300,
+							"to": "الموقف الجديد",
+							"geometry": "w`h}Dq`ruDCKk@VKBI@W}@AC?C?C@ECA?AK]GUGQEM?A?A@A@AXOFEDGBI@IPl@TMBFHXf@dBJ^A?"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "سيدي جابر",
+							"from": "الموقف الجديد",
+							"to": "محطة سيدي جابر",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 15,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "a`h}Dy`ruDaAeD{AsFg@gBMm@]}B]gAw@cBK[Yw@gDcL{CeKUc@w@yB[aA[yAg@iDi@{Bu@qBm@o@g@Ya@A_@F[TQ^ENOxAOp@IV]h@c@^oCpAQLa@`@wAl@i@Xy@`@q\\xNcAXqAPoABm@E}Gu@k@@s@V{Az@}@l@kH`F_Ax@_@b@c@n@Qd@kBzF_@hAeC|GKVQRkB`BeD`CSPm@`@y@X_@HaAHa@?eBGgA@iAHwCh@oB`@qOfFs@RoItC_EtAcFhBy@X_GtBSDQ?q@_BJViAkCY_AmAuGa@{B]aBI_@So@Ym@uAmBgCqD_AaBe@mAc@{@{@aBaAaBg@yAqAuCUi@GKiAsBuAiBiAgBM_@e@yA_@}@gBoDkAkBiFkIo@kAMSq@qBi@mB[{@k@sA[g@UUw@y@}@gAGIgA{AmAyAg@s@qHaKyEsGsAiBACoFeHgAsAY_@Y[s@eAe@_AOi@As@E[IWSaAEm@AWIkF@QL]PORGn@ExAE~La@~L_@rJ[hAK@@bIjJdIjJJLJIh@OPKPOn@{@j@YFQ?SCGq@_@w@Yi@_@iBuAi@o@gDkFsFwI"
+						}
+					]
+				}
+			]
+		},
+		{
+			"slug": "raml-station-to-sidi-gaber-station",
+			"from": {
+				"id": "raml-station",
+				"ar": "محطة الرمل",
+				"en": "Raml Station",
+				"lat": 31.200331183965478,
+				"lon": 29.899097756194084
+			},
+			"to": {
+				"id": "sidi-gaber-station",
+				"ar": "محطة سيدي جابر",
+				"en": "Sidi Gaber Station",
+				"lat": 31.21914,
+				"lon": 29.943452
+			},
+			"options": [
+				{
+					"minutes": 24,
+					"walkMeters": 39,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 39,
+							"to": "محطة الرمل",
+							"geometry": "{xl}DktnuDJ`@BABAHCGS??C@"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "باكوس - المنشية",
+							"headsign": "باكوس",
+							"from": "محطة الرمل",
+							"to": "جامعة الإسكندرية - الكورنيش",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 7,
+							"everyMinutes": 1,
+							"fare": 8.5,
+							"geometry": "ixl}DetnuDGWSs@Uc@q@{@QSo@q@SWc@j@}@~@{@aBe@kAWg@Yi@u@sAoAoB[g@cB}BCCoBaCkAqAkCkCUUcEsDe@_@iBkAkCcB_@ScDcBa@]OOUUYo@Si@UaAKs@S{BQgCQmCMiAQiAUaAKU]{@q@_B"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "الكيلو 21 - سيدي جابر",
+							"headsign": "سيدي جابر",
+							"from": "جامعة الإسكندرية - الكورنيش",
+							"to": "محطة سيدي جابر",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 8,
+							"everyMinutes": 1,
+							"fare": null,
+							"geometry": "gyn}DqiquDJViAkCY_AmAuGa@{B]aBI_@So@Ym@uAmBgCqD_AaBe@mAc@{@{@aBaAaBg@yAqAuCUi@GKiAsBuAiBiAgBM_@e@yA_@}@gBoDkAkBiFkIo@kAMSq@qBi@mB[{@k@sA[g@UUw@y@}@gAGIgA{AmAyAg@s@qHaKyEsGsAiBACoFeHgAsAY_@Y[s@eAe@_AOi@As@E[IWSaAEm@AWIkF@QL]PORGn@ExAE~La@~L_@rJ[hAK@@bIjJdIjJJLJIh@OPKPOn@{@j@YFQ?SCGq@_@w@Yi@_@iBuAi@o@gDkFsFwI"
+						}
+					]
+				},
+				{
+					"minutes": 30,
+					"walkMeters": 768,
+					"steps": [
+						{
+							"kind": "walk",
+							"meters": 39,
+							"to": "محطة الرمل",
+							"geometry": "{xl}DktnuDJ`@BABAHCGS??C@"
+						},
+						{
+							"kind": "ride",
+							"vehicle": "مشروع (ميكروباص)",
+							"route": "أبو سليمان - المنشية",
+							"headsign": "أبو سليمان",
+							"from": "محطة الرمل",
+							"to": "ميدان فيكتور عمانويل",
+							"fromOnRoad": false,
+							"toOnRoad": false,
+							"minutes": 19,
+							"everyMinutes": 1,
+							"fare": 9.5,
+							"geometry": "ixl}DctnuD[mAUc@IKg@o@aAeAPYf@o@}CkDk@m@{@mAm@qAcBaFmEsMw@_C{AgE_AgCyCcIvAsB~GyJEO}DeLf@C@?bL{DBA^KPAP@PDh@XjAdDb@|@JFL@LCFGDOAQ??[kAoC{G_@eAK]yD_NSs@iDgLeB_GwA{EqDsLUc@{@gBiEaIuB}DF[@]C]IY?i@Cc@]wAQy@qCiLAE?I@OVo@NOVOJM@ICUOQa@KECIIk@_AmAaCaGoLaGmL??AYBQ?QCQKOo@g@MWyBcH_BeFaBsFw@iCOw@?QNOHQFUB_@C_@GSIQMM"
+						},
+						{
+							"kind": "walk",
+							"meters": 728,
+							"to": "محطة سيدي جابر",
+							"geometry": "_po}D_zwuD??CIAI?I@I@EQCMCi@@UFQJOJMPGPKVEDK@i@M_@KOCa@K_B]CNCZCNEPGPILILMJWPmAl@}@b@s@^]PqAp@oBt@CHAFCD_B|AZd@@B"
 						}
 					]
 				}

@@ -10,7 +10,7 @@ place,Abo Soliman,أبو سليمان,dt4a,high,alex_identified_routes.geojson,
 place,Abu Qir,أبو قير,dt4a,high,alex_identified_routes.geojson,
 place,Abu Talat,ابو تلات,dt4a,high,alex_identified_routes.geojson,
 place,Abu Youssef,ابو يوسف,dt4a,high,alex_identified_routes.geojson,
-place,Airport,المطار,dt4a,high,alex_identified_routes.geojson,
+place,Airport,مطار النزهة,dt4a,high,alex_identified_routes.geojson,"Official DT4A name «المطار»: the old Nouzha (Al Nozha) airport area. Shown as «مطار النزهة» so riders don't confuse it with Borg El Arab, which is what «the airport» means today."
 place,Al-Bitash,البيطاش,dt4a,high,alex_identified_routes.geojson,
 place,Al-Maraghi,المراغي,dt4a,high,alex_identified_routes.geojson,
 place,Al-Milaha,الملاحة,dt4a,high,alex_identified_routes.geojson,was «الملاحه»: standard spelling / locals say موقف for microbus terminals
@@ -82,7 +82,7 @@ stop,Administration Station,شارع بورسعيد - مساكن الإسكان 
 stop,Admon Fremon St,شارع إدمون فريمون,draft,high,osm: شارع ادمون فريمون 0 m,
 stop,Agamy School,مدرسة العجمى,dt4a,high,alex_processed_stops.geojson,
 stop,Agamy Star,عجمي ستار,draft,high,osm: عجمي ستار shop=mall 27 m; facebook.com/agamystarmall,Also called 'عجمي ستار مول'.
-stop,Airport,المطار,dt4a,high,alex_terminals.geojson,
+stop,Airport,مطار النزهة,dt4a,high,alex_terminals.geojson,"Official DT4A name «المطار»: the old Nouzha (Al Nozha) airport area. Shown as «مطار النزهة» so riders don't confuse it with Borg El Arab, which is what «the airport» means today."
 stop,Al Amrawy Mosque,شارع مصطفى كامل - ميامي الجديدة,draft,medium,osm: شارع مصطفى كامل 38 m; ميامى الجديدة 117 m,was «مسجد العمراوي» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. I could not confirm a mosque with this name near Mostafa Kamel St and the Sadat axis bridge.
 stop,Al Berolos Canal,ترعة البرنس,draft,medium,osm: شارع ترعه البرنس 50 m ('Berolos' is likely a mishearing of البرنس),was «ترعة البرلس» (unconfirmed landmark); replaced with OSM-verified street/area for public pages. Unconfirmed. The only named waterway street nearby is 'ترعة البرنس'. 'Berolos' may be a mishearing of 'البرنس'. Check with a local.
 stop,Al Gamal Mosque,مسجد الجمل,draft,high,aleqaria.com.eg (Awqaf Eid 2024 list: 'مسجد الجمل شارع المكس الورديان'); osm: شارع المكس 4 m,"It is 'الجمل' (pronounced el-gamal), not 'الجمال'."

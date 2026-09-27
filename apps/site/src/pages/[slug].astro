@@ -14,8 +14,9 @@ import RouteSign from '../components/RouteSign.astro';
 import WalkThere from '../components/WalkThere.astro';
 import FeedbackForm from '../components/FeedbackForm.astro';
 import data from '../data/routes.json';
+import names from '../data/aliases.json';
 import {
-	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, everyText,
+	type Page, viewSteps, rides, li, round5, mins, walkText, boardText, everyText, fareText,
 	vehicleOf, vehicleColor, vehicleInk, vehicleShort,
 } from '../lib/trip';
 
@@ -30,14 +31,28 @@ const firstBoard = steps.findIndex((s) => s.type === 'board');
 const gray = '#9aa6ad';
 const isBus = (v: string) => v === 'bus' || v === 'minibus';
 
-const reverse = data.pages.find((p) => p.from.en === page.to.en && p.to.en === page.from.en);
-const sameOrigin = data.pages.filter((p) => p.from.en === page.from.en && p.slug !== page.slug).slice(0, 5);
+const reverse = data.pages.find((p) => p.from.id === page.to.id && p.to.id === page.from.id);
+const sameOrigin = data.pages.filter((p) => p.from.id === page.from.id && p.slug !== page.slug).slice(0, 5);
+
+// Other names riders use for the two ends («المحطة» for محطة مصر), and notes on
+// names people mix up (مطار النزهة is not Borg El Arab).
+const aliases = names.aliases as Record<string, string[]>;
+const notes = names.notes as Record<string, string>;
+const ends = [page.from.ar, page.to.ar];
+const otherNames = ends.filter((n) => aliases[n]).map((n) => `${n} = ${aliases[n].join(' / ')}`);
+const endNotes = ends.map((n) => notes[n]).filter(Boolean);
+
+// The official fare, when every ride's line is on the governorate's list.
+const fare = rides(best).every((r) => r.fare !== null) ? rides(best).reduce((sum, r) => sum + r.fare!, 0) : null;
+// Only the best option's rides show a fare.
+const anyFare = rides(best).some((r) => r.fare !== null);
 
 const title = `ازاي تروح من ${page.from.ar} ${li(page.to.ar)}؟`;
 const firstRide = rides(best)[0];
 const description =
 	`من ${page.from.ar} ${li(page.to.ar)}: اركب ${vehicleShort(firstRide.vehicle)} «${firstRide.route}» من ${firstRide.from}. ` +
-	`حوالي ${round5(best.minutes)} دقيقة${firstRide.everyMinutes ? `، و${everyText(firstRide.everyMinutes)}` : ''}.`;
+	`حوالي ${round5(best.minutes)} دقيقة${firstRide.everyMinutes ? `، و${everyText(firstRide.everyMinutes)}` : ''}.` +
+	(otherNames.length ? ` (${otherNames.join('، ')})` : '');
 const breadcrumbs = {
 	'@context': 'https://schema.org',
 	'@type': 'BreadcrumbList',
@@ -53,10 +68,14 @@ const breadcrumbs = {
 		<RouteMap option={best} label={`خريطة المشوار من ${page.from.ar} ${li(page.to.ar)}`} />
 
 		<h1 class="mt-6 text-3xl font-bold leading-snug text-sea-dark">{title}</h1>
+		{otherNames.length > 0 && <p class="mt-2 text-sm text-muted">أسماء تانية: {otherNames.join('، ')}</p>}
+		{endNotes.map((n) => <p class="mt-1 text-sm text-muted">{n}</p>)}
 
 		<div class="mt-4 flex items-end gap-3">
 			<p class="text-5xl font-bold leading-none">{round5(best.minutes)}</p>
-			<p class="pb-1 text-muted">دقيقة تقريباً، {walkText(best.walkMeters)}</p>
+			<p class="pb-1 text-muted">
+				دقيقة تقريباً، {walkText(best.walkMeters)}{fare !== null && <>، والأجرة {fareText(fare)}</>}
+			</p>
 		</div>
 
 		<ol class="mt-4 flex flex-wrap items-center gap-1.5" aria-label="ملخص المشوار">
@@ -120,6 +139,7 @@ const breadcrumbs = {
 									<RouteSign route={s.ride.route} vehicle={s.vehicle} />
 									<p class="mt-2 text-sm leading-relaxed text-muted">
 										{s.ride.vehicle}، اتجاه {s.ride.headsign}. {everyText(s.ride.everyMinutes)}
+										{s.ride.fare !== null && <> الأجرة الرسمية {fareText(s.ride.fare)}.</>}
 									</p>
 									{i === firstBoard && <WalkThere geometry={s.ride.geometry} />}
 								</div>
@@ -165,6 +185,7 @@ const breadcrumbs = {
 
 		<p class="mt-8 text-sm leading-relaxed text-muted">
 			الأوقات تقريبية. الخطوط ومواعيدها من مسح ميداني سنة 2022، ولو خط اتغير الصفحة دي ممكن تكون محتاجة تتحدث.
+			{anyFare && ' الأجرة من تعريفة محافظة الإسكندرية الرسمية (مارس 2026).'}
 		</p>
 
 		<FeedbackForm page={`/${page.slug}/`} />
