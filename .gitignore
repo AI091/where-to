@@ -52,3 +52,7 @@ coverage-audit/
 .playwright-cli/
 .playwright-mcp/
 engine/target/
+
+# Instructions for coding agents stay local
+AGENTS.md
+CLAUDE.md
